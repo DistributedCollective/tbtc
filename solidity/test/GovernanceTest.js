@@ -3,12 +3,13 @@ const {increaseTime, expectEvent} = require("./helpers/utils.js")
 const {createSnapshot, restoreSnapshot} = require("./helpers/snapshot.js")
 const {accounts, contract, web3} = require("@openzeppelin/test-environment")
 const {BN, expectRevert} = require("@openzeppelin/test-helpers")
-const {expect} = require("chai")
+const bnChai = require("bn-chai")
+const {expect} = require("chai").use(bnChai(BN))
 const constants = require("@openzeppelin/test-helpers/src/constants")
-
+// chai
 const TBTCSystem = contract.fromArtifact("TBTCSystem")
 const SatWeiPriceFeed = contract.fromArtifact("SatWeiPriceFeed")
-const MockMedianizer = contract.fromArtifact("MockMedianizer")
+const MockPriceOracle = contract.fromArtifact("MockPriceOracle")
 const ECDSAKeepFactoryStub = contract.fromArtifact("ECDSAKeepFactoryStub")
 
 describe("TBTCSystem governance", async function() {
@@ -63,13 +64,13 @@ describe("TBTCSystem governance", async function() {
       newFullyBackedOpenKeepFee,
     )
 
-    ethBtcMedianizer = await MockMedianizer.new()
+    ethBtcMedianizer = await MockPriceOracle.new()
     await ethBtcMedianizer.setValue(medianizerValue)
     satWeiPriceFeed.initialize(tbtcSystem.address, ethBtcMedianizer.address)
 
-    badEthBtcMedianizer = await MockMedianizer.new()
+    badEthBtcMedianizer = await MockPriceOracle.new()
     await badEthBtcMedianizer.setValue(0)
-    newEthBtcMedianizer = await MockMedianizer.new()
+    newEthBtcMedianizer = await MockPriceOracle.new()
     await newEthBtcMedianizer.setValue(1)
   })
 
@@ -312,7 +313,7 @@ describe("TBTCSystem governance", async function() {
 
         const minimum = await ecdsaKeepFactory.minimumBondableValue()
         // (10**28 / 10**11) * 10**5 * 150%
-        expect(minimum).to.eq.BN(new BN("15000000000000000000000"))
+        expect(minimum).to.eq.BN(new BN("15000000000000000"))
       })
     })
 
@@ -509,42 +510,6 @@ describe("TBTCSystem governance", async function() {
         expect(await newKeepStakedFactory.keepOwner.call()).to.equal(
           mockDeposit,
         )
-      },
-    })
-
-    governanceTest({
-      property: "the ETHBTC feeds with a new entry",
-      change: "EthBtcPriceFeedAddition",
-      timeDelayGetter: "getPriceFeedGovernanceTimeDelay",
-      goodParametersWithName: [
-        {name: "_priceFeed", value: newEthBtcMedianizer.address},
-      ],
-      badInitializationTests: {
-        "adding inactive feed": {
-          parameters: [badEthBtcMedianizer.address],
-          error: "Cannot add inactive feed",
-        },
-      },
-      verifyFinalizationEvents: (receipt, newFeedAddress) => {
-        expectEvent(receipt, "EthBtcPriceFeedAdded", {
-          _priceFeed: newFeedAddress,
-        })
-      },
-      verifyFinalState: async () => {
-        // disable current feed
-        await ethBtcMedianizer.setValue(0)
-
-        // check new feed
-        expect(await satWeiPriceFeed.getWorkingEthBtcFeed()).to.equal(
-          newEthBtcMedianizer.address,
-        )
-      },
-      badFinalizationTests: {
-        "finalizing inactive feed": {
-          parameters: [newEthBtcMedianizer.address],
-          beforeFinalizing: async () => newEthBtcMedianizer.setValue(0),
-          error: "Cannot add inactive feed",
-        },
       },
     })
   })
@@ -768,8 +733,7 @@ describe("TBTCSystem governance", async function() {
       await tbtcSystem.finalizeLotSizesUpdate()
 
       await ethBtcMedianizer.setValue(new BN(10 ** 13))
-      // (10**28 / 10 ** 13) * 10**5 * 150%
-      const expected = new BN("150000000000000000000")
+      const expected = new BN("1500000000000000000")
       await tbtcSystem.refreshMinimumBondableValue()
       expect(await ecdsaKeepFactory.minimumBondableValue()).to.eq.BN(expected)
     })
