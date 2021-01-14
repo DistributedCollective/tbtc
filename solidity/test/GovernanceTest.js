@@ -732,10 +732,15 @@ describe("TBTCSystem governance", async function() {
       await increaseTime(remainingTime.toNumber() + 1)
       await tbtcSystem.finalizeLotSizesUpdate()
 
+      const expectedPre = new BN(10 ** 11).mul(new BN(15)).mul(new BN(1e4))
+      expect(await ecdsaKeepFactory.minimumBondableValue()).to.eq.BN(expectedPre)
       await ethBtcMedianizer.setValue(new BN(10 ** 13))
-      const expected = new BN("1500000000000000000")
+
+      // 
+      const expectedPost = new BN(10 ** 13).mul(new BN(15)).mul(new BN(1e4))
       await tbtcSystem.refreshMinimumBondableValue()
-      expect(await ecdsaKeepFactory.minimumBondableValue()).to.eq.BN(expected)
+
+      expect(await ecdsaKeepFactory.minimumBondableValue()).to.eq.BN(expectedPost)
     })
   })
 })

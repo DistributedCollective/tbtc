@@ -23,6 +23,7 @@ const main = async () => {
     abi,
     provider,
   )
+  console.log((await oracle.latestAnswer()))
   console.log((await oracle.latestAnswer()).toString())
 }
 const abi = [

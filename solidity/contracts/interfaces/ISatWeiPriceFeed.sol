@@ -1,6 +1,5 @@
 pragma solidity 0.5.17;
 
-import "../external/AggregatorV3Interface.sol";
 
 /// @notice satoshi/wei price feed interface.
 interface ISatWeiPriceFeed {

@@ -25,10 +25,10 @@ describe("SatWeiPriceFeed", async function() {
     it("returns correct satwei price feed value", async () => {
       const btcusd = new BN(7000)
       // multiplication before division since BN does not store decimal points
-      // oracle returns price * 1e8
-      await btcsov.setValue(btcusd.mul(new BN(1e8)))
+      await btcsov.setValue(btcusd)
       const price = await satWeiPriceFeed.getPrice.call({from: accounts[0]})
-      expect(new BN(price)).to.eq.BN(btcusd.mul(new BN(1e8)))
+      // oracle returns price in sat 1 BTC = 1e8 sat
+      expect(new BN(price)).to.eq.BN(btcusd)
     })
   })
 
