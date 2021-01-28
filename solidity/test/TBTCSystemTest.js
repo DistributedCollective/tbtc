@@ -1,11 +1,12 @@
 const {deployAndLinkAll} = require("./helpers/testDeployer.js")
 const {accounts, contract, web3} = require("@openzeppelin/test-environment")
 const {BN, expectRevert} = require("@openzeppelin/test-helpers")
-const {expect} = require("chai")
+const bnChai = require("bn-chai")
+const {expect} = require("chai").use(bnChai(BN))
 
 const TBTCSystem = contract.fromArtifact("TBTCSystem")
 const SatWeiPriceFeed = contract.fromArtifact("SatWeiPriceFeed")
-const MockMedianizer = contract.fromArtifact("MockMedianizer")
+const MockPriceOracle = contract.fromArtifact("MockPriceOracle")
 
 describe("TBTCSystem", async function() {
   let tbtcSystem
@@ -34,7 +35,7 @@ describe("TBTCSystem", async function() {
     ecdsaKeepFactory = ecdsaKeepFactoryStub
     tdt = tbtcDepositToken
 
-    const ethBtcMedianizer = await MockMedianizer.new()
+    const ethBtcMedianizer = await MockPriceOracle.new()
     await ethBtcMedianizer.setValue(medianizerValue)
     mockSatWeiPriceFeed.initialize(tbtcSystem.address, ethBtcMedianizer.address)
   })
@@ -127,13 +128,10 @@ describe("TBTCSystem", async function() {
 
     it("should give the price if the caller does have an associated TDT", async () => {
       await tdt.forceMint(tdtOwner, web3.utils.toBN(keepOwner))
-      const priceFeedValue = new BN(10)
-        .pow(new BN(28))
-        .div(new BN(medianizerValue))
 
       expect(
         await tbtcSystem.fetchBitcoinPrice.call({from: keepOwner}),
-      ).to.eq.BN(priceFeedValue)
+      ).to.eq.BN(medianizerValue)
     })
   })
 })

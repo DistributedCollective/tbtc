@@ -7,7 +7,6 @@ import {VendingMachine} from "./VendingMachine.sol";
 import {DepositFactory} from "../proxy/DepositFactory.sol";
 
 import {IRelay} from "@summa-tx/relay-sol/contracts/Relay.sol";
-import "../external/IMedianizer.sol";
 
 import {ITBTCSystem} from "../interfaces/ITBTCSystem.sol";
 import {ISatWeiPriceFeed} from "../interfaces/ISatWeiPriceFeed.sol";
@@ -100,7 +99,6 @@ contract TBTCSystem is Ownable, ITBTCSystem, DepositLog {
     // price feed
     uint256 constant priceFeedGovernanceTimeDelay = 90 days;
     uint256 ethBtcPriceFeedAdditionInitiated;
-    IMedianizer nextEthBtcPriceFeed;
 
     constructor(address _priceFeed, address _relay) public {
         priceFeed = ISatWeiPriceFeed(_priceFeed);
@@ -347,19 +345,6 @@ contract TBTCSystem is Ownable, ITBTCSystem, DepositLog {
         );
     }
 
-    /// @notice Add a new ETH/BTC price feed contract to the priecFeed.
-    /// @dev This can be finalized by calling `finalizeEthBtcPriceFeedAddition`
-    ///      anytime after `priceFeedGovernanceTimeDelay` has elapsed.
-    function beginEthBtcPriceFeedAddition(IMedianizer _ethBtcPriceFeed) external onlyOwner {
-        bool ethBtcActive;
-        (, ethBtcActive) = _ethBtcPriceFeed.peek();
-        require(ethBtcActive, "Cannot add inactive feed");
-
-        nextEthBtcPriceFeed = _ethBtcPriceFeed;
-        ethBtcPriceFeedAdditionInitiated = block.timestamp;
-        emit EthBtcPriceFeedAdditionStarted(address(_ethBtcPriceFeed), block.timestamp);
-    }
-
     modifier onlyAfterGovernanceDelay(
         uint256 _changeInitializedTimestamp,
         uint256 _delay
@@ -461,28 +446,6 @@ contract TBTCSystem is Ownable, ITBTCSystem, DepositLog {
         newKeepStakedFactory = address(0);
         newFullyBackedFactory = address(0);
         newFactorySelector = address(0);
-    }
-
-    /// @notice Finish adding a new price feed contract to the priceFeed.
-    /// @dev `beginEthBtcPriceFeedAddition` must be called first; once
-    ///      `ethBtcPriceFeedAdditionInitiated` has passed, this function can be
-    ///      called to append a new price feed.
-    function finalizeEthBtcPriceFeedAddition()
-            external
-            onlyOwner
-            onlyAfterGovernanceDelay(
-                ethBtcPriceFeedAdditionInitiated,
-                priceFeedGovernanceTimeDelay
-            ) {
-        // This process interacts with external contracts, so
-        // Checks-Effects-Interactions it.
-        IMedianizer _nextEthBtcPriceFeed = nextEthBtcPriceFeed;
-        nextEthBtcPriceFeed = IMedianizer(0);
-        ethBtcPriceFeedAdditionInitiated = 0;
-
-        emit EthBtcPriceFeedAdded(address(_nextEthBtcPriceFeed));
-
-        priceFeed.addEthBtcFeed(_nextEthBtcPriceFeed);
     }
 
     /// @notice Gets the system signer fee divisor.
