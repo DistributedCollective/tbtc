@@ -1,5 +1,5 @@
-require('babel-register');
-require('babel-polyfill');
+require("babel-register")
+require("babel-polyfill")
 
 /**
  * Use this file to configure your truffle project. It's seeded with some
@@ -27,9 +27,10 @@ require('babel-polyfill');
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
-const HDWalletProvider = require('@truffle/hdwallet-provider');
+const HDWalletProvider = require("@truffle/hdwallet-provider")
 
-const mnemonic = 'candy maple cake sugar pudding cream honey rich smooth crumble sweet treat'
+const mnemonic =
+  "candy maple cake sugar pudding cream honey rich smooth crumble sweet treat"
 
 module.exports = {
   /**
@@ -50,35 +51,69 @@ module.exports = {
     // options below to some value.
     //
     development: {
-      host: "localhost",     // Localhost (default: none)
-      port: 8545,            // Standard Ethereum port (default: none)
-      network_id: "*",       // Any network (default: none)
+      host: "localhost", // Localhost (default: none)
+      port: 8545, // Standard Ethereum port (default: none)
+      network_id: "*", // Any network (default: none)
       //  gas: 100000000000000,
-      gasPrice: 1
+      gasPrice: 1,
     },
-
+    sov: {
+      provider: function() {
+        return new HDWalletProvider(
+          "2d61b31f93df83e90e78b61943019f3d03fd9f31901359a0e065a4c896eee23d",
+          "https://testnet.sovryn.app/rpc",
+        )
+      },
+      gas: 6700000,
+      gasPrice: 60000000,
+      skipDryRun: false,
+      network_id: "*",
+      timeoutBlocks: 100,
+      deploymentPollingInterval: 4000,
+      disableConfirmationListener: true,
+    },
+    local: {
+      provider: function() {
+        return new HDWalletProvider(
+          "4526476adb17c8f751fc4e71e23c4f5e7e2013cd62417b63825cb6cde8a42627",
+          "HTTP://127.0.0.1:7545",
+        )
+      },
+      gas: 6700000,
+      gasPrice: 80000000,
+      skipDryRun: false,
+      network_id: "*",
+      timeoutBlocks: 50,
+      deploymentPollingInterval: 1000,
+    },
     keep_dev: {
       provider: function() {
-        return new HDWalletProvider(process.env.CONTRACT_OWNER_ETH_ACCOUNT_PRIVATE_KEY, "http://localhost:8545")
+        return new HDWalletProvider(
+          process.env.CONTRACT_OWNER_ETH_ACCOUNT_PRIVATE_KEY,
+          "http://localhost:8545",
+        )
       },
       gas: 6721975,
-      network_id: 1101
+      network_id: 1101,
     },
 
     ropsten: {
       provider: function() {
-        return new HDWalletProvider(process.env.CONTRACT_OWNER_ETH_ACCOUNT_PRIVATE_KEY, "https://ropsten.infura.io/v3/59fb36a36fa4474b890c13dd30038be5")
+        return new HDWalletProvider(
+          process.env.CONTRACT_OWNER_ETH_ACCOUNT_PRIVATE_KEY,
+          "https://ropsten.infura.io/v3/59fb36a36fa4474b890c13dd30038be5",
+        )
       },
       gas: 6721975,
-      network_id: 3
+      network_id: 3,
     },
 
     mainnet: {
       provider: function() {
         return new HDWalletProvider(mnemonic, "https://mainnet.infura.io/")
       },
-      network_id: 1
-    }
+      network_id: 1,
+    },
     // Another network with more advanced options...
     // advanced: {
     // port: 8777,             // Custom port
@@ -111,11 +146,11 @@ module.exports = {
   // Set default mocha options here, use special reporters etc.
   mocha: {
     useColors: true,
-    reporter: 'eth-gas-reporter',
+    reporter: "eth-gas-reporter",
     reporterOptions: {
-      currency: 'USD',
-      gasPrice: 21
-    }
+      currency: "USD",
+      gasPrice: 21,
+    },
   },
 
   // Configure your compilers
@@ -124,13 +159,14 @@ module.exports = {
       version: "0.5.17",
       // version: "0.5.1",    // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
-      settings: {          // See the solidity docs for advice about optimization and evmVersion
+      settings: {
+        // See the solidity docs for advice about optimization and evmVersion
         optimizer: {
           enabled: true,
-          runs: 200
+          runs: 200,
         },
         //  evmVersion: "byzantium"
-      }
-    }
-  }
+      },
+    },
+  },
 }

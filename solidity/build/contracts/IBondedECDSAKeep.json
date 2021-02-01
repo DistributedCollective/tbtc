@@ -1,0 +1,1385 @@
+{
+  "contractName": "IBondedECDSAKeep",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getPublicKey",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "checkBondAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_digest",
+          "type": "bytes32"
+        }
+      ],
+      "name": "sign",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "distributeETHReward",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_tokenAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "distributeERC20Reward",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "seizeSignerBonds",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "returnPartialSignerBonds",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint8",
+          "name": "_v",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_r",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_s",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_signedDigest",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_preimage",
+          "type": "bytes"
+        }
+      ],
+      "name": "submitSignatureFraud",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "_isFraud",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "closeKeep",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"checkBondAmount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"closeKeep\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_tokenAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"distributeERC20Reward\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"distributeETHReward\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getPublicKey\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"returnPartialSignerBonds\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"seizeSignerBonds\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_digest\",\"type\":\"bytes32\"}],\"name\":\"sign\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"_v\",\"type\":\"uint8\"},{\"internalType\":\"bytes32\",\"name\":\"_r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_s\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"_signedDigest\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"_preimage\",\"type\":\"bytes\"}],\"name\":\"submitSignatureFraud\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"_isFraud\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"checkBondAmount()\":{\"return\":\"The amount of the keep's ETH bond in wei.\"},\"closeKeep()\":{\"details\":\"The function can be called only by the owner of the keep and only if the keep has not been already closed.\"},\"distributeERC20Reward(address,uint256)\":{\"details\":\"This works with any ERC20 token that implements a transferFrom function. This function only has authority over pre-approved token amount. We don't explicitly check for allowance, SafeMath subtraction overflow is enough protection.\",\"params\":{\"_tokenAddress\":\"Address of the ERC20 token to distribute.\",\"_value\":\"Amount of ERC20 token to distribute.\"}},\"distributeETHReward()\":{\"details\":\"Only the value passed to this function is distributed.\"},\"getPublicKey()\":{\"return\":\"Keeps's public key.\"},\"sign(bytes32)\":{\"params\":{\"_digest\":\"Digest to be signed.\"}},\"submitSignatureFraud(uint8,bytes32,bytes32,bytes32,bytes)\":{\"details\":\"The function expects the signed digest to be calculated as a sha256 hash of the preimage: `sha256(_preimage)`.\",\"params\":{\"_preimage\":\"Preimage of the hashed message.\",\"_r\":\"R part of ECDSA signature.\",\"_s\":\"S part of ECDSA signature.\",\"_signedDigest\":\"Digest for the provided signature. Result of hashing the preimage.\",\"_v\":\"Signature's header byte: `27 + recoveryID`.\"},\"return\":\"True if fraud, error otherwise.\"}},\"title\":\"ECDSA Keep\"},\"userdoc\":{\"methods\":{\"checkBondAmount()\":{\"notice\":\"Returns the amount of the keep's ETH bond in wei.\"},\"closeKeep()\":{\"notice\":\"Closes keep when no longer needed. Releases bonds to the keep members. Keep can be closed only when there is no signing in progress or requested signing process has timed out.\"},\"distributeERC20Reward(address,uint256)\":{\"notice\":\"Distributes ERC20 reward evenly across keep signer beneficiaries.\"},\"distributeETHReward()\":{\"notice\":\"Distributes ETH reward evenly across keep signer beneficiaries.\"},\"getPublicKey()\":{\"notice\":\"Returns public key of this keep.\"},\"returnPartialSignerBonds()\":{\"notice\":\"Returns partial signer's ETH bonds to the pool as an unbounded value. This function is called after bonds have been seized and processed by the privileged application after calling seizeSignerBonds function. It is entirely up to the application if a part of signers' bonds is returned. The application may decide for that but may also decide to seize bonds and do not return anything.\"},\"seizeSignerBonds()\":{\"notice\":\"Seizes the signers' ETH bonds. After seizing bonds keep is terminated so it will no longer respond to signing requests. Bonds can be seized only when there is no signing in progress or requested signing process has timed out. This function seizes all of signers' bonds. The application may decide to return part of bonds later after they are processed using returnPartialSignerBonds function.\"},\"sign(bytes32)\":{\"notice\":\"Calculates a signature over provided digest by the keep. Note that signatures from the keep not explicitly requested by calling `sign` will be provable as fraud via `submitSignatureFraud`.\"},\"submitSignatureFraud(uint8,bytes32,bytes32,bytes32,bytes)\":{\"notice\":\"Submits a fraud proof for a valid signature from this keep that was not first approved via a call to sign.\"}},\"notice\":\"Contract reflecting an ECDSA keep.\"}},\"settings\":{\"compilationTarget\":{\"@keep-network/keep-ecdsa/contracts/api/IBondedECDSAKeep.sol\":\"IBondedECDSAKeep\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@keep-network/keep-ecdsa/contracts/api/IBondedECDSAKeep.sol\":{\"keccak256\":\"0xbfb2ab8aaf8d53b708ee7506a49285baac34d5f3c3f86fa52d68c6d2daf2e481\",\"urls\":[\"bzz-raw://31d6bcdda38444ad1eba3d868a94b7514aaeb4336aabc0b34de9b1c936eda827\",\"dweb:/ipfs/QmZCkXewTXFpztpM1Ep1ySgjwn5bvfRZHLB8ex63hZeiUf\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "/**\n▓▓▌ ▓▓ ▐▓▓ ▓▓▓▓▓▓▓▓▓▓▌▐▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▄\n▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▌▐▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\n  ▓▓▓▓▓▓    ▓▓▓▓▓▓▓▀    ▐▓▓▓▓▓▓    ▐▓▓▓▓▓   ▓▓▓▓▓▓     ▓▓▓▓▓   ▐▓▓▓▓▓▌   ▐▓▓▓▓▓▓\n  ▓▓▓▓▓▓▄▄▓▓▓▓▓▓▓▀      ▐▓▓▓▓▓▓▄▄▄▄         ▓▓▓▓▓▓▄▄▄▄         ▐▓▓▓▓▓▌   ▐▓▓▓▓▓▓\n  ▓▓▓▓▓▓▓▓▓▓▓▓▓▀        ▐▓▓▓▓▓▓▓▓▓▓         ▓▓▓▓▓▓▓▓▓▓▌        ▐▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\n  ▓▓▓▓▓▓▀▀▓▓▓▓▓▓▄       ▐▓▓▓▓▓▓▀▀▀▀         ▓▓▓▓▓▓▀▀▀▀         ▐▓▓▓▓▓▓▓▓▓▓▓▓▓▓▀\n  ▓▓▓▓▓▓   ▀▓▓▓▓▓▓▄     ▐▓▓▓▓▓▓     ▓▓▓▓▓   ▓▓▓▓▓▓     ▓▓▓▓▓   ▐▓▓▓▓▓▌\n▓▓▓▓▓▓▓▓▓▓ █▓▓▓▓▓▓▓▓▓ ▐▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  ▓▓▓▓▓▓▓▓▓▓\n▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓ ▐▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  ▓▓▓▓▓▓▓▓▓▓\n\n                           Trust math, not hardware.\n*/\n\npragma solidity 0.5.17;\n\n/// @title ECDSA Keep\n/// @notice Contract reflecting an ECDSA keep.\ncontract IBondedECDSAKeep {\n    /// @notice Returns public key of this keep.\n    /// @return Keeps's public key.\n    function getPublicKey() external view returns (bytes memory);\n\n    /// @notice Returns the amount of the keep's ETH bond in wei.\n    /// @return The amount of the keep's ETH bond in wei.\n    function checkBondAmount() external view returns (uint256);\n\n    /// @notice Calculates a signature over provided digest by the keep. Note that\n    /// signatures from the keep not explicitly requested by calling `sign`\n    /// will be provable as fraud via `submitSignatureFraud`.\n    /// @param _digest Digest to be signed.\n    function sign(bytes32 _digest) external;\n\n    /// @notice Distributes ETH reward evenly across keep signer beneficiaries.\n    /// @dev Only the value passed to this function is distributed.\n    function distributeETHReward() external payable;\n\n    /// @notice Distributes ERC20 reward evenly across keep signer beneficiaries.\n    /// @dev This works with any ERC20 token that implements a transferFrom\n    /// function.\n    /// This function only has authority over pre-approved\n    /// token amount. We don't explicitly check for allowance, SafeMath\n    /// subtraction overflow is enough protection.\n    /// @param _tokenAddress Address of the ERC20 token to distribute.\n    /// @param _value Amount of ERC20 token to distribute.\n    function distributeERC20Reward(address _tokenAddress, uint256 _value)\n        external;\n\n    /// @notice Seizes the signers' ETH bonds. After seizing bonds keep is\n    /// terminated so it will no longer respond to signing requests. Bonds can\n    /// be seized only when there is no signing in progress or requested signing\n    /// process has timed out. This function seizes all of signers' bonds.\n    /// The application may decide to return part of bonds later after they are\n    /// processed using returnPartialSignerBonds function.\n    function seizeSignerBonds() external;\n\n    /// @notice Returns partial signer's ETH bonds to the pool as an unbounded\n    /// value. This function is called after bonds have been seized and processed\n    /// by the privileged application after calling seizeSignerBonds function.\n    /// It is entirely up to the application if a part of signers' bonds is\n    /// returned. The application may decide for that but may also decide to\n    /// seize bonds and do not return anything.\n    function returnPartialSignerBonds() external payable;\n\n    /// @notice Submits a fraud proof for a valid signature from this keep that was\n    /// not first approved via a call to sign.\n    /// @dev The function expects the signed digest to be calculated as a sha256\n    /// hash of the preimage: `sha256(_preimage)`.\n    /// @param _v Signature's header byte: `27 + recoveryID`.\n    /// @param _r R part of ECDSA signature.\n    /// @param _s S part of ECDSA signature.\n    /// @param _signedDigest Digest for the provided signature. Result of hashing\n    /// the preimage.\n    /// @param _preimage Preimage of the hashed message.\n    /// @return True if fraud, error otherwise.\n    function submitSignatureFraud(\n        uint8 _v,\n        bytes32 _r,\n        bytes32 _s,\n        bytes32 _signedDigest,\n        bytes calldata _preimage\n    )\n        external returns (bool _isFraud);\n\n    /// @notice Closes keep when no longer needed. Releases bonds to the keep\n    /// members. Keep can be closed only when there is no signing in progress or\n    /// requested signing process has timed out.\n    /// @dev The function can be called only by the owner of the keep and only\n    /// if the keep has not been already closed.\n    function closeKeep() external;\n}\n",
+  "sourcePath": "@keep-network/keep-ecdsa/contracts/api/IBondedECDSAKeep.sol",
+  "ast": {
+    "absolutePath": "@keep-network/keep-ecdsa/contracts/api/IBondedECDSAKeep.sol",
+    "exportedSymbols": {
+      "IBondedECDSAKeep": [
+        11115
+      ]
+    },
+    "id": 11116,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11065,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "1837:23:44"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title ECDSA Keep\n @notice Contract reflecting an ECDSA keep.",
+        "fullyImplemented": false,
+        "id": 11115,
+        "linearizedBaseContracts": [
+          11115
+        ],
+        "name": "IBondedECDSAKeep",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@notice Returns public key of this keep.\n @return Keeps's public key.",
+            "id": 11070,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPublicKey",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11066,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2069:2:44"
+            },
+            "returnParameters": {
+              "id": 11069,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11068,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11070,
+                  "src": "2095:12:44",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 11067,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2095:5:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2094:14:44"
+            },
+            "scope": 11115,
+            "src": "2048:61:44",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Returns the amount of the keep's ETH bond in wei.\n @return The amount of the keep's ETH bond in wei.",
+            "id": 11075,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "checkBondAmount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11071,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2263:2:44"
+            },
+            "returnParameters": {
+              "id": 11074,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11073,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11075,
+                  "src": "2289:7:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11072,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2289:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2288:9:44"
+            },
+            "scope": 11115,
+            "src": "2239:59:44",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Calculates a signature over provided digest by the keep. Note that\n signatures from the keep not explicitly requested by calling `sign`\n will be provable as fraud via `submitSignatureFraud`.\n @param _digest Digest to be signed.",
+            "id": 11080,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "sign",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11078,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11077,
+                  "name": "_digest",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11080,
+                  "src": "2583:15:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 11076,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2583:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2582:17:44"
+            },
+            "returnParameters": {
+              "id": 11079,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2608:0:44"
+            },
+            "scope": 11115,
+            "src": "2569:40:44",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Distributes ETH reward evenly across keep signer beneficiaries.\n @dev Only the value passed to this function is distributed.",
+            "id": 11083,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "distributeETHReward",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11081,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2791:2:44"
+            },
+            "returnParameters": {
+              "id": 11082,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2810:0:44"
+            },
+            "scope": 11115,
+            "src": "2763:48:44",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Distributes ERC20 reward evenly across keep signer beneficiaries.\n @dev This works with any ERC20 token that implements a transferFrom\n function.\n This function only has authority over pre-approved\n token amount. We don't explicitly check for allowance, SafeMath\n subtraction overflow is enough protection.\n @param _tokenAddress Address of the ERC20 token to distribute.\n @param _value Amount of ERC20 token to distribute.",
+            "id": 11090,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "distributeERC20Reward",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11088,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11085,
+                  "name": "_tokenAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11090,
+                  "src": "3336:21:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 11084,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3336:7:44",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11087,
+                  "name": "_value",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11090,
+                  "src": "3359:14:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11086,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3359:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3335:39:44"
+            },
+            "returnParameters": {
+              "id": 11089,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3391:0:44"
+            },
+            "scope": 11115,
+            "src": "3305:87:44",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Seizes the signers' ETH bonds. After seizing bonds keep is\n terminated so it will no longer respond to signing requests. Bonds can\n be seized only when there is no signing in progress or requested signing\n process has timed out. This function seizes all of signers' bonds.\n The application may decide to return part of bonds later after they are\n processed using returnPartialSignerBonds function.",
+            "id": 11093,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "seizeSignerBonds",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11091,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3872:2:44"
+            },
+            "returnParameters": {
+              "id": 11092,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3883:0:44"
+            },
+            "scope": 11115,
+            "src": "3847:37:44",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Returns partial signer's ETH bonds to the pool as an unbounded\n value. This function is called after bonds have been seized and processed\n by the privileged application after calling seizeSignerBonds function.\n It is entirely up to the application if a part of signers' bonds is\n returned. The application may decide for that but may also decide to\n seize bonds and do not return anything.",
+            "id": 11096,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "returnPartialSignerBonds",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11094,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "4364:2:44"
+            },
+            "returnParameters": {
+              "id": 11095,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "4383:0:44"
+            },
+            "scope": 11115,
+            "src": "4331:53:44",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Submits a fraud proof for a valid signature from this keep that was\n not first approved via a call to sign.\n @dev The function expects the signed digest to be calculated as a sha256\n hash of the preimage: `sha256(_preimage)`.\n @param _v Signature's header byte: `27 + recoveryID`.\n @param _r R part of ECDSA signature.\n @param _s S part of ECDSA signature.\n @param _signedDigest Digest for the provided signature. Result of hashing\n the preimage.\n @param _preimage Preimage of the hashed message.\n @return True if fraud, error otherwise.",
+            "id": 11111,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "submitSignatureFraud",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11107,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11098,
+                  "name": "_v",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11111,
+                  "src": "5053:8:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 11097,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5053:5:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11100,
+                  "name": "_r",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11111,
+                  "src": "5071:10:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 11099,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5071:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11102,
+                  "name": "_s",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11111,
+                  "src": "5091:10:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 11101,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5091:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11104,
+                  "name": "_signedDigest",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11111,
+                  "src": "5111:21:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 11103,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5111:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11106,
+                  "name": "_preimage",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11111,
+                  "src": "5142:24:44",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 11105,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5142:5:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "5043:129:44"
+            },
+            "returnParameters": {
+              "id": 11110,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11109,
+                  "name": "_isFraud",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11111,
+                  "src": "5199:13:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 11108,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5199:4:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "5198:15:44"
+            },
+            "scope": 11115,
+            "src": "5014:200:44",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Closes keep when no longer needed. Releases bonds to the keep\n members. Keep can be closed only when there is no signing in progress or\n requested signing process has timed out.\n @dev The function can be called only by the owner of the keep and only\n if the keep has not been already closed.",
+            "id": 11114,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "closeKeep",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11112,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "5574:2:44"
+            },
+            "returnParameters": {
+              "id": 11113,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "5585:0:44"
+            },
+            "scope": 11115,
+            "src": "5556:30:44",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 11116,
+        "src": "1931:3657:44"
+      }
+    ],
+    "src": "1837:3752:44"
+  },
+  "legacyAST": {
+    "absolutePath": "@keep-network/keep-ecdsa/contracts/api/IBondedECDSAKeep.sol",
+    "exportedSymbols": {
+      "IBondedECDSAKeep": [
+        11115
+      ]
+    },
+    "id": 11116,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11065,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "1837:23:44"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title ECDSA Keep\n @notice Contract reflecting an ECDSA keep.",
+        "fullyImplemented": false,
+        "id": 11115,
+        "linearizedBaseContracts": [
+          11115
+        ],
+        "name": "IBondedECDSAKeep",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@notice Returns public key of this keep.\n @return Keeps's public key.",
+            "id": 11070,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPublicKey",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11066,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2069:2:44"
+            },
+            "returnParameters": {
+              "id": 11069,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11068,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11070,
+                  "src": "2095:12:44",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 11067,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2095:5:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2094:14:44"
+            },
+            "scope": 11115,
+            "src": "2048:61:44",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Returns the amount of the keep's ETH bond in wei.\n @return The amount of the keep's ETH bond in wei.",
+            "id": 11075,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "checkBondAmount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11071,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2263:2:44"
+            },
+            "returnParameters": {
+              "id": 11074,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11073,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11075,
+                  "src": "2289:7:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11072,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2289:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2288:9:44"
+            },
+            "scope": 11115,
+            "src": "2239:59:44",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Calculates a signature over provided digest by the keep. Note that\n signatures from the keep not explicitly requested by calling `sign`\n will be provable as fraud via `submitSignatureFraud`.\n @param _digest Digest to be signed.",
+            "id": 11080,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "sign",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11078,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11077,
+                  "name": "_digest",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11080,
+                  "src": "2583:15:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 11076,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2583:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2582:17:44"
+            },
+            "returnParameters": {
+              "id": 11079,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2608:0:44"
+            },
+            "scope": 11115,
+            "src": "2569:40:44",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Distributes ETH reward evenly across keep signer beneficiaries.\n @dev Only the value passed to this function is distributed.",
+            "id": 11083,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "distributeETHReward",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11081,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2791:2:44"
+            },
+            "returnParameters": {
+              "id": 11082,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2810:0:44"
+            },
+            "scope": 11115,
+            "src": "2763:48:44",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Distributes ERC20 reward evenly across keep signer beneficiaries.\n @dev This works with any ERC20 token that implements a transferFrom\n function.\n This function only has authority over pre-approved\n token amount. We don't explicitly check for allowance, SafeMath\n subtraction overflow is enough protection.\n @param _tokenAddress Address of the ERC20 token to distribute.\n @param _value Amount of ERC20 token to distribute.",
+            "id": 11090,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "distributeERC20Reward",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11088,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11085,
+                  "name": "_tokenAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11090,
+                  "src": "3336:21:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 11084,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3336:7:44",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11087,
+                  "name": "_value",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11090,
+                  "src": "3359:14:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11086,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3359:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3335:39:44"
+            },
+            "returnParameters": {
+              "id": 11089,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3391:0:44"
+            },
+            "scope": 11115,
+            "src": "3305:87:44",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Seizes the signers' ETH bonds. After seizing bonds keep is\n terminated so it will no longer respond to signing requests. Bonds can\n be seized only when there is no signing in progress or requested signing\n process has timed out. This function seizes all of signers' bonds.\n The application may decide to return part of bonds later after they are\n processed using returnPartialSignerBonds function.",
+            "id": 11093,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "seizeSignerBonds",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11091,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3872:2:44"
+            },
+            "returnParameters": {
+              "id": 11092,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3883:0:44"
+            },
+            "scope": 11115,
+            "src": "3847:37:44",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Returns partial signer's ETH bonds to the pool as an unbounded\n value. This function is called after bonds have been seized and processed\n by the privileged application after calling seizeSignerBonds function.\n It is entirely up to the application if a part of signers' bonds is\n returned. The application may decide for that but may also decide to\n seize bonds and do not return anything.",
+            "id": 11096,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "returnPartialSignerBonds",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11094,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "4364:2:44"
+            },
+            "returnParameters": {
+              "id": 11095,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "4383:0:44"
+            },
+            "scope": 11115,
+            "src": "4331:53:44",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Submits a fraud proof for a valid signature from this keep that was\n not first approved via a call to sign.\n @dev The function expects the signed digest to be calculated as a sha256\n hash of the preimage: `sha256(_preimage)`.\n @param _v Signature's header byte: `27 + recoveryID`.\n @param _r R part of ECDSA signature.\n @param _s S part of ECDSA signature.\n @param _signedDigest Digest for the provided signature. Result of hashing\n the preimage.\n @param _preimage Preimage of the hashed message.\n @return True if fraud, error otherwise.",
+            "id": 11111,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "submitSignatureFraud",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11107,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11098,
+                  "name": "_v",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11111,
+                  "src": "5053:8:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 11097,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5053:5:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11100,
+                  "name": "_r",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11111,
+                  "src": "5071:10:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 11099,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5071:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11102,
+                  "name": "_s",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11111,
+                  "src": "5091:10:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 11101,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5091:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11104,
+                  "name": "_signedDigest",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11111,
+                  "src": "5111:21:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 11103,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5111:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11106,
+                  "name": "_preimage",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11111,
+                  "src": "5142:24:44",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 11105,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5142:5:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "5043:129:44"
+            },
+            "returnParameters": {
+              "id": 11110,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11109,
+                  "name": "_isFraud",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11111,
+                  "src": "5199:13:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 11108,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "5199:4:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "5198:15:44"
+            },
+            "scope": 11115,
+            "src": "5014:200:44",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Closes keep when no longer needed. Releases bonds to the keep\n members. Keep can be closed only when there is no signing in progress or\n requested signing process has timed out.\n @dev The function can be called only by the owner of the keep and only\n if the keep has not been already closed.",
+            "id": 11114,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "closeKeep",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11112,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "5574:2:44"
+            },
+            "returnParameters": {
+              "id": 11113,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "5585:0:44"
+            },
+            "scope": 11115,
+            "src": "5556:30:44",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 11116,
+        "src": "1931:3657:44"
+      }
+    ],
+    "src": "1837:3752:44"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.17+commit.d19bba13.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2021-02-01T14:28:06.561Z",
+  "devdoc": {
+    "methods": {
+      "checkBondAmount()": {
+        "return": "The amount of the keep's ETH bond in wei."
+      },
+      "closeKeep()": {
+        "details": "The function can be called only by the owner of the keep and only if the keep has not been already closed."
+      },
+      "distributeERC20Reward(address,uint256)": {
+        "details": "This works with any ERC20 token that implements a transferFrom function. This function only has authority over pre-approved token amount. We don't explicitly check for allowance, SafeMath subtraction overflow is enough protection.",
+        "params": {
+          "_tokenAddress": "Address of the ERC20 token to distribute.",
+          "_value": "Amount of ERC20 token to distribute."
+        }
+      },
+      "distributeETHReward()": {
+        "details": "Only the value passed to this function is distributed."
+      },
+      "getPublicKey()": {
+        "return": "Keeps's public key."
+      },
+      "sign(bytes32)": {
+        "params": {
+          "_digest": "Digest to be signed."
+        }
+      },
+      "submitSignatureFraud(uint8,bytes32,bytes32,bytes32,bytes)": {
+        "details": "The function expects the signed digest to be calculated as a sha256 hash of the preimage: `sha256(_preimage)`.",
+        "params": {
+          "_preimage": "Preimage of the hashed message.",
+          "_r": "R part of ECDSA signature.",
+          "_s": "S part of ECDSA signature.",
+          "_signedDigest": "Digest for the provided signature. Result of hashing the preimage.",
+          "_v": "Signature's header byte: `27 + recoveryID`."
+        },
+        "return": "True if fraud, error otherwise."
+      }
+    },
+    "title": "ECDSA Keep"
+  },
+  "userdoc": {
+    "methods": {
+      "checkBondAmount()": {
+        "notice": "Returns the amount of the keep's ETH bond in wei."
+      },
+      "closeKeep()": {
+        "notice": "Closes keep when no longer needed. Releases bonds to the keep members. Keep can be closed only when there is no signing in progress or requested signing process has timed out."
+      },
+      "distributeERC20Reward(address,uint256)": {
+        "notice": "Distributes ERC20 reward evenly across keep signer beneficiaries."
+      },
+      "distributeETHReward()": {
+        "notice": "Distributes ETH reward evenly across keep signer beneficiaries."
+      },
+      "getPublicKey()": {
+        "notice": "Returns public key of this keep."
+      },
+      "returnPartialSignerBonds()": {
+        "notice": "Returns partial signer's ETH bonds to the pool as an unbounded value. This function is called after bonds have been seized and processed by the privileged application after calling seizeSignerBonds function. It is entirely up to the application if a part of signers' bonds is returned. The application may decide for that but may also decide to seize bonds and do not return anything."
+      },
+      "seizeSignerBonds()": {
+        "notice": "Seizes the signers' ETH bonds. After seizing bonds keep is terminated so it will no longer respond to signing requests. Bonds can be seized only when there is no signing in progress or requested signing process has timed out. This function seizes all of signers' bonds. The application may decide to return part of bonds later after they are processed using returnPartialSignerBonds function."
+      },
+      "sign(bytes32)": {
+        "notice": "Calculates a signature over provided digest by the keep. Note that signatures from the keep not explicitly requested by calling `sign` will be provable as fraud via `submitSignatureFraud`."
+      },
+      "submitSignatureFraud(uint8,bytes32,bytes32,bytes32,bytes)": {
+        "notice": "Submits a fraud proof for a valid signature from this keep that was not first approved via a call to sign."
+      }
+    },
+    "notice": "Contract reflecting an ECDSA keep."
+  }
+}

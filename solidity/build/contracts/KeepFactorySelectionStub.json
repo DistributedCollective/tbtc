@@ -1,0 +1,4341 @@
+{
+  "contractName": "KeepFactorySelectionStub",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "contract IBondedECDSAKeepFactory",
+          "name": "_defaultFactory",
+          "type": "address"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "selectFactory",
+      "outputs": [
+        {
+          "internalType": "contract IBondedECDSAKeepFactory",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_minimumBondableValue",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_groupSize",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_honestThreshold",
+          "type": "uint256"
+        }
+      ],
+      "name": "setMinimumBondableValue",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "selectFactoryAndRefresh",
+      "outputs": [
+        {
+          "internalType": "contract IBondedECDSAKeepFactory",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_keepStakedFactory",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_fullyBackedFactory",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_factorySelector",
+          "type": "address"
+        }
+      ],
+      "name": "setFactories",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "factories",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "_keepStakedFactory",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_fullyBackedFactory",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_factorySelector",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"factories\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"_keepStakedFactory\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_fullyBackedFactory\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_factorySelector\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"contract IBondedECDSAKeepFactory\",\"name\":\"_defaultFactory\",\"type\":\"address\"}],\"name\":\"initialize\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"selectFactory\",\"outputs\":[{\"internalType\":\"contract IBondedECDSAKeepFactory\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"selectFactoryAndRefresh\",\"outputs\":[{\"internalType\":\"contract IBondedECDSAKeepFactory\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_keepStakedFactory\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_fullyBackedFactory\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_factorySelector\",\"type\":\"address\"}],\"name\":\"setFactories\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_minimumBondableValue\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_groupSize\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_honestThreshold\",\"type\":\"uint256\"}],\"name\":\"setMinimumBondableValue\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/system/KeepFactorySelectionStub.sol\":\"KeepFactorySelectionStub\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/KeepFactorySelection.sol\":{\"keccak256\":\"0x265dc7653b1f74a38b24656a470332619425abc5977cb35c2f6168bcff99458a\",\"urls\":[\"bzz-raw://31f61cb0f74a7ea5d1ac5e7f7b074a4aad72ebf69bf52bd17e143815f0241633\",\"dweb:/ipfs/Qmc8SayKsvLha4eMmYu1a6zkhufBgHMfEfckTyyTvYyogR\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/system/KeepFactorySelectionStub.sol\":{\"keccak256\":\"0x6a72f89acf75700d89a0a8db3a7fe73613af4ff99e319f199ccb11e543b9886a\",\"urls\":[\"bzz-raw://79c41f4063f421d2ae0869a4e7073680d952b6fe5085058de157c1117ac9342f\",\"dweb:/ipfs/QmchsutdfuLSHjL3tiHKxCpqMTJnzzuarKE1nc5PFK23nM\"]},\"@keep-network/keep-ecdsa/contracts/api/IBondedECDSAKeepFactory.sol\":{\"keccak256\":\"0x2f51101d96001bf8cd86c4a008135e44f8ef06a900758f271edd0b981572e19d\",\"urls\":[\"bzz-raw://132593b2dee9b913423120745e5c2bad382a7a49ca2ab485db8cb58691c227ff\",\"dweb:/ipfs/QmX8cLz6pqDufA1w6Jn6v8HrS1ED1JcwrNNRMZQd6w7dY4\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061043d806100206000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c80633fd19199146100675780636291fc8d1461008b5780637bd3b99514610093578063b8ee9156146100cd578063c4d66de8146100f6578063fe5b38e41461011c575b600080fd5b61006f61014f565b604080516001600160a01b039092168252519081900360200190f35b61006f6101d3565b6100cb600480360360608110156100a957600080fd5b506001600160a01b038135811691602081013582169160409091013516610226565b005b6100cb600480360360608110156100e357600080fd5b508035906020810135906040013561023e565b6100cb6004803603602081101561010c57600080fd5b50356001600160a01b03166102c0565b61012461033a565b604080516001600160a01b039485168152928416602084015292168183015290519081900360600190f35b60008073__KeepFactorySelection__________________63d83d44b090916040518263ffffffff1660e01b81526004018082815260200191505060206040518083038186803b1580156101a257600080fd5b505af41580156101b6573d6000803e3d6000fd5b505050506040513d60208110156101cc57600080fd5b5051905090565b60008073__KeepFactorySelection__________________63d857268890916040518263ffffffff1660e01b81526004018082815260200191505060206040518083038186803b1580156101a257600080fd5b610239600084848463ffffffff61035716565b505050565b6040805163e33cd97160e01b8152600060048201819052602482018690526044820185905260648201849052915173__KeepFactorySelection__________________9263e33cd9719260848082019391829003018186803b1580156102a357600080fd5b505af41580156102b7573d6000803e3d6000fd5b50505050505050565b6040805163e8e08cf160e01b81526000600482018190526001600160a01b0384166024830152915173__KeepFactorySelection__________________9263e8e08cf19260448082019391829003018186803b15801561031f57600080fd5b505af4158015610333573d6000803e3d6000fd5b5050505050565b6003546004546002546001600160a01b0392831693918316921690565b6001600160a01b03831661039c5760405162461bcd60e51b81526004018080602001828103825260238152602001806103e66023913960400191505060405180910390fd5b6003840180546001600160a01b039485166001600160a01b031991821617909155600485018054938516938216939093179092556002909301805493909216921691909117905556fe496e76616c6964204b4545502d7374616b656420666163746f72792061646472657373a265627a7a7231582051d91dc8af348c6074fd5cc95bc73689f64867abbc957aad9cf4eba6e21ad4ab64736f6c63430005110032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c80633fd19199146100675780636291fc8d1461008b5780637bd3b99514610093578063b8ee9156146100cd578063c4d66de8146100f6578063fe5b38e41461011c575b600080fd5b61006f61014f565b604080516001600160a01b039092168252519081900360200190f35b61006f6101d3565b6100cb600480360360608110156100a957600080fd5b506001600160a01b038135811691602081013582169160409091013516610226565b005b6100cb600480360360608110156100e357600080fd5b508035906020810135906040013561023e565b6100cb6004803603602081101561010c57600080fd5b50356001600160a01b03166102c0565b61012461033a565b604080516001600160a01b039485168152928416602084015292168183015290519081900360600190f35b60008073__KeepFactorySelection__________________63d83d44b090916040518263ffffffff1660e01b81526004018082815260200191505060206040518083038186803b1580156101a257600080fd5b505af41580156101b6573d6000803e3d6000fd5b505050506040513d60208110156101cc57600080fd5b5051905090565b60008073__KeepFactorySelection__________________63d857268890916040518263ffffffff1660e01b81526004018082815260200191505060206040518083038186803b1580156101a257600080fd5b610239600084848463ffffffff61035716565b505050565b6040805163e33cd97160e01b8152600060048201819052602482018690526044820185905260648201849052915173__KeepFactorySelection__________________9263e33cd9719260848082019391829003018186803b1580156102a357600080fd5b505af41580156102b7573d6000803e3d6000fd5b50505050505050565b6040805163e8e08cf160e01b81526000600482018190526001600160a01b0384166024830152915173__KeepFactorySelection__________________9263e8e08cf19260448082019391829003018186803b15801561031f57600080fd5b505af4158015610333573d6000803e3d6000fd5b5050505050565b6003546004546002546001600160a01b0392831693918316921690565b6001600160a01b03831661039c5760405162461bcd60e51b81526004018080602001828103825260238152602001806103e66023913960400191505060405180910390fd5b6003840180546001600160a01b039485166001600160a01b031991821617909155600485018054938516938216939093179092556002909301805493909216921691909117905556fe496e76616c6964204b4545502d7374616b656420666163746f72792061646472657373a265627a7a7231582051d91dc8af348c6074fd5cc95bc73689f64867abbc957aad9cf4eba6e21ad4ab64736f6c63430005110032",
+  "sourceMap": "183:1645:38:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;183:1645:38;;;;;;;",
+  "deployedSourceMap": "183:1645:38:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;183:1645:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;483:131;;;:::i;:::-;;;;-1:-1:-1;;;;;483:131:38;;;;;;;;;;;;;;933:146;;;:::i;1085:297::-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;;;;;1085:297:38;;;;;;;;;;;;;;;;;;;:::i;:::-;;620:307;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;620:307:38;;;;;;;;;;;;:::i;344:133::-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;344:133:38;-1:-1:-1;;;;;344:133:38;;:::i;1388:438::-;;;:::i;:::-;;;;-1:-1:-1;;;;;1388:438:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;483:131;529:23;571:20;:34;;;;:36;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;571:36:38;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;571:36:38;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;571:36:38;;-1:-1:-1;483:131:38;:::o;933:146::-;984:23;1026:20;:44;;;;:46;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;1085:297:38;1237:138;:20;1284:18;1316:19;1349:16;1237:138;:33;:138;:::i;:::-;1085:297;;;:::o;620:307::-;777:143;;;-1:-1:-1;;;777:143:38;;:20;:143;;;;;;;;;;;;;;;;;;;;;;;;;;:44;;;;:143;;;;;;;;;;;:44;:143;;;5:2:-1;;;;30:1;27;20:12;5:2;777:143:38;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;777:143:38;;;;620:307;;;:::o;344:133::-;422:48;;;-1:-1:-1;;;422:48:38;;:20;:48;;;;;;-1:-1:-1;;;;;422:48:38;;;;;;;;:31;;;;:48;;;;;;;;;;;:31;:48;;;5:2:-1;;;;30:1;27;20:12;5:2;422:48:38;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;422:48:38;;;;344:133;:::o;1388:438::-;1626:38;;1705:39;;1782:36;;-1:-1:-1;;;;;1626:38:38;;;;1705:39;;;;1782:36;;1388:438::o;7142:547:20:-;-1:-1:-1;;;;;7348:41:20;;7327:123;;;;-1:-1:-1;;;7327:123:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;7461:23;;;:69;;-1:-1:-1;;;;;7461:69:20;;;-1:-1:-1;;;;;;7461:69:20;;;;;;;7540:24;;;:71;;;;;;;;;;;;;;;7621:21;;;;:61;;;;;;;;;;;;;;7142:547::o",
+  "source": "pragma solidity 0.5.17;\n\nimport {IBondedECDSAKeepFactory} from \"@keep-network/keep-ecdsa/contracts/api/IBondedECDSAKeepFactory.sol\";\n\nimport \"../../system/KeepFactorySelection.sol\";\n\ncontract KeepFactorySelectionStub {\n    using KeepFactorySelection for KeepFactorySelection.Storage;\n    KeepFactorySelection.Storage keepFactorySelection;\n\n    function initialize(IBondedECDSAKeepFactory _defaultFactory) public {\n        keepFactorySelection.initialize(_defaultFactory);\n    }\n\n    function selectFactory() public view returns (IBondedECDSAKeepFactory) {\n        return keepFactorySelection.selectFactory();\n    }\n\n    function setMinimumBondableValue(\n        uint256 _minimumBondableValue,\n        uint256 _groupSize,\n        uint256 _honestThreshold\n    ) public {\n        keepFactorySelection.setMinimumBondableValue(\n            _minimumBondableValue,\n            _groupSize,\n            _honestThreshold\n        );\n    }\n\n    function selectFactoryAndRefresh() public returns (IBondedECDSAKeepFactory) {\n        return keepFactorySelection.selectFactoryAndRefresh();\n    }\n\n    function setFactories(\n        address _keepStakedFactory,\n        address _fullyBackedFactory,\n        address _factorySelector\n    ) public {\n        keepFactorySelection.setFactories(\n            _keepStakedFactory,\n            _fullyBackedFactory,\n            _factorySelector\n        );\n    }\n\n    function factories()\n        public\n        view\n        returns (\n            address _keepStakedFactory,\n            address _fullyBackedFactory,\n            address _factorySelector\n        )\n    {\n        _keepStakedFactory = address(keepFactorySelection.keepStakedFactory);\n        _fullyBackedFactory = address(keepFactorySelection.fullyBackedFactory);\n        _factorySelector = address(keepFactorySelection.factorySelector);\n    }\n}\n\ncontract KeepFactorySelectorStub is KeepFactorySelector {\n\n    bool internal defaultMode = true;\n    bool internal maliciousMode = false;\n\n    function selectFactory(\n        uint256,\n        IBondedECDSAKeepFactory _defaultFactory,\n        IBondedECDSAKeepFactory _fullyBackedFactory\n    ) external view returns (IBondedECDSAKeepFactory) {\n        if (maliciousMode) {\n            return IBondedECDSAKeepFactory(0xaFacEbadfAceCffeeFaceacebacEAfAceCfFEeA0);\n        } else if (defaultMode) {\n            return _defaultFactory;\n        } else {\n            return _fullyBackedFactory;\n        }\n    }\n\n    function setMaliciousMode() public {\n        maliciousMode = true;\n    }\n\n    function unsetMaliciousMode() public {\n        maliciousMode = false;\n    }\n\n    function setDefaultMode() public {\n        defaultMode = true;\n    }\n\n    function setFullyBackedMode() public {\n        defaultMode = false;\n    }\n}\n",
+  "sourcePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/system/KeepFactorySelectionStub.sol",
+  "ast": {
+    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/system/KeepFactorySelectionStub.sol",
+    "exportedSymbols": {
+      "KeepFactorySelectionStub": [
+        10503
+      ],
+      "KeepFactorySelectorStub": [
+        10571
+      ]
+    },
+    "id": 10572,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10395,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:38"
+      },
+      {
+        "absolutePath": "@keep-network/keep-ecdsa/contracts/api/IBondedECDSAKeepFactory.sol",
+        "file": "@keep-network/keep-ecdsa/contracts/api/IBondedECDSAKeepFactory.sol",
+        "id": 10397,
+        "nodeType": "ImportDirective",
+        "scope": 10572,
+        "sourceUnit": 11155,
+        "src": "25:107:38",
+        "symbolAliases": [
+          {
+            "foreign": 10396,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/KeepFactorySelection.sol",
+        "file": "../../system/KeepFactorySelection.sol",
+        "id": 10398,
+        "nodeType": "ImportDirective",
+        "scope": 10572,
+        "sourceUnit": 6467,
+        "src": "134:47:38",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 10503,
+        "linearizedBaseContracts": [
+          10503
+        ],
+        "name": "KeepFactorySelectionStub",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 10401,
+            "libraryName": {
+              "contractScope": null,
+              "id": 10399,
+              "name": "KeepFactorySelection",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6466,
+              "src": "229:20:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_KeepFactorySelection_$6466",
+                "typeString": "library KeepFactorySelection"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "223:60:38",
+            "typeName": {
+              "contractScope": null,
+              "id": 10400,
+              "name": "KeepFactorySelection.Storage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6218,
+              "src": "254:28:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Storage_$6218_storage_ptr",
+                "typeString": "struct KeepFactorySelection.Storage"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 10403,
+            "name": "keepFactorySelection",
+            "nodeType": "VariableDeclaration",
+            "scope": 10503,
+            "src": "288:49:38",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Storage_$6218_storage",
+              "typeString": "struct KeepFactorySelection.Storage"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 10402,
+              "name": "KeepFactorySelection.Storage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6218,
+              "src": "288:28:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Storage_$6218_storage_ptr",
+                "typeString": "struct KeepFactorySelection.Storage"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 10414,
+              "nodeType": "Block",
+              "src": "412:65:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 10411,
+                        "name": "_defaultFactory",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10405,
+                        "src": "454:15:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                          "typeString": "contract IBondedECDSAKeepFactory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                          "typeString": "contract IBondedECDSAKeepFactory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 10408,
+                        "name": "keepFactorySelection",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10403,
+                        "src": "422:20:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Storage_$6218_storage",
+                          "typeString": "struct KeepFactorySelection.Storage storage ref"
+                        }
+                      },
+                      "id": 10410,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "initialize",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6253,
+                      "src": "422:31:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_Storage_$6218_storage_ptr_$_t_contract$_IBondedECDSAKeepFactory_$11154_$returns$__$bound_to$_t_struct$_Storage_$6218_storage_ptr_$",
+                        "typeString": "function (struct KeepFactorySelection.Storage storage pointer,contract IBondedECDSAKeepFactory)"
+                      }
+                    },
+                    "id": 10412,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "422:48:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 10413,
+                  "nodeType": "ExpressionStatement",
+                  "src": "422:48:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10415,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "initialize",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10406,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10405,
+                  "name": "_defaultFactory",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10415,
+                  "src": "364:39:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                    "typeString": "contract IBondedECDSAKeepFactory"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10404,
+                    "name": "IBondedECDSAKeepFactory",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 11154,
+                    "src": "364:23:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                      "typeString": "contract IBondedECDSAKeepFactory"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "363:41:38"
+            },
+            "returnParameters": {
+              "id": 10407,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "412:0:38"
+            },
+            "scope": 10503,
+            "src": "344:133:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10424,
+              "nodeType": "Block",
+              "src": "554:60:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 10420,
+                        "name": "keepFactorySelection",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10403,
+                        "src": "571:20:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Storage_$6218_storage",
+                          "typeString": "struct KeepFactorySelection.Storage storage ref"
+                        }
+                      },
+                      "id": 10421,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "selectFactory",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6264,
+                      "src": "571:34:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_view$_t_struct$_Storage_$6218_storage_ptr_$returns$_t_contract$_IBondedECDSAKeepFactory_$11154_$bound_to$_t_struct$_Storage_$6218_storage_ptr_$",
+                        "typeString": "function (struct KeepFactorySelection.Storage storage pointer) view returns (contract IBondedECDSAKeepFactory)"
+                      }
+                    },
+                    "id": 10422,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "571:36:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                      "typeString": "contract IBondedECDSAKeepFactory"
+                    }
+                  },
+                  "functionReturnParameters": 10419,
+                  "id": 10423,
+                  "nodeType": "Return",
+                  "src": "564:43:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10425,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "selectFactory",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10416,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "505:2:38"
+            },
+            "returnParameters": {
+              "id": 10419,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10418,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10425,
+                  "src": "529:23:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                    "typeString": "contract IBondedECDSAKeepFactory"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10417,
+                    "name": "IBondedECDSAKeepFactory",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 11154,
+                    "src": "529:23:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                      "typeString": "contract IBondedECDSAKeepFactory"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "528:25:38"
+            },
+            "scope": 10503,
+            "src": "483:131:38",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10442,
+              "nodeType": "Block",
+              "src": "767:160:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 10437,
+                        "name": "_minimumBondableValue",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10427,
+                        "src": "835:21:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 10438,
+                        "name": "_groupSize",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10429,
+                        "src": "870:10:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 10439,
+                        "name": "_honestThreshold",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10431,
+                        "src": "894:16:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 10434,
+                        "name": "keepFactorySelection",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10403,
+                        "src": "777:20:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Storage_$6218_storage",
+                          "typeString": "struct KeepFactorySelection.Storage storage ref"
+                        }
+                      },
+                      "id": 10436,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "setMinimumBondableValue",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6336,
+                      "src": "777:44:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_Storage_$6218_storage_ptr_$_t_uint256_$_t_uint256_$_t_uint256_$returns$__$bound_to$_t_struct$_Storage_$6218_storage_ptr_$",
+                        "typeString": "function (struct KeepFactorySelection.Storage storage pointer,uint256,uint256,uint256)"
+                      }
+                    },
+                    "id": 10440,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "777:143:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 10441,
+                  "nodeType": "ExpressionStatement",
+                  "src": "777:143:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10443,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setMinimumBondableValue",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10432,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10427,
+                  "name": "_minimumBondableValue",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10443,
+                  "src": "662:29:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10426,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "662:7:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10429,
+                  "name": "_groupSize",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10443,
+                  "src": "701:18:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10428,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "701:7:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10431,
+                  "name": "_honestThreshold",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10443,
+                  "src": "729:24:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10430,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "729:7:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "652:107:38"
+            },
+            "returnParameters": {
+              "id": 10433,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "767:0:38"
+            },
+            "scope": 10503,
+            "src": "620:307:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10452,
+              "nodeType": "Block",
+              "src": "1009:70:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 10448,
+                        "name": "keepFactorySelection",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10403,
+                        "src": "1026:20:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Storage_$6218_storage",
+                          "typeString": "struct KeepFactorySelection.Storage storage ref"
+                        }
+                      },
+                      "id": 10449,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "selectFactoryAndRefresh",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6284,
+                      "src": "1026:44:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_Storage_$6218_storage_ptr_$returns$_t_contract$_IBondedECDSAKeepFactory_$11154_$bound_to$_t_struct$_Storage_$6218_storage_ptr_$",
+                        "typeString": "function (struct KeepFactorySelection.Storage storage pointer) returns (contract IBondedECDSAKeepFactory)"
+                      }
+                    },
+                    "id": 10450,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1026:46:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                      "typeString": "contract IBondedECDSAKeepFactory"
+                    }
+                  },
+                  "functionReturnParameters": 10447,
+                  "id": 10451,
+                  "nodeType": "Return",
+                  "src": "1019:53:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10453,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "selectFactoryAndRefresh",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10444,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "965:2:38"
+            },
+            "returnParameters": {
+              "id": 10447,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10446,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10453,
+                  "src": "984:23:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                    "typeString": "contract IBondedECDSAKeepFactory"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10445,
+                    "name": "IBondedECDSAKeepFactory",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 11154,
+                    "src": "984:23:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                      "typeString": "contract IBondedECDSAKeepFactory"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "983:25:38"
+            },
+            "scope": 10503,
+            "src": "933:146:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10470,
+              "nodeType": "Block",
+              "src": "1227:155:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 10465,
+                        "name": "_keepStakedFactory",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10455,
+                        "src": "1284:18:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 10466,
+                        "name": "_fullyBackedFactory",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10457,
+                        "src": "1316:19:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 10467,
+                        "name": "_factorySelector",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10459,
+                        "src": "1349:16:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 10462,
+                        "name": "keepFactorySelection",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10403,
+                        "src": "1237:20:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Storage_$6218_storage",
+                          "typeString": "struct KeepFactorySelection.Storage storage ref"
+                        }
+                      },
+                      "id": 10464,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "setFactories",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6465,
+                      "src": "1237:33:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Storage_$6218_storage_ptr_$_t_address_$_t_address_$_t_address_$returns$__$bound_to$_t_struct$_Storage_$6218_storage_ptr_$",
+                        "typeString": "function (struct KeepFactorySelection.Storage storage pointer,address,address,address)"
+                      }
+                    },
+                    "id": 10468,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1237:138:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 10469,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1237:138:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10471,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setFactories",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10460,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10455,
+                  "name": "_keepStakedFactory",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10471,
+                  "src": "1116:26:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10454,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1116:7:38",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10457,
+                  "name": "_fullyBackedFactory",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10471,
+                  "src": "1152:27:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10456,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1152:7:38",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10459,
+                  "name": "_factorySelector",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10471,
+                  "src": "1189:24:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10458,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1189:7:38",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1106:113:38"
+            },
+            "returnParameters": {
+              "id": 10461,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1227:0:38"
+            },
+            "scope": 10503,
+            "src": "1085:297:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10501,
+              "nodeType": "Block",
+              "src": "1587:239:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10485,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 10480,
+                      "name": "_keepStakedFactory",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10474,
+                      "src": "1597:18:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 10482,
+                            "name": "keepFactorySelection",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 10403,
+                            "src": "1626:20:38",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Storage_$6218_storage",
+                              "typeString": "struct KeepFactorySelection.Storage storage ref"
+                            }
+                          },
+                          "id": 10483,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "keepStakedFactory",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 6215,
+                          "src": "1626:38:38",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                            "typeString": "contract IBondedECDSAKeepFactory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                            "typeString": "contract IBondedECDSAKeepFactory"
+                          }
+                        ],
+                        "id": 10481,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "1618:7:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_address_$",
+                          "typeString": "type(address)"
+                        },
+                        "typeName": "address"
+                      },
+                      "id": 10484,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1618:47:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "1597:68:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 10486,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1597:68:38"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10492,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 10487,
+                      "name": "_fullyBackedFactory",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10476,
+                      "src": "1675:19:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 10489,
+                            "name": "keepFactorySelection",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 10403,
+                            "src": "1705:20:38",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Storage_$6218_storage",
+                              "typeString": "struct KeepFactorySelection.Storage storage ref"
+                            }
+                          },
+                          "id": 10490,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "fullyBackedFactory",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 6217,
+                          "src": "1705:39:38",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                            "typeString": "contract IBondedECDSAKeepFactory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                            "typeString": "contract IBondedECDSAKeepFactory"
+                          }
+                        ],
+                        "id": 10488,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "1697:7:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_address_$",
+                          "typeString": "type(address)"
+                        },
+                        "typeName": "address"
+                      },
+                      "id": 10491,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1697:48:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "1675:70:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 10493,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1675:70:38"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10499,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 10494,
+                      "name": "_factorySelector",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10478,
+                      "src": "1755:16:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 10496,
+                            "name": "keepFactorySelection",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 10403,
+                            "src": "1782:20:38",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Storage_$6218_storage",
+                              "typeString": "struct KeepFactorySelection.Storage storage ref"
+                            }
+                          },
+                          "id": 10497,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "factorySelector",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 6213,
+                          "src": "1782:36:38",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_KeepFactorySelector_$6207",
+                            "typeString": "contract KeepFactorySelector"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_contract$_KeepFactorySelector_$6207",
+                            "typeString": "contract KeepFactorySelector"
+                          }
+                        ],
+                        "id": 10495,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "1774:7:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_address_$",
+                          "typeString": "type(address)"
+                        },
+                        "typeName": "address"
+                      },
+                      "id": 10498,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1774:45:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "1755:64:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 10500,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1755:64:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10502,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "factories",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10472,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1406:2:38"
+            },
+            "returnParameters": {
+              "id": 10479,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10474,
+                  "name": "_keepStakedFactory",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10502,
+                  "src": "1467:26:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10473,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1467:7:38",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10476,
+                  "name": "_fullyBackedFactory",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10502,
+                  "src": "1507:27:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10475,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1507:7:38",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10478,
+                  "name": "_factorySelector",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10502,
+                  "src": "1548:24:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10477,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1548:7:38",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1453:129:38"
+            },
+            "scope": 10503,
+            "src": "1388:438:38",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 10572,
+        "src": "183:1645:38"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 10504,
+              "name": "KeepFactorySelector",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6207,
+              "src": "1866:19:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_KeepFactorySelector_$6207",
+                "typeString": "contract KeepFactorySelector"
+              }
+            },
+            "id": 10505,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1866:19:38"
+          }
+        ],
+        "contractDependencies": [
+          6207
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 10571,
+        "linearizedBaseContracts": [
+          10571,
+          6207
+        ],
+        "name": "KeepFactorySelectorStub",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 10508,
+            "name": "defaultMode",
+            "nodeType": "VariableDeclaration",
+            "scope": 10571,
+            "src": "1893:32:38",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 10506,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "1893:4:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "74727565",
+              "id": 10507,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "bool",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1921:4:38",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "value": "true"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 10511,
+            "name": "maliciousMode",
+            "nodeType": "VariableDeclaration",
+            "scope": 10571,
+            "src": "1931:35:38",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 10509,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "1931:4:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "66616c7365",
+              "id": 10510,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "bool",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1961:5:38",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "value": "false"
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 10537,
+              "nodeType": "Block",
+              "src": "2169:261:38",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "id": 10522,
+                    "name": "maliciousMode",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 10511,
+                    "src": "2183:13:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "condition": {
+                      "argumentTypes": null,
+                      "id": 10528,
+                      "name": "defaultMode",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10508,
+                      "src": "2307:11:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "falseBody": {
+                      "id": 10534,
+                      "nodeType": "Block",
+                      "src": "2373:51:38",
+                      "statements": [
+                        {
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 10532,
+                            "name": "_fullyBackedFactory",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 10517,
+                            "src": "2394:19:38",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                              "typeString": "contract IBondedECDSAKeepFactory"
+                            }
+                          },
+                          "functionReturnParameters": 10521,
+                          "id": 10533,
+                          "nodeType": "Return",
+                          "src": "2387:26:38"
+                        }
+                      ]
+                    },
+                    "id": 10535,
+                    "nodeType": "IfStatement",
+                    "src": "2303:121:38",
+                    "trueBody": {
+                      "id": 10531,
+                      "nodeType": "Block",
+                      "src": "2320:47:38",
+                      "statements": [
+                        {
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 10529,
+                            "name": "_defaultFactory",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 10515,
+                            "src": "2341:15:38",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                              "typeString": "contract IBondedECDSAKeepFactory"
+                            }
+                          },
+                          "functionReturnParameters": 10521,
+                          "id": 10530,
+                          "nodeType": "Return",
+                          "src": "2334:22:38"
+                        }
+                      ]
+                    }
+                  },
+                  "id": 10536,
+                  "nodeType": "IfStatement",
+                  "src": "2179:245:38",
+                  "trueBody": {
+                    "id": 10527,
+                    "nodeType": "Block",
+                    "src": "2198:99:38",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "hexValue": "307861466163456261646641636543666665654661636561636562616345416641636543664645654130",
+                              "id": 10524,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "number",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "2243:42:38",
+                              "subdenomination": null,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address_payable",
+                                "typeString": "address payable"
+                              },
+                              "value": "0xaFacEbadfAceCffeeFaceacebacEAfAceCfFEeA0"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address_payable",
+                                "typeString": "address payable"
+                              }
+                            ],
+                            "id": 10523,
+                            "name": "IBondedECDSAKeepFactory",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 11154,
+                            "src": "2219:23:38",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_contract$_IBondedECDSAKeepFactory_$11154_$",
+                              "typeString": "type(contract IBondedECDSAKeepFactory)"
+                            }
+                          },
+                          "id": 10525,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "2219:67:38",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                            "typeString": "contract IBondedECDSAKeepFactory"
+                          }
+                        },
+                        "functionReturnParameters": 10521,
+                        "id": 10526,
+                        "nodeType": "Return",
+                        "src": "2212:74:38"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10538,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "selectFactory",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10518,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10513,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10538,
+                  "src": "2005:7:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10512,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2005:7:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10515,
+                  "name": "_defaultFactory",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10538,
+                  "src": "2022:39:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                    "typeString": "contract IBondedECDSAKeepFactory"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10514,
+                    "name": "IBondedECDSAKeepFactory",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 11154,
+                    "src": "2022:23:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                      "typeString": "contract IBondedECDSAKeepFactory"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10517,
+                  "name": "_fullyBackedFactory",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10538,
+                  "src": "2071:43:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                    "typeString": "contract IBondedECDSAKeepFactory"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10516,
+                    "name": "IBondedECDSAKeepFactory",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 11154,
+                    "src": "2071:23:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                      "typeString": "contract IBondedECDSAKeepFactory"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1995:125:38"
+            },
+            "returnParameters": {
+              "id": 10521,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10520,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10538,
+                  "src": "2144:23:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                    "typeString": "contract IBondedECDSAKeepFactory"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10519,
+                    "name": "IBondedECDSAKeepFactory",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 11154,
+                    "src": "2144:23:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                      "typeString": "contract IBondedECDSAKeepFactory"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2143:25:38"
+            },
+            "scope": 10571,
+            "src": "1973:457:38",
+            "stateMutability": "view",
+            "superFunction": 6206,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 10545,
+              "nodeType": "Block",
+              "src": "2471:37:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10543,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 10541,
+                      "name": "maliciousMode",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10511,
+                      "src": "2481:13:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 10542,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "2497:4:38",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "2481:20:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 10544,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2481:20:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10546,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setMaliciousMode",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10539,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2461:2:38"
+            },
+            "returnParameters": {
+              "id": 10540,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2471:0:38"
+            },
+            "scope": 10571,
+            "src": "2436:72:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10553,
+              "nodeType": "Block",
+              "src": "2551:38:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10551,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 10549,
+                      "name": "maliciousMode",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10511,
+                      "src": "2561:13:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "66616c7365",
+                      "id": 10550,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "2577:5:38",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "false"
+                    },
+                    "src": "2561:21:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 10552,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2561:21:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10554,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "unsetMaliciousMode",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10547,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2541:2:38"
+            },
+            "returnParameters": {
+              "id": 10548,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2551:0:38"
+            },
+            "scope": 10571,
+            "src": "2514:75:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10561,
+              "nodeType": "Block",
+              "src": "2628:35:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10559,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 10557,
+                      "name": "defaultMode",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10508,
+                      "src": "2638:11:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 10558,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "2652:4:38",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "2638:18:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 10560,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2638:18:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10562,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setDefaultMode",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10555,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2618:2:38"
+            },
+            "returnParameters": {
+              "id": 10556,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2628:0:38"
+            },
+            "scope": 10571,
+            "src": "2595:68:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10569,
+              "nodeType": "Block",
+              "src": "2706:36:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10567,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 10565,
+                      "name": "defaultMode",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10508,
+                      "src": "2716:11:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "66616c7365",
+                      "id": 10566,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "2730:5:38",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "false"
+                    },
+                    "src": "2716:19:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 10568,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2716:19:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10570,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setFullyBackedMode",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10563,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2696:2:38"
+            },
+            "returnParameters": {
+              "id": 10564,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2706:0:38"
+            },
+            "scope": 10571,
+            "src": "2669:73:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 10572,
+        "src": "1830:914:38"
+      }
+    ],
+    "src": "0:2745:38"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/system/KeepFactorySelectionStub.sol",
+    "exportedSymbols": {
+      "KeepFactorySelectionStub": [
+        10503
+      ],
+      "KeepFactorySelectorStub": [
+        10571
+      ]
+    },
+    "id": 10572,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10395,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:38"
+      },
+      {
+        "absolutePath": "@keep-network/keep-ecdsa/contracts/api/IBondedECDSAKeepFactory.sol",
+        "file": "@keep-network/keep-ecdsa/contracts/api/IBondedECDSAKeepFactory.sol",
+        "id": 10397,
+        "nodeType": "ImportDirective",
+        "scope": 10572,
+        "sourceUnit": 11155,
+        "src": "25:107:38",
+        "symbolAliases": [
+          {
+            "foreign": 10396,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/KeepFactorySelection.sol",
+        "file": "../../system/KeepFactorySelection.sol",
+        "id": 10398,
+        "nodeType": "ImportDirective",
+        "scope": 10572,
+        "sourceUnit": 6467,
+        "src": "134:47:38",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 10503,
+        "linearizedBaseContracts": [
+          10503
+        ],
+        "name": "KeepFactorySelectionStub",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 10401,
+            "libraryName": {
+              "contractScope": null,
+              "id": 10399,
+              "name": "KeepFactorySelection",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6466,
+              "src": "229:20:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_KeepFactorySelection_$6466",
+                "typeString": "library KeepFactorySelection"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "223:60:38",
+            "typeName": {
+              "contractScope": null,
+              "id": 10400,
+              "name": "KeepFactorySelection.Storage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6218,
+              "src": "254:28:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Storage_$6218_storage_ptr",
+                "typeString": "struct KeepFactorySelection.Storage"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 10403,
+            "name": "keepFactorySelection",
+            "nodeType": "VariableDeclaration",
+            "scope": 10503,
+            "src": "288:49:38",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Storage_$6218_storage",
+              "typeString": "struct KeepFactorySelection.Storage"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 10402,
+              "name": "KeepFactorySelection.Storage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6218,
+              "src": "288:28:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Storage_$6218_storage_ptr",
+                "typeString": "struct KeepFactorySelection.Storage"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 10414,
+              "nodeType": "Block",
+              "src": "412:65:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 10411,
+                        "name": "_defaultFactory",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10405,
+                        "src": "454:15:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                          "typeString": "contract IBondedECDSAKeepFactory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                          "typeString": "contract IBondedECDSAKeepFactory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 10408,
+                        "name": "keepFactorySelection",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10403,
+                        "src": "422:20:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Storage_$6218_storage",
+                          "typeString": "struct KeepFactorySelection.Storage storage ref"
+                        }
+                      },
+                      "id": 10410,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "initialize",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6253,
+                      "src": "422:31:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_Storage_$6218_storage_ptr_$_t_contract$_IBondedECDSAKeepFactory_$11154_$returns$__$bound_to$_t_struct$_Storage_$6218_storage_ptr_$",
+                        "typeString": "function (struct KeepFactorySelection.Storage storage pointer,contract IBondedECDSAKeepFactory)"
+                      }
+                    },
+                    "id": 10412,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "422:48:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 10413,
+                  "nodeType": "ExpressionStatement",
+                  "src": "422:48:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10415,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "initialize",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10406,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10405,
+                  "name": "_defaultFactory",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10415,
+                  "src": "364:39:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                    "typeString": "contract IBondedECDSAKeepFactory"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10404,
+                    "name": "IBondedECDSAKeepFactory",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 11154,
+                    "src": "364:23:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                      "typeString": "contract IBondedECDSAKeepFactory"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "363:41:38"
+            },
+            "returnParameters": {
+              "id": 10407,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "412:0:38"
+            },
+            "scope": 10503,
+            "src": "344:133:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10424,
+              "nodeType": "Block",
+              "src": "554:60:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 10420,
+                        "name": "keepFactorySelection",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10403,
+                        "src": "571:20:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Storage_$6218_storage",
+                          "typeString": "struct KeepFactorySelection.Storage storage ref"
+                        }
+                      },
+                      "id": 10421,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "selectFactory",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6264,
+                      "src": "571:34:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_view$_t_struct$_Storage_$6218_storage_ptr_$returns$_t_contract$_IBondedECDSAKeepFactory_$11154_$bound_to$_t_struct$_Storage_$6218_storage_ptr_$",
+                        "typeString": "function (struct KeepFactorySelection.Storage storage pointer) view returns (contract IBondedECDSAKeepFactory)"
+                      }
+                    },
+                    "id": 10422,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "571:36:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                      "typeString": "contract IBondedECDSAKeepFactory"
+                    }
+                  },
+                  "functionReturnParameters": 10419,
+                  "id": 10423,
+                  "nodeType": "Return",
+                  "src": "564:43:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10425,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "selectFactory",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10416,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "505:2:38"
+            },
+            "returnParameters": {
+              "id": 10419,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10418,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10425,
+                  "src": "529:23:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                    "typeString": "contract IBondedECDSAKeepFactory"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10417,
+                    "name": "IBondedECDSAKeepFactory",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 11154,
+                    "src": "529:23:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                      "typeString": "contract IBondedECDSAKeepFactory"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "528:25:38"
+            },
+            "scope": 10503,
+            "src": "483:131:38",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10442,
+              "nodeType": "Block",
+              "src": "767:160:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 10437,
+                        "name": "_minimumBondableValue",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10427,
+                        "src": "835:21:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 10438,
+                        "name": "_groupSize",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10429,
+                        "src": "870:10:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 10439,
+                        "name": "_honestThreshold",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10431,
+                        "src": "894:16:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 10434,
+                        "name": "keepFactorySelection",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10403,
+                        "src": "777:20:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Storage_$6218_storage",
+                          "typeString": "struct KeepFactorySelection.Storage storage ref"
+                        }
+                      },
+                      "id": 10436,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "setMinimumBondableValue",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6336,
+                      "src": "777:44:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_Storage_$6218_storage_ptr_$_t_uint256_$_t_uint256_$_t_uint256_$returns$__$bound_to$_t_struct$_Storage_$6218_storage_ptr_$",
+                        "typeString": "function (struct KeepFactorySelection.Storage storage pointer,uint256,uint256,uint256)"
+                      }
+                    },
+                    "id": 10440,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "777:143:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 10441,
+                  "nodeType": "ExpressionStatement",
+                  "src": "777:143:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10443,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setMinimumBondableValue",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10432,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10427,
+                  "name": "_minimumBondableValue",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10443,
+                  "src": "662:29:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10426,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "662:7:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10429,
+                  "name": "_groupSize",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10443,
+                  "src": "701:18:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10428,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "701:7:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10431,
+                  "name": "_honestThreshold",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10443,
+                  "src": "729:24:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10430,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "729:7:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "652:107:38"
+            },
+            "returnParameters": {
+              "id": 10433,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "767:0:38"
+            },
+            "scope": 10503,
+            "src": "620:307:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10452,
+              "nodeType": "Block",
+              "src": "1009:70:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 10448,
+                        "name": "keepFactorySelection",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10403,
+                        "src": "1026:20:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Storage_$6218_storage",
+                          "typeString": "struct KeepFactorySelection.Storage storage ref"
+                        }
+                      },
+                      "id": 10449,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "selectFactoryAndRefresh",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6284,
+                      "src": "1026:44:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_delegatecall_nonpayable$_t_struct$_Storage_$6218_storage_ptr_$returns$_t_contract$_IBondedECDSAKeepFactory_$11154_$bound_to$_t_struct$_Storage_$6218_storage_ptr_$",
+                        "typeString": "function (struct KeepFactorySelection.Storage storage pointer) returns (contract IBondedECDSAKeepFactory)"
+                      }
+                    },
+                    "id": 10450,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1026:46:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                      "typeString": "contract IBondedECDSAKeepFactory"
+                    }
+                  },
+                  "functionReturnParameters": 10447,
+                  "id": 10451,
+                  "nodeType": "Return",
+                  "src": "1019:53:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10453,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "selectFactoryAndRefresh",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10444,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "965:2:38"
+            },
+            "returnParameters": {
+              "id": 10447,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10446,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10453,
+                  "src": "984:23:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                    "typeString": "contract IBondedECDSAKeepFactory"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10445,
+                    "name": "IBondedECDSAKeepFactory",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 11154,
+                    "src": "984:23:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                      "typeString": "contract IBondedECDSAKeepFactory"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "983:25:38"
+            },
+            "scope": 10503,
+            "src": "933:146:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10470,
+              "nodeType": "Block",
+              "src": "1227:155:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 10465,
+                        "name": "_keepStakedFactory",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10455,
+                        "src": "1284:18:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 10466,
+                        "name": "_fullyBackedFactory",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10457,
+                        "src": "1316:19:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 10467,
+                        "name": "_factorySelector",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10459,
+                        "src": "1349:16:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 10462,
+                        "name": "keepFactorySelection",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10403,
+                        "src": "1237:20:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Storage_$6218_storage",
+                          "typeString": "struct KeepFactorySelection.Storage storage ref"
+                        }
+                      },
+                      "id": 10464,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "setFactories",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6465,
+                      "src": "1237:33:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Storage_$6218_storage_ptr_$_t_address_$_t_address_$_t_address_$returns$__$bound_to$_t_struct$_Storage_$6218_storage_ptr_$",
+                        "typeString": "function (struct KeepFactorySelection.Storage storage pointer,address,address,address)"
+                      }
+                    },
+                    "id": 10468,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1237:138:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 10469,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1237:138:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10471,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setFactories",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10460,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10455,
+                  "name": "_keepStakedFactory",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10471,
+                  "src": "1116:26:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10454,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1116:7:38",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10457,
+                  "name": "_fullyBackedFactory",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10471,
+                  "src": "1152:27:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10456,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1152:7:38",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10459,
+                  "name": "_factorySelector",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10471,
+                  "src": "1189:24:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10458,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1189:7:38",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1106:113:38"
+            },
+            "returnParameters": {
+              "id": 10461,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1227:0:38"
+            },
+            "scope": 10503,
+            "src": "1085:297:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10501,
+              "nodeType": "Block",
+              "src": "1587:239:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10485,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 10480,
+                      "name": "_keepStakedFactory",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10474,
+                      "src": "1597:18:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 10482,
+                            "name": "keepFactorySelection",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 10403,
+                            "src": "1626:20:38",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Storage_$6218_storage",
+                              "typeString": "struct KeepFactorySelection.Storage storage ref"
+                            }
+                          },
+                          "id": 10483,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "keepStakedFactory",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 6215,
+                          "src": "1626:38:38",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                            "typeString": "contract IBondedECDSAKeepFactory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                            "typeString": "contract IBondedECDSAKeepFactory"
+                          }
+                        ],
+                        "id": 10481,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "1618:7:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_address_$",
+                          "typeString": "type(address)"
+                        },
+                        "typeName": "address"
+                      },
+                      "id": 10484,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1618:47:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "1597:68:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 10486,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1597:68:38"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10492,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 10487,
+                      "name": "_fullyBackedFactory",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10476,
+                      "src": "1675:19:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 10489,
+                            "name": "keepFactorySelection",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 10403,
+                            "src": "1705:20:38",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Storage_$6218_storage",
+                              "typeString": "struct KeepFactorySelection.Storage storage ref"
+                            }
+                          },
+                          "id": 10490,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "fullyBackedFactory",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 6217,
+                          "src": "1705:39:38",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                            "typeString": "contract IBondedECDSAKeepFactory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                            "typeString": "contract IBondedECDSAKeepFactory"
+                          }
+                        ],
+                        "id": 10488,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "1697:7:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_address_$",
+                          "typeString": "type(address)"
+                        },
+                        "typeName": "address"
+                      },
+                      "id": 10491,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1697:48:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "1675:70:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 10493,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1675:70:38"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10499,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 10494,
+                      "name": "_factorySelector",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10478,
+                      "src": "1755:16:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 10496,
+                            "name": "keepFactorySelection",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 10403,
+                            "src": "1782:20:38",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_Storage_$6218_storage",
+                              "typeString": "struct KeepFactorySelection.Storage storage ref"
+                            }
+                          },
+                          "id": 10497,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "factorySelector",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 6213,
+                          "src": "1782:36:38",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_KeepFactorySelector_$6207",
+                            "typeString": "contract KeepFactorySelector"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_contract$_KeepFactorySelector_$6207",
+                            "typeString": "contract KeepFactorySelector"
+                          }
+                        ],
+                        "id": 10495,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "lValueRequested": false,
+                        "nodeType": "ElementaryTypeNameExpression",
+                        "src": "1774:7:38",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_address_$",
+                          "typeString": "type(address)"
+                        },
+                        "typeName": "address"
+                      },
+                      "id": 10498,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1774:45:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "1755:64:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 10500,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1755:64:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10502,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "factories",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10472,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1406:2:38"
+            },
+            "returnParameters": {
+              "id": 10479,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10474,
+                  "name": "_keepStakedFactory",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10502,
+                  "src": "1467:26:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10473,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1467:7:38",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10476,
+                  "name": "_fullyBackedFactory",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10502,
+                  "src": "1507:27:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10475,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1507:7:38",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10478,
+                  "name": "_factorySelector",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10502,
+                  "src": "1548:24:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10477,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1548:7:38",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1453:129:38"
+            },
+            "scope": 10503,
+            "src": "1388:438:38",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 10572,
+        "src": "183:1645:38"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 10504,
+              "name": "KeepFactorySelector",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6207,
+              "src": "1866:19:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_KeepFactorySelector_$6207",
+                "typeString": "contract KeepFactorySelector"
+              }
+            },
+            "id": 10505,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1866:19:38"
+          }
+        ],
+        "contractDependencies": [
+          6207
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 10571,
+        "linearizedBaseContracts": [
+          10571,
+          6207
+        ],
+        "name": "KeepFactorySelectorStub",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 10508,
+            "name": "defaultMode",
+            "nodeType": "VariableDeclaration",
+            "scope": 10571,
+            "src": "1893:32:38",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 10506,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "1893:4:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "74727565",
+              "id": 10507,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "bool",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1921:4:38",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "value": "true"
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 10511,
+            "name": "maliciousMode",
+            "nodeType": "VariableDeclaration",
+            "scope": 10571,
+            "src": "1931:35:38",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 10509,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "1931:4:38",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "66616c7365",
+              "id": 10510,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "bool",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "1961:5:38",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "value": "false"
+            },
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 10537,
+              "nodeType": "Block",
+              "src": "2169:261:38",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "id": 10522,
+                    "name": "maliciousMode",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 10511,
+                    "src": "2183:13:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "condition": {
+                      "argumentTypes": null,
+                      "id": 10528,
+                      "name": "defaultMode",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10508,
+                      "src": "2307:11:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "falseBody": {
+                      "id": 10534,
+                      "nodeType": "Block",
+                      "src": "2373:51:38",
+                      "statements": [
+                        {
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 10532,
+                            "name": "_fullyBackedFactory",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 10517,
+                            "src": "2394:19:38",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                              "typeString": "contract IBondedECDSAKeepFactory"
+                            }
+                          },
+                          "functionReturnParameters": 10521,
+                          "id": 10533,
+                          "nodeType": "Return",
+                          "src": "2387:26:38"
+                        }
+                      ]
+                    },
+                    "id": 10535,
+                    "nodeType": "IfStatement",
+                    "src": "2303:121:38",
+                    "trueBody": {
+                      "id": 10531,
+                      "nodeType": "Block",
+                      "src": "2320:47:38",
+                      "statements": [
+                        {
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 10529,
+                            "name": "_defaultFactory",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 10515,
+                            "src": "2341:15:38",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                              "typeString": "contract IBondedECDSAKeepFactory"
+                            }
+                          },
+                          "functionReturnParameters": 10521,
+                          "id": 10530,
+                          "nodeType": "Return",
+                          "src": "2334:22:38"
+                        }
+                      ]
+                    }
+                  },
+                  "id": 10536,
+                  "nodeType": "IfStatement",
+                  "src": "2179:245:38",
+                  "trueBody": {
+                    "id": 10527,
+                    "nodeType": "Block",
+                    "src": "2198:99:38",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "hexValue": "307861466163456261646641636543666665654661636561636562616345416641636543664645654130",
+                              "id": 10524,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "number",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "2243:42:38",
+                              "subdenomination": null,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address_payable",
+                                "typeString": "address payable"
+                              },
+                              "value": "0xaFacEbadfAceCffeeFaceacebacEAfAceCfFEeA0"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address_payable",
+                                "typeString": "address payable"
+                              }
+                            ],
+                            "id": 10523,
+                            "name": "IBondedECDSAKeepFactory",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 11154,
+                            "src": "2219:23:38",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_contract$_IBondedECDSAKeepFactory_$11154_$",
+                              "typeString": "type(contract IBondedECDSAKeepFactory)"
+                            }
+                          },
+                          "id": 10525,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "2219:67:38",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                            "typeString": "contract IBondedECDSAKeepFactory"
+                          }
+                        },
+                        "functionReturnParameters": 10521,
+                        "id": 10526,
+                        "nodeType": "Return",
+                        "src": "2212:74:38"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10538,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "selectFactory",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10518,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10513,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10538,
+                  "src": "2005:7:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10512,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2005:7:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10515,
+                  "name": "_defaultFactory",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10538,
+                  "src": "2022:39:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                    "typeString": "contract IBondedECDSAKeepFactory"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10514,
+                    "name": "IBondedECDSAKeepFactory",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 11154,
+                    "src": "2022:23:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                      "typeString": "contract IBondedECDSAKeepFactory"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10517,
+                  "name": "_fullyBackedFactory",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10538,
+                  "src": "2071:43:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                    "typeString": "contract IBondedECDSAKeepFactory"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10516,
+                    "name": "IBondedECDSAKeepFactory",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 11154,
+                    "src": "2071:23:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                      "typeString": "contract IBondedECDSAKeepFactory"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1995:125:38"
+            },
+            "returnParameters": {
+              "id": 10521,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10520,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10538,
+                  "src": "2144:23:38",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                    "typeString": "contract IBondedECDSAKeepFactory"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 10519,
+                    "name": "IBondedECDSAKeepFactory",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 11154,
+                    "src": "2144:23:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IBondedECDSAKeepFactory_$11154",
+                      "typeString": "contract IBondedECDSAKeepFactory"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2143:25:38"
+            },
+            "scope": 10571,
+            "src": "1973:457:38",
+            "stateMutability": "view",
+            "superFunction": 6206,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 10545,
+              "nodeType": "Block",
+              "src": "2471:37:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10543,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 10541,
+                      "name": "maliciousMode",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10511,
+                      "src": "2481:13:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 10542,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "2497:4:38",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "2481:20:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 10544,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2481:20:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10546,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setMaliciousMode",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10539,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2461:2:38"
+            },
+            "returnParameters": {
+              "id": 10540,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2471:0:38"
+            },
+            "scope": 10571,
+            "src": "2436:72:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10553,
+              "nodeType": "Block",
+              "src": "2551:38:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10551,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 10549,
+                      "name": "maliciousMode",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10511,
+                      "src": "2561:13:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "66616c7365",
+                      "id": 10550,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "2577:5:38",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "false"
+                    },
+                    "src": "2561:21:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 10552,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2561:21:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10554,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "unsetMaliciousMode",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10547,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2541:2:38"
+            },
+            "returnParameters": {
+              "id": 10548,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2551:0:38"
+            },
+            "scope": 10571,
+            "src": "2514:75:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10561,
+              "nodeType": "Block",
+              "src": "2628:35:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10559,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 10557,
+                      "name": "defaultMode",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10508,
+                      "src": "2638:11:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "74727565",
+                      "id": 10558,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "2652:4:38",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "2638:18:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 10560,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2638:18:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10562,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setDefaultMode",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10555,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2618:2:38"
+            },
+            "returnParameters": {
+              "id": 10556,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2628:0:38"
+            },
+            "scope": 10571,
+            "src": "2595:68:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10569,
+              "nodeType": "Block",
+              "src": "2706:36:38",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10567,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 10565,
+                      "name": "defaultMode",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10508,
+                      "src": "2716:11:38",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "66616c7365",
+                      "id": 10566,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "2730:5:38",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "false"
+                    },
+                    "src": "2716:19:38",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 10568,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2716:19:38"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10570,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setFullyBackedMode",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10563,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2696:2:38"
+            },
+            "returnParameters": {
+              "id": 10564,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2706:0:38"
+            },
+            "scope": 10571,
+            "src": "2669:73:38",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 10572,
+        "src": "1830:914:38"
+      }
+    ],
+    "src": "0:2745:38"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.17+commit.d19bba13.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2021-02-01T14:28:06.555Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

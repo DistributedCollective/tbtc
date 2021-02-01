@@ -1,0 +1,3993 @@
+{
+  "contractName": "DepositFactory",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_systemAddress",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "depositCloneAddress",
+          "type": "address"
+        }
+      ],
+      "name": "DepositCloneCreated",
+      "type": "event"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "feeRebateToken",
+      "outputs": [
+        {
+          "internalType": "contract FeeRebateToken",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "masterDepositAddress",
+      "outputs": [
+        {
+          "internalType": "address payable",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "tbtcSystem",
+      "outputs": [
+        {
+          "internalType": "contract TBTCSystem",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "tbtcToken",
+      "outputs": [
+        {
+          "internalType": "contract TBTCToken",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "vendingMachineAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address payable",
+          "name": "_masterDepositAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "contract TBTCSystem",
+          "name": "_tbtcSystem",
+          "type": "address"
+        },
+        {
+          "internalType": "contract TBTCToken",
+          "name": "_tbtcToken",
+          "type": "address"
+        },
+        {
+          "internalType": "contract TBTCDepositToken",
+          "name": "_tbtcDepositToken",
+          "type": "address"
+        },
+        {
+          "internalType": "contract FeeRebateToken",
+          "name": "_feeRebateToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_vendingMachineAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setExternalDependencies",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "_lotSizeSatoshis",
+          "type": "uint64"
+        }
+      ],
+      "name": "createDeposit",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_systemAddress\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"depositCloneAddress\",\"type\":\"address\"}],\"name\":\"DepositCloneCreated\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint64\",\"name\":\"_lotSizeSatoshis\",\"type\":\"uint64\"}],\"name\":\"createDeposit\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"feeRebateToken\",\"outputs\":[{\"internalType\":\"contract FeeRebateToken\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"masterDepositAddress\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"_masterDepositAddress\",\"type\":\"address\"},{\"internalType\":\"contract TBTCSystem\",\"name\":\"_tbtcSystem\",\"type\":\"address\"},{\"internalType\":\"contract TBTCToken\",\"name\":\"_tbtcToken\",\"type\":\"address\"},{\"internalType\":\"contract TBTCDepositToken\",\"name\":\"_tbtcDepositToken\",\"type\":\"address\"},{\"internalType\":\"contract FeeRebateToken\",\"name\":\"_feeRebateToken\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_vendingMachineAddress\",\"type\":\"address\"}],\"name\":\"setExternalDependencies\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tbtcSystem\",\"outputs\":[{\"internalType\":\"contract TBTCSystem\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tbtcToken\",\"outputs\":[{\"internalType\":\"contract TBTCToken\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"vendingMachineAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"We avoid redeployment of deposit contract by using the clone factory. Proxy delegates calls to Deposit and therefore does not affect deposit state. This means that we only need to deploy the deposit contracts once. The factory provides clean state for every new deposit clone.\",\"methods\":{\"createDeposit(uint64)\":{\"details\":\"Calls `Deposit.initializeDeposit` to initialize the instance. Mints      the TDT to the function caller. (See `TBTCDepositToken` for more      info on TDTs). Reverts if new deposits are currently paused, if the      specified lot size is not currently permitted, or if the selection      of the signers fails for any reason. Also reverts if the bonds      collateralizing the deposit would not be enough to cover a refund      of the deposit creation fee, should the signer group fail to      complete its setup process.\",\"return\":\"The address of the new deposit.\"},\"setExternalDependencies(address,address,address,address,address,address)\":{\"details\":\"Set the required external variables.\",\"params\":{\"_feeRebateToken\":\"AFee Rebate Token contract.\",\"_masterDepositAddress\":\"The address of the master deposit contract.\",\"_tbtcDepositToken\":\"TBTC Deposit Token contract.\",\"_tbtcSystem\":\"Tbtc system contract.\",\"_tbtcToken\":\"TBTC token contract.\",\"_vendingMachineAddress\":\"Address of the Vending Machine contract.\"}}},\"title\":\"Deposit Factory\"},\"userdoc\":{\"methods\":{\"createDeposit(uint64)\":{\"notice\":\"Creates a new deposit instance and mints a TDT. This function is         currently the only way to create a new deposit.\"}},\"notice\":\"Factory for the creation of new deposit clones.\"}},\"settings\":{\"compilationTarget\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/proxy/DepositFactory.sol\":\"DepositFactory\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/DepositLog.sol\":{\"keccak256\":\"0xd2422abaf64bf2d28f4c0548bc31c3d0e4c5f3e4414486c149b773bea0c9db0a\",\"urls\":[\"bzz-raw://c4b0e3caea108ce67da5922906753dc1a1f87cee923e7c32260239150f2152bb\",\"dweb:/ipfs/QmcHcftf4M6ZyuFG725QiFGHuAtz6zDQZ9HCEaoP5Wb6Fd\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/deposit/Deposit.sol\":{\"keccak256\":\"0x7a9df31ad626248459fe8b2dc58c3fe493bf15607163d4265e89e9fa4ecf5821\",\"urls\":[\"bzz-raw://a6a7482d4efc3d7628169ebf1b27efdac4caeb131a35ccaeaa589eb571de96be\",\"dweb:/ipfs/QmdtQTuBbG4WWoLzGZF582TnXjeGsn6HEzR6TEZruCooVr\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/deposit/DepositFunding.sol\":{\"keccak256\":\"0xe742137d7ce4eb157ff687fa46d6816b3adceaf9fdafb50bc2955c9a0bb18b3f\",\"urls\":[\"bzz-raw://36b72b4fd80c9964cd93b80f4d67a777ea30d4ad7a040823f6a0cca77b02ede5\",\"dweb:/ipfs/QmdbJ2gF2WCqxdXp9BgNwtEn3Pik7J9oXK44Q37Zd6X12E\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/deposit/DepositLiquidation.sol\":{\"keccak256\":\"0x29621caae685780eda6271de5215804cb54284814dee422d4cb23b0370dd845f\",\"urls\":[\"bzz-raw://414bba9cb3cfaac642e820079aa9cb33e659749d5dc3259e007bd85fb30cd4b1\",\"dweb:/ipfs/QmWn8JumPKGGm9X3BPqYsCnxt3QyLfwcgnVZwf2wptDJ6T\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/deposit/DepositRedemption.sol\":{\"keccak256\":\"0x356eb75775a6d84baefdb7b967a92056ce302567c3e4f17396faccc0815b76b5\",\"urls\":[\"bzz-raw://a9f3e2363cf7e339f27dcc89886a9f87e1ec35fa9d2c19c3a7a96c4ba983d3d6\",\"dweb:/ipfs/QmfTvP96LbJA5UGsEUSiVMGCWzfFadKkRSLJtAvecbqSmV\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/deposit/DepositStates.sol\":{\"keccak256\":\"0x5ec59ee85fb559a1a85677000acfb650981ad1dcba9db739ccd509df1e64f0be\",\"urls\":[\"bzz-raw://966ff2b55c286a30934af8397fa581e31d4d7f8ce154a58973ade03e7f171ce6\",\"dweb:/ipfs/QmXKdfbBzmsGgjExobtpz2YJYTwpwYTmWnuqJM2UrPRxbH\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/deposit/DepositUtils.sol\":{\"keccak256\":\"0x1a72a88825376a93f8eacef069115398bd36899efddb01c844233107899e6c34\",\"urls\":[\"bzz-raw://fb72e51e6b20f827f88f8672aff2d5cd587c91303128624c5c45d620adf5fa75\",\"dweb:/ipfs/QmTkkEbuweQsGerWHSsVUSb2fFmfWhVfShGphmgFnxQPet\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/deposit/OutsourceDepositLogging.sol\":{\"keccak256\":\"0x97f73731fecda2306e2c5d1d44038515d3d484b06f0ddb11a3471c6630ccc70d\",\"urls\":[\"bzz-raw://37d9cb8532dfa28f38ae0fba8750b80b9caa24561141e21a75c93f28d0670e91\",\"dweb:/ipfs/QmQdHFaFkPrDdCegD4BrLv8xMTJCs82fafLJu6me3QNPuj\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/interfaces/ISatWeiPriceFeed.sol\":{\"keccak256\":\"0x1bebc0f56f8850288333fbbaf4c61163089ee9c39ea1b513aa8a57ac4f183988\",\"urls\":[\"bzz-raw://05c7fb8bb3bf433738c99ff118b4bbc338f3c4a569c292de63a29e5ab6437871\",\"dweb:/ipfs/QmUpnuw7sR6UemzUBjNTfCFJsw4StMScai5SY1CZyxRheG\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/interfaces/ITBTCSystem.sol\":{\"keccak256\":\"0xdae4f0fa4b6d02f2a45c54be47d06d9e6106eee7cab170bfc5f469475492fcef\",\"urls\":[\"bzz-raw://1b80448536b598d8ec5f115773bd959f5ce75d654346a21fcd981c12811a9b77\",\"dweb:/ipfs/QmcpEoUxPXRhKw9VHGC7TsD6koVenP1e9iin5xYNZ3K1VY\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/interfaces/ITokenRecipient.sol\":{\"keccak256\":\"0x4ac6830ad44d0b0d70ebabc60150e9c915c7c0bd0129ef868d5d2cd8da0c32bd\",\"urls\":[\"bzz-raw://a5c6465285add41f07a951f90405800a8802e323ea11e9c7bdb5625ce109c7f7\",\"dweb:/ipfs/QmRf7B4WxsS7gbSwUotgQM633BQc2ye7rhYC1RNVFamBfp\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/proxy/CloneFactory.sol\":{\"keccak256\":\"0x00a2f1a89d548c4a94de39db7a587eecda14637b28e4a601b0b3649e2336fd0e\",\"urls\":[\"bzz-raw://8d0bfba659f711812b5a203df5240bfdbc3c5da653b4d9e4505f1d71819a0962\",\"dweb:/ipfs/QmUNaHWVbiAWRYNrHAaUQsrRuEPFN2iYYLeQiSMitsmdEL\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/proxy/DepositFactory.sol\":{\"keccak256\":\"0x5777dc29a594204c5ba93d663dd8459ddae47426180a2aeb0e477eafe57241aa\",\"urls\":[\"bzz-raw://cbdde981625a5ca6ef800d0d421d0a810540232a86ca56f01444eae7207874db\",\"dweb:/ipfs/QmTKMRc7j9dCZ4uDRKMt2va3RFZd9qwgs7z8JkZkhm7tYx\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/DepositFactoryAuthority.sol\":{\"keccak256\":\"0x022479e32c12f6be988fb0d7dfd51038177511b92f02a5b19bb72b0e4f09d851\",\"urls\":[\"bzz-raw://9eeb54aded5ad8073a5e3525c0051b1b6ee891ec097270e4d9271d14c4f19057\",\"dweb:/ipfs/QmVvcwW2jw9zBjdWJdqkBTNfU6K9vMT8EYDwoYF1nxMHXd\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/FeeRebateToken.sol\":{\"keccak256\":\"0x1524c58a04b7607141b7858cdb8822f3afd15a51111ad48c8ed74a2b5a48b058\",\"urls\":[\"bzz-raw://104073ebf4f1c028f42cc9d66e520ba8dbcd5ef3228cc7306da1934830f5dc80\",\"dweb:/ipfs/Qmd4MR2ak1FLLKVet9YXRVJbUFZYB3cp1fEw324vJhTQKW\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/KeepFactorySelection.sol\":{\"keccak256\":\"0x265dc7653b1f74a38b24656a470332619425abc5977cb35c2f6168bcff99458a\",\"urls\":[\"bzz-raw://31f61cb0f74a7ea5d1ac5e7f7b074a4aad72ebf69bf52bd17e143815f0241633\",\"dweb:/ipfs/Qmc8SayKsvLha4eMmYu1a6zkhufBgHMfEfckTyyTvYyogR\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCConstants.sol\":{\"keccak256\":\"0xba7ebfbbe1a10904fb87d8fc0998aa15d64968e6619fd7a1347bd14636491bb0\",\"urls\":[\"bzz-raw://763cc6118e03fd481d1835272f9e65d97277680a5d7b10ab5680910eaf9917d0\",\"dweb:/ipfs/QmTAA1x9j1f7XcNPkJsTaY2fqbFWLCw5ovhrY1dAzy8uwh\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCDepositToken.sol\":{\"keccak256\":\"0xffb53d47231c83d85651040b76aa7f700450d7e100d22c783d9ff4c6d09c5631\",\"urls\":[\"bzz-raw://2cb5b13739c83a0808d0c83e0dbda81a727c1e9fe6a965bd3e3390ebcabc9cba\",\"dweb:/ipfs/QmVycxi9QZvJaRs2DDP1QEdEbJUPpXCZSUeM71utPCt3iJ\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCSystem.sol\":{\"keccak256\":\"0xc095b83ea7b892d0643632a1b6b8ea2757c882908f9772c7de57d300382cd3a5\",\"urls\":[\"bzz-raw://96a2c8892cc0003663af23aa00bb46d24837a71e0dea6291b7647357614e53bf\",\"dweb:/ipfs/QmPdVysyPfwAR1rziwAox5wEKKZxf375EaeXMndvLm8Ku2\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCSystemAuthority.sol\":{\"keccak256\":\"0x6e17b6142810febc4ae734cf7940e3af7128de67dd1bcc28bb25f97d6977c1dd\",\"urls\":[\"bzz-raw://d0b9b5068ecb32abae1dabae7719da42bcff2f416cb652d4a15a64d113c69b0c\",\"dweb:/ipfs/QmTMPTj7yzcW2fY9EYSefMpWwaA9KJfwCTK6tYdvnt12M2\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCToken.sol\":{\"keccak256\":\"0xeb02cb2492f35f0edbc913dc074db23497dfbaba065b46d52e1dba0f4b72054b\",\"urls\":[\"bzz-raw://2a99f79eef217e086fd28614d8e95030a7da8c9bfaf5679a9461b0cdc1179f1d\",\"dweb:/ipfs/Qmdv9u2x3C5yynx97dtgeW9PtJS8adikMkQJDCoGw3AYTJ\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/VendingMachine.sol\":{\"keccak256\":\"0x3d33d0617fd632b85ebe690c6f8ad83effc5834b2bb6a3566a0554ba46d36e80\",\"urls\":[\"bzz-raw://7d20bf8982e5f7e911de748fc1ce9b47cdfc9e9736826fa2fa2b32d673f3eb6b\",\"dweb:/ipfs/QmP2wzZ3LXBwA1JDcFTR9QEd11ygYauJnAV7Puxam9G2Xk\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/VendingMachineAuthority.sol\":{\"keccak256\":\"0xdc58e152bd6e4649e403970257791f2c01295d616b4a26f333604a2f69a18287\",\"urls\":[\"bzz-raw://ca421ef0e6bb73e11faaed675c16d670ba61fec3a3ad96f6e1739e6f6f69bb3d\",\"dweb:/ipfs/QmVbdwJCzLrcUFUzBQ5KiW86aFotawMGm3bqoopZjYaY7p\"]},\"@keep-network/keep-ecdsa/contracts/api/IBondedECDSAKeep.sol\":{\"keccak256\":\"0xbfb2ab8aaf8d53b708ee7506a49285baac34d5f3c3f86fa52d68c6d2daf2e481\",\"urls\":[\"bzz-raw://31d6bcdda38444ad1eba3d868a94b7514aaeb4336aabc0b34de9b1c936eda827\",\"dweb:/ipfs/QmZCkXewTXFpztpM1Ep1ySgjwn5bvfRZHLB8ex63hZeiUf\"]},\"@keep-network/keep-ecdsa/contracts/api/IBondedECDSAKeepFactory.sol\":{\"keccak256\":\"0x2f51101d96001bf8cd86c4a008135e44f8ef06a900758f271edd0b981572e19d\",\"urls\":[\"bzz-raw://132593b2dee9b913423120745e5c2bad382a7a49ca2ab485db8cb58691c227ff\",\"dweb:/ipfs/QmX8cLz6pqDufA1w6Jn6v8HrS1ED1JcwrNNRMZQd6w7dY4\"]},\"@summa-tx/bitcoin-spv-sol/contracts/BTCUtils.sol\":{\"keccak256\":\"0x461cc52e40ba53e646f5c9505b992baa3d5b3c98ae5718561e61b3bc6c726d52\",\"urls\":[\"bzz-raw://90cf2e608b660671642a616ec044e2a39e8ceb7079315b6133ec978c47af9f98\",\"dweb:/ipfs/QmX4hyYS99RYWiQ7BwLXuvQpU5x62YbjJWLgYFwrPkYbzT\"]},\"@summa-tx/bitcoin-spv-sol/contracts/BytesLib.sol\":{\"keccak256\":\"0x43451fdb4c4d55c01122411a4cf89a5c544c2bd4b646ee1d1f306626275324bf\",\"urls\":[\"bzz-raw://db93f07c32fa294d416aaab1b19a205772f2a3fa573fd380e5641e7770193ccf\",\"dweb:/ipfs/QmVE4y8cFKWZGKEfTM9Q3YreAArpMTTALHNr2tcvcNDnbi\"]},\"@summa-tx/bitcoin-spv-sol/contracts/CheckBitcoinSigs.sol\":{\"keccak256\":\"0x2fcbfa2440f69e346d5e14d960b14498f6484f83713fe7cec1ecf4abea3835a1\",\"urls\":[\"bzz-raw://4a385ef55a53dd0dcd1b687a47dbf6785580883a0be0cb10c617c338a35f3a8b\",\"dweb:/ipfs/QmZp9AT146beL3SoETJCWsJ4zzAZQavy9oGCYPiwAofEtq\"]},\"@summa-tx/bitcoin-spv-sol/contracts/SafeMath.sol\":{\"keccak256\":\"0x22d34c04c68c2a77ee83e2ef3756f6e6bad6ad675560d777e612315d7eb83935\",\"urls\":[\"bzz-raw://b642c61be1d34e153e4f9cc139291fa26f4ecf31a3acc5b960aad20f4f689eeb\",\"dweb:/ipfs/QmWADdVTCSyvtgb76AxFFkAr9h9jbY57Mj5X6xiEqCqmMu\"]},\"@summa-tx/bitcoin-spv-sol/contracts/ValidateSPV.sol\":{\"keccak256\":\"0x9af3b3f36de63e95977f09548617989e391b3c511cf0383ee35cefd5da7d3bfd\",\"urls\":[\"bzz-raw://97ce025c7d18540e4c24578db61cc5e33828be8e9a82b5cb5f46c99212f75ed1\",\"dweb:/ipfs/QmRrdWnd95rgCZzeaNiU4KUcGe1j7oDBj7LatpXhUmjbEE\"]},\"@summa-tx/relay-sol/contracts/Interfaces.sol\":{\"keccak256\":\"0x6f2698f8aab5cee319f36d69438b6870496a5523e7ccac4b465cdb38661242fa\",\"urls\":[\"bzz-raw://7f854c72db81631d1df800ae0c5fb0a50dc9efd97b0e6593b063c9fb1c61ef9e\",\"dweb:/ipfs/QmUMSQhzYKRSkLTGcHekjqvw1mLpeUULZkfffRdN521NBg\"]},\"@summa-tx/relay-sol/contracts/Relay.sol\":{\"keccak256\":\"0x4a6d12fa6570e2c787f9dc234edae9c1eb326e78eb2c6384c84d2b6ba0a0ad7e\",\"urls\":[\"bzz-raw://fa5365dc5a8312d0305568dbf297964be13567a7879395bfc3e99be2510e4e10\",\"dweb:/ipfs/QmfGZz6iL45xPcwQTT3XFAqb7McuY89niBEvfbhy513moF\"]},\"openzeppelin-solidity/contracts/drafts/Counters.sol\":{\"keccak256\":\"0x5eb69360d3441ab2ee799bd7c007cccbffb0896f12b2dfe1456193e2aa180a11\",\"urls\":[\"bzz-raw://072e8b5a1b5acfc2acba9b6fb87d1dc57065aad44572617ad46b014074969eb3\",\"dweb:/ipfs/QmVTDHUriaxBJqiWCWgWC8vYaYYfXSz883LsowzTx1DcpK\"]},\"openzeppelin-solidity/contracts/introspection/ERC165.sol\":{\"keccak256\":\"0xac2eacd7e7762e275442f28f21d821544df5aae2ed7698af13be8c41b7005e2e\",\"urls\":[\"bzz-raw://8bdbefb642e7b08535c66bbf074e576cfef2300cdf910c1e0b211f6393833a28\",\"dweb:/ipfs/QmQhfx2Ufr8a2gFXm3KogL66xGgAuAWMwcamkWFKGG6Vya\"]},\"openzeppelin-solidity/contracts/introspection/IERC165.sol\":{\"keccak256\":\"0x661553e43d7c4fbb2de504e5999fd5c104d367488350ed5bf023031bd1ba5ac5\",\"urls\":[\"bzz-raw://b40442c5b350b57b88a081a1eacd2bac962d4ecc1f029f5447a18986f08f6f14\",\"dweb:/ipfs/QmV7wjtRf11ibUHh4g8JjuhMpy68pPhV95L2y46UBoRfsZ\"]},\"openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x4ccf2d7b51873db1ccfd54ca2adae5eac3b184f9699911ed4490438419f1c690\",\"urls\":[\"bzz-raw://d62d769b2219d5de39013093412623e624fa887f871826ea3bae6052ee893610\",\"dweb:/ipfs/QmV3yVktya1s617QmuzQR2CfuJgUi3dR2xEZY9ecmqZ2G1\"]},\"openzeppelin-solidity/contracts/ownership/Ownable.sol\":{\"keccak256\":\"0xf79fb10e8235770eb4aea7249034076a3cc9f9119ad944fc48705bae9c9d20dc\",\"urls\":[\"bzz-raw://cd3429aa9a4878dcf6c73faa32c3722f4013d4be012ece543b246faa6b50f55c\",\"dweb:/ipfs/QmS55hgTvNEAKinus19m65CB4wcymN8EiUPFpRx5tYJ1i2\"]},\"openzeppelin-solidity/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0x852793a3c2f86d336a683b30d688ec3dcfc57451af5a2bf5975cda3b7191a901\",\"urls\":[\"bzz-raw://4f5b57664069671648fb81f55b0082faecdf1b2f159eec6b1fa6cef9b7d73bc5\",\"dweb:/ipfs/QmcyytaLs7zFdb4Uu7C5PmQRhQdB3wA3fUdkV6mkYfdDFH\"]},\"openzeppelin-solidity/contracts/token/ERC20/ERC20Detailed.sol\":{\"keccak256\":\"0xc61b3603089b09a730d8ca72e9133a496cc4405da40e9b87c12f073245d774bf\",\"urls\":[\"bzz-raw://de8bb0003d53de236913f0e0102e7a9d015e02098f2495edd000f207fe2be2f4\",\"dweb:/ipfs/QmbtwNwAJEehWWL7yGGyyMoenQvcqtz91pqLgQPpLRoLYC\"]},\"openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x90e8c2521653bbb1768b05889c5760031e688d9cd361f167489b89215e201b95\",\"urls\":[\"bzz-raw://d0abb99bb8bfc2bc0a89902b8ed1dc0442ad08cc78cee64c291b3df6a27bcccc\",\"dweb:/ipfs/QmP5NaEwZthQeM2ESz4WTT3osrP7jhbvu7ocbttBi2JAw6\"]},\"openzeppelin-solidity/contracts/token/ERC721/ERC721.sol\":{\"keccak256\":\"0xf151df411bbf4eaef1fc8e8480cd10c2cd985f1a36517e63981517610213efc1\",\"urls\":[\"bzz-raw://2a277b3cc3a1a03af5c039bc75cd16bb2d23b529cb2564cc0bea1b1e0eb4dd68\",\"dweb:/ipfs/QmNRxggY8qmjjuLnxggRqE8uBueuCktLwi9YYHagWoaEJ8\"]},\"openzeppelin-solidity/contracts/token/ERC721/ERC721Metadata.sol\":{\"keccak256\":\"0xe5e28b1a405164faa98f8ecd8ed2b00907b89e3d58b2b2bb8ac8b12bc5714489\",\"urls\":[\"bzz-raw://0d5d3f0caa7e7ec91f8a2894e1a6a3513a0c79aa91a498ebf8fdbdd07c12286f\",\"dweb:/ipfs/QmP7r4jQMRxXb5JHy5V9bgMz5FmTezcSDd7ivyzJN88pTR\"]},\"openzeppelin-solidity/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0xce48937a8007c580b8e2e35705738c922dd17540de89ebee6df06d2917a3f9fc\",\"urls\":[\"bzz-raw://1d117265103ee3efcd454d3aafb3e79a115f9bca6dec78a1229558eb30d14d05\",\"dweb:/ipfs/QmTm5Z1c7zzPiG3Cfj1eBMB23AeiEFGgvmTFQVaeEWXVCw\"]},\"openzeppelin-solidity/contracts/token/ERC721/IERC721Metadata.sol\":{\"keccak256\":\"0x2b2b99dc7fe8fcd1f9427d00822b99cbc683dc21f5dd7532bd7e2281fd2c2ca2\",\"urls\":[\"bzz-raw://a8024c00e34efaf328f9592e76823c79f25fa0f6006bdf4a1e7fea204afd4773\",\"dweb:/ipfs/QmZns9jTr7843njq3J2iL2LLoWXK5mdzN1bDGd9GL3ahhD\"]},\"openzeppelin-solidity/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0xadbfb7028fb0f851dc848a48b9e54e7c89ffd2c2edc12fa4ba9bb383dfaa83d9\",\"urls\":[\"bzz-raw://90dceab42713246639100b87d6650037d68e4a2ab2dd4b5768c3ed35d6b3a4a0\",\"dweb:/ipfs/QmQ42UW5nchMoYP9bU9F1AJga5chG8j92fCPkURpiDKsCu\"]},\"openzeppelin-solidity/contracts/utils/Address.sol\":{\"keccak256\":\"0xf3358e5819ca73357abd6c90bdfffd0474af54364897f6b3e3234c4b71fbe9a1\",\"urls\":[\"bzz-raw://75ae8d04454d1511a2ed986cc8585736f05c5c25280683b3d24712a9f414a4bf\",\"dweb:/ipfs/Qmb3kNCoBUZdah1AgBBD4zMk898j5Qw8ahT1w5cCMYp5Y3\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516105633803806105638339818101604052602081101561003357600080fd5b5051600080546001600160a01b039092166001600160a01b03199092169190911790556104fe806100656000396000f3fe6080604052600436106100705760003560e01c8063b7947b401161004e578063b7947b40146100d0578063bbe2bbd5146100f7578063c3e26d9914610154578063e5d3d7141461016957610070565b80630873c713146100755780633fd8a4a4146100a65780639da1e244146100bb575b600080fd5b34801561008157600080fd5b5061008a61017e565b604080516001600160a01b039092168252519081900360200190f35b3480156100b257600080fd5b5061008a61018d565b3480156100c757600080fd5b5061008a61019c565b61008a600480360360208110156100e657600080fd5b503567ffffffffffffffff166101ab565b34801561010357600080fd5b50610152600480360360c081101561011a57600080fd5b506001600160a01b038135811691602081013582169160408201358116916060810135821691608082013581169160a001351661037f565b005b34801561016057600080fd5b5061008a610437565b34801561017557600080fd5b5061008a610446565b6006546001600160a01b031681565b6003546001600160a01b031681565b6001546001600160a01b031681565b60015460009081906101c5906001600160a01b0316610455565b604080516001600160a01b038316815290519192507f1d6e7961301df0f19b325bf7669f5b932069b5ad8f9b71292351c7bed17cf4f1919081900360200190a1600254604080516340c10f1960e01b81523360048201526001600160a01b038481166024830152915191909216916340c10f1991604480830192600092919082900301818387803b15801561025957600080fd5b505af115801561026d573d6000803e3d6000fd5b50506040805163189acdbd60e31b815230600482015290518493506001600160a01b038416925063c4d66de89160248082019260009290919082900301818387803b1580156102bb57600080fd5b505af11580156102cf573d6000803e3d6000fd5b5050600354600480546002546005546006546040805163a81e63f760e01b81526001600160a01b039788169681019690965293861660248601529185166044850152841660648401528316608483015267ffffffffffffffff891660a483015251918516935063a81e63f79250349160c480830192600092919082900301818588803b15801561035e57600080fd5b505af1158015610372573d6000803e3d6000fd5b5094979650505050505050565b6000546001600160a01b031633146103c85760405162461bcd60e51b81526004018080602001828103825260228152602001806104a86022913960400191505060405180910390fd5b600180546001600160a01b03199081166001600160a01b0398891617909155600280548216948816949094179093556003805484169587169590951790945560048054831693861693909317909255600580548216928516929092179091556006805490911691909216179055565b6005546001600160a01b031681565b6004546001600160a01b031681565b6000808260601b9050604051733d602d80600a3d3981f3363d3d373d3d3d363d7360601b81528160148201526e5af43d82803e903d91602b57fd5bf360881b60288201526037816000f094935050505056fe43616c6c6572206d757374206265207462746353797374656d20636f6e7472616374a265627a7a72315820c7ec09ee41590a871f615a90e7733a1fde6d1fa8fece9b5424ed019b93ac9cae64736f6c63430005110032",
+  "deployedBytecode": "0x6080604052600436106100705760003560e01c8063b7947b401161004e578063b7947b40146100d0578063bbe2bbd5146100f7578063c3e26d9914610154578063e5d3d7141461016957610070565b80630873c713146100755780633fd8a4a4146100a65780639da1e244146100bb575b600080fd5b34801561008157600080fd5b5061008a61017e565b604080516001600160a01b039092168252519081900360200190f35b3480156100b257600080fd5b5061008a61018d565b3480156100c757600080fd5b5061008a61019c565b61008a600480360360208110156100e657600080fd5b503567ffffffffffffffff166101ab565b34801561010357600080fd5b50610152600480360360c081101561011a57600080fd5b506001600160a01b038135811691602081013582169160408201358116916060810135821691608082013581169160a001351661037f565b005b34801561016057600080fd5b5061008a610437565b34801561017557600080fd5b5061008a610446565b6006546001600160a01b031681565b6003546001600160a01b031681565b6001546001600160a01b031681565b60015460009081906101c5906001600160a01b0316610455565b604080516001600160a01b038316815290519192507f1d6e7961301df0f19b325bf7669f5b932069b5ad8f9b71292351c7bed17cf4f1919081900360200190a1600254604080516340c10f1960e01b81523360048201526001600160a01b038481166024830152915191909216916340c10f1991604480830192600092919082900301818387803b15801561025957600080fd5b505af115801561026d573d6000803e3d6000fd5b50506040805163189acdbd60e31b815230600482015290518493506001600160a01b038416925063c4d66de89160248082019260009290919082900301818387803b1580156102bb57600080fd5b505af11580156102cf573d6000803e3d6000fd5b5050600354600480546002546005546006546040805163a81e63f760e01b81526001600160a01b039788169681019690965293861660248601529185166044850152841660648401528316608483015267ffffffffffffffff891660a483015251918516935063a81e63f79250349160c480830192600092919082900301818588803b15801561035e57600080fd5b505af1158015610372573d6000803e3d6000fd5b5094979650505050505050565b6000546001600160a01b031633146103c85760405162461bcd60e51b81526004018080602001828103825260228152602001806104a86022913960400191505060405180910390fd5b600180546001600160a01b03199081166001600160a01b0398891617909155600280548216948816949094179093556003805484169587169590951790945560048054831693861693909317909255600580548216928516929092179091556006805490911691909216179055565b6005546001600160a01b031681565b6004546001600160a01b031681565b6000808260601b9050604051733d602d80600a3d3981f3363d3d373d3d3d363d7360601b81528160148201526e5af43d82803e903d91602b57fd5bf360881b60288201526037816000f094935050505056fe43616c6c6572206d757374206265207462746353797374656d20636f6e7472616374a265627a7a72315820c7ec09ee41590a871f615a90e7733a1fde6d1fa8fece9b5424ed019b93ac9cae64736f6c63430005110032",
+  "sourceMap": "691:3110:15:-;;;1106:93;8:9:-1;5:2;;;30:1;27;20:12;5:2;1106:93:15;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;1106:93:15;436:17:25;:38;;-1:-1:-1;;;;;436:38:25;;;-1:-1:-1;;;;;;436:38:25;;;;;;;;;691:3110:15;;;;;;",
+  "deployedSourceMap": "691:3110:15:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1063:36;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1063:36:15;;;:::i;:::-;;;;-1:-1:-1;;;;;1063:36:15;;;;;;;;;;;;;;955:28;;8:9:-1;5:2;;;30:1;27;20:12;5:2;955:28:15;;;:::i;867:43::-;;8:9:-1;5:2;;;30:1;27;20:12;5:2;867:43:15;;;:::i;3110:689::-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;3110:689:15;;;;:::i;1693:567::-;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1693:567:15;;;;;;13:3:-1;8;5:12;2:2;;;30:1;27;20:12;2:2;-1:-1;;;;;;1693:567:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;1021:36;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1021:36:15;;;:::i;989:26::-;;8:9:-1;5:2;;;30:1;27;20:12;5:2;989:26:15;;;:::i;1063:36::-;;;-1:-1:-1;;;;;1063:36:15;;:::o;955:28::-;;;-1:-1:-1;;;;;955:28:15;;:::o;867:43::-;;;-1:-1:-1;;;;;867:43:15;;:::o;3110:689::-;3237:20;;3183:7;;;;3225:33;;-1:-1:-1;;;;;3237:20:15;3225:11;:33::i;:::-;3273;;;-1:-1:-1;;;;;3273:33:15;;;;;;3202:56;;-1:-1:-1;3273:33:15;;;;;;;;;;3334:16;;3317:74;;;-1:-1:-1;;;3317:74:15;;3357:10;3317:74;;;;-1:-1:-1;;;;;3369:21:15;;;3317:74;;;;;;3334:16;;;;;3317:39;;:74;;;;;3334:16;;3317:74;;;;;;;3334:16;;3317:74;;;5:2:-1;;;;30:1;27;20:12;5:2;3317:74:15;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;-1:-1;;3469:33:15;;;-1:-1:-1;;;3469:33:15;;3496:4;3469:33;;;;;;3444:12;;-1:-1:-1;;;;;;3469:18:15;;;-1:-1:-1;3469:18:15;;:33;;;;;3402:15;;3469:33;;;;;;;;3402:15;3469:18;:33;;;5:2:-1;;;;30:1;27;20:12;5:2;3469:33:15;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;-1:-1;;3572:10:15;;3600:9;;;3627:16;;3661:14;;3693:21;;3512:250;;;-1:-1:-1;;;3512:250:15;;-1:-1:-1;;;;;3572:10:15;;;3512:250;;;;;;;3600:9;;;3512:250;;;;3627:16;;;3512:250;;;;3661:14;;3512:250;;;;3693:21;;3512:250;;;;;;;;;;;;:25;;;;-1:-1:-1;3512:25:15;;-1:-1:-1;3544:9:15;;3512:250;;;;;3572:10;;3512:250;;;;;;;3544:9;3512:25;:250;;;5:2:-1;;;;30:1;27;20:12;5:2;3512:250:15;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;-1:-1;3780:12:15;;3110:689;-1:-1:-1;;;;;;;3110:689:15:o;1693:567::-;634:17:25;;-1:-1:-1;;;;;634:17:25;620:10;:31;612:78;;;;-1:-1:-1;;;612:78:25;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1999:20:15;:44;;-1:-1:-1;;;;;;1999:44:15;;;-1:-1:-1;;;;;1999:44:15;;;;;;;2053:16;:36;;;;;;;;;;;;;;2099:10;:24;;;;;;;;;;;;;;2133:9;:22;;;;;;;;;;;;;;2165:14;:32;;;;;;;;;;;;;;2207:21;:46;;;;;;;;;;;;1693:567::o;1021:36::-;;;-1:-1:-1;;;;;1021:36:15;;:::o;989:26::-;;;-1:-1:-1;;;;;989:26:15;;:::o;1459:441:14:-;1514:14;1536:19;1566:6;1558:15;;1536:37;;1615:4;1609:11;-1:-1:-1;;;1634:5:14;1627:81;1740:11;1733:4;1726:5;1722:16;1715:37;-1:-1:-1;;;1777:4:14;1770:5;1766:16;1759:92;1885:4;1878:5;1875:1;1868:22;1858:32;1588:308;-1:-1:-1;;;;1588:308:14:o",
+  "source": "pragma solidity 0.5.17;\n\nimport \"./CloneFactory.sol\";\nimport \"../deposit/Deposit.sol\";\nimport \"../system/TBTCSystem.sol\";\nimport \"../system/TBTCToken.sol\";\nimport \"../system/FeeRebateToken.sol\";\nimport \"../system/TBTCSystemAuthority.sol\";\nimport {TBTCDepositToken} from \"../system/TBTCDepositToken.sol\";\n\n\n/// @title Deposit Factory\n/// @notice Factory for the creation of new deposit clones.\n/// @dev We avoid redeployment of deposit contract by using the clone factory.\n/// Proxy delegates calls to Deposit and therefore does not affect deposit state.\n/// This means that we only need to deploy the deposit contracts once.\n/// The factory provides clean state for every new deposit clone.\ncontract DepositFactory is CloneFactory, TBTCSystemAuthority{\n\n    // Holds the address of the deposit contract\n    // which will be used as a master contract for cloning.\n    address payable public masterDepositAddress;\n    TBTCDepositToken tbtcDepositToken;\n    TBTCSystem public tbtcSystem;\n    TBTCToken public tbtcToken;\n    FeeRebateToken public feeRebateToken;\n    address public vendingMachineAddress;\n\n    constructor(address _systemAddress)\n        TBTCSystemAuthority(_systemAddress)\n    public {}\n\n    /// @dev                          Set the required external variables.\n    /// @param _masterDepositAddress  The address of the master deposit contract.\n    /// @param _tbtcSystem            Tbtc system contract.\n    /// @param _tbtcToken             TBTC token contract.\n    /// @param _tbtcDepositToken      TBTC Deposit Token contract.\n    /// @param _feeRebateToken        AFee Rebate Token contract.\n    /// @param _vendingMachineAddress Address of the Vending Machine contract.\n    function setExternalDependencies(\n        address payable _masterDepositAddress,\n        TBTCSystem _tbtcSystem,\n        TBTCToken _tbtcToken,\n        TBTCDepositToken _tbtcDepositToken,\n        FeeRebateToken _feeRebateToken,\n        address _vendingMachineAddress\n    ) external onlyTbtcSystem {\n        masterDepositAddress = _masterDepositAddress;\n        tbtcDepositToken = _tbtcDepositToken;\n        tbtcSystem = _tbtcSystem;\n        tbtcToken = _tbtcToken;\n        feeRebateToken = _feeRebateToken;\n        vendingMachineAddress = _vendingMachineAddress;\n    }\n\n    event DepositCloneCreated(address depositCloneAddress);\n\n    /// @notice Creates a new deposit instance and mints a TDT. This function is\n    ///         currently the only way to create a new deposit.\n    /// @dev Calls `Deposit.initializeDeposit` to initialize the instance. Mints\n    ///      the TDT to the function caller. (See `TBTCDepositToken` for more\n    ///      info on TDTs). Reverts if new deposits are currently paused, if the\n    ///      specified lot size is not currently permitted, or if the selection\n    ///      of the signers fails for any reason. Also reverts if the bonds\n    ///      collateralizing the deposit would not be enough to cover a refund\n    ///      of the deposit creation fee, should the signer group fail to\n    ///      complete its setup process.\n    /// @return The address of the new deposit.\n    function createDeposit(uint64 _lotSizeSatoshis) external payable returns(address) {\n        address cloneAddress = createClone(masterDepositAddress);\n        emit DepositCloneCreated(cloneAddress);\n\n        TBTCDepositToken(tbtcDepositToken).mint(msg.sender, uint256(cloneAddress));\n\n        Deposit deposit = Deposit(address(uint160(cloneAddress)));\n        deposit.initialize(address(this));\n        deposit.initializeDeposit.value(msg.value)(\n                tbtcSystem,\n                tbtcToken,\n                tbtcDepositToken,\n                feeRebateToken,\n                vendingMachineAddress,\n                _lotSizeSatoshis\n            );\n\n        return cloneAddress;\n    }\n}\n",
+  "sourcePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/proxy/DepositFactory.sol",
+  "ast": {
+    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/proxy/DepositFactory.sol",
+    "exportedSymbols": {
+      "DepositFactory": [
+        5801
+      ]
+    },
+    "id": 5802,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5656,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:15"
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/proxy/CloneFactory.sol",
+        "file": "./CloneFactory.sol",
+        "id": 5657,
+        "nodeType": "ImportDirective",
+        "scope": 5802,
+        "sourceUnit": 5655,
+        "src": "25:28:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/deposit/Deposit.sol",
+        "file": "../deposit/Deposit.sol",
+        "id": 5658,
+        "nodeType": "ImportDirective",
+        "scope": 5802,
+        "sourceUnit": 1135,
+        "src": "54:32:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCSystem.sol",
+        "file": "../system/TBTCSystem.sol",
+        "id": 5659,
+        "nodeType": "ImportDirective",
+        "scope": 5802,
+        "sourceUnit": 8185,
+        "src": "87:34:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCToken.sol",
+        "file": "../system/TBTCToken.sol",
+        "id": 5660,
+        "nodeType": "ImportDirective",
+        "scope": 5802,
+        "sourceUnit": 8323,
+        "src": "122:33:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/FeeRebateToken.sol",
+        "file": "../system/FeeRebateToken.sol",
+        "id": 5661,
+        "nodeType": "ImportDirective",
+        "scope": 5802,
+        "sourceUnit": 6192,
+        "src": "156:38:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCSystemAuthority.sol",
+        "file": "../system/TBTCSystemAuthority.sol",
+        "id": 5662,
+        "nodeType": "ImportDirective",
+        "scope": 5802,
+        "sourceUnit": 8212,
+        "src": "195:43:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCDepositToken.sol",
+        "file": "../system/TBTCDepositToken.sol",
+        "id": 5664,
+        "nodeType": "ImportDirective",
+        "scope": 5802,
+        "sourceUnit": 6736,
+        "src": "239:64:15",
+        "symbolAliases": [
+          {
+            "foreign": 5663,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 5665,
+              "name": "CloneFactory",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 5654,
+              "src": "718:12:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_CloneFactory_$5654",
+                "typeString": "contract CloneFactory"
+              }
+            },
+            "id": 5666,
+            "nodeType": "InheritanceSpecifier",
+            "src": "718:12:15"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 5667,
+              "name": "TBTCSystemAuthority",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 8211,
+              "src": "732:19:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TBTCSystemAuthority_$8211",
+                "typeString": "contract TBTCSystemAuthority"
+              }
+            },
+            "id": 5668,
+            "nodeType": "InheritanceSpecifier",
+            "src": "732:19:15"
+          }
+        ],
+        "contractDependencies": [
+          5654,
+          8211
+        ],
+        "contractKind": "contract",
+        "documentation": "@title Deposit Factory\n @notice Factory for the creation of new deposit clones.\n @dev We avoid redeployment of deposit contract by using the clone factory.\n Proxy delegates calls to Deposit and therefore does not affect deposit state.\n This means that we only need to deploy the deposit contracts once.\n The factory provides clean state for every new deposit clone.",
+        "fullyImplemented": true,
+        "id": 5801,
+        "linearizedBaseContracts": [
+          5801,
+          8211,
+          5654
+        ],
+        "name": "DepositFactory",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 5670,
+            "name": "masterDepositAddress",
+            "nodeType": "VariableDeclaration",
+            "scope": 5801,
+            "src": "867:43:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address_payable",
+              "typeString": "address payable"
+            },
+            "typeName": {
+              "id": 5669,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "867:15:15",
+              "stateMutability": "payable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address_payable",
+                "typeString": "address payable"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 5672,
+            "name": "tbtcDepositToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 5801,
+            "src": "916:33:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+              "typeString": "contract TBTCDepositToken"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 5671,
+              "name": "TBTCDepositToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6735,
+              "src": "916:16:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                "typeString": "contract TBTCDepositToken"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 5674,
+            "name": "tbtcSystem",
+            "nodeType": "VariableDeclaration",
+            "scope": 5801,
+            "src": "955:28:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_TBTCSystem_$8184",
+              "typeString": "contract TBTCSystem"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 5673,
+              "name": "TBTCSystem",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 8184,
+              "src": "955:10:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TBTCSystem_$8184",
+                "typeString": "contract TBTCSystem"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 5676,
+            "name": "tbtcToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 5801,
+            "src": "989:26:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_TBTCToken_$8322",
+              "typeString": "contract TBTCToken"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 5675,
+              "name": "TBTCToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 8322,
+              "src": "989:9:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                "typeString": "contract TBTCToken"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 5678,
+            "name": "feeRebateToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 5801,
+            "src": "1021:36:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+              "typeString": "contract FeeRebateToken"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 5677,
+              "name": "FeeRebateToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6191,
+              "src": "1021:14:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                "typeString": "contract FeeRebateToken"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 5680,
+            "name": "vendingMachineAddress",
+            "nodeType": "VariableDeclaration",
+            "scope": 5801,
+            "src": "1063:36:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 5679,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "1063:7:15",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 5688,
+              "nodeType": "Block",
+              "src": "1197:2:15",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 5689,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 5685,
+                    "name": "_systemAddress",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 5682,
+                    "src": "1170:14:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 5686,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 5684,
+                  "name": "TBTCSystemAuthority",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 8211,
+                  "src": "1150:19:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_TBTCSystemAuthority_$8211_$",
+                    "typeString": "type(contract TBTCSystemAuthority)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1150:35:15"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5683,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5682,
+                  "name": "_systemAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5689,
+                  "src": "1118:22:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5681,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1118:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1117:24:15"
+            },
+            "returnParameters": {
+              "id": 5687,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1197:0:15"
+            },
+            "scope": 5801,
+            "src": "1106:93:15",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 5730,
+              "nodeType": "Block",
+              "src": "1989:271:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 5708,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 5706,
+                      "name": "masterDepositAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5670,
+                      "src": "1999:20:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 5707,
+                      "name": "_masterDepositAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5691,
+                      "src": "2022:21:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "1999:44:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "id": 5709,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1999:44:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 5712,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 5710,
+                      "name": "tbtcDepositToken",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5672,
+                      "src": "2053:16:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                        "typeString": "contract TBTCDepositToken"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 5711,
+                      "name": "_tbtcDepositToken",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5697,
+                      "src": "2072:17:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                        "typeString": "contract TBTCDepositToken"
+                      }
+                    },
+                    "src": "2053:36:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                      "typeString": "contract TBTCDepositToken"
+                    }
+                  },
+                  "id": 5713,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2053:36:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 5716,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 5714,
+                      "name": "tbtcSystem",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5674,
+                      "src": "2099:10:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_TBTCSystem_$8184",
+                        "typeString": "contract TBTCSystem"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 5715,
+                      "name": "_tbtcSystem",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5693,
+                      "src": "2112:11:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_TBTCSystem_$8184",
+                        "typeString": "contract TBTCSystem"
+                      }
+                    },
+                    "src": "2099:24:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_TBTCSystem_$8184",
+                      "typeString": "contract TBTCSystem"
+                    }
+                  },
+                  "id": 5717,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2099:24:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 5720,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 5718,
+                      "name": "tbtcToken",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5676,
+                      "src": "2133:9:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                        "typeString": "contract TBTCToken"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 5719,
+                      "name": "_tbtcToken",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5695,
+                      "src": "2145:10:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                        "typeString": "contract TBTCToken"
+                      }
+                    },
+                    "src": "2133:22:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                      "typeString": "contract TBTCToken"
+                    }
+                  },
+                  "id": 5721,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2133:22:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 5724,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 5722,
+                      "name": "feeRebateToken",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5678,
+                      "src": "2165:14:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                        "typeString": "contract FeeRebateToken"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 5723,
+                      "name": "_feeRebateToken",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5699,
+                      "src": "2182:15:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                        "typeString": "contract FeeRebateToken"
+                      }
+                    },
+                    "src": "2165:32:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                      "typeString": "contract FeeRebateToken"
+                    }
+                  },
+                  "id": 5725,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2165:32:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 5728,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 5726,
+                      "name": "vendingMachineAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5680,
+                      "src": "2207:21:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 5727,
+                      "name": "_vendingMachineAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5701,
+                      "src": "2231:22:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "2207:46:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 5729,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2207:46:15"
+                }
+              ]
+            },
+            "documentation": "@dev                          Set the required external variables.\n @param _masterDepositAddress  The address of the master deposit contract.\n @param _tbtcSystem            Tbtc system contract.\n @param _tbtcToken             TBTC token contract.\n @param _tbtcDepositToken      TBTC Deposit Token contract.\n @param _feeRebateToken        AFee Rebate Token contract.\n @param _vendingMachineAddress Address of the Vending Machine contract.",
+            "id": 5731,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 5704,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 5703,
+                  "name": "onlyTbtcSystem",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 8210,
+                  "src": "1974:14:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1974:14:15"
+              }
+            ],
+            "name": "setExternalDependencies",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5702,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5691,
+                  "name": "_masterDepositAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5731,
+                  "src": "1735:37:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  },
+                  "typeName": {
+                    "id": 5690,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1735:15:15",
+                    "stateMutability": "payable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5693,
+                  "name": "_tbtcSystem",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5731,
+                  "src": "1782:22:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_TBTCSystem_$8184",
+                    "typeString": "contract TBTCSystem"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 5692,
+                    "name": "TBTCSystem",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 8184,
+                    "src": "1782:10:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_TBTCSystem_$8184",
+                      "typeString": "contract TBTCSystem"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5695,
+                  "name": "_tbtcToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5731,
+                  "src": "1814:20:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                    "typeString": "contract TBTCToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 5694,
+                    "name": "TBTCToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 8322,
+                    "src": "1814:9:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                      "typeString": "contract TBTCToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5697,
+                  "name": "_tbtcDepositToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5731,
+                  "src": "1844:34:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                    "typeString": "contract TBTCDepositToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 5696,
+                    "name": "TBTCDepositToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 6735,
+                    "src": "1844:16:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                      "typeString": "contract TBTCDepositToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5699,
+                  "name": "_feeRebateToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5731,
+                  "src": "1888:30:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                    "typeString": "contract FeeRebateToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 5698,
+                    "name": "FeeRebateToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 6191,
+                    "src": "1888:14:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                      "typeString": "contract FeeRebateToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5701,
+                  "name": "_vendingMachineAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5731,
+                  "src": "1928:30:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5700,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1928:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1725:239:15"
+            },
+            "returnParameters": {
+              "id": 5705,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1989:0:15"
+            },
+            "scope": 5801,
+            "src": "1693:567:15",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 5735,
+            "name": "DepositCloneCreated",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 5734,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5733,
+                  "indexed": false,
+                  "name": "depositCloneAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5735,
+                  "src": "2292:27:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5732,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2292:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2291:29:15"
+            },
+            "src": "2266:55:15"
+          },
+          {
+            "body": {
+              "id": 5799,
+              "nodeType": "Block",
+              "src": "3192:607:15",
+              "statements": [
+                {
+                  "assignments": [
+                    5743
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 5743,
+                      "name": "cloneAddress",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 5799,
+                      "src": "3202:20:15",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      },
+                      "typeName": {
+                        "id": 5742,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "3202:7:15",
+                        "stateMutability": "nonpayable",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 5747,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 5745,
+                        "name": "masterDepositAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5670,
+                        "src": "3237:20:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      ],
+                      "id": 5744,
+                      "name": "createClone",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5636,
+                      "src": "3225:11:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$_t_address_$",
+                        "typeString": "function (address) returns (address)"
+                      }
+                    },
+                    "id": 5746,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3225:33:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "3202:56:15"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 5749,
+                        "name": "cloneAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5743,
+                        "src": "3293:12:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 5748,
+                      "name": "DepositCloneCreated",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5735,
+                      "src": "3273:19:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 5750,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3273:33:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 5751,
+                  "nodeType": "EmitStatement",
+                  "src": "3268:38:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 5756,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 18047,
+                          "src": "3357:3:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 5757,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "3357:10:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 5759,
+                            "name": "cloneAddress",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 5743,
+                            "src": "3377:12:15",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 5758,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "3369:7:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint256"
+                        },
+                        "id": 5760,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "3369:21:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 5753,
+                            "name": "tbtcDepositToken",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 5672,
+                            "src": "3334:16:15",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                              "typeString": "contract TBTCDepositToken"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                              "typeString": "contract TBTCDepositToken"
+                            }
+                          ],
+                          "id": 5752,
+                          "name": "TBTCDepositToken",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 6735,
+                          "src": "3317:16:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_TBTCDepositToken_$6735_$",
+                            "typeString": "type(contract TBTCDepositToken)"
+                          }
+                        },
+                        "id": 5754,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "3317:34:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                          "typeString": "contract TBTCDepositToken"
+                        }
+                      },
+                      "id": 5755,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "mint",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6689,
+                      "src": "3317:39:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,uint256) external"
+                      }
+                    },
+                    "id": 5761,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3317:74:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 5762,
+                  "nodeType": "ExpressionStatement",
+                  "src": "3317:74:15"
+                },
+                {
+                  "assignments": [
+                    5764
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 5764,
+                      "name": "deposit",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 5799,
+                      "src": "3402:15:15",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Deposit_$1134",
+                        "typeString": "contract Deposit"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 5763,
+                        "name": "Deposit",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 1134,
+                        "src": "3402:7:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Deposit_$1134",
+                          "typeString": "contract Deposit"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 5772,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "arguments": [
+                              {
+                                "argumentTypes": null,
+                                "id": 5768,
+                                "name": "cloneAddress",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 5743,
+                                "src": "3444:12:15",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              ],
+                              "id": 5767,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "nodeType": "ElementaryTypeNameExpression",
+                              "src": "3436:7:15",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_uint160_$",
+                                "typeString": "type(uint160)"
+                              },
+                              "typeName": "uint160"
+                            },
+                            "id": 5769,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "typeConversion",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "3436:21:15",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint160",
+                              "typeString": "uint160"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint160",
+                              "typeString": "uint160"
+                            }
+                          ],
+                          "id": 5766,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "3428:7:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": "address"
+                        },
+                        "id": 5770,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "3428:30:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      ],
+                      "id": 5765,
+                      "name": "Deposit",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1134,
+                      "src": "3420:7:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_contract$_Deposit_$1134_$",
+                        "typeString": "type(contract Deposit)"
+                      }
+                    },
+                    "id": 5771,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3420:39:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Deposit_$1134",
+                      "typeString": "contract Deposit"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "3402:57:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 5777,
+                            "name": "this",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 18165,
+                            "src": "3496:4:15",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_DepositFactory_$5801",
+                              "typeString": "contract DepositFactory"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_DepositFactory_$5801",
+                              "typeString": "contract DepositFactory"
+                            }
+                          ],
+                          "id": 5776,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "3488:7:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": "address"
+                        },
+                        "id": 5778,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "3488:13:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 5773,
+                        "name": "deposit",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5764,
+                        "src": "3469:7:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Deposit_$1134",
+                          "typeString": "contract Deposit"
+                        }
+                      },
+                      "id": 5775,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "initialize",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6124,
+                      "src": "3469:18:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address) external"
+                      }
+                    },
+                    "id": 5779,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3469:33:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 5780,
+                  "nodeType": "ExpressionStatement",
+                  "src": "3469:33:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 5789,
+                        "name": "tbtcSystem",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5674,
+                        "src": "3572:10:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_TBTCSystem_$8184",
+                          "typeString": "contract TBTCSystem"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 5790,
+                        "name": "tbtcToken",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5676,
+                        "src": "3600:9:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                          "typeString": "contract TBTCToken"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 5791,
+                        "name": "tbtcDepositToken",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5672,
+                        "src": "3627:16:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                          "typeString": "contract TBTCDepositToken"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 5792,
+                        "name": "feeRebateToken",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5678,
+                        "src": "3661:14:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                          "typeString": "contract FeeRebateToken"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 5793,
+                        "name": "vendingMachineAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5680,
+                        "src": "3693:21:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 5794,
+                        "name": "_lotSizeSatoshis",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5737,
+                        "src": "3732:16:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint64",
+                          "typeString": "uint64"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_TBTCSystem_$8184",
+                          "typeString": "contract TBTCSystem"
+                        },
+                        {
+                          "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                          "typeString": "contract TBTCToken"
+                        },
+                        {
+                          "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                          "typeString": "contract TBTCDepositToken"
+                        },
+                        {
+                          "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                          "typeString": "contract FeeRebateToken"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint64",
+                          "typeString": "uint64"
+                        }
+                      ],
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 5786,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 18047,
+                            "src": "3544:3:15",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 5787,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "value",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "3544:9:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 5781,
+                            "name": "deposit",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 5764,
+                            "src": "3512:7:15",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_Deposit_$1134",
+                              "typeString": "contract Deposit"
+                            }
+                          },
+                          "id": 5784,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "initializeDeposit",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 1097,
+                          "src": "3512:25:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_payable$_t_contract$_ITBTCSystem_$5498_$_t_contract$_TBTCToken_$8322_$_t_contract$_IERC721_$17974_$_t_contract$_FeeRebateToken_$6191_$_t_address_$_t_uint64_$returns$__$",
+                            "typeString": "function (contract ITBTCSystem,contract TBTCToken,contract IERC721,contract FeeRebateToken,address,uint64) payable external"
+                          }
+                        },
+                        "id": 5785,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "value",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "3512:31:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_setvalue_pure$_t_uint256_$returns$_t_function_external_payable$_t_contract$_ITBTCSystem_$5498_$_t_contract$_TBTCToken_$8322_$_t_contract$_IERC721_$17974_$_t_contract$_FeeRebateToken_$6191_$_t_address_$_t_uint64_$returns$__$value_$",
+                          "typeString": "function (uint256) pure returns (function (contract ITBTCSystem,contract TBTCToken,contract IERC721,contract FeeRebateToken,address,uint64) payable external)"
+                        }
+                      },
+                      "id": 5788,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "3512:42:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_payable$_t_contract$_ITBTCSystem_$5498_$_t_contract$_TBTCToken_$8322_$_t_contract$_IERC721_$17974_$_t_contract$_FeeRebateToken_$6191_$_t_address_$_t_uint64_$returns$__$value",
+                        "typeString": "function (contract ITBTCSystem,contract TBTCToken,contract IERC721,contract FeeRebateToken,address,uint64) payable external"
+                      }
+                    },
+                    "id": 5795,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3512:250:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 5796,
+                  "nodeType": "ExpressionStatement",
+                  "src": "3512:250:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 5797,
+                    "name": "cloneAddress",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 5743,
+                    "src": "3780:12:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 5741,
+                  "id": 5798,
+                  "nodeType": "Return",
+                  "src": "3773:19:15"
+                }
+              ]
+            },
+            "documentation": "@notice Creates a new deposit instance and mints a TDT. This function is\n         currently the only way to create a new deposit.\n @dev Calls `Deposit.initializeDeposit` to initialize the instance. Mints\n      the TDT to the function caller. (See `TBTCDepositToken` for more\n      info on TDTs). Reverts if new deposits are currently paused, if the\n      specified lot size is not currently permitted, or if the selection\n      of the signers fails for any reason. Also reverts if the bonds\n      collateralizing the deposit would not be enough to cover a refund\n      of the deposit creation fee, should the signer group fail to\n      complete its setup process.\n @return The address of the new deposit.",
+            "id": 5800,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createDeposit",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5738,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5737,
+                  "name": "_lotSizeSatoshis",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5800,
+                  "src": "3133:23:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 5736,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3133:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3132:25:15"
+            },
+            "returnParameters": {
+              "id": 5741,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5740,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5800,
+                  "src": "3183:7:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5739,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3183:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3182:9:15"
+            },
+            "scope": 5801,
+            "src": "3110:689:15",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5802,
+        "src": "691:3110:15"
+      }
+    ],
+    "src": "0:3802:15"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/proxy/DepositFactory.sol",
+    "exportedSymbols": {
+      "DepositFactory": [
+        5801
+      ]
+    },
+    "id": 5802,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5656,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:15"
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/proxy/CloneFactory.sol",
+        "file": "./CloneFactory.sol",
+        "id": 5657,
+        "nodeType": "ImportDirective",
+        "scope": 5802,
+        "sourceUnit": 5655,
+        "src": "25:28:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/deposit/Deposit.sol",
+        "file": "../deposit/Deposit.sol",
+        "id": 5658,
+        "nodeType": "ImportDirective",
+        "scope": 5802,
+        "sourceUnit": 1135,
+        "src": "54:32:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCSystem.sol",
+        "file": "../system/TBTCSystem.sol",
+        "id": 5659,
+        "nodeType": "ImportDirective",
+        "scope": 5802,
+        "sourceUnit": 8185,
+        "src": "87:34:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCToken.sol",
+        "file": "../system/TBTCToken.sol",
+        "id": 5660,
+        "nodeType": "ImportDirective",
+        "scope": 5802,
+        "sourceUnit": 8323,
+        "src": "122:33:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/FeeRebateToken.sol",
+        "file": "../system/FeeRebateToken.sol",
+        "id": 5661,
+        "nodeType": "ImportDirective",
+        "scope": 5802,
+        "sourceUnit": 6192,
+        "src": "156:38:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCSystemAuthority.sol",
+        "file": "../system/TBTCSystemAuthority.sol",
+        "id": 5662,
+        "nodeType": "ImportDirective",
+        "scope": 5802,
+        "sourceUnit": 8212,
+        "src": "195:43:15",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCDepositToken.sol",
+        "file": "../system/TBTCDepositToken.sol",
+        "id": 5664,
+        "nodeType": "ImportDirective",
+        "scope": 5802,
+        "sourceUnit": 6736,
+        "src": "239:64:15",
+        "symbolAliases": [
+          {
+            "foreign": 5663,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 5665,
+              "name": "CloneFactory",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 5654,
+              "src": "718:12:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_CloneFactory_$5654",
+                "typeString": "contract CloneFactory"
+              }
+            },
+            "id": 5666,
+            "nodeType": "InheritanceSpecifier",
+            "src": "718:12:15"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 5667,
+              "name": "TBTCSystemAuthority",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 8211,
+              "src": "732:19:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TBTCSystemAuthority_$8211",
+                "typeString": "contract TBTCSystemAuthority"
+              }
+            },
+            "id": 5668,
+            "nodeType": "InheritanceSpecifier",
+            "src": "732:19:15"
+          }
+        ],
+        "contractDependencies": [
+          5654,
+          8211
+        ],
+        "contractKind": "contract",
+        "documentation": "@title Deposit Factory\n @notice Factory for the creation of new deposit clones.\n @dev We avoid redeployment of deposit contract by using the clone factory.\n Proxy delegates calls to Deposit and therefore does not affect deposit state.\n This means that we only need to deploy the deposit contracts once.\n The factory provides clean state for every new deposit clone.",
+        "fullyImplemented": true,
+        "id": 5801,
+        "linearizedBaseContracts": [
+          5801,
+          8211,
+          5654
+        ],
+        "name": "DepositFactory",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 5670,
+            "name": "masterDepositAddress",
+            "nodeType": "VariableDeclaration",
+            "scope": 5801,
+            "src": "867:43:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address_payable",
+              "typeString": "address payable"
+            },
+            "typeName": {
+              "id": 5669,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "867:15:15",
+              "stateMutability": "payable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address_payable",
+                "typeString": "address payable"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 5672,
+            "name": "tbtcDepositToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 5801,
+            "src": "916:33:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+              "typeString": "contract TBTCDepositToken"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 5671,
+              "name": "TBTCDepositToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6735,
+              "src": "916:16:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                "typeString": "contract TBTCDepositToken"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 5674,
+            "name": "tbtcSystem",
+            "nodeType": "VariableDeclaration",
+            "scope": 5801,
+            "src": "955:28:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_TBTCSystem_$8184",
+              "typeString": "contract TBTCSystem"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 5673,
+              "name": "TBTCSystem",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 8184,
+              "src": "955:10:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TBTCSystem_$8184",
+                "typeString": "contract TBTCSystem"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 5676,
+            "name": "tbtcToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 5801,
+            "src": "989:26:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_TBTCToken_$8322",
+              "typeString": "contract TBTCToken"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 5675,
+              "name": "TBTCToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 8322,
+              "src": "989:9:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                "typeString": "contract TBTCToken"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 5678,
+            "name": "feeRebateToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 5801,
+            "src": "1021:36:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+              "typeString": "contract FeeRebateToken"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 5677,
+              "name": "FeeRebateToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6191,
+              "src": "1021:14:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                "typeString": "contract FeeRebateToken"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 5680,
+            "name": "vendingMachineAddress",
+            "nodeType": "VariableDeclaration",
+            "scope": 5801,
+            "src": "1063:36:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 5679,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "1063:7:15",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 5688,
+              "nodeType": "Block",
+              "src": "1197:2:15",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 5689,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 5685,
+                    "name": "_systemAddress",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 5682,
+                    "src": "1170:14:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 5686,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 5684,
+                  "name": "TBTCSystemAuthority",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 8211,
+                  "src": "1150:19:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_TBTCSystemAuthority_$8211_$",
+                    "typeString": "type(contract TBTCSystemAuthority)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1150:35:15"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5683,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5682,
+                  "name": "_systemAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5689,
+                  "src": "1118:22:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5681,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1118:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1117:24:15"
+            },
+            "returnParameters": {
+              "id": 5687,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1197:0:15"
+            },
+            "scope": 5801,
+            "src": "1106:93:15",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 5730,
+              "nodeType": "Block",
+              "src": "1989:271:15",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 5708,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 5706,
+                      "name": "masterDepositAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5670,
+                      "src": "1999:20:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 5707,
+                      "name": "_masterDepositAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5691,
+                      "src": "2022:21:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "1999:44:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "id": 5709,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1999:44:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 5712,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 5710,
+                      "name": "tbtcDepositToken",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5672,
+                      "src": "2053:16:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                        "typeString": "contract TBTCDepositToken"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 5711,
+                      "name": "_tbtcDepositToken",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5697,
+                      "src": "2072:17:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                        "typeString": "contract TBTCDepositToken"
+                      }
+                    },
+                    "src": "2053:36:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                      "typeString": "contract TBTCDepositToken"
+                    }
+                  },
+                  "id": 5713,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2053:36:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 5716,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 5714,
+                      "name": "tbtcSystem",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5674,
+                      "src": "2099:10:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_TBTCSystem_$8184",
+                        "typeString": "contract TBTCSystem"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 5715,
+                      "name": "_tbtcSystem",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5693,
+                      "src": "2112:11:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_TBTCSystem_$8184",
+                        "typeString": "contract TBTCSystem"
+                      }
+                    },
+                    "src": "2099:24:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_TBTCSystem_$8184",
+                      "typeString": "contract TBTCSystem"
+                    }
+                  },
+                  "id": 5717,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2099:24:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 5720,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 5718,
+                      "name": "tbtcToken",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5676,
+                      "src": "2133:9:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                        "typeString": "contract TBTCToken"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 5719,
+                      "name": "_tbtcToken",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5695,
+                      "src": "2145:10:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                        "typeString": "contract TBTCToken"
+                      }
+                    },
+                    "src": "2133:22:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                      "typeString": "contract TBTCToken"
+                    }
+                  },
+                  "id": 5721,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2133:22:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 5724,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 5722,
+                      "name": "feeRebateToken",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5678,
+                      "src": "2165:14:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                        "typeString": "contract FeeRebateToken"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 5723,
+                      "name": "_feeRebateToken",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5699,
+                      "src": "2182:15:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                        "typeString": "contract FeeRebateToken"
+                      }
+                    },
+                    "src": "2165:32:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                      "typeString": "contract FeeRebateToken"
+                    }
+                  },
+                  "id": 5725,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2165:32:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 5728,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 5726,
+                      "name": "vendingMachineAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5680,
+                      "src": "2207:21:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 5727,
+                      "name": "_vendingMachineAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5701,
+                      "src": "2231:22:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "2207:46:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 5729,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2207:46:15"
+                }
+              ]
+            },
+            "documentation": "@dev                          Set the required external variables.\n @param _masterDepositAddress  The address of the master deposit contract.\n @param _tbtcSystem            Tbtc system contract.\n @param _tbtcToken             TBTC token contract.\n @param _tbtcDepositToken      TBTC Deposit Token contract.\n @param _feeRebateToken        AFee Rebate Token contract.\n @param _vendingMachineAddress Address of the Vending Machine contract.",
+            "id": 5731,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "arguments": null,
+                "id": 5704,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 5703,
+                  "name": "onlyTbtcSystem",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 8210,
+                  "src": "1974:14:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_modifier$__$",
+                    "typeString": "modifier ()"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1974:14:15"
+              }
+            ],
+            "name": "setExternalDependencies",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5702,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5691,
+                  "name": "_masterDepositAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5731,
+                  "src": "1735:37:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  },
+                  "typeName": {
+                    "id": 5690,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1735:15:15",
+                    "stateMutability": "payable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5693,
+                  "name": "_tbtcSystem",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5731,
+                  "src": "1782:22:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_TBTCSystem_$8184",
+                    "typeString": "contract TBTCSystem"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 5692,
+                    "name": "TBTCSystem",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 8184,
+                    "src": "1782:10:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_TBTCSystem_$8184",
+                      "typeString": "contract TBTCSystem"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5695,
+                  "name": "_tbtcToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5731,
+                  "src": "1814:20:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                    "typeString": "contract TBTCToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 5694,
+                    "name": "TBTCToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 8322,
+                    "src": "1814:9:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                      "typeString": "contract TBTCToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5697,
+                  "name": "_tbtcDepositToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5731,
+                  "src": "1844:34:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                    "typeString": "contract TBTCDepositToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 5696,
+                    "name": "TBTCDepositToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 6735,
+                    "src": "1844:16:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                      "typeString": "contract TBTCDepositToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5699,
+                  "name": "_feeRebateToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5731,
+                  "src": "1888:30:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                    "typeString": "contract FeeRebateToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 5698,
+                    "name": "FeeRebateToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 6191,
+                    "src": "1888:14:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                      "typeString": "contract FeeRebateToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5701,
+                  "name": "_vendingMachineAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5731,
+                  "src": "1928:30:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5700,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1928:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1725:239:15"
+            },
+            "returnParameters": {
+              "id": 5705,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1989:0:15"
+            },
+            "scope": 5801,
+            "src": "1693:567:15",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 5735,
+            "name": "DepositCloneCreated",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 5734,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5733,
+                  "indexed": false,
+                  "name": "depositCloneAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5735,
+                  "src": "2292:27:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5732,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2292:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2291:29:15"
+            },
+            "src": "2266:55:15"
+          },
+          {
+            "body": {
+              "id": 5799,
+              "nodeType": "Block",
+              "src": "3192:607:15",
+              "statements": [
+                {
+                  "assignments": [
+                    5743
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 5743,
+                      "name": "cloneAddress",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 5799,
+                      "src": "3202:20:15",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      },
+                      "typeName": {
+                        "id": 5742,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "3202:7:15",
+                        "stateMutability": "nonpayable",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 5747,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 5745,
+                        "name": "masterDepositAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5670,
+                        "src": "3237:20:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      ],
+                      "id": 5744,
+                      "name": "createClone",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5636,
+                      "src": "3225:11:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$_t_address_$",
+                        "typeString": "function (address) returns (address)"
+                      }
+                    },
+                    "id": 5746,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3225:33:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "3202:56:15"
+                },
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 5749,
+                        "name": "cloneAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5743,
+                        "src": "3293:12:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 5748,
+                      "name": "DepositCloneCreated",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5735,
+                      "src": "3273:19:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 5750,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3273:33:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 5751,
+                  "nodeType": "EmitStatement",
+                  "src": "3268:38:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 5756,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 18047,
+                          "src": "3357:3:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 5757,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "3357:10:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 5759,
+                            "name": "cloneAddress",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 5743,
+                            "src": "3377:12:15",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 5758,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "3369:7:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint256"
+                        },
+                        "id": 5760,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "3369:21:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 5753,
+                            "name": "tbtcDepositToken",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 5672,
+                            "src": "3334:16:15",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                              "typeString": "contract TBTCDepositToken"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                              "typeString": "contract TBTCDepositToken"
+                            }
+                          ],
+                          "id": 5752,
+                          "name": "TBTCDepositToken",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 6735,
+                          "src": "3317:16:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_TBTCDepositToken_$6735_$",
+                            "typeString": "type(contract TBTCDepositToken)"
+                          }
+                        },
+                        "id": 5754,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "3317:34:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                          "typeString": "contract TBTCDepositToken"
+                        }
+                      },
+                      "id": 5755,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "mint",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6689,
+                      "src": "3317:39:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,uint256) external"
+                      }
+                    },
+                    "id": 5761,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3317:74:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 5762,
+                  "nodeType": "ExpressionStatement",
+                  "src": "3317:74:15"
+                },
+                {
+                  "assignments": [
+                    5764
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 5764,
+                      "name": "deposit",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 5799,
+                      "src": "3402:15:15",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Deposit_$1134",
+                        "typeString": "contract Deposit"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 5763,
+                        "name": "Deposit",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 1134,
+                        "src": "3402:7:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Deposit_$1134",
+                          "typeString": "contract Deposit"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 5772,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "arguments": [
+                              {
+                                "argumentTypes": null,
+                                "id": 5768,
+                                "name": "cloneAddress",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 5743,
+                                "src": "3444:12:15",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              ],
+                              "id": 5767,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "nodeType": "ElementaryTypeNameExpression",
+                              "src": "3436:7:15",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_uint160_$",
+                                "typeString": "type(uint160)"
+                              },
+                              "typeName": "uint160"
+                            },
+                            "id": 5769,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "typeConversion",
+                            "lValueRequested": false,
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "3436:21:15",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint160",
+                              "typeString": "uint160"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint160",
+                              "typeString": "uint160"
+                            }
+                          ],
+                          "id": 5766,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "3428:7:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": "address"
+                        },
+                        "id": 5770,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "3428:30:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      ],
+                      "id": 5765,
+                      "name": "Deposit",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 1134,
+                      "src": "3420:7:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_contract$_Deposit_$1134_$",
+                        "typeString": "type(contract Deposit)"
+                      }
+                    },
+                    "id": 5771,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3420:39:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Deposit_$1134",
+                      "typeString": "contract Deposit"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "3402:57:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 5777,
+                            "name": "this",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 18165,
+                            "src": "3496:4:15",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_DepositFactory_$5801",
+                              "typeString": "contract DepositFactory"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_DepositFactory_$5801",
+                              "typeString": "contract DepositFactory"
+                            }
+                          ],
+                          "id": 5776,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "3488:7:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": "address"
+                        },
+                        "id": 5778,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "3488:13:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 5773,
+                        "name": "deposit",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5764,
+                        "src": "3469:7:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Deposit_$1134",
+                          "typeString": "contract Deposit"
+                        }
+                      },
+                      "id": 5775,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "initialize",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 6124,
+                      "src": "3469:18:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address) external"
+                      }
+                    },
+                    "id": 5779,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3469:33:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 5780,
+                  "nodeType": "ExpressionStatement",
+                  "src": "3469:33:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 5789,
+                        "name": "tbtcSystem",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5674,
+                        "src": "3572:10:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_TBTCSystem_$8184",
+                          "typeString": "contract TBTCSystem"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 5790,
+                        "name": "tbtcToken",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5676,
+                        "src": "3600:9:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                          "typeString": "contract TBTCToken"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 5791,
+                        "name": "tbtcDepositToken",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5672,
+                        "src": "3627:16:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                          "typeString": "contract TBTCDepositToken"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 5792,
+                        "name": "feeRebateToken",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5678,
+                        "src": "3661:14:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                          "typeString": "contract FeeRebateToken"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 5793,
+                        "name": "vendingMachineAddress",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5680,
+                        "src": "3693:21:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 5794,
+                        "name": "_lotSizeSatoshis",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5737,
+                        "src": "3732:16:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint64",
+                          "typeString": "uint64"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_TBTCSystem_$8184",
+                          "typeString": "contract TBTCSystem"
+                        },
+                        {
+                          "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                          "typeString": "contract TBTCToken"
+                        },
+                        {
+                          "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                          "typeString": "contract TBTCDepositToken"
+                        },
+                        {
+                          "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                          "typeString": "contract FeeRebateToken"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint64",
+                          "typeString": "uint64"
+                        }
+                      ],
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 5786,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 18047,
+                            "src": "3544:3:15",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 5787,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "value",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "3544:9:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 5781,
+                            "name": "deposit",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 5764,
+                            "src": "3512:7:15",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_Deposit_$1134",
+                              "typeString": "contract Deposit"
+                            }
+                          },
+                          "id": 5784,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "initializeDeposit",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 1097,
+                          "src": "3512:25:15",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_payable$_t_contract$_ITBTCSystem_$5498_$_t_contract$_TBTCToken_$8322_$_t_contract$_IERC721_$17974_$_t_contract$_FeeRebateToken_$6191_$_t_address_$_t_uint64_$returns$__$",
+                            "typeString": "function (contract ITBTCSystem,contract TBTCToken,contract IERC721,contract FeeRebateToken,address,uint64) payable external"
+                          }
+                        },
+                        "id": 5785,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "value",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "3512:31:15",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_setvalue_pure$_t_uint256_$returns$_t_function_external_payable$_t_contract$_ITBTCSystem_$5498_$_t_contract$_TBTCToken_$8322_$_t_contract$_IERC721_$17974_$_t_contract$_FeeRebateToken_$6191_$_t_address_$_t_uint64_$returns$__$value_$",
+                          "typeString": "function (uint256) pure returns (function (contract ITBTCSystem,contract TBTCToken,contract IERC721,contract FeeRebateToken,address,uint64) payable external)"
+                        }
+                      },
+                      "id": 5788,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "3512:42:15",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_payable$_t_contract$_ITBTCSystem_$5498_$_t_contract$_TBTCToken_$8322_$_t_contract$_IERC721_$17974_$_t_contract$_FeeRebateToken_$6191_$_t_address_$_t_uint64_$returns$__$value",
+                        "typeString": "function (contract ITBTCSystem,contract TBTCToken,contract IERC721,contract FeeRebateToken,address,uint64) payable external"
+                      }
+                    },
+                    "id": 5795,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3512:250:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 5796,
+                  "nodeType": "ExpressionStatement",
+                  "src": "3512:250:15"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 5797,
+                    "name": "cloneAddress",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 5743,
+                    "src": "3780:12:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 5741,
+                  "id": 5798,
+                  "nodeType": "Return",
+                  "src": "3773:19:15"
+                }
+              ]
+            },
+            "documentation": "@notice Creates a new deposit instance and mints a TDT. This function is\n         currently the only way to create a new deposit.\n @dev Calls `Deposit.initializeDeposit` to initialize the instance. Mints\n      the TDT to the function caller. (See `TBTCDepositToken` for more\n      info on TDTs). Reverts if new deposits are currently paused, if the\n      specified lot size is not currently permitted, or if the selection\n      of the signers fails for any reason. Also reverts if the bonds\n      collateralizing the deposit would not be enough to cover a refund\n      of the deposit creation fee, should the signer group fail to\n      complete its setup process.\n @return The address of the new deposit.",
+            "id": 5800,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createDeposit",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5738,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5737,
+                  "name": "_lotSizeSatoshis",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5800,
+                  "src": "3133:23:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 5736,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3133:6:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3132:25:15"
+            },
+            "returnParameters": {
+              "id": 5741,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5740,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5800,
+                  "src": "3183:7:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5739,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3183:7:15",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3182:9:15"
+            },
+            "scope": 5801,
+            "src": "3110:689:15",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5802,
+        "src": "691:3110:15"
+      }
+    ],
+    "src": "0:3802:15"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.17+commit.d19bba13.Emscripten.clang"
+  },
+  "networks": {
+    "31": {
+      "events": {
+        "0x1d6e7961301df0f19b325bf7669f5b932069b5ad8f9b71292351c7bed17cf4f1": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "depositCloneAddress",
+              "type": "address"
+            }
+          ],
+          "name": "DepositCloneCreated",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xCF7a9C0DF4c232fD2e95baDC0e10405228c26698",
+      "transactionHash": "0xc6bdb157996baa8ca9d9df18ab507cda407e392818a512e29bec641efcbe24c3"
+    }
+  },
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2021-02-01T14:52:37.601Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "details": "We avoid redeployment of deposit contract by using the clone factory. Proxy delegates calls to Deposit and therefore does not affect deposit state. This means that we only need to deploy the deposit contracts once. The factory provides clean state for every new deposit clone.",
+    "methods": {
+      "createDeposit(uint64)": {
+        "details": "Calls `Deposit.initializeDeposit` to initialize the instance. Mints      the TDT to the function caller. (See `TBTCDepositToken` for more      info on TDTs). Reverts if new deposits are currently paused, if the      specified lot size is not currently permitted, or if the selection      of the signers fails for any reason. Also reverts if the bonds      collateralizing the deposit would not be enough to cover a refund      of the deposit creation fee, should the signer group fail to      complete its setup process.",
+        "return": "The address of the new deposit."
+      },
+      "setExternalDependencies(address,address,address,address,address,address)": {
+        "details": "Set the required external variables.",
+        "params": {
+          "_feeRebateToken": "AFee Rebate Token contract.",
+          "_masterDepositAddress": "The address of the master deposit contract.",
+          "_tbtcDepositToken": "TBTC Deposit Token contract.",
+          "_tbtcSystem": "Tbtc system contract.",
+          "_tbtcToken": "TBTC token contract.",
+          "_vendingMachineAddress": "Address of the Vending Machine contract."
+        }
+      }
+    },
+    "title": "Deposit Factory"
+  },
+  "userdoc": {
+    "methods": {
+      "createDeposit(uint64)": {
+        "notice": "Creates a new deposit instance and mints a TDT. This function is         currently the only way to create a new deposit."
+      }
+    },
+    "notice": "Factory for the creation of new deposit clones."
+  }
+}

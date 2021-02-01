@@ -13,6 +13,8 @@
   "scripts": {
     "clean": "rm -rf build/",
     "compile": "truffle compile",
+    "deploy": "truffle migrate --network sov",
+    "deploy:local": "truffle migrate --network local",
     "test": "truffle compile && mocha --exit --recursive test --timeout 20000",
     "test:oracle": "mocha test/SatWeiPriceFeedTest.js",
     "test:temp": "mocha test/GovernanceTest.js --timeout 20000",

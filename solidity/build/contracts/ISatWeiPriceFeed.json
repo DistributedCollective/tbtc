@@ -1,0 +1,238 @@
+{
+  "contractName": "ISatWeiPriceFeed",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"getPrice()\":{\"details\":\"This does not account for any 'Flippening' event.\",\"return\":\"The price of one satoshi in wei.\"}}},\"userdoc\":{\"methods\":{\"getPrice()\":{\"notice\":\"Get the current price of 1 satoshi in wei.\"}},\"notice\":\"satoshi/wei price feed interface.\"}},\"settings\":{\"compilationTarget\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/interfaces/ISatWeiPriceFeed.sol\":\"ISatWeiPriceFeed\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/interfaces/ISatWeiPriceFeed.sol\":{\"keccak256\":\"0x1bebc0f56f8850288333fbbaf4c61163089ee9c39ea1b513aa8a57ac4f183988\",\"urls\":[\"bzz-raw://05c7fb8bb3bf433738c99ff118b4bbc338f3c4a569c292de63a29e5ab6437871\",\"dweb:/ipfs/QmUpnuw7sR6UemzUBjNTfCFJsw4StMScai5SY1CZyxRheG\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity 0.5.17;\n\n\n/// @notice satoshi/wei price feed interface.\ninterface ISatWeiPriceFeed {\n    /// @notice Get the current price of 1 satoshi in wei.\n    /// @dev This does not account for any 'Flippening' event.\n    /// @return The price of one satoshi in wei.\n    function getPrice() external view returns (uint256);\n}\n",
+  "sourcePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/interfaces/ISatWeiPriceFeed.sol",
+  "ast": {
+    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/interfaces/ISatWeiPriceFeed.sol",
+    "exportedSymbols": {
+      "ISatWeiPriceFeed": [
+        5434
+      ]
+    },
+    "id": 5435,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5428,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:10"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": "@notice satoshi/wei price feed interface.",
+        "fullyImplemented": false,
+        "id": 5434,
+        "linearizedBaseContracts": [
+          5434
+        ],
+        "name": "ISatWeiPriceFeed",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@notice Get the current price of 1 satoshi in wei.\n @dev This does not account for any 'Flippening' event.\n @return The price of one satoshi in wei.",
+            "id": 5433,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPrice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5429,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "293:2:10"
+            },
+            "returnParameters": {
+              "id": 5432,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5431,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5433,
+                  "src": "319:7:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5430,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "319:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "318:9:10"
+            },
+            "scope": 5434,
+            "src": "276:52:10",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5435,
+        "src": "72:258:10"
+      }
+    ],
+    "src": "0:331:10"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/interfaces/ISatWeiPriceFeed.sol",
+    "exportedSymbols": {
+      "ISatWeiPriceFeed": [
+        5434
+      ]
+    },
+    "id": 5435,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5428,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:10"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": "@notice satoshi/wei price feed interface.",
+        "fullyImplemented": false,
+        "id": 5434,
+        "linearizedBaseContracts": [
+          5434
+        ],
+        "name": "ISatWeiPriceFeed",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@notice Get the current price of 1 satoshi in wei.\n @dev This does not account for any 'Flippening' event.\n @return The price of one satoshi in wei.",
+            "id": 5433,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPrice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5429,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "293:2:10"
+            },
+            "returnParameters": {
+              "id": 5432,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5431,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5433,
+                  "src": "319:7:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5430,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "319:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "318:9:10"
+            },
+            "scope": 5434,
+            "src": "276:52:10",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5435,
+        "src": "72:258:10"
+      }
+    ],
+    "src": "0:331:10"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.17+commit.d19bba13.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2021-02-01T14:28:06.514Z",
+  "devdoc": {
+    "methods": {
+      "getPrice()": {
+        "details": "This does not account for any 'Flippening' event.",
+        "return": "The price of one satoshi in wei."
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {
+      "getPrice()": {
+        "notice": "Get the current price of 1 satoshi in wei."
+      }
+    },
+    "notice": "satoshi/wei price feed interface."
+  }
+}
