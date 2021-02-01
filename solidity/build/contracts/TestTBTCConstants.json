@@ -403,14 +403,14 @@
     "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/system/TestTBTCConstants.sol",
     "exportedSymbols": {
       "TestTBTCConstants": [
-        10892
+        10897
       ]
     },
-    "id": 10893,
+    "id": 10898,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 10712,
+        "id": 10717,
         "literals": [
           "solidity",
           "0.5",
@@ -425,19 +425,19 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 10892,
+        "id": 10897,
         "linearizedBaseContracts": [
-          10892
+          10897
         ],
         "name": "TestTBTCConstants",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 10715,
+            "id": 10720,
             "name": "BENEFICIARY_FEE_DIVISOR",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "215:54:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -446,7 +446,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10713,
+              "id": 10718,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "215:7:41",
@@ -458,7 +458,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "31303030",
-              "id": 10714,
+              "id": 10719,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -477,10 +477,10 @@
           },
           {
             "constant": true,
-            "id": 10724,
+            "id": 10729,
             "name": "DEPOSIT_TERM_LENGTH",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "310:64:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -489,7 +489,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10716,
+              "id": 10721,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "310:7:41",
@@ -504,7 +504,7 @@
                 "typeIdentifier": "t_rational_15552000_by_1",
                 "typeString": "int_const 15552000"
               },
-              "id": 10723,
+              "id": 10728,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -515,7 +515,7 @@
                   "typeIdentifier": "t_rational_259200_by_1",
                   "typeString": "int_const 259200"
                 },
-                "id": 10721,
+                "id": 10726,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -526,7 +526,7 @@
                     "typeIdentifier": "t_rational_4320_by_1",
                     "typeString": "int_const 4320"
                   },
-                  "id": 10719,
+                  "id": 10724,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -534,7 +534,7 @@
                   "leftExpression": {
                     "argumentTypes": null,
                     "hexValue": "313830",
-                    "id": 10717,
+                    "id": 10722,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -554,7 +554,7 @@
                   "rightExpression": {
                     "argumentTypes": null,
                     "hexValue": "3234",
-                    "id": 10718,
+                    "id": 10723,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -580,7 +580,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 10720,
+                  "id": 10725,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -606,7 +606,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 10722,
+                "id": 10727,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -631,10 +631,10 @@
           },
           {
             "constant": true,
-            "id": 10727,
+            "id": 10732,
             "name": "TX_PROOF_DIFFICULTY_FACTOR",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "403:54:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -643,7 +643,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10725,
+              "id": 10730,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "403:7:41",
@@ -655,7 +655,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "36",
-              "id": 10726,
+              "id": 10731,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -674,10 +674,10 @@
           },
           {
             "constant": true,
-            "id": 10732,
+            "id": 10737,
             "name": "SATOSHI_MULTIPLIER",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "463:53:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -686,7 +686,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10728,
+              "id": 10733,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "463:7:41",
@@ -701,7 +701,7 @@
                 "typeIdentifier": "t_rational_10000000000_by_1",
                 "typeString": "int_const 10000000000"
               },
-              "id": 10731,
+              "id": 10736,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -709,7 +709,7 @@
               "leftExpression": {
                 "argumentTypes": null,
                 "hexValue": "3130",
-                "id": 10729,
+                "id": 10734,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -729,7 +729,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3130",
-                "id": 10730,
+                "id": 10735,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -754,10 +754,10 @@
           },
           {
             "constant": true,
-            "id": 10739,
+            "id": 10744,
             "name": "REDEMPTION_SIGNATURE_TIMEOUT",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "558:66:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -766,7 +766,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10733,
+              "id": 10738,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "558:7:41",
@@ -781,7 +781,7 @@
                 "typeIdentifier": "t_rational_7200_by_1",
                 "typeString": "int_const 7200"
               },
-              "id": 10738,
+              "id": 10743,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -792,7 +792,7 @@
                   "typeIdentifier": "t_rational_120_by_1",
                   "typeString": "int_const 120"
                 },
-                "id": 10736,
+                "id": 10741,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -800,7 +800,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "32",
-                  "id": 10734,
+                  "id": 10739,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -820,7 +820,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 10735,
+                  "id": 10740,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -846,7 +846,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 10737,
+                "id": 10742,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -871,10 +871,10 @@
           },
           {
             "constant": true,
-            "id": 10746,
+            "id": 10751,
             "name": "INCREASE_FEE_TIMER",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "642:56:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -883,7 +883,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10740,
+              "id": 10745,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "642:7:41",
@@ -898,7 +898,7 @@
                 "typeIdentifier": "t_rational_14400_by_1",
                 "typeString": "int_const 14400"
               },
-              "id": 10745,
+              "id": 10750,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -909,7 +909,7 @@
                   "typeIdentifier": "t_rational_240_by_1",
                   "typeString": "int_const 240"
                 },
-                "id": 10743,
+                "id": 10748,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -917,7 +917,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "34",
-                  "id": 10741,
+                  "id": 10746,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -937,7 +937,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 10742,
+                  "id": 10747,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -963,7 +963,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 10744,
+                "id": 10749,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -988,10 +988,10 @@
           },
           {
             "constant": true,
-            "id": 10753,
+            "id": 10758,
             "name": "REDEMPTION_PROOF_TIMEOUT",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "716:62:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1000,7 +1000,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10747,
+              "id": 10752,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "716:7:41",
@@ -1015,7 +1015,7 @@
                 "typeIdentifier": "t_rational_21600_by_1",
                 "typeString": "int_const 21600"
               },
-              "id": 10752,
+              "id": 10757,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1026,7 +1026,7 @@
                   "typeIdentifier": "t_rational_360_by_1",
                   "typeString": "int_const 360"
                 },
-                "id": 10750,
+                "id": 10755,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1034,7 +1034,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "36",
-                  "id": 10748,
+                  "id": 10753,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1054,7 +1054,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 10749,
+                  "id": 10754,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1080,7 +1080,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 10751,
+                "id": 10756,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1105,10 +1105,10 @@
           },
           {
             "constant": true,
-            "id": 10756,
+            "id": 10761,
             "name": "MINIMUM_REDEMPTION_FEE",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "796:53:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1117,7 +1117,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10754,
+              "id": 10759,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "796:7:41",
@@ -1129,7 +1129,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "32303030",
-              "id": 10755,
+              "id": 10760,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1148,10 +1148,10 @@
           },
           {
             "constant": true,
-            "id": 10759,
+            "id": 10764,
             "name": "MINIMUM_UTXO_VALUE",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "866:49:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1160,7 +1160,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10757,
+              "id": 10762,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "866:7:41",
@@ -1172,7 +1172,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "32303030",
-              "id": 10758,
+              "id": 10763,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1191,10 +1191,10 @@
           },
           {
             "constant": true,
-            "id": 10766,
+            "id": 10771,
             "name": "FUNDING_PROOF_TIMEOUT",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "953:59:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1203,7 +1203,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10760,
+              "id": 10765,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "953:7:41",
@@ -1218,7 +1218,7 @@
                 "typeIdentifier": "t_rational_10800_by_1",
                 "typeString": "int_const 10800"
               },
-              "id": 10765,
+              "id": 10770,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1229,7 +1229,7 @@
                   "typeIdentifier": "t_rational_180_by_1",
                   "typeString": "int_const 180"
                 },
-                "id": 10763,
+                "id": 10768,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1237,7 +1237,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "33",
-                  "id": 10761,
+                  "id": 10766,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1257,7 +1257,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 10762,
+                  "id": 10767,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1283,7 +1283,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 10764,
+                "id": 10769,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1308,10 +1308,10 @@
           },
           {
             "constant": true,
-            "id": 10773,
+            "id": 10778,
             "name": "FORMATION_TIMEOUT",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "1029:55:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1320,7 +1320,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10767,
+              "id": 10772,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1029:7:41",
@@ -1335,7 +1335,7 @@
                 "typeIdentifier": "t_rational_10800_by_1",
                 "typeString": "int_const 10800"
               },
-              "id": 10772,
+              "id": 10777,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1346,7 +1346,7 @@
                   "typeIdentifier": "t_rational_180_by_1",
                   "typeString": "int_const 180"
                 },
-                "id": 10770,
+                "id": 10775,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1354,7 +1354,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "33",
-                  "id": 10768,
+                  "id": 10773,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1374,7 +1374,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 10769,
+                  "id": 10774,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1400,7 +1400,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 10771,
+                "id": 10776,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1425,10 +1425,10 @@
           },
           {
             "constant": true,
-            "id": 10780,
+            "id": 10785,
             "name": "COURTESY_CALL_DURATION",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "1126:60:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1437,7 +1437,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10774,
+              "id": 10779,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1126:7:41",
@@ -1452,7 +1452,7 @@
                 "typeIdentifier": "t_rational_21600_by_1",
                 "typeString": "int_const 21600"
               },
-              "id": 10779,
+              "id": 10784,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1463,7 +1463,7 @@
                   "typeIdentifier": "t_rational_360_by_1",
                   "typeString": "int_const 360"
                 },
-                "id": 10777,
+                "id": 10782,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1471,7 +1471,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "36",
-                  "id": 10775,
+                  "id": 10780,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1491,7 +1491,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 10776,
+                  "id": 10781,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1517,7 +1517,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 10778,
+                "id": 10783,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1542,10 +1542,10 @@
           },
           {
             "constant": true,
-            "id": 10787,
+            "id": 10792,
             "name": "AUCTION_DURATION",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "1203:55:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1554,7 +1554,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10781,
+              "id": 10786,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1203:7:41",
@@ -1569,7 +1569,7 @@
                 "typeIdentifier": "t_rational_86400_by_1",
                 "typeString": "int_const 86400"
               },
-              "id": 10786,
+              "id": 10791,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1580,7 +1580,7 @@
                   "typeIdentifier": "t_rational_1440_by_1",
                   "typeString": "int_const 1440"
                 },
-                "id": 10784,
+                "id": 10789,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1588,7 +1588,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "3234",
-                  "id": 10782,
+                  "id": 10787,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1608,7 +1608,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 10783,
+                  "id": 10788,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1634,7 +1634,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 10785,
+                "id": 10790,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1659,54 +1659,54 @@
           },
           {
             "body": {
-              "id": 10794,
+              "id": 10799,
               "nodeType": "Block",
               "src": "1345:35:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10792,
+                    "id": 10797,
                     "name": "BENEFICIARY_FEE_DIVISOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10715,
+                    "referencedDeclaration": 10720,
                     "src": "1354:23:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10791,
-                  "id": 10793,
+                  "functionReturnParameters": 10796,
+                  "id": 10798,
                   "nodeType": "Return",
                   "src": "1347:30:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10795,
+            "id": 10800,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getBeneficiaryRewardDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10788,
+              "id": 10793,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1312:2:41"
             },
             "returnParameters": {
-              "id": 10791,
+              "id": 10796,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10790,
+                  "id": 10795,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10795,
+                  "scope": 10800,
                   "src": "1336:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1715,7 +1715,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10789,
+                    "id": 10794,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1336:7:41",
@@ -1730,7 +1730,7 @@
               ],
               "src": "1335:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "1276:104:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1738,54 +1738,54 @@
           },
           {
             "body": {
-              "id": 10802,
+              "id": 10807,
               "nodeType": "Block",
               "src": "1441:31:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10800,
+                    "id": 10805,
                     "name": "DEPOSIT_TERM_LENGTH",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10724,
+                    "referencedDeclaration": 10729,
                     "src": "1450:19:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10799,
-                  "id": 10801,
+                  "functionReturnParameters": 10804,
+                  "id": 10806,
                   "nodeType": "Return",
                   "src": "1443:26:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10803,
+            "id": 10808,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getDepositTerm",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10796,
+              "id": 10801,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1408:2:41"
             },
             "returnParameters": {
-              "id": 10799,
+              "id": 10804,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10798,
+                  "id": 10803,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10803,
+                  "scope": 10808,
                   "src": "1432:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1794,7 +1794,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10797,
+                    "id": 10802,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1432:7:41",
@@ -1809,7 +1809,7 @@
               ],
               "src": "1431:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "1385:87:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1817,54 +1817,54 @@
           },
           {
             "body": {
-              "id": 10810,
+              "id": 10815,
               "nodeType": "Block",
               "src": "1545:38:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10808,
+                    "id": 10813,
                     "name": "TX_PROOF_DIFFICULTY_FACTOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10727,
+                    "referencedDeclaration": 10732,
                     "src": "1554:26:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10807,
-                  "id": 10809,
+                  "functionReturnParameters": 10812,
+                  "id": 10814,
                   "nodeType": "Return",
                   "src": "1547:33:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10811,
+            "id": 10816,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getTxProofDifficultyFactor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10804,
+              "id": 10809,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1512:2:41"
             },
             "returnParameters": {
-              "id": 10807,
+              "id": 10812,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10806,
+                  "id": 10811,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10811,
+                  "scope": 10816,
                   "src": "1536:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1873,7 +1873,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10805,
+                    "id": 10810,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1536:7:41",
@@ -1888,7 +1888,7 @@
               ],
               "src": "1535:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "1477:106:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1896,54 +1896,54 @@
           },
           {
             "body": {
-              "id": 10818,
+              "id": 10823,
               "nodeType": "Block",
               "src": "1650:30:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10816,
+                    "id": 10821,
                     "name": "SATOSHI_MULTIPLIER",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10732,
+                    "referencedDeclaration": 10737,
                     "src": "1659:18:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10815,
-                  "id": 10817,
+                  "functionReturnParameters": 10820,
+                  "id": 10822,
                   "nodeType": "Return",
                   "src": "1652:25:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10819,
+            "id": 10824,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getSatoshiMultiplier",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10812,
+              "id": 10817,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1617:2:41"
             },
             "returnParameters": {
-              "id": 10815,
+              "id": 10820,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10814,
+                  "id": 10819,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10819,
+                  "scope": 10824,
                   "src": "1641:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1952,7 +1952,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10813,
+                    "id": 10818,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1641:7:41",
@@ -1967,7 +1967,7 @@
               ],
               "src": "1640:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "1588:92:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1975,54 +1975,54 @@
           },
           {
             "body": {
-              "id": 10826,
+              "id": 10831,
               "nodeType": "Block",
               "src": "1747:40:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10824,
+                    "id": 10829,
                     "name": "REDEMPTION_SIGNATURE_TIMEOUT",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10739,
+                    "referencedDeclaration": 10744,
                     "src": "1756:28:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10823,
-                  "id": 10825,
+                  "functionReturnParameters": 10828,
+                  "id": 10830,
                   "nodeType": "Return",
                   "src": "1749:35:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10827,
+            "id": 10832,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getSignatureTimeout",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10820,
+              "id": 10825,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1714:2:41"
             },
             "returnParameters": {
-              "id": 10823,
+              "id": 10828,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10822,
+                  "id": 10827,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10827,
+                  "scope": 10832,
                   "src": "1738:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2031,7 +2031,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10821,
+                    "id": 10826,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1738:7:41",
@@ -2046,7 +2046,7 @@
               ],
               "src": "1737:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "1686:101:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -2054,54 +2054,54 @@
           },
           {
             "body": {
-              "id": 10834,
+              "id": 10839,
               "nodeType": "Block",
               "src": "1853:30:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10832,
+                    "id": 10837,
                     "name": "INCREASE_FEE_TIMER",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10746,
+                    "referencedDeclaration": 10751,
                     "src": "1862:18:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10831,
-                  "id": 10833,
+                  "functionReturnParameters": 10836,
+                  "id": 10838,
                   "nodeType": "Return",
                   "src": "1855:25:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10835,
+            "id": 10840,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getIncreaseFeeTimer",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10828,
+              "id": 10833,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1820:2:41"
             },
             "returnParameters": {
-              "id": 10831,
+              "id": 10836,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10830,
+                  "id": 10835,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10835,
+                  "scope": 10840,
                   "src": "1844:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2110,7 +2110,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10829,
+                    "id": 10834,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1844:7:41",
@@ -2125,7 +2125,7 @@
               ],
               "src": "1843:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "1792:91:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -2133,54 +2133,54 @@
           },
           {
             "body": {
-              "id": 10842,
+              "id": 10847,
               "nodeType": "Block",
               "src": "1955:36:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10840,
+                    "id": 10845,
                     "name": "REDEMPTION_PROOF_TIMEOUT",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10753,
+                    "referencedDeclaration": 10758,
                     "src": "1964:24:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10839,
-                  "id": 10841,
+                  "functionReturnParameters": 10844,
+                  "id": 10846,
                   "nodeType": "Return",
                   "src": "1957:31:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10843,
+            "id": 10848,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getRedemptionProofTimeout",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10836,
+              "id": 10841,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1922:2:41"
             },
             "returnParameters": {
-              "id": 10839,
+              "id": 10844,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10838,
+                  "id": 10843,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10843,
+                  "scope": 10848,
                   "src": "1946:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2189,7 +2189,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10837,
+                    "id": 10842,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1946:7:41",
@@ -2204,7 +2204,7 @@
               ],
               "src": "1945:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "1888:103:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -2212,54 +2212,54 @@
           },
           {
             "body": {
-              "id": 10850,
+              "id": 10855,
               "nodeType": "Block",
               "src": "2061:34:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10848,
+                    "id": 10853,
                     "name": "MINIMUM_REDEMPTION_FEE",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10756,
+                    "referencedDeclaration": 10761,
                     "src": "2070:22:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10847,
-                  "id": 10849,
+                  "functionReturnParameters": 10852,
+                  "id": 10854,
                   "nodeType": "Return",
                   "src": "2063:29:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10851,
+            "id": 10856,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getMinimumRedemptionFee",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10844,
+              "id": 10849,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2028:2:41"
             },
             "returnParameters": {
-              "id": 10847,
+              "id": 10852,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10846,
+                  "id": 10851,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10851,
+                  "scope": 10856,
                   "src": "2052:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2268,7 +2268,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10845,
+                    "id": 10850,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2052:7:41",
@@ -2283,7 +2283,7 @@
               ],
               "src": "2051:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "1996:99:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -2291,54 +2291,54 @@
           },
           {
             "body": {
-              "id": 10858,
+              "id": 10863,
               "nodeType": "Block",
               "src": "2161:30:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10856,
+                    "id": 10861,
                     "name": "MINIMUM_UTXO_VALUE",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10759,
+                    "referencedDeclaration": 10764,
                     "src": "2170:18:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10855,
-                  "id": 10857,
+                  "functionReturnParameters": 10860,
+                  "id": 10862,
                   "nodeType": "Return",
                   "src": "2163:25:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10859,
+            "id": 10864,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getMinimumUtxoValue",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10852,
+              "id": 10857,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2128:2:41"
             },
             "returnParameters": {
-              "id": 10855,
+              "id": 10860,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10854,
+                  "id": 10859,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10859,
+                  "scope": 10864,
                   "src": "2152:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2347,7 +2347,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10853,
+                    "id": 10858,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2152:7:41",
@@ -2362,7 +2362,7 @@
               ],
               "src": "2151:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "2100:91:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -2370,54 +2370,54 @@
           },
           {
             "body": {
-              "id": 10866,
+              "id": 10871,
               "nodeType": "Block",
               "src": "2256:33:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10864,
+                    "id": 10869,
                     "name": "FUNDING_PROOF_TIMEOUT",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10766,
+                    "referencedDeclaration": 10771,
                     "src": "2265:21:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10863,
-                  "id": 10865,
+                  "functionReturnParameters": 10868,
+                  "id": 10870,
                   "nodeType": "Return",
                   "src": "2258:28:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10867,
+            "id": 10872,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getFundingTimeout",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10860,
+              "id": 10865,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2223:2:41"
             },
             "returnParameters": {
-              "id": 10863,
+              "id": 10868,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10862,
+                  "id": 10867,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10867,
+                  "scope": 10872,
                   "src": "2247:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2426,7 +2426,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10861,
+                    "id": 10866,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2247:7:41",
@@ -2441,7 +2441,7 @@
               ],
               "src": "2246:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "2197:92:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -2449,54 +2449,54 @@
           },
           {
             "body": {
-              "id": 10874,
+              "id": 10879,
               "nodeType": "Block",
               "src": "2367:29:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10872,
+                    "id": 10877,
                     "name": "FORMATION_TIMEOUT",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10773,
+                    "referencedDeclaration": 10778,
                     "src": "2376:17:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10871,
-                  "id": 10873,
+                  "functionReturnParameters": 10876,
+                  "id": 10878,
                   "nodeType": "Return",
                   "src": "2369:24:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10875,
+            "id": 10880,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getSigningGroupFormationTimeout",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10868,
+              "id": 10873,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2334:2:41"
             },
             "returnParameters": {
-              "id": 10871,
+              "id": 10876,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10870,
+                  "id": 10875,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10875,
+                  "scope": 10880,
                   "src": "2358:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2505,7 +2505,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10869,
+                    "id": 10874,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2358:7:41",
@@ -2520,7 +2520,7 @@
               ],
               "src": "2357:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "2294:102:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -2528,54 +2528,54 @@
           },
           {
             "body": {
-              "id": 10882,
+              "id": 10887,
               "nodeType": "Block",
               "src": "2466:34:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10880,
+                    "id": 10885,
                     "name": "COURTESY_CALL_DURATION",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10780,
+                    "referencedDeclaration": 10785,
                     "src": "2475:22:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10879,
-                  "id": 10881,
+                  "functionReturnParameters": 10884,
+                  "id": 10886,
                   "nodeType": "Return",
                   "src": "2468:29:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10883,
+            "id": 10888,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getCourtesyCallTimeout",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10876,
+              "id": 10881,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2433:2:41"
             },
             "returnParameters": {
-              "id": 10879,
+              "id": 10884,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10878,
+                  "id": 10883,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10883,
+                  "scope": 10888,
                   "src": "2457:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2584,7 +2584,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10877,
+                    "id": 10882,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2457:7:41",
@@ -2599,7 +2599,7 @@
               ],
               "src": "2456:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "2402:98:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -2607,54 +2607,54 @@
           },
           {
             "body": {
-              "id": 10890,
+              "id": 10895,
               "nodeType": "Block",
               "src": "2565:28:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10888,
+                    "id": 10893,
                     "name": "AUCTION_DURATION",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10787,
+                    "referencedDeclaration": 10792,
                     "src": "2574:16:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10887,
-                  "id": 10889,
+                  "functionReturnParameters": 10892,
+                  "id": 10894,
                   "nodeType": "Return",
                   "src": "2567:23:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10891,
+            "id": 10896,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getAuctionDuration",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10884,
+              "id": 10889,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2532:2:41"
             },
             "returnParameters": {
-              "id": 10887,
+              "id": 10892,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10886,
+                  "id": 10891,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10891,
+                  "scope": 10896,
                   "src": "2556:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2663,7 +2663,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10885,
+                    "id": 10890,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2556:7:41",
@@ -2678,14 +2678,14 @@
               ],
               "src": "2555:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "2505:88:41",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 10893,
+        "scope": 10898,
         "src": "25:2570:41"
       }
     ],
@@ -2695,14 +2695,14 @@
     "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/system/TestTBTCConstants.sol",
     "exportedSymbols": {
       "TestTBTCConstants": [
-        10892
+        10897
       ]
     },
-    "id": 10893,
+    "id": 10898,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 10712,
+        "id": 10717,
         "literals": [
           "solidity",
           "0.5",
@@ -2717,19 +2717,19 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 10892,
+        "id": 10897,
         "linearizedBaseContracts": [
-          10892
+          10897
         ],
         "name": "TestTBTCConstants",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 10715,
+            "id": 10720,
             "name": "BENEFICIARY_FEE_DIVISOR",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "215:54:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2738,7 +2738,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10713,
+              "id": 10718,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "215:7:41",
@@ -2750,7 +2750,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "31303030",
-              "id": 10714,
+              "id": 10719,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2769,10 +2769,10 @@
           },
           {
             "constant": true,
-            "id": 10724,
+            "id": 10729,
             "name": "DEPOSIT_TERM_LENGTH",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "310:64:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2781,7 +2781,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10716,
+              "id": 10721,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "310:7:41",
@@ -2796,7 +2796,7 @@
                 "typeIdentifier": "t_rational_15552000_by_1",
                 "typeString": "int_const 15552000"
               },
-              "id": 10723,
+              "id": 10728,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2807,7 +2807,7 @@
                   "typeIdentifier": "t_rational_259200_by_1",
                   "typeString": "int_const 259200"
                 },
-                "id": 10721,
+                "id": 10726,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -2818,7 +2818,7 @@
                     "typeIdentifier": "t_rational_4320_by_1",
                     "typeString": "int_const 4320"
                   },
-                  "id": 10719,
+                  "id": 10724,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -2826,7 +2826,7 @@
                   "leftExpression": {
                     "argumentTypes": null,
                     "hexValue": "313830",
-                    "id": 10717,
+                    "id": 10722,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -2846,7 +2846,7 @@
                   "rightExpression": {
                     "argumentTypes": null,
                     "hexValue": "3234",
-                    "id": 10718,
+                    "id": 10723,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -2872,7 +2872,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 10720,
+                  "id": 10725,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -2898,7 +2898,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 10722,
+                "id": 10727,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -2923,10 +2923,10 @@
           },
           {
             "constant": true,
-            "id": 10727,
+            "id": 10732,
             "name": "TX_PROOF_DIFFICULTY_FACTOR",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "403:54:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2935,7 +2935,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10725,
+              "id": 10730,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "403:7:41",
@@ -2947,7 +2947,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "36",
-              "id": 10726,
+              "id": 10731,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2966,10 +2966,10 @@
           },
           {
             "constant": true,
-            "id": 10732,
+            "id": 10737,
             "name": "SATOSHI_MULTIPLIER",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "463:53:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2978,7 +2978,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10728,
+              "id": 10733,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "463:7:41",
@@ -2993,7 +2993,7 @@
                 "typeIdentifier": "t_rational_10000000000_by_1",
                 "typeString": "int_const 10000000000"
               },
-              "id": 10731,
+              "id": 10736,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3001,7 +3001,7 @@
               "leftExpression": {
                 "argumentTypes": null,
                 "hexValue": "3130",
-                "id": 10729,
+                "id": 10734,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3021,7 +3021,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3130",
-                "id": 10730,
+                "id": 10735,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3046,10 +3046,10 @@
           },
           {
             "constant": true,
-            "id": 10739,
+            "id": 10744,
             "name": "REDEMPTION_SIGNATURE_TIMEOUT",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "558:66:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3058,7 +3058,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10733,
+              "id": 10738,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "558:7:41",
@@ -3073,7 +3073,7 @@
                 "typeIdentifier": "t_rational_7200_by_1",
                 "typeString": "int_const 7200"
               },
-              "id": 10738,
+              "id": 10743,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3084,7 +3084,7 @@
                   "typeIdentifier": "t_rational_120_by_1",
                   "typeString": "int_const 120"
                 },
-                "id": 10736,
+                "id": 10741,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3092,7 +3092,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "32",
-                  "id": 10734,
+                  "id": 10739,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3112,7 +3112,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 10735,
+                  "id": 10740,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3138,7 +3138,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 10737,
+                "id": 10742,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3163,10 +3163,10 @@
           },
           {
             "constant": true,
-            "id": 10746,
+            "id": 10751,
             "name": "INCREASE_FEE_TIMER",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "642:56:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3175,7 +3175,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10740,
+              "id": 10745,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "642:7:41",
@@ -3190,7 +3190,7 @@
                 "typeIdentifier": "t_rational_14400_by_1",
                 "typeString": "int_const 14400"
               },
-              "id": 10745,
+              "id": 10750,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3201,7 +3201,7 @@
                   "typeIdentifier": "t_rational_240_by_1",
                   "typeString": "int_const 240"
                 },
-                "id": 10743,
+                "id": 10748,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3209,7 +3209,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "34",
-                  "id": 10741,
+                  "id": 10746,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3229,7 +3229,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 10742,
+                  "id": 10747,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3255,7 +3255,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 10744,
+                "id": 10749,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3280,10 +3280,10 @@
           },
           {
             "constant": true,
-            "id": 10753,
+            "id": 10758,
             "name": "REDEMPTION_PROOF_TIMEOUT",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "716:62:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3292,7 +3292,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10747,
+              "id": 10752,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "716:7:41",
@@ -3307,7 +3307,7 @@
                 "typeIdentifier": "t_rational_21600_by_1",
                 "typeString": "int_const 21600"
               },
-              "id": 10752,
+              "id": 10757,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3318,7 +3318,7 @@
                   "typeIdentifier": "t_rational_360_by_1",
                   "typeString": "int_const 360"
                 },
-                "id": 10750,
+                "id": 10755,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3326,7 +3326,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "36",
-                  "id": 10748,
+                  "id": 10753,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3346,7 +3346,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 10749,
+                  "id": 10754,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3372,7 +3372,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 10751,
+                "id": 10756,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3397,10 +3397,10 @@
           },
           {
             "constant": true,
-            "id": 10756,
+            "id": 10761,
             "name": "MINIMUM_REDEMPTION_FEE",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "796:53:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3409,7 +3409,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10754,
+              "id": 10759,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "796:7:41",
@@ -3421,7 +3421,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "32303030",
-              "id": 10755,
+              "id": 10760,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3440,10 +3440,10 @@
           },
           {
             "constant": true,
-            "id": 10759,
+            "id": 10764,
             "name": "MINIMUM_UTXO_VALUE",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "866:49:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3452,7 +3452,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10757,
+              "id": 10762,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "866:7:41",
@@ -3464,7 +3464,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "32303030",
-              "id": 10758,
+              "id": 10763,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3483,10 +3483,10 @@
           },
           {
             "constant": true,
-            "id": 10766,
+            "id": 10771,
             "name": "FUNDING_PROOF_TIMEOUT",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "953:59:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3495,7 +3495,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10760,
+              "id": 10765,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "953:7:41",
@@ -3510,7 +3510,7 @@
                 "typeIdentifier": "t_rational_10800_by_1",
                 "typeString": "int_const 10800"
               },
-              "id": 10765,
+              "id": 10770,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3521,7 +3521,7 @@
                   "typeIdentifier": "t_rational_180_by_1",
                   "typeString": "int_const 180"
                 },
-                "id": 10763,
+                "id": 10768,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3529,7 +3529,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "33",
-                  "id": 10761,
+                  "id": 10766,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3549,7 +3549,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 10762,
+                  "id": 10767,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3575,7 +3575,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 10764,
+                "id": 10769,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3600,10 +3600,10 @@
           },
           {
             "constant": true,
-            "id": 10773,
+            "id": 10778,
             "name": "FORMATION_TIMEOUT",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "1029:55:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3612,7 +3612,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10767,
+              "id": 10772,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1029:7:41",
@@ -3627,7 +3627,7 @@
                 "typeIdentifier": "t_rational_10800_by_1",
                 "typeString": "int_const 10800"
               },
-              "id": 10772,
+              "id": 10777,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3638,7 +3638,7 @@
                   "typeIdentifier": "t_rational_180_by_1",
                   "typeString": "int_const 180"
                 },
-                "id": 10770,
+                "id": 10775,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3646,7 +3646,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "33",
-                  "id": 10768,
+                  "id": 10773,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3666,7 +3666,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 10769,
+                  "id": 10774,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3692,7 +3692,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 10771,
+                "id": 10776,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3717,10 +3717,10 @@
           },
           {
             "constant": true,
-            "id": 10780,
+            "id": 10785,
             "name": "COURTESY_CALL_DURATION",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "1126:60:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3729,7 +3729,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10774,
+              "id": 10779,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1126:7:41",
@@ -3744,7 +3744,7 @@
                 "typeIdentifier": "t_rational_21600_by_1",
                 "typeString": "int_const 21600"
               },
-              "id": 10779,
+              "id": 10784,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3755,7 +3755,7 @@
                   "typeIdentifier": "t_rational_360_by_1",
                   "typeString": "int_const 360"
                 },
-                "id": 10777,
+                "id": 10782,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3763,7 +3763,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "36",
-                  "id": 10775,
+                  "id": 10780,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3783,7 +3783,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 10776,
+                  "id": 10781,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3809,7 +3809,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 10778,
+                "id": 10783,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3834,10 +3834,10 @@
           },
           {
             "constant": true,
-            "id": 10787,
+            "id": 10792,
             "name": "AUCTION_DURATION",
             "nodeType": "VariableDeclaration",
-            "scope": 10892,
+            "scope": 10897,
             "src": "1203:55:41",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3846,7 +3846,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10781,
+              "id": 10786,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1203:7:41",
@@ -3861,7 +3861,7 @@
                 "typeIdentifier": "t_rational_86400_by_1",
                 "typeString": "int_const 86400"
               },
-              "id": 10786,
+              "id": 10791,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3872,7 +3872,7 @@
                   "typeIdentifier": "t_rational_1440_by_1",
                   "typeString": "int_const 1440"
                 },
-                "id": 10784,
+                "id": 10789,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3880,7 +3880,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "3234",
-                  "id": 10782,
+                  "id": 10787,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3900,7 +3900,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 10783,
+                  "id": 10788,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3926,7 +3926,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 10785,
+                "id": 10790,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3951,54 +3951,54 @@
           },
           {
             "body": {
-              "id": 10794,
+              "id": 10799,
               "nodeType": "Block",
               "src": "1345:35:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10792,
+                    "id": 10797,
                     "name": "BENEFICIARY_FEE_DIVISOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10715,
+                    "referencedDeclaration": 10720,
                     "src": "1354:23:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10791,
-                  "id": 10793,
+                  "functionReturnParameters": 10796,
+                  "id": 10798,
                   "nodeType": "Return",
                   "src": "1347:30:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10795,
+            "id": 10800,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getBeneficiaryRewardDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10788,
+              "id": 10793,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1312:2:41"
             },
             "returnParameters": {
-              "id": 10791,
+              "id": 10796,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10790,
+                  "id": 10795,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10795,
+                  "scope": 10800,
                   "src": "1336:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4007,7 +4007,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10789,
+                    "id": 10794,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1336:7:41",
@@ -4022,7 +4022,7 @@
               ],
               "src": "1335:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "1276:104:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4030,54 +4030,54 @@
           },
           {
             "body": {
-              "id": 10802,
+              "id": 10807,
               "nodeType": "Block",
               "src": "1441:31:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10800,
+                    "id": 10805,
                     "name": "DEPOSIT_TERM_LENGTH",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10724,
+                    "referencedDeclaration": 10729,
                     "src": "1450:19:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10799,
-                  "id": 10801,
+                  "functionReturnParameters": 10804,
+                  "id": 10806,
                   "nodeType": "Return",
                   "src": "1443:26:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10803,
+            "id": 10808,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getDepositTerm",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10796,
+              "id": 10801,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1408:2:41"
             },
             "returnParameters": {
-              "id": 10799,
+              "id": 10804,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10798,
+                  "id": 10803,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10803,
+                  "scope": 10808,
                   "src": "1432:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4086,7 +4086,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10797,
+                    "id": 10802,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1432:7:41",
@@ -4101,7 +4101,7 @@
               ],
               "src": "1431:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "1385:87:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4109,54 +4109,54 @@
           },
           {
             "body": {
-              "id": 10810,
+              "id": 10815,
               "nodeType": "Block",
               "src": "1545:38:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10808,
+                    "id": 10813,
                     "name": "TX_PROOF_DIFFICULTY_FACTOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10727,
+                    "referencedDeclaration": 10732,
                     "src": "1554:26:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10807,
-                  "id": 10809,
+                  "functionReturnParameters": 10812,
+                  "id": 10814,
                   "nodeType": "Return",
                   "src": "1547:33:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10811,
+            "id": 10816,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getTxProofDifficultyFactor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10804,
+              "id": 10809,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1512:2:41"
             },
             "returnParameters": {
-              "id": 10807,
+              "id": 10812,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10806,
+                  "id": 10811,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10811,
+                  "scope": 10816,
                   "src": "1536:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4165,7 +4165,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10805,
+                    "id": 10810,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1536:7:41",
@@ -4180,7 +4180,7 @@
               ],
               "src": "1535:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "1477:106:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4188,54 +4188,54 @@
           },
           {
             "body": {
-              "id": 10818,
+              "id": 10823,
               "nodeType": "Block",
               "src": "1650:30:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10816,
+                    "id": 10821,
                     "name": "SATOSHI_MULTIPLIER",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10732,
+                    "referencedDeclaration": 10737,
                     "src": "1659:18:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10815,
-                  "id": 10817,
+                  "functionReturnParameters": 10820,
+                  "id": 10822,
                   "nodeType": "Return",
                   "src": "1652:25:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10819,
+            "id": 10824,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getSatoshiMultiplier",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10812,
+              "id": 10817,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1617:2:41"
             },
             "returnParameters": {
-              "id": 10815,
+              "id": 10820,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10814,
+                  "id": 10819,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10819,
+                  "scope": 10824,
                   "src": "1641:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4244,7 +4244,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10813,
+                    "id": 10818,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1641:7:41",
@@ -4259,7 +4259,7 @@
               ],
               "src": "1640:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "1588:92:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4267,54 +4267,54 @@
           },
           {
             "body": {
-              "id": 10826,
+              "id": 10831,
               "nodeType": "Block",
               "src": "1747:40:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10824,
+                    "id": 10829,
                     "name": "REDEMPTION_SIGNATURE_TIMEOUT",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10739,
+                    "referencedDeclaration": 10744,
                     "src": "1756:28:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10823,
-                  "id": 10825,
+                  "functionReturnParameters": 10828,
+                  "id": 10830,
                   "nodeType": "Return",
                   "src": "1749:35:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10827,
+            "id": 10832,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getSignatureTimeout",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10820,
+              "id": 10825,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1714:2:41"
             },
             "returnParameters": {
-              "id": 10823,
+              "id": 10828,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10822,
+                  "id": 10827,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10827,
+                  "scope": 10832,
                   "src": "1738:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4323,7 +4323,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10821,
+                    "id": 10826,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1738:7:41",
@@ -4338,7 +4338,7 @@
               ],
               "src": "1737:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "1686:101:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4346,54 +4346,54 @@
           },
           {
             "body": {
-              "id": 10834,
+              "id": 10839,
               "nodeType": "Block",
               "src": "1853:30:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10832,
+                    "id": 10837,
                     "name": "INCREASE_FEE_TIMER",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10746,
+                    "referencedDeclaration": 10751,
                     "src": "1862:18:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10831,
-                  "id": 10833,
+                  "functionReturnParameters": 10836,
+                  "id": 10838,
                   "nodeType": "Return",
                   "src": "1855:25:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10835,
+            "id": 10840,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getIncreaseFeeTimer",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10828,
+              "id": 10833,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1820:2:41"
             },
             "returnParameters": {
-              "id": 10831,
+              "id": 10836,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10830,
+                  "id": 10835,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10835,
+                  "scope": 10840,
                   "src": "1844:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4402,7 +4402,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10829,
+                    "id": 10834,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1844:7:41",
@@ -4417,7 +4417,7 @@
               ],
               "src": "1843:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "1792:91:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4425,54 +4425,54 @@
           },
           {
             "body": {
-              "id": 10842,
+              "id": 10847,
               "nodeType": "Block",
               "src": "1955:36:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10840,
+                    "id": 10845,
                     "name": "REDEMPTION_PROOF_TIMEOUT",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10753,
+                    "referencedDeclaration": 10758,
                     "src": "1964:24:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10839,
-                  "id": 10841,
+                  "functionReturnParameters": 10844,
+                  "id": 10846,
                   "nodeType": "Return",
                   "src": "1957:31:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10843,
+            "id": 10848,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getRedemptionProofTimeout",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10836,
+              "id": 10841,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1922:2:41"
             },
             "returnParameters": {
-              "id": 10839,
+              "id": 10844,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10838,
+                  "id": 10843,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10843,
+                  "scope": 10848,
                   "src": "1946:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4481,7 +4481,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10837,
+                    "id": 10842,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1946:7:41",
@@ -4496,7 +4496,7 @@
               ],
               "src": "1945:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "1888:103:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4504,54 +4504,54 @@
           },
           {
             "body": {
-              "id": 10850,
+              "id": 10855,
               "nodeType": "Block",
               "src": "2061:34:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10848,
+                    "id": 10853,
                     "name": "MINIMUM_REDEMPTION_FEE",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10756,
+                    "referencedDeclaration": 10761,
                     "src": "2070:22:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10847,
-                  "id": 10849,
+                  "functionReturnParameters": 10852,
+                  "id": 10854,
                   "nodeType": "Return",
                   "src": "2063:29:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10851,
+            "id": 10856,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getMinimumRedemptionFee",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10844,
+              "id": 10849,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2028:2:41"
             },
             "returnParameters": {
-              "id": 10847,
+              "id": 10852,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10846,
+                  "id": 10851,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10851,
+                  "scope": 10856,
                   "src": "2052:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4560,7 +4560,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10845,
+                    "id": 10850,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2052:7:41",
@@ -4575,7 +4575,7 @@
               ],
               "src": "2051:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "1996:99:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4583,54 +4583,54 @@
           },
           {
             "body": {
-              "id": 10858,
+              "id": 10863,
               "nodeType": "Block",
               "src": "2161:30:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10856,
+                    "id": 10861,
                     "name": "MINIMUM_UTXO_VALUE",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10759,
+                    "referencedDeclaration": 10764,
                     "src": "2170:18:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10855,
-                  "id": 10857,
+                  "functionReturnParameters": 10860,
+                  "id": 10862,
                   "nodeType": "Return",
                   "src": "2163:25:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10859,
+            "id": 10864,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getMinimumUtxoValue",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10852,
+              "id": 10857,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2128:2:41"
             },
             "returnParameters": {
-              "id": 10855,
+              "id": 10860,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10854,
+                  "id": 10859,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10859,
+                  "scope": 10864,
                   "src": "2152:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4639,7 +4639,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10853,
+                    "id": 10858,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2152:7:41",
@@ -4654,7 +4654,7 @@
               ],
               "src": "2151:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "2100:91:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4662,54 +4662,54 @@
           },
           {
             "body": {
-              "id": 10866,
+              "id": 10871,
               "nodeType": "Block",
               "src": "2256:33:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10864,
+                    "id": 10869,
                     "name": "FUNDING_PROOF_TIMEOUT",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10766,
+                    "referencedDeclaration": 10771,
                     "src": "2265:21:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10863,
-                  "id": 10865,
+                  "functionReturnParameters": 10868,
+                  "id": 10870,
                   "nodeType": "Return",
                   "src": "2258:28:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10867,
+            "id": 10872,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getFundingTimeout",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10860,
+              "id": 10865,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2223:2:41"
             },
             "returnParameters": {
-              "id": 10863,
+              "id": 10868,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10862,
+                  "id": 10867,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10867,
+                  "scope": 10872,
                   "src": "2247:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4718,7 +4718,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10861,
+                    "id": 10866,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2247:7:41",
@@ -4733,7 +4733,7 @@
               ],
               "src": "2246:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "2197:92:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4741,54 +4741,54 @@
           },
           {
             "body": {
-              "id": 10874,
+              "id": 10879,
               "nodeType": "Block",
               "src": "2367:29:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10872,
+                    "id": 10877,
                     "name": "FORMATION_TIMEOUT",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10773,
+                    "referencedDeclaration": 10778,
                     "src": "2376:17:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10871,
-                  "id": 10873,
+                  "functionReturnParameters": 10876,
+                  "id": 10878,
                   "nodeType": "Return",
                   "src": "2369:24:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10875,
+            "id": 10880,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getSigningGroupFormationTimeout",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10868,
+              "id": 10873,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2334:2:41"
             },
             "returnParameters": {
-              "id": 10871,
+              "id": 10876,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10870,
+                  "id": 10875,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10875,
+                  "scope": 10880,
                   "src": "2358:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4797,7 +4797,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10869,
+                    "id": 10874,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2358:7:41",
@@ -4812,7 +4812,7 @@
               ],
               "src": "2357:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "2294:102:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4820,54 +4820,54 @@
           },
           {
             "body": {
-              "id": 10882,
+              "id": 10887,
               "nodeType": "Block",
               "src": "2466:34:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10880,
+                    "id": 10885,
                     "name": "COURTESY_CALL_DURATION",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10780,
+                    "referencedDeclaration": 10785,
                     "src": "2475:22:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10879,
-                  "id": 10881,
+                  "functionReturnParameters": 10884,
+                  "id": 10886,
                   "nodeType": "Return",
                   "src": "2468:29:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10883,
+            "id": 10888,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getCourtesyCallTimeout",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10876,
+              "id": 10881,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2433:2:41"
             },
             "returnParameters": {
-              "id": 10879,
+              "id": 10884,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10878,
+                  "id": 10883,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10883,
+                  "scope": 10888,
                   "src": "2457:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4876,7 +4876,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10877,
+                    "id": 10882,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2457:7:41",
@@ -4891,7 +4891,7 @@
               ],
               "src": "2456:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "2402:98:41",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4899,54 +4899,54 @@
           },
           {
             "body": {
-              "id": 10890,
+              "id": 10895,
               "nodeType": "Block",
               "src": "2565:28:41",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10888,
+                    "id": 10893,
                     "name": "AUCTION_DURATION",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10787,
+                    "referencedDeclaration": 10792,
                     "src": "2574:16:41",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10887,
-                  "id": 10889,
+                  "functionReturnParameters": 10892,
+                  "id": 10894,
                   "nodeType": "Return",
                   "src": "2567:23:41"
                 }
               ]
             },
             "documentation": null,
-            "id": 10891,
+            "id": 10896,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getAuctionDuration",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10884,
+              "id": 10889,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2532:2:41"
             },
             "returnParameters": {
-              "id": 10887,
+              "id": 10892,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10886,
+                  "id": 10891,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10891,
+                  "scope": 10896,
                   "src": "2556:7:41",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4955,7 +4955,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10885,
+                    "id": 10890,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2556:7:41",
@@ -4970,14 +4970,14 @@
               ],
               "src": "2555:9:41"
             },
-            "scope": 10892,
+            "scope": 10897,
             "src": "2505:88:41",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 10893,
+        "scope": 10898,
         "src": "25:2570:41"
       }
     ],
@@ -4989,7 +4989,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.23",
-  "updatedAt": "2021-02-01T14:28:06.559Z",
+  "updatedAt": "2021-02-01T16:23:17.025Z",
   "devdoc": {
     "methods": {}
   },

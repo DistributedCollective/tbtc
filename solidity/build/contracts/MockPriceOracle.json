@@ -79,17 +79,17 @@
     "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/price-feed/MockPriceOracle.sol",
     "exportedSymbols": {
       "ETHBTCPriceFeedMock": [
-        10324
+        10329
       ],
       "MockPriceOracle": [
-        10321
+        10326
       ]
     },
-    "id": 10325,
+    "id": 10330,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 10285,
+        "id": 10290,
         "literals": [
           "solidity",
           "0.5",
@@ -101,9 +101,9 @@
       {
         "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/external/PriceOracle.sol",
         "file": "../../../contracts/external/PriceOracle.sol",
-        "id": 10286,
+        "id": 10291,
         "nodeType": "ImportDirective",
-        "scope": 10325,
+        "scope": 10330,
         "sourceUnit": 5427,
         "src": "25:53:35",
         "symbolAliases": [],
@@ -115,7 +115,7 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 10287,
+              "id": 10292,
               "name": "PriceOracle",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 5426,
@@ -125,7 +125,7 @@
                 "typeString": "contract PriceOracle"
               }
             },
-            "id": 10288,
+            "id": 10293,
             "nodeType": "InheritanceSpecifier",
             "src": "258:11:35"
           }
@@ -136,9 +136,9 @@
         "contractKind": "contract",
         "documentation": "@title A mock implementation of a medianizer price oracle.\n @dev This is used in the Keep testnets only. Mainnet uses the MakerDAO medianizer.",
         "fullyImplemented": true,
-        "id": 10321,
+        "id": 10326,
         "linearizedBaseContracts": [
-          10321,
+          10326,
           5426
         ],
         "name": "MockPriceOracle",
@@ -146,10 +146,10 @@
         "nodes": [
           {
             "constant": false,
-            "id": 10290,
+            "id": 10295,
             "name": "value",
             "nodeType": "VariableDeclaration",
-            "scope": 10321,
+            "scope": 10326,
             "src": "276:19:35",
             "stateVariable": true,
             "storageLocation": "default",
@@ -158,7 +158,7 @@
               "typeString": "int256"
             },
             "typeName": {
-              "id": 10289,
+              "id": 10294,
               "name": "int256",
               "nodeType": "ElementaryTypeName",
               "src": "276:6:35",
@@ -172,31 +172,31 @@
           },
           {
             "body": {
-              "id": 10293,
+              "id": 10298,
               "nodeType": "Block",
               "src": "323:63:35",
               "statements": []
             },
             "documentation": null,
-            "id": 10294,
+            "id": 10299,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10291,
+              "id": 10296,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "313:2:35"
             },
             "returnParameters": {
-              "id": 10292,
+              "id": 10297,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "323:0:35"
             },
-            "scope": 10321,
+            "scope": 10326,
             "src": "302:84:35",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -204,54 +204,54 @@
           },
           {
             "body": {
-              "id": 10301,
+              "id": 10306,
               "nodeType": "Block",
               "src": "447:29:35",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10299,
+                    "id": 10304,
                     "name": "value",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10290,
+                    "referencedDeclaration": 10295,
                     "src": "464:5:35",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
                     }
                   },
-                  "functionReturnParameters": 10298,
-                  "id": 10300,
+                  "functionReturnParameters": 10303,
+                  "id": 10305,
                   "nodeType": "Return",
                   "src": "457:12:35"
                 }
               ]
             },
             "documentation": null,
-            "id": 10302,
+            "id": 10307,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "latestAnswer",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10295,
+              "id": 10300,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "413:2:35"
             },
             "returnParameters": {
-              "id": 10298,
+              "id": 10303,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10297,
+                  "id": 10302,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10302,
+                  "scope": 10307,
                   "src": "439:6:35",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -260,7 +260,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 10296,
+                    "id": 10301,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
                     "src": "439:6:35",
@@ -275,7 +275,7 @@
               ],
               "src": "438:8:35"
             },
-            "scope": 10321,
+            "scope": 10326,
             "src": "392:84:35",
             "stateMutability": "view",
             "superFunction": 5425,
@@ -283,54 +283,54 @@
           },
           {
             "body": {
-              "id": 10309,
+              "id": 10314,
               "nodeType": "Block",
               "src": "540:29:35",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10307,
+                    "id": 10312,
                     "name": "value",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10290,
+                    "referencedDeclaration": 10295,
                     "src": "557:5:35",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
                     }
                   },
-                  "functionReturnParameters": 10306,
-                  "id": 10308,
+                  "functionReturnParameters": 10311,
+                  "id": 10313,
                   "nodeType": "Return",
                   "src": "550:12:35"
                 }
               ]
             },
             "documentation": null,
-            "id": 10310,
+            "id": 10315,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getPrice",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10303,
+              "id": 10308,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "499:2:35"
             },
             "returnParameters": {
-              "id": 10306,
+              "id": 10311,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10305,
+                  "id": 10310,
                   "name": "answer",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10310,
+                  "scope": 10315,
                   "src": "525:13:35",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -339,7 +339,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 10304,
+                    "id": 10309,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
                     "src": "525:6:35",
@@ -354,7 +354,7 @@
               ],
               "src": "524:15:35"
             },
-            "scope": 10321,
+            "scope": 10326,
             "src": "482:87:35",
             "stateMutability": "view",
             "superFunction": null,
@@ -362,25 +362,25 @@
           },
           {
             "body": {
-              "id": 10319,
+              "id": 10324,
               "nodeType": "Block",
               "src": "617:31:35",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10317,
+                    "id": 10322,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 10315,
+                      "id": 10320,
                       "name": "value",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10290,
+                      "referencedDeclaration": 10295,
                       "src": "627:5:35",
                       "typeDescriptions": {
                         "typeIdentifier": "t_int256",
@@ -391,11 +391,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 10316,
+                      "id": 10321,
                       "name": "_value",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10312,
+                      "referencedDeclaration": 10317,
                       "src": "635:6:35",
                       "typeDescriptions": {
                         "typeIdentifier": "t_int256",
@@ -408,29 +408,29 @@
                       "typeString": "int256"
                     }
                   },
-                  "id": 10318,
+                  "id": 10323,
                   "nodeType": "ExpressionStatement",
                   "src": "627:14:35"
                 }
               ]
             },
             "documentation": null,
-            "id": 10320,
+            "id": 10325,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "setValue",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10313,
+              "id": 10318,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10312,
+                  "id": 10317,
                   "name": "_value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10320,
+                  "scope": 10325,
                   "src": "593:13:35",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -439,7 +439,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 10311,
+                    "id": 10316,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
                     "src": "593:6:35",
@@ -455,19 +455,19 @@
               "src": "592:15:35"
             },
             "returnParameters": {
-              "id": 10314,
+              "id": 10319,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "617:0:35"
             },
-            "scope": 10321,
+            "scope": 10326,
             "src": "575:73:35",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 10325,
+        "scope": 10330,
         "src": "230:420:35"
       },
       {
@@ -476,38 +476,38 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 10322,
+              "id": 10327,
               "name": "MockPriceOracle",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 10321,
+              "referencedDeclaration": 10326,
               "src": "684:15:35",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_MockPriceOracle_$10321",
+                "typeIdentifier": "t_contract$_MockPriceOracle_$10326",
                 "typeString": "contract MockPriceOracle"
               }
             },
-            "id": 10323,
+            "id": 10328,
             "nodeType": "InheritanceSpecifier",
             "src": "684:15:35"
           }
         ],
         "contractDependencies": [
           5426,
-          10321
+          10326
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 10324,
+        "id": 10329,
         "linearizedBaseContracts": [
-          10324,
-          10321,
+          10329,
+          10326,
           5426
         ],
         "name": "ETHBTCPriceFeedMock",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 10325,
+        "scope": 10330,
         "src": "652:103:35"
       }
     ],
@@ -517,17 +517,17 @@
     "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/price-feed/MockPriceOracle.sol",
     "exportedSymbols": {
       "ETHBTCPriceFeedMock": [
-        10324
+        10329
       ],
       "MockPriceOracle": [
-        10321
+        10326
       ]
     },
-    "id": 10325,
+    "id": 10330,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 10285,
+        "id": 10290,
         "literals": [
           "solidity",
           "0.5",
@@ -539,9 +539,9 @@
       {
         "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/external/PriceOracle.sol",
         "file": "../../../contracts/external/PriceOracle.sol",
-        "id": 10286,
+        "id": 10291,
         "nodeType": "ImportDirective",
-        "scope": 10325,
+        "scope": 10330,
         "sourceUnit": 5427,
         "src": "25:53:35",
         "symbolAliases": [],
@@ -553,7 +553,7 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 10287,
+              "id": 10292,
               "name": "PriceOracle",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 5426,
@@ -563,7 +563,7 @@
                 "typeString": "contract PriceOracle"
               }
             },
-            "id": 10288,
+            "id": 10293,
             "nodeType": "InheritanceSpecifier",
             "src": "258:11:35"
           }
@@ -574,9 +574,9 @@
         "contractKind": "contract",
         "documentation": "@title A mock implementation of a medianizer price oracle.\n @dev This is used in the Keep testnets only. Mainnet uses the MakerDAO medianizer.",
         "fullyImplemented": true,
-        "id": 10321,
+        "id": 10326,
         "linearizedBaseContracts": [
-          10321,
+          10326,
           5426
         ],
         "name": "MockPriceOracle",
@@ -584,10 +584,10 @@
         "nodes": [
           {
             "constant": false,
-            "id": 10290,
+            "id": 10295,
             "name": "value",
             "nodeType": "VariableDeclaration",
-            "scope": 10321,
+            "scope": 10326,
             "src": "276:19:35",
             "stateVariable": true,
             "storageLocation": "default",
@@ -596,7 +596,7 @@
               "typeString": "int256"
             },
             "typeName": {
-              "id": 10289,
+              "id": 10294,
               "name": "int256",
               "nodeType": "ElementaryTypeName",
               "src": "276:6:35",
@@ -610,31 +610,31 @@
           },
           {
             "body": {
-              "id": 10293,
+              "id": 10298,
               "nodeType": "Block",
               "src": "323:63:35",
               "statements": []
             },
             "documentation": null,
-            "id": 10294,
+            "id": 10299,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10291,
+              "id": 10296,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "313:2:35"
             },
             "returnParameters": {
-              "id": 10292,
+              "id": 10297,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "323:0:35"
             },
-            "scope": 10321,
+            "scope": 10326,
             "src": "302:84:35",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -642,54 +642,54 @@
           },
           {
             "body": {
-              "id": 10301,
+              "id": 10306,
               "nodeType": "Block",
               "src": "447:29:35",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10299,
+                    "id": 10304,
                     "name": "value",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10290,
+                    "referencedDeclaration": 10295,
                     "src": "464:5:35",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
                     }
                   },
-                  "functionReturnParameters": 10298,
-                  "id": 10300,
+                  "functionReturnParameters": 10303,
+                  "id": 10305,
                   "nodeType": "Return",
                   "src": "457:12:35"
                 }
               ]
             },
             "documentation": null,
-            "id": 10302,
+            "id": 10307,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "latestAnswer",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10295,
+              "id": 10300,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "413:2:35"
             },
             "returnParameters": {
-              "id": 10298,
+              "id": 10303,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10297,
+                  "id": 10302,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10302,
+                  "scope": 10307,
                   "src": "439:6:35",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -698,7 +698,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 10296,
+                    "id": 10301,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
                     "src": "439:6:35",
@@ -713,7 +713,7 @@
               ],
               "src": "438:8:35"
             },
-            "scope": 10321,
+            "scope": 10326,
             "src": "392:84:35",
             "stateMutability": "view",
             "superFunction": 5425,
@@ -721,54 +721,54 @@
           },
           {
             "body": {
-              "id": 10309,
+              "id": 10314,
               "nodeType": "Block",
               "src": "540:29:35",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10307,
+                    "id": 10312,
                     "name": "value",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10290,
+                    "referencedDeclaration": 10295,
                     "src": "557:5:35",
                     "typeDescriptions": {
                       "typeIdentifier": "t_int256",
                       "typeString": "int256"
                     }
                   },
-                  "functionReturnParameters": 10306,
-                  "id": 10308,
+                  "functionReturnParameters": 10311,
+                  "id": 10313,
                   "nodeType": "Return",
                   "src": "550:12:35"
                 }
               ]
             },
             "documentation": null,
-            "id": 10310,
+            "id": 10315,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getPrice",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10303,
+              "id": 10308,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "499:2:35"
             },
             "returnParameters": {
-              "id": 10306,
+              "id": 10311,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10305,
+                  "id": 10310,
                   "name": "answer",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10310,
+                  "scope": 10315,
                   "src": "525:13:35",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -777,7 +777,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 10304,
+                    "id": 10309,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
                     "src": "525:6:35",
@@ -792,7 +792,7 @@
               ],
               "src": "524:15:35"
             },
-            "scope": 10321,
+            "scope": 10326,
             "src": "482:87:35",
             "stateMutability": "view",
             "superFunction": null,
@@ -800,25 +800,25 @@
           },
           {
             "body": {
-              "id": 10319,
+              "id": 10324,
               "nodeType": "Block",
               "src": "617:31:35",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10317,
+                    "id": 10322,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 10315,
+                      "id": 10320,
                       "name": "value",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10290,
+                      "referencedDeclaration": 10295,
                       "src": "627:5:35",
                       "typeDescriptions": {
                         "typeIdentifier": "t_int256",
@@ -829,11 +829,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 10316,
+                      "id": 10321,
                       "name": "_value",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10312,
+                      "referencedDeclaration": 10317,
                       "src": "635:6:35",
                       "typeDescriptions": {
                         "typeIdentifier": "t_int256",
@@ -846,29 +846,29 @@
                       "typeString": "int256"
                     }
                   },
-                  "id": 10318,
+                  "id": 10323,
                   "nodeType": "ExpressionStatement",
                   "src": "627:14:35"
                 }
               ]
             },
             "documentation": null,
-            "id": 10320,
+            "id": 10325,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "setValue",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10313,
+              "id": 10318,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10312,
+                  "id": 10317,
                   "name": "_value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10320,
+                  "scope": 10325,
                   "src": "593:13:35",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -877,7 +877,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 10311,
+                    "id": 10316,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
                     "src": "593:6:35",
@@ -893,19 +893,19 @@
               "src": "592:15:35"
             },
             "returnParameters": {
-              "id": 10314,
+              "id": 10319,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "617:0:35"
             },
-            "scope": 10321,
+            "scope": 10326,
             "src": "575:73:35",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 10325,
+        "scope": 10330,
         "src": "230:420:35"
       },
       {
@@ -914,38 +914,38 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 10322,
+              "id": 10327,
               "name": "MockPriceOracle",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 10321,
+              "referencedDeclaration": 10326,
               "src": "684:15:35",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_MockPriceOracle_$10321",
+                "typeIdentifier": "t_contract$_MockPriceOracle_$10326",
                 "typeString": "contract MockPriceOracle"
               }
             },
-            "id": 10323,
+            "id": 10328,
             "nodeType": "InheritanceSpecifier",
             "src": "684:15:35"
           }
         ],
         "contractDependencies": [
           5426,
-          10321
+          10326
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 10324,
+        "id": 10329,
         "linearizedBaseContracts": [
-          10324,
-          10321,
+          10329,
+          10326,
           5426
         ],
         "name": "ETHBTCPriceFeedMock",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 10325,
+        "scope": 10330,
         "src": "652:103:35"
       }
     ],
@@ -957,7 +957,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.23",
-  "updatedAt": "2021-02-01T14:28:06.554Z",
+  "updatedAt": "2021-02-01T16:23:17.020Z",
   "devdoc": {
     "details": "This is used in the Keep testnets only. Mainnet uses the MakerDAO medianizer.",
     "methods": {},

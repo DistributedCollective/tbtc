@@ -115,14 +115,14 @@
     "absolutePath": "@keep-network/keep-ecdsa/contracts/api/IBondedECDSAKeepFactory.sol",
     "exportedSymbols": {
       "IBondedECDSAKeepFactory": [
-        11154
+        11159
       ]
     },
-    "id": 11155,
+    "id": 11160,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 11117,
+        "id": 11122,
         "literals": [
           "solidity",
           "0.5",
@@ -137,9 +137,9 @@
         "contractKind": "interface",
         "documentation": "@title Bonded ECDSA Keep Factory\n @notice Factory for Bonded ECDSA Keeps.",
         "fullyImplemented": false,
-        "id": 11154,
+        "id": 11159,
         "linearizedBaseContracts": [
-          11154
+          11159
         ],
         "name": "IBondedECDSAKeepFactory",
         "nodeType": "ContractDefinition",
@@ -147,22 +147,22 @@
           {
             "body": null,
             "documentation": "@notice Open a new ECDSA Keep.\n @param _groupSize Number of members in the keep.\n @param _honestThreshold Minimum number of honest keep members.\n @param _owner Address of the keep owner.\n @param _bond Value of ETH bond required from the keep.\n @param _stakeLockDuration Stake lock duration in seconds.\n @return Address of the opened keep.",
-            "id": 11132,
+            "id": 11137,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "openKeep",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 11128,
+              "id": 11133,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11119,
+                  "id": 11124,
                   "name": "_groupSize",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11132,
+                  "scope": 11137,
                   "src": "2399:18:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -171,7 +171,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11118,
+                    "id": 11123,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2399:7:45",
@@ -185,10 +185,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 11121,
+                  "id": 11126,
                   "name": "_honestThreshold",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11132,
+                  "scope": 11137,
                   "src": "2427:24:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -197,7 +197,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11120,
+                    "id": 11125,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2427:7:45",
@@ -211,10 +211,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 11123,
+                  "id": 11128,
                   "name": "_owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11132,
+                  "scope": 11137,
                   "src": "2461:14:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -223,7 +223,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 11122,
+                    "id": 11127,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2461:7:45",
@@ -238,10 +238,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 11125,
+                  "id": 11130,
                   "name": "_bond",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11132,
+                  "scope": 11137,
                   "src": "2485:13:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -250,7 +250,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11124,
+                    "id": 11129,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2485:7:45",
@@ -264,10 +264,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 11127,
+                  "id": 11132,
                   "name": "_stakeLockDuration",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11132,
+                  "scope": 11137,
                   "src": "2508:26:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -276,7 +276,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11126,
+                    "id": 11131,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2508:7:45",
@@ -292,15 +292,15 @@
               "src": "2389:151:45"
             },
             "returnParameters": {
-              "id": 11131,
+              "id": 11136,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11130,
+                  "id": 11135,
                   "name": "keepAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11132,
+                  "scope": 11137,
                   "src": "2567:19:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -309,7 +309,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 11129,
+                    "id": 11134,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2567:7:45",
@@ -325,7 +325,7 @@
               ],
               "src": "2566:21:45"
             },
-            "scope": 11154,
+            "scope": 11159,
             "src": "2372:216:45",
             "stateMutability": "payable",
             "superFunction": null,
@@ -334,28 +334,28 @@
           {
             "body": null,
             "documentation": "@notice Gets a fee estimate for opening a new keep.\n @return Uint256 estimate.",
-            "id": 11137,
+            "id": 11142,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "openKeepFeeEstimate",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 11133,
+              "id": 11138,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2716:2:45"
             },
             "returnParameters": {
-              "id": 11136,
+              "id": 11141,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11135,
+                  "id": 11140,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11137,
+                  "scope": 11142,
                   "src": "2742:7:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -364,7 +364,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11134,
+                    "id": 11139,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2742:7:45",
@@ -379,7 +379,7 @@
               ],
               "src": "2741:9:45"
             },
-            "scope": 11154,
+            "scope": 11159,
             "src": "2688:63:45",
             "stateMutability": "view",
             "superFunction": null,
@@ -388,22 +388,22 @@
           {
             "body": null,
             "documentation": "@notice Gets the total weight of operators\n in the sortition pool for the given application.\n @param _application Address of the application.\n @return The sum of all registered operators' weights in the pool.\n Reverts if sortition pool for the application does not exist.",
-            "id": 11144,
+            "id": 11149,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getSortitionPoolWeight",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 11140,
+              "id": 11145,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11139,
+                  "id": 11144,
                   "name": "_application",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11144,
+                  "scope": 11149,
                   "src": "3106:20:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -412,7 +412,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 11138,
+                    "id": 11143,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3106:7:45",
@@ -429,15 +429,15 @@
               "src": "3096:36:45"
             },
             "returnParameters": {
-              "id": 11143,
+              "id": 11148,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11142,
+                  "id": 11147,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11144,
+                  "scope": 11149,
                   "src": "3156:7:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -446,7 +446,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11141,
+                    "id": 11146,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3156:7:45",
@@ -461,7 +461,7 @@
               ],
               "src": "3155:9:45"
             },
-            "scope": 11154,
+            "scope": 11159,
             "src": "3065:100:45",
             "stateMutability": "view",
             "superFunction": null,
@@ -470,22 +470,22 @@
           {
             "body": null,
             "documentation": "@notice Sets the minimum bondable value required from the operator to\n join the sortition pool of the given application. It is up to the\n application to specify a reasonable minimum bond for operators trying to\n join the pool to prevent griefing by operators joining without enough\n bondable value.\n @dev The default minimum bond value for each sortition pool created\n is 20 ETH.\n @param _minimumBondableValue The minimum unbonded value the application\n requires from a single keep.\n @param _groupSize Number of signers in the keep.\n @param _honestThreshold Minimum number of honest keep signers.",
-            "id": 11153,
+            "id": 11158,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "setMinimumBondableValue",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 11151,
+              "id": 11156,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11146,
+                  "id": 11151,
                   "name": "_minimumBondableValue",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11153,
+                  "scope": 11158,
                   "src": "3888:29:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -494,7 +494,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11145,
+                    "id": 11150,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3888:7:45",
@@ -508,10 +508,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 11148,
+                  "id": 11153,
                   "name": "_groupSize",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11153,
+                  "scope": 11158,
                   "src": "3927:18:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -520,7 +520,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11147,
+                    "id": 11152,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3927:7:45",
@@ -534,10 +534,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 11150,
+                  "id": 11155,
                   "name": "_honestThreshold",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11153,
+                  "scope": 11158,
                   "src": "3955:24:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -546,7 +546,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11149,
+                    "id": 11154,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3955:7:45",
@@ -562,19 +562,19 @@
               "src": "3878:107:45"
             },
             "returnParameters": {
-              "id": 11152,
+              "id": 11157,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3994:0:45"
             },
-            "scope": 11154,
+            "scope": 11159,
             "src": "3846:149:45",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 11155,
+        "scope": 11160,
         "src": "1943:2054:45"
       }
     ],
@@ -584,14 +584,14 @@
     "absolutePath": "@keep-network/keep-ecdsa/contracts/api/IBondedECDSAKeepFactory.sol",
     "exportedSymbols": {
       "IBondedECDSAKeepFactory": [
-        11154
+        11159
       ]
     },
-    "id": 11155,
+    "id": 11160,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 11117,
+        "id": 11122,
         "literals": [
           "solidity",
           "0.5",
@@ -606,9 +606,9 @@
         "contractKind": "interface",
         "documentation": "@title Bonded ECDSA Keep Factory\n @notice Factory for Bonded ECDSA Keeps.",
         "fullyImplemented": false,
-        "id": 11154,
+        "id": 11159,
         "linearizedBaseContracts": [
-          11154
+          11159
         ],
         "name": "IBondedECDSAKeepFactory",
         "nodeType": "ContractDefinition",
@@ -616,22 +616,22 @@
           {
             "body": null,
             "documentation": "@notice Open a new ECDSA Keep.\n @param _groupSize Number of members in the keep.\n @param _honestThreshold Minimum number of honest keep members.\n @param _owner Address of the keep owner.\n @param _bond Value of ETH bond required from the keep.\n @param _stakeLockDuration Stake lock duration in seconds.\n @return Address of the opened keep.",
-            "id": 11132,
+            "id": 11137,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "openKeep",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 11128,
+              "id": 11133,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11119,
+                  "id": 11124,
                   "name": "_groupSize",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11132,
+                  "scope": 11137,
                   "src": "2399:18:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -640,7 +640,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11118,
+                    "id": 11123,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2399:7:45",
@@ -654,10 +654,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 11121,
+                  "id": 11126,
                   "name": "_honestThreshold",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11132,
+                  "scope": 11137,
                   "src": "2427:24:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -666,7 +666,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11120,
+                    "id": 11125,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2427:7:45",
@@ -680,10 +680,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 11123,
+                  "id": 11128,
                   "name": "_owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11132,
+                  "scope": 11137,
                   "src": "2461:14:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -692,7 +692,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 11122,
+                    "id": 11127,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2461:7:45",
@@ -707,10 +707,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 11125,
+                  "id": 11130,
                   "name": "_bond",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11132,
+                  "scope": 11137,
                   "src": "2485:13:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -719,7 +719,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11124,
+                    "id": 11129,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2485:7:45",
@@ -733,10 +733,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 11127,
+                  "id": 11132,
                   "name": "_stakeLockDuration",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11132,
+                  "scope": 11137,
                   "src": "2508:26:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -745,7 +745,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11126,
+                    "id": 11131,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2508:7:45",
@@ -761,15 +761,15 @@
               "src": "2389:151:45"
             },
             "returnParameters": {
-              "id": 11131,
+              "id": 11136,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11130,
+                  "id": 11135,
                   "name": "keepAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11132,
+                  "scope": 11137,
                   "src": "2567:19:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -778,7 +778,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 11129,
+                    "id": 11134,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2567:7:45",
@@ -794,7 +794,7 @@
               ],
               "src": "2566:21:45"
             },
-            "scope": 11154,
+            "scope": 11159,
             "src": "2372:216:45",
             "stateMutability": "payable",
             "superFunction": null,
@@ -803,28 +803,28 @@
           {
             "body": null,
             "documentation": "@notice Gets a fee estimate for opening a new keep.\n @return Uint256 estimate.",
-            "id": 11137,
+            "id": 11142,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "openKeepFeeEstimate",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 11133,
+              "id": 11138,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2716:2:45"
             },
             "returnParameters": {
-              "id": 11136,
+              "id": 11141,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11135,
+                  "id": 11140,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11137,
+                  "scope": 11142,
                   "src": "2742:7:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -833,7 +833,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11134,
+                    "id": 11139,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2742:7:45",
@@ -848,7 +848,7 @@
               ],
               "src": "2741:9:45"
             },
-            "scope": 11154,
+            "scope": 11159,
             "src": "2688:63:45",
             "stateMutability": "view",
             "superFunction": null,
@@ -857,22 +857,22 @@
           {
             "body": null,
             "documentation": "@notice Gets the total weight of operators\n in the sortition pool for the given application.\n @param _application Address of the application.\n @return The sum of all registered operators' weights in the pool.\n Reverts if sortition pool for the application does not exist.",
-            "id": 11144,
+            "id": 11149,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getSortitionPoolWeight",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 11140,
+              "id": 11145,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11139,
+                  "id": 11144,
                   "name": "_application",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11144,
+                  "scope": 11149,
                   "src": "3106:20:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -881,7 +881,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 11138,
+                    "id": 11143,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3106:7:45",
@@ -898,15 +898,15 @@
               "src": "3096:36:45"
             },
             "returnParameters": {
-              "id": 11143,
+              "id": 11148,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11142,
+                  "id": 11147,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11144,
+                  "scope": 11149,
                   "src": "3156:7:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -915,7 +915,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11141,
+                    "id": 11146,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3156:7:45",
@@ -930,7 +930,7 @@
               ],
               "src": "3155:9:45"
             },
-            "scope": 11154,
+            "scope": 11159,
             "src": "3065:100:45",
             "stateMutability": "view",
             "superFunction": null,
@@ -939,22 +939,22 @@
           {
             "body": null,
             "documentation": "@notice Sets the minimum bondable value required from the operator to\n join the sortition pool of the given application. It is up to the\n application to specify a reasonable minimum bond for operators trying to\n join the pool to prevent griefing by operators joining without enough\n bondable value.\n @dev The default minimum bond value for each sortition pool created\n is 20 ETH.\n @param _minimumBondableValue The minimum unbonded value the application\n requires from a single keep.\n @param _groupSize Number of signers in the keep.\n @param _honestThreshold Minimum number of honest keep signers.",
-            "id": 11153,
+            "id": 11158,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "setMinimumBondableValue",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 11151,
+              "id": 11156,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11146,
+                  "id": 11151,
                   "name": "_minimumBondableValue",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11153,
+                  "scope": 11158,
                   "src": "3888:29:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -963,7 +963,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11145,
+                    "id": 11150,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3888:7:45",
@@ -977,10 +977,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 11148,
+                  "id": 11153,
                   "name": "_groupSize",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11153,
+                  "scope": 11158,
                   "src": "3927:18:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -989,7 +989,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11147,
+                    "id": 11152,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3927:7:45",
@@ -1003,10 +1003,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 11150,
+                  "id": 11155,
                   "name": "_honestThreshold",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11153,
+                  "scope": 11158,
                   "src": "3955:24:45",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1015,7 +1015,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11149,
+                    "id": 11154,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3955:7:45",
@@ -1031,19 +1031,19 @@
               "src": "3878:107:45"
             },
             "returnParameters": {
-              "id": 11152,
+              "id": 11157,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3994:0:45"
             },
-            "scope": 11154,
+            "scope": 11159,
             "src": "3846:149:45",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 11155,
+        "scope": 11160,
         "src": "1943:2054:45"
       }
     ],
@@ -1055,7 +1055,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.23",
-  "updatedAt": "2021-02-01T14:28:06.562Z",
+  "updatedAt": "2021-02-01T16:23:17.028Z",
   "devdoc": {
     "methods": {
       "getSortitionPoolWeight(address)": {

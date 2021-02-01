@@ -43,14 +43,14 @@
     "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/price-feed/MockSatWeiPriceFeed.sol",
     "exportedSymbols": {
       "MockSatWeiPriceFeed": [
-        10347
+        10352
       ]
     },
-    "id": 10348,
+    "id": 10353,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 10326,
+        "id": 10331,
         "literals": [
           "solidity",
           "0.5",
@@ -65,19 +65,19 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 10347,
+        "id": 10352,
         "linearizedBaseContracts": [
-          10347
+          10352
         ],
         "name": "MockSatWeiPriceFeed",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 10328,
+            "id": 10333,
             "name": "price",
             "nodeType": "VariableDeclaration",
-            "scope": 10347,
+            "scope": 10352,
             "src": "60:21:36",
             "stateVariable": true,
             "storageLocation": "default",
@@ -86,7 +86,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10327,
+              "id": 10332,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "60:7:36",
@@ -100,54 +100,54 @@
           },
           {
             "body": {
-              "id": 10335,
+              "id": 10340,
               "nodeType": "Block",
               "src": "258:29:36",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10333,
+                    "id": 10338,
                     "name": "price",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10328,
+                    "referencedDeclaration": 10333,
                     "src": "275:5:36",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10332,
-                  "id": 10334,
+                  "functionReturnParameters": 10337,
+                  "id": 10339,
                   "nodeType": "Return",
                   "src": "268:12:36"
                 }
               ]
             },
             "documentation": "@notice Get the current price of satoshi in wei.\n @return The price of one satoshi in wei.",
-            "id": 10336,
+            "id": 10341,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getPrice",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10329,
+              "id": 10334,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "211:2:36"
             },
             "returnParameters": {
-              "id": 10332,
+              "id": 10337,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10331,
+                  "id": 10336,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10336,
+                  "scope": 10341,
                   "src": "245:7:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -156,7 +156,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10330,
+                    "id": 10335,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "245:7:36",
@@ -171,7 +171,7 @@
               ],
               "src": "244:9:36"
             },
-            "scope": 10347,
+            "scope": 10352,
             "src": "194:93:36",
             "stateMutability": "view",
             "superFunction": null,
@@ -179,25 +179,25 @@
           },
           {
             "body": {
-              "id": 10345,
+              "id": 10350,
               "nodeType": "Block",
               "src": "334:31:36",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10343,
+                    "id": 10348,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 10341,
+                      "id": 10346,
                       "name": "price",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10328,
+                      "referencedDeclaration": 10333,
                       "src": "344:5:36",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -208,11 +208,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 10342,
+                      "id": 10347,
                       "name": "_price",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10338,
+                      "referencedDeclaration": 10343,
                       "src": "352:6:36",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -225,29 +225,29 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 10344,
+                  "id": 10349,
                   "nodeType": "ExpressionStatement",
                   "src": "344:14:36"
                 }
               ]
             },
             "documentation": null,
-            "id": 10346,
+            "id": 10351,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "setPrice",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10339,
+              "id": 10344,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10338,
+                  "id": 10343,
                   "name": "_price",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10346,
+                  "scope": 10351,
                   "src": "311:14:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -256,7 +256,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10337,
+                    "id": 10342,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "311:7:36",
@@ -272,19 +272,19 @@
               "src": "310:16:36"
             },
             "returnParameters": {
-              "id": 10340,
+              "id": 10345,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "334:0:36"
             },
-            "scope": 10347,
+            "scope": 10352,
             "src": "293:72:36",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 10348,
+        "scope": 10353,
         "src": "25:343:36"
       }
     ],
@@ -294,14 +294,14 @@
     "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/price-feed/MockSatWeiPriceFeed.sol",
     "exportedSymbols": {
       "MockSatWeiPriceFeed": [
-        10347
+        10352
       ]
     },
-    "id": 10348,
+    "id": 10353,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 10326,
+        "id": 10331,
         "literals": [
           "solidity",
           "0.5",
@@ -316,19 +316,19 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 10347,
+        "id": 10352,
         "linearizedBaseContracts": [
-          10347
+          10352
         ],
         "name": "MockSatWeiPriceFeed",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 10328,
+            "id": 10333,
             "name": "price",
             "nodeType": "VariableDeclaration",
-            "scope": 10347,
+            "scope": 10352,
             "src": "60:21:36",
             "stateVariable": true,
             "storageLocation": "default",
@@ -337,7 +337,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10327,
+              "id": 10332,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "60:7:36",
@@ -351,54 +351,54 @@
           },
           {
             "body": {
-              "id": 10335,
+              "id": 10340,
               "nodeType": "Block",
               "src": "258:29:36",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10333,
+                    "id": 10338,
                     "name": "price",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10328,
+                    "referencedDeclaration": 10333,
                     "src": "275:5:36",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10332,
-                  "id": 10334,
+                  "functionReturnParameters": 10337,
+                  "id": 10339,
                   "nodeType": "Return",
                   "src": "268:12:36"
                 }
               ]
             },
             "documentation": "@notice Get the current price of satoshi in wei.\n @return The price of one satoshi in wei.",
-            "id": 10336,
+            "id": 10341,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getPrice",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10329,
+              "id": 10334,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "211:2:36"
             },
             "returnParameters": {
-              "id": 10332,
+              "id": 10337,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10331,
+                  "id": 10336,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10336,
+                  "scope": 10341,
                   "src": "245:7:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -407,7 +407,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10330,
+                    "id": 10335,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "245:7:36",
@@ -422,7 +422,7 @@
               ],
               "src": "244:9:36"
             },
-            "scope": 10347,
+            "scope": 10352,
             "src": "194:93:36",
             "stateMutability": "view",
             "superFunction": null,
@@ -430,25 +430,25 @@
           },
           {
             "body": {
-              "id": 10345,
+              "id": 10350,
               "nodeType": "Block",
               "src": "334:31:36",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10343,
+                    "id": 10348,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 10341,
+                      "id": 10346,
                       "name": "price",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10328,
+                      "referencedDeclaration": 10333,
                       "src": "344:5:36",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -459,11 +459,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 10342,
+                      "id": 10347,
                       "name": "_price",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10338,
+                      "referencedDeclaration": 10343,
                       "src": "352:6:36",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -476,29 +476,29 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 10344,
+                  "id": 10349,
                   "nodeType": "ExpressionStatement",
                   "src": "344:14:36"
                 }
               ]
             },
             "documentation": null,
-            "id": 10346,
+            "id": 10351,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "setPrice",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10339,
+              "id": 10344,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10338,
+                  "id": 10343,
                   "name": "_price",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10346,
+                  "scope": 10351,
                   "src": "311:14:36",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -507,7 +507,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10337,
+                    "id": 10342,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "311:7:36",
@@ -523,19 +523,19 @@
               "src": "310:16:36"
             },
             "returnParameters": {
-              "id": 10340,
+              "id": 10345,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "334:0:36"
             },
-            "scope": 10347,
+            "scope": 10352,
             "src": "293:72:36",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 10348,
+        "scope": 10353,
         "src": "25:343:36"
       }
     ],
@@ -547,7 +547,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.23",
-  "updatedAt": "2021-02-01T14:28:06.554Z",
+  "updatedAt": "2021-02-01T16:23:17.020Z",
   "devdoc": {
     "methods": {
       "getPrice()": {

@@ -1675,17 +1675,17 @@
     "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/deposit/TestDepositUtils.sol",
     "exportedSymbols": {
       "TestDepositUtils": [
-        9806
+        9811
       ],
       "TestDepositUtilsSPV": [
-        9892
+        9897
       ]
     },
-    "id": 9893,
+    "id": 9898,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 9615,
+        "id": 9620,
         "literals": [
           "solidity",
           "0.5",
@@ -1697,14 +1697,14 @@
       {
         "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/deposit/DepositUtils.sol",
         "file": "../../../contracts/deposit/DepositUtils.sol",
-        "id": 9617,
+        "id": 9622,
         "nodeType": "ImportDirective",
-        "scope": 9893,
+        "scope": 9898,
         "sourceUnit": 5104,
         "src": "25:73:30",
         "symbolAliases": [
           {
-            "foreign": 9616,
+            "foreign": 9621,
             "local": null
           }
         ],
@@ -1713,14 +1713,14 @@
       {
         "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/deposit/TestDeposit.sol",
         "file": "./TestDeposit.sol",
-        "id": 9619,
+        "id": 9624,
         "nodeType": "ImportDirective",
-        "scope": 9893,
-        "sourceUnit": 9614,
+        "scope": 9898,
+        "sourceUnit": 9619,
         "src": "99:46:30",
         "symbolAliases": [
           {
-            "foreign": 9618,
+            "foreign": 9623,
             "local": null
           }
         ],
@@ -1732,66 +1732,66 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 9620,
+              "id": 9625,
               "name": "TestDeposit",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 9613,
+              "referencedDeclaration": 9618,
               "src": "176:11:30",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_TestDeposit_$9613",
+                "typeIdentifier": "t_contract$_TestDeposit_$9618",
                 "typeString": "contract TestDeposit"
               }
             },
-            "id": 9621,
+            "id": 9626,
             "nodeType": "InheritanceSpecifier",
             "src": "176:11:30"
           }
         ],
         "contractDependencies": [
           1134,
-          6142,
-          9613
+          6147,
+          9618
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 9806,
+        "id": 9811,
         "linearizedBaseContracts": [
-          9806,
-          9613,
+          9811,
+          9618,
           1134,
-          6142
+          6147
         ],
         "name": "TestDepositUtils",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 9624,
+              "id": 9629,
               "nodeType": "Block",
               "src": "215:59:30",
               "statements": []
             },
             "documentation": null,
-            "id": 9625,
+            "id": 9630,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9622,
+              "id": 9627,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "205:2:30"
             },
             "returnParameters": {
-              "id": 9623,
+              "id": 9628,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "215:0:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "194:80:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1799,7 +1799,7 @@
           },
           {
             "body": {
-              "id": 9634,
+              "id": 9639,
               "nodeType": "Block",
               "src": "397:53:30",
               "statements": [
@@ -1811,7 +1811,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9630,
+                        "id": 9635,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -1822,7 +1822,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9631,
+                      "id": 9636,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -1836,7 +1836,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer) view returns (uint256)"
                       }
                     },
-                    "id": 9632,
+                    "id": 9637,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1850,36 +1850,36 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 9629,
-                  "id": 9633,
+                  "functionReturnParameters": 9634,
+                  "id": 9638,
                   "nodeType": "Return",
                   "src": "407:36:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9635,
+            "id": 9640,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "currentBlockDifficulty",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9626,
+              "id": 9631,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "364:2:30"
             },
             "returnParameters": {
-              "id": 9629,
+              "id": 9634,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9628,
+                  "id": 9633,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9635,
+                  "scope": 9640,
                   "src": "388:7:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1888,7 +1888,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9627,
+                    "id": 9632,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "388:7:30",
@@ -1903,7 +1903,7 @@
               ],
               "src": "387:9:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "333:117:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -1911,7 +1911,7 @@
           },
           {
             "body": {
-              "id": 9644,
+              "id": 9649,
               "nodeType": "Block",
               "src": "521:54:30",
               "statements": [
@@ -1923,7 +1923,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9640,
+                        "id": 9645,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -1934,7 +1934,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9641,
+                      "id": 9646,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -1948,7 +1948,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer) view returns (uint256)"
                       }
                     },
-                    "id": 9642,
+                    "id": 9647,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1962,36 +1962,36 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 9639,
-                  "id": 9643,
+                  "functionReturnParameters": 9644,
+                  "id": 9648,
                   "nodeType": "Return",
                   "src": "531:37:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9645,
+            "id": 9650,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "previousBlockDifficulty",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9636,
+              "id": 9641,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "488:2:30"
             },
             "returnParameters": {
-              "id": 9639,
+              "id": 9644,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9638,
+                  "id": 9643,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9645,
+                  "scope": 9650,
                   "src": "512:7:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2000,7 +2000,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9637,
+                    "id": 9642,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "512:7:30",
@@ -2015,7 +2015,7 @@
               ],
               "src": "511:9:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "456:119:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -2023,7 +2023,7 @@
           },
           {
             "body": {
-              "id": 9655,
+              "id": 9660,
               "nodeType": "Block",
               "src": "656:69:30",
               "statements": [
@@ -2033,11 +2033,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 9652,
+                        "id": 9657,
                         "name": "_bitcoinHeaders",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9647,
+                        "referencedDeclaration": 9652,
                         "src": "702:15:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -2054,7 +2054,7 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9650,
+                        "id": 9655,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -2065,7 +2065,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9651,
+                      "id": 9656,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -2079,7 +2079,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer,bytes memory) view"
                       }
                     },
-                    "id": 9653,
+                    "id": 9658,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2093,30 +2093,30 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "functionReturnParameters": 9649,
-                  "id": 9654,
+                  "functionReturnParameters": 9654,
+                  "id": 9659,
                   "nodeType": "Return",
                   "src": "666:52:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9656,
+            "id": 9661,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "evaluateProofDifficulty",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9648,
+              "id": 9653,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9647,
+                  "id": 9652,
                   "name": "_bitcoinHeaders",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9656,
+                  "scope": 9661,
                   "src": "614:28:30",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2125,7 +2125,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 9646,
+                    "id": 9651,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "614:5:30",
@@ -2141,12 +2141,12 @@
               "src": "613:30:30"
             },
             "returnParameters": {
-              "id": 9649,
+              "id": 9654,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "656:0:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "581:144:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -2154,14 +2154,14 @@
           },
           {
             "body": {
-              "id": 9675,
+              "id": 9680,
               "nodeType": "Block",
               "src": "839:121:30",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 9667,
+                    "id": 9672,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2170,7 +2170,7 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9663,
+                        "id": 9668,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -2181,7 +2181,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9665,
+                      "id": 9670,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -2199,11 +2199,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 9666,
+                      "id": 9671,
                       "name": "_signingGroupPubkeyX",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 9658,
+                      "referencedDeclaration": 9663,
                       "src": "876:20:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -2216,14 +2216,14 @@
                       "typeString": "bytes32"
                     }
                   },
-                  "id": 9668,
+                  "id": 9673,
                   "nodeType": "ExpressionStatement",
                   "src": "849:47:30"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 9673,
+                    "id": 9678,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2232,7 +2232,7 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9669,
+                        "id": 9674,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -2243,7 +2243,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9671,
+                      "id": 9676,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -2261,11 +2261,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 9672,
+                      "id": 9677,
                       "name": "_signingGroupPubkeyY",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 9660,
+                      "referencedDeclaration": 9665,
                       "src": "933:20:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -2278,29 +2278,29 @@
                       "typeString": "bytes32"
                     }
                   },
-                  "id": 9674,
+                  "id": 9679,
                   "nodeType": "ExpressionStatement",
                   "src": "906:47:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9676,
+            "id": 9681,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "setPubKey",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9661,
+              "id": 9666,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9658,
+                  "id": 9663,
                   "name": "_signingGroupPubkeyX",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9676,
+                  "scope": 9681,
                   "src": "759:28:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2309,7 +2309,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 9657,
+                    "id": 9662,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "759:7:30",
@@ -2323,10 +2323,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9660,
+                  "id": 9665,
                   "name": "_signingGroupPubkeyY",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9676,
+                  "scope": 9681,
                   "src": "797:28:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2335,7 +2335,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 9659,
+                    "id": 9664,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "797:7:30",
@@ -2351,12 +2351,12 @@
               "src": "749:82:30"
             },
             "returnParameters": {
-              "id": 9662,
+              "id": 9667,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "839:0:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "731:229:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2364,7 +2364,7 @@
           },
           {
             "body": {
-              "id": 9691,
+              "id": 9696,
               "nodeType": "Block",
               "src": "1109:92:30",
               "statements": [
@@ -2374,11 +2374,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 9687,
+                        "id": 9692,
                         "name": "_txOutputVector",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9678,
+                        "referencedDeclaration": 9683,
                         "src": "1157:15:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -2387,11 +2387,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9688,
+                        "id": 9693,
                         "name": "_fundingOutputIndex",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9680,
+                        "referencedDeclaration": 9685,
                         "src": "1174:19:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
@@ -2412,7 +2412,7 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9685,
+                        "id": 9690,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -2423,7 +2423,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9686,
+                      "id": 9691,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -2437,7 +2437,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer,bytes memory,uint8) view returns (bytes8)"
                       }
                     },
-                    "id": 9689,
+                    "id": 9694,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2451,30 +2451,30 @@
                       "typeString": "bytes8"
                     }
                   },
-                  "functionReturnParameters": 9684,
-                  "id": 9690,
+                  "functionReturnParameters": 9689,
+                  "id": 9695,
                   "nodeType": "Return",
                   "src": "1119:75:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9692,
+            "id": 9697,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "findAndParseFundingOutput",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9681,
+              "id": 9686,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9678,
+                  "id": 9683,
                   "name": "_txOutputVector",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9692,
+                  "scope": 9697,
                   "src": "1010:28:30",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2483,7 +2483,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 9677,
+                    "id": 9682,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1010:5:30",
@@ -2497,10 +2497,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9680,
+                  "id": 9685,
                   "name": "_fundingOutputIndex",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9692,
+                  "scope": 9697,
                   "src": "1048:25:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2509,7 +2509,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 9679,
+                    "id": 9684,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "1048:5:30",
@@ -2525,15 +2525,15 @@
               "src": "1000:79:30"
             },
             "returnParameters": {
-              "id": 9684,
+              "id": 9689,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9683,
+                  "id": 9688,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9692,
+                  "scope": 9697,
                   "src": "1101:6:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2542,7 +2542,7 @@
                     "typeString": "bytes8"
                   },
                   "typeName": {
-                    "id": 9682,
+                    "id": 9687,
                     "name": "bytes8",
                     "nodeType": "ElementaryTypeName",
                     "src": "1101:6:30",
@@ -2557,7 +2557,7 @@
               ],
               "src": "1100:8:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "966:235:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -2565,7 +2565,7 @@
           },
           {
             "body": {
-              "id": 9701,
+              "id": 9706,
               "nodeType": "Block",
               "src": "1258:44:30",
               "statements": [
@@ -2577,7 +2577,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9697,
+                        "id": 9702,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -2588,7 +2588,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9698,
+                      "id": 9703,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -2602,7 +2602,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer) view returns (uint256)"
                       }
                     },
-                    "id": 9699,
+                    "id": 9704,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2616,36 +2616,36 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 9696,
-                  "id": 9700,
+                  "functionReturnParameters": 9701,
+                  "id": 9705,
                   "nodeType": "Return",
                   "src": "1268:27:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9702,
+            "id": 9707,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "signerFee",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9693,
+              "id": 9698,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1225:2:30"
             },
             "returnParameters": {
-              "id": 9696,
+              "id": 9701,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9695,
+                  "id": 9700,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9702,
+                  "scope": 9707,
                   "src": "1249:7:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2654,7 +2654,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9694,
+                    "id": 9699,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1249:7:30",
@@ -2669,7 +2669,7 @@
               ],
               "src": "1248:9:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "1207:95:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -2677,7 +2677,7 @@
           },
           {
             "body": {
-              "id": 9711,
+              "id": 9716,
               "nodeType": "Block",
               "src": "1367:43:30",
               "statements": [
@@ -2689,7 +2689,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9707,
+                        "id": 9712,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -2700,7 +2700,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9708,
+                      "id": 9713,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -2714,7 +2714,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer) view returns (bytes memory)"
                       }
                     },
-                    "id": 9709,
+                    "id": 9714,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2728,36 +2728,36 @@
                       "typeString": "bytes memory"
                     }
                   },
-                  "functionReturnParameters": 9706,
-                  "id": 9710,
+                  "functionReturnParameters": 9711,
+                  "id": 9715,
                   "nodeType": "Return",
                   "src": "1377:26:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9712,
+            "id": 9717,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "signerPubkey",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9703,
+              "id": 9708,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1329:2:30"
             },
             "returnParameters": {
-              "id": 9706,
+              "id": 9711,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9705,
+                  "id": 9710,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9712,
+                  "scope": 9717,
                   "src": "1353:12:30",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2766,7 +2766,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 9704,
+                    "id": 9709,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1353:5:30",
@@ -2781,7 +2781,7 @@
               ],
               "src": "1352:14:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "1308:102:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -2789,7 +2789,7 @@
           },
           {
             "body": {
-              "id": 9721,
+              "id": 9726,
               "nodeType": "Block",
               "src": "1467:40:30",
               "statements": [
@@ -2801,7 +2801,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9717,
+                        "id": 9722,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -2812,7 +2812,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9718,
+                      "id": 9723,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -2826,7 +2826,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer) view returns (bytes20)"
                       }
                     },
-                    "id": 9719,
+                    "id": 9724,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2840,36 +2840,36 @@
                       "typeString": "bytes20"
                     }
                   },
-                  "functionReturnParameters": 9716,
-                  "id": 9720,
+                  "functionReturnParameters": 9721,
+                  "id": 9725,
                   "nodeType": "Return",
                   "src": "1477:23:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9722,
+            "id": 9727,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "signerPKH",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9713,
+              "id": 9718,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1434:2:30"
             },
             "returnParameters": {
-              "id": 9716,
+              "id": 9721,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9715,
+                  "id": 9720,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9722,
+                  "scope": 9727,
                   "src": "1458:7:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2878,7 +2878,7 @@
                     "typeString": "bytes20"
                   },
                   "typeName": {
-                    "id": 9714,
+                    "id": 9719,
                     "name": "bytes20",
                     "nodeType": "ElementaryTypeName",
                     "src": "1458:7:30",
@@ -2893,7 +2893,7 @@
               ],
               "src": "1457:9:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "1416:91:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -2901,7 +2901,7 @@
           },
           {
             "body": {
-              "id": 9731,
+              "id": 9736,
               "nodeType": "Block",
               "src": "1572:48:30",
               "statements": [
@@ -2913,7 +2913,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9727,
+                        "id": 9732,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -2924,7 +2924,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9728,
+                      "id": 9733,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -2938,7 +2938,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer) view returns (uint256)"
                       }
                     },
-                    "id": 9729,
+                    "id": 9734,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2952,36 +2952,36 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 9726,
-                  "id": 9730,
+                  "functionReturnParameters": 9731,
+                  "id": 9735,
                   "nodeType": "Return",
                   "src": "1582:31:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9732,
+            "id": 9737,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "fetchBitcoinPrice",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9723,
+              "id": 9728,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1539:2:30"
             },
             "returnParameters": {
-              "id": 9726,
+              "id": 9731,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9725,
+                  "id": 9730,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9732,
+                  "scope": 9737,
                   "src": "1563:7:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2990,7 +2990,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9724,
+                    "id": 9729,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1563:7:30",
@@ -3005,7 +3005,7 @@
               ],
               "src": "1562:9:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "1513:107:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -3013,7 +3013,7 @@
           },
           {
             "body": {
-              "id": 9741,
+              "id": 9746,
               "nodeType": "Block",
               "src": "1683:46:30",
               "statements": [
@@ -3025,7 +3025,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9737,
+                        "id": 9742,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -3036,7 +3036,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9738,
+                      "id": 9743,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -3050,7 +3050,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer) view returns (uint256)"
                       }
                     },
-                    "id": 9739,
+                    "id": 9744,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3064,36 +3064,36 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 9736,
-                  "id": 9740,
+                  "functionReturnParameters": 9741,
+                  "id": 9745,
                   "nodeType": "Return",
                   "src": "1693:29:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9742,
+            "id": 9747,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "fetchBondAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9733,
+              "id": 9738,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1650:2:30"
             },
             "returnParameters": {
-              "id": 9736,
+              "id": 9741,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9735,
+                  "id": 9740,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9742,
+                  "scope": 9747,
                   "src": "1674:7:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3102,7 +3102,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9734,
+                    "id": 9739,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1674:7:30",
@@ -3117,7 +3117,7 @@
               ],
               "src": "1673:9:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "1626:103:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -3125,7 +3125,7 @@
           },
           {
             "body": {
-              "id": 9751,
+              "id": 9756,
               "nodeType": "Block",
               "src": "1805:51:30",
               "statements": [
@@ -3137,7 +3137,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9747,
+                        "id": 9752,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -3148,7 +3148,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9748,
+                      "id": 9753,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -3162,7 +3162,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer) view returns (address payable)"
                       }
                     },
-                    "id": 9749,
+                    "id": 9754,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3176,36 +3176,36 @@
                       "typeString": "address payable"
                     }
                   },
-                  "functionReturnParameters": 9746,
-                  "id": 9750,
+                  "functionReturnParameters": 9751,
+                  "id": 9755,
                   "nodeType": "Return",
                   "src": "1815:34:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9752,
+            "id": 9757,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "feeRebateTokenHolder",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9743,
+              "id": 9748,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1764:2:30"
             },
             "returnParameters": {
-              "id": 9746,
+              "id": 9751,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9745,
+                  "id": 9750,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9752,
+                  "scope": 9757,
                   "src": "1788:15:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3214,7 +3214,7 @@
                     "typeString": "address payable"
                   },
                   "typeName": {
-                    "id": 9744,
+                    "id": 9749,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1788:15:30",
@@ -3230,7 +3230,7 @@
               ],
               "src": "1787:17:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "1735:121:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -3238,7 +3238,7 @@
           },
           {
             "body": {
-              "id": 9759,
+              "id": 9764,
               "nodeType": "Block",
               "src": "1899:49:30",
               "statements": [
@@ -3250,7 +3250,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9755,
+                        "id": 9760,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -3261,7 +3261,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9756,
+                      "id": 9761,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -3275,7 +3275,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer)"
                       }
                     },
-                    "id": 9757,
+                    "id": 9762,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3289,33 +3289,33 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "functionReturnParameters": 9754,
-                  "id": 9758,
+                  "functionReturnParameters": 9759,
+                  "id": 9763,
                   "nodeType": "Return",
                   "src": "1909:32:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9760,
+            "id": 9765,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "redemptionTeardown",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9753,
+              "id": 9758,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1889:2:30"
             },
             "returnParameters": {
-              "id": 9754,
+              "id": 9759,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1899:0:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "1862:86:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -3323,7 +3323,7 @@
           },
           {
             "body": {
-              "id": 9769,
+              "id": 9774,
               "nodeType": "Block",
               "src": "2007:47:30",
               "statements": [
@@ -3335,7 +3335,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9765,
+                        "id": 9770,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -3346,7 +3346,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9766,
+                      "id": 9771,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -3360,7 +3360,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer) returns (uint256)"
                       }
                     },
-                    "id": 9767,
+                    "id": 9772,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3374,36 +3374,36 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 9764,
-                  "id": 9768,
+                  "functionReturnParameters": 9769,
+                  "id": 9773,
                   "nodeType": "Return",
                   "src": "2017:30:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9770,
+            "id": 9775,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "seizeSignerBonds",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9761,
+              "id": 9766,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1979:2:30"
             },
             "returnParameters": {
-              "id": 9764,
+              "id": 9769,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9763,
+                  "id": 9768,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9770,
+                  "scope": 9775,
                   "src": "1998:7:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3412,7 +3412,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9762,
+                    "id": 9767,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1998:7:30",
@@ -3427,7 +3427,7 @@
               ],
               "src": "1997:9:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "1954:100:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -3435,7 +3435,7 @@
           },
           {
             "body": {
-              "id": 9777,
+              "id": 9782,
               "nodeType": "Block",
               "src": "2098:50:30",
               "statements": [
@@ -3447,7 +3447,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9773,
+                        "id": 9778,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -3458,7 +3458,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9774,
+                      "id": 9779,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -3472,7 +3472,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer)"
                       }
                     },
-                    "id": 9775,
+                    "id": 9780,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3486,33 +3486,33 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "functionReturnParameters": 9772,
-                  "id": 9776,
+                  "functionReturnParameters": 9777,
+                  "id": 9781,
                   "nodeType": "Return",
                   "src": "2108:33:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9778,
+            "id": 9783,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "distributeFeeRebate",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9771,
+              "id": 9776,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2088:2:30"
             },
             "returnParameters": {
-              "id": 9772,
+              "id": 9777,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2098:0:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "2060:88:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -3520,7 +3520,7 @@
           },
           {
             "body": {
-              "id": 9789,
+              "id": 9794,
               "nodeType": "Block",
               "src": "2210:53:30",
               "statements": [
@@ -3530,11 +3530,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 9786,
+                        "id": 9791,
                         "name": "_ethValue",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9780,
+                        "referencedDeclaration": 9785,
                         "src": "2246:9:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3551,7 +3551,7 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9783,
+                        "id": 9788,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -3562,7 +3562,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9785,
+                      "id": 9790,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -3576,7 +3576,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer,uint256)"
                       }
                     },
-                    "id": 9787,
+                    "id": 9792,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3590,29 +3590,29 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 9788,
+                  "id": 9793,
                   "nodeType": "ExpressionStatement",
                   "src": "2220:36:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9790,
+            "id": 9795,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "pushFundsToKeepGroup",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9781,
+              "id": 9786,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9780,
+                  "id": 9785,
                   "name": "_ethValue",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9790,
+                  "scope": 9795,
                   "src": "2184:17:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3621,7 +3621,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9779,
+                    "id": 9784,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2184:7:30",
@@ -3637,20 +3637,20 @@
               "src": "2183:19:30"
             },
             "returnParameters": {
-              "id": 9782,
+              "id": 9787,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2210:0:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "2154:109:30",
             "stateMutability": "nonpayable",
-            "superFunction": 9602,
+            "superFunction": 9607,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 9804,
+              "id": 9809,
               "nodeType": "Block",
               "src": "2340:60:30",
               "statements": [
@@ -3660,11 +3660,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 9800,
+                        "id": 9805,
                         "name": "_withdrawer",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9792,
+                        "referencedDeclaration": 9797,
                         "src": "2372:11:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -3673,11 +3673,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9801,
+                        "id": 9806,
                         "name": "_amount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9794,
+                        "referencedDeclaration": 9799,
                         "src": "2385:7:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3698,7 +3698,7 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9797,
+                        "id": 9802,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -3709,7 +3709,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9799,
+                      "id": 9804,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -3723,7 +3723,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer,address,uint256)"
                       }
                     },
-                    "id": 9802,
+                    "id": 9807,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3737,29 +3737,29 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 9803,
+                  "id": 9808,
                   "nodeType": "ExpressionStatement",
                   "src": "2350:43:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9805,
+            "id": 9810,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "enableWithdrawal",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9795,
+              "id": 9800,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9792,
+                  "id": 9797,
                   "name": "_withdrawer",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9805,
+                  "scope": 9810,
                   "src": "2295:19:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3768,7 +3768,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9791,
+                    "id": 9796,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2295:7:30",
@@ -3783,10 +3783,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9794,
+                  "id": 9799,
                   "name": "_amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9805,
+                  "scope": 9810,
                   "src": "2316:15:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3795,7 +3795,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9793,
+                    "id": 9798,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2316:7:30",
@@ -3811,19 +3811,19 @@
               "src": "2294:38:30"
             },
             "returnParameters": {
-              "id": 9796,
+              "id": 9801,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2340:0:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "2269:131:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 9893,
+        "scope": 9898,
         "src": "147:2255:30"
       },
       {
@@ -3832,66 +3832,66 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 9807,
+              "id": 9812,
               "name": "TestDeposit",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 9613,
+              "referencedDeclaration": 9618,
               "src": "2598:11:30",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_TestDeposit_$9613",
+                "typeIdentifier": "t_contract$_TestDeposit_$9618",
                 "typeString": "contract TestDeposit"
               }
             },
-            "id": 9808,
+            "id": 9813,
             "nodeType": "InheritanceSpecifier",
             "src": "2598:11:30"
           }
         ],
         "contractDependencies": [
           1134,
-          6142,
-          9613
+          6147,
+          9618
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 9892,
+        "id": 9897,
         "linearizedBaseContracts": [
-          9892,
-          9613,
+          9897,
+          9618,
           1134,
-          6142
+          6147
         ],
         "name": "TestDepositUtilsSPV",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 9811,
+              "id": 9816,
               "nodeType": "Block",
               "src": "2637:63:30",
               "statements": []
             },
             "documentation": null,
-            "id": 9812,
+            "id": 9817,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9809,
+              "id": 9814,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2627:2:30"
             },
             "returnParameters": {
-              "id": 9810,
+              "id": 9815,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2637:0:30"
             },
-            "scope": 9892,
+            "scope": 9897,
             "src": "2616:84:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -3899,14 +3899,14 @@
           },
           {
             "body": {
-              "id": 9831,
+              "id": 9836,
               "nodeType": "Block",
               "src": "2814:121:30",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 9823,
+                    "id": 9828,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3915,7 +3915,7 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9819,
+                        "id": 9824,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -3926,7 +3926,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9821,
+                      "id": 9826,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -3944,11 +3944,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 9822,
+                      "id": 9827,
                       "name": "_signingGroupPubkeyX",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 9814,
+                      "referencedDeclaration": 9819,
                       "src": "2851:20:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -3961,14 +3961,14 @@
                       "typeString": "bytes32"
                     }
                   },
-                  "id": 9824,
+                  "id": 9829,
                   "nodeType": "ExpressionStatement",
                   "src": "2824:47:30"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 9829,
+                    "id": 9834,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3977,7 +3977,7 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9825,
+                        "id": 9830,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -3988,7 +3988,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9827,
+                      "id": 9832,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -4006,11 +4006,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 9828,
+                      "id": 9833,
                       "name": "_signingGroupPubkeyY",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 9816,
+                      "referencedDeclaration": 9821,
                       "src": "2908:20:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -4023,29 +4023,29 @@
                       "typeString": "bytes32"
                     }
                   },
-                  "id": 9830,
+                  "id": 9835,
                   "nodeType": "ExpressionStatement",
                   "src": "2881:47:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9832,
+            "id": 9837,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "setPubKey",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9817,
+              "id": 9822,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9814,
+                  "id": 9819,
                   "name": "_signingGroupPubkeyX",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9832,
+                  "scope": 9837,
                   "src": "2734:28:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4054,7 +4054,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 9813,
+                    "id": 9818,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "2734:7:30",
@@ -4068,10 +4068,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9816,
+                  "id": 9821,
                   "name": "_signingGroupPubkeyY",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9832,
+                  "scope": 9837,
                   "src": "2772:28:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4080,7 +4080,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 9815,
+                    "id": 9820,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "2772:7:30",
@@ -4096,12 +4096,12 @@
               "src": "2724:82:30"
             },
             "returnParameters": {
-              "id": 9818,
+              "id": 9823,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2814:0:30"
             },
-            "scope": 9892,
+            "scope": 9897,
             "src": "2706:229:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -4109,7 +4109,7 @@
           },
           {
             "body": {
-              "id": 9867,
+              "id": 9872,
               "nodeType": "Block",
               "src": "3327:293:30",
               "statements": [
@@ -4119,11 +4119,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 9857,
+                        "id": 9862,
                         "name": "_txVersion",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9834,
+                        "referencedDeclaration": 9839,
                         "src": "3394:10:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes4",
@@ -4132,11 +4132,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9858,
+                        "id": 9863,
                         "name": "_txInputVector",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9836,
+                        "referencedDeclaration": 9841,
                         "src": "3418:14:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -4145,11 +4145,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9859,
+                        "id": 9864,
                         "name": "_txOutputVector",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9838,
+                        "referencedDeclaration": 9843,
                         "src": "3446:15:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -4158,11 +4158,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9860,
+                        "id": 9865,
                         "name": "_txLocktime",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9840,
+                        "referencedDeclaration": 9845,
                         "src": "3475:11:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes4",
@@ -4171,11 +4171,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9861,
+                        "id": 9866,
                         "name": "_fundingOutputIndex",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9842,
+                        "referencedDeclaration": 9847,
                         "src": "3500:19:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
@@ -4184,11 +4184,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9862,
+                        "id": 9867,
                         "name": "_merkleProof",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9844,
+                        "referencedDeclaration": 9849,
                         "src": "3533:12:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -4197,11 +4197,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9863,
+                        "id": 9868,
                         "name": "_txIndexInBlock",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9846,
+                        "referencedDeclaration": 9851,
                         "src": "3559:15:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4210,11 +4210,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9864,
+                        "id": 9869,
                         "name": "_bitcoinHeaders",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9848,
+                        "referencedDeclaration": 9853,
                         "src": "3588:15:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -4259,7 +4259,7 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9855,
+                        "id": 9860,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -4270,7 +4270,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9856,
+                      "id": 9861,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -4284,7 +4284,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer,bytes4,bytes memory,bytes memory,bytes4,uint8,bytes memory,uint256,bytes memory) view returns (bytes8,bytes memory)"
                       }
                     },
-                    "id": 9865,
+                    "id": 9870,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4298,30 +4298,30 @@
                       "typeString": "tuple(bytes8,bytes memory)"
                     }
                   },
-                  "functionReturnParameters": 9854,
-                  "id": 9866,
+                  "functionReturnParameters": 9859,
+                  "id": 9871,
                   "nodeType": "Return",
                   "src": "3337:276:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9868,
+            "id": 9873,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "validateAndParseFundingSPVProof",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9849,
+              "id": 9854,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9834,
+                  "id": 9839,
                   "name": "_txVersion",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9868,
+                  "scope": 9873,
                   "src": "2991:17:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4330,7 +4330,7 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 9833,
+                    "id": 9838,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
                     "src": "2991:6:30",
@@ -4344,10 +4344,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9836,
+                  "id": 9841,
                   "name": "_txInputVector",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9868,
+                  "scope": 9873,
                   "src": "3018:27:30",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -4356,7 +4356,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 9835,
+                    "id": 9840,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "3018:5:30",
@@ -4370,10 +4370,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9838,
+                  "id": 9843,
                   "name": "_txOutputVector",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9868,
+                  "scope": 9873,
                   "src": "3055:28:30",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -4382,7 +4382,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 9837,
+                    "id": 9842,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "3055:5:30",
@@ -4396,10 +4396,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9840,
+                  "id": 9845,
                   "name": "_txLocktime",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9868,
+                  "scope": 9873,
                   "src": "3093:18:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4408,7 +4408,7 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 9839,
+                    "id": 9844,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
                     "src": "3093:6:30",
@@ -4422,10 +4422,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9842,
+                  "id": 9847,
                   "name": "_fundingOutputIndex",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9868,
+                  "scope": 9873,
                   "src": "3121:25:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4434,7 +4434,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 9841,
+                    "id": 9846,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "3121:5:30",
@@ -4448,10 +4448,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9844,
+                  "id": 9849,
                   "name": "_merkleProof",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9868,
+                  "scope": 9873,
                   "src": "3156:25:30",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -4460,7 +4460,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 9843,
+                    "id": 9848,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "3156:5:30",
@@ -4474,10 +4474,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9846,
+                  "id": 9851,
                   "name": "_txIndexInBlock",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9868,
+                  "scope": 9873,
                   "src": "3191:23:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4486,7 +4486,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9845,
+                    "id": 9850,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3191:7:30",
@@ -4500,10 +4500,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9848,
+                  "id": 9853,
                   "name": "_bitcoinHeaders",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9868,
+                  "scope": 9873,
                   "src": "3224:28:30",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -4512,7 +4512,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 9847,
+                    "id": 9852,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "3224:5:30",
@@ -4528,15 +4528,15 @@
               "src": "2981:277:30"
             },
             "returnParameters": {
-              "id": 9854,
+              "id": 9859,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9851,
+                  "id": 9856,
                   "name": "_valueBytes",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9868,
+                  "scope": 9873,
                   "src": "3280:18:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4545,7 +4545,7 @@
                     "typeString": "bytes8"
                   },
                   "typeName": {
-                    "id": 9850,
+                    "id": 9855,
                     "name": "bytes8",
                     "nodeType": "ElementaryTypeName",
                     "src": "3280:6:30",
@@ -4559,10 +4559,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9853,
+                  "id": 9858,
                   "name": "_utxoOutpoint",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9868,
+                  "scope": 9873,
                   "src": "3300:26:30",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -4571,7 +4571,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 9852,
+                    "id": 9857,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "3300:5:30",
@@ -4586,7 +4586,7 @@
               ],
               "src": "3279:48:30"
             },
-            "scope": 9892,
+            "scope": 9897,
             "src": "2941:679:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -4594,7 +4594,7 @@
           },
           {
             "body": {
-              "id": 9890,
+              "id": 9895,
               "nodeType": "Block",
               "src": "3817:93:30",
               "statements": [
@@ -4604,11 +4604,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 9884,
+                        "id": 9889,
                         "name": "_bitcoinTxId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9870,
+                        "referencedDeclaration": 9875,
                         "src": "3851:12:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -4617,11 +4617,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9885,
+                        "id": 9890,
                         "name": "_merkleProof",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9872,
+                        "referencedDeclaration": 9877,
                         "src": "3865:12:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -4630,11 +4630,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9886,
+                        "id": 9891,
                         "name": "_index",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9874,
+                        "referencedDeclaration": 9879,
                         "src": "3879:6:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4643,11 +4643,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9887,
+                        "id": 9892,
                         "name": "_bitcoinHeaders",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9876,
+                        "referencedDeclaration": 9881,
                         "src": "3887:15:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -4676,7 +4676,7 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9881,
+                        "id": 9886,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -4687,7 +4687,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9883,
+                      "id": 9888,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -4701,7 +4701,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer,bytes32,bytes memory,uint256,bytes memory) view"
                       }
                     },
-                    "id": 9888,
+                    "id": 9893,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4715,29 +4715,29 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 9889,
+                  "id": 9894,
                   "nodeType": "ExpressionStatement",
                   "src": "3827:76:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9891,
+            "id": 9896,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "checkProofFromTxId",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9877,
+              "id": 9882,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9870,
+                  "id": 9875,
                   "name": "_bitcoinTxId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9891,
+                  "scope": 9896,
                   "src": "3663:20:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4746,7 +4746,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 9869,
+                    "id": 9874,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "3663:7:30",
@@ -4760,10 +4760,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9872,
+                  "id": 9877,
                   "name": "_merkleProof",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9891,
+                  "scope": 9896,
                   "src": "3693:25:30",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -4772,7 +4772,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 9871,
+                    "id": 9876,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "3693:5:30",
@@ -4786,10 +4786,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9874,
+                  "id": 9879,
                   "name": "_index",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9891,
+                  "scope": 9896,
                   "src": "3728:14:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4798,7 +4798,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9873,
+                    "id": 9878,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3728:7:30",
@@ -4812,10 +4812,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9876,
+                  "id": 9881,
                   "name": "_bitcoinHeaders",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9891,
+                  "scope": 9896,
                   "src": "3752:28:30",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -4824,7 +4824,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 9875,
+                    "id": 9880,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "3752:5:30",
@@ -4840,15 +4840,15 @@
               "src": "3653:133:30"
             },
             "returnParameters": {
-              "id": 9880,
+              "id": 9885,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9879,
+                  "id": 9884,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9891,
+                  "scope": 9896,
                   "src": "3808:7:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4857,7 +4857,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 9878,
+                    "id": 9883,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "3808:7:30",
@@ -4872,14 +4872,14 @@
               ],
               "src": "3807:9:30"
             },
-            "scope": 9892,
+            "scope": 9897,
             "src": "3626:284:30",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 9893,
+        "scope": 9898,
         "src": "2566:1346:30"
       }
     ],
@@ -4889,17 +4889,17 @@
     "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/deposit/TestDepositUtils.sol",
     "exportedSymbols": {
       "TestDepositUtils": [
-        9806
+        9811
       ],
       "TestDepositUtilsSPV": [
-        9892
+        9897
       ]
     },
-    "id": 9893,
+    "id": 9898,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 9615,
+        "id": 9620,
         "literals": [
           "solidity",
           "0.5",
@@ -4911,14 +4911,14 @@
       {
         "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/deposit/DepositUtils.sol",
         "file": "../../../contracts/deposit/DepositUtils.sol",
-        "id": 9617,
+        "id": 9622,
         "nodeType": "ImportDirective",
-        "scope": 9893,
+        "scope": 9898,
         "sourceUnit": 5104,
         "src": "25:73:30",
         "symbolAliases": [
           {
-            "foreign": 9616,
+            "foreign": 9621,
             "local": null
           }
         ],
@@ -4927,14 +4927,14 @@
       {
         "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/deposit/TestDeposit.sol",
         "file": "./TestDeposit.sol",
-        "id": 9619,
+        "id": 9624,
         "nodeType": "ImportDirective",
-        "scope": 9893,
-        "sourceUnit": 9614,
+        "scope": 9898,
+        "sourceUnit": 9619,
         "src": "99:46:30",
         "symbolAliases": [
           {
-            "foreign": 9618,
+            "foreign": 9623,
             "local": null
           }
         ],
@@ -4946,66 +4946,66 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 9620,
+              "id": 9625,
               "name": "TestDeposit",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 9613,
+              "referencedDeclaration": 9618,
               "src": "176:11:30",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_TestDeposit_$9613",
+                "typeIdentifier": "t_contract$_TestDeposit_$9618",
                 "typeString": "contract TestDeposit"
               }
             },
-            "id": 9621,
+            "id": 9626,
             "nodeType": "InheritanceSpecifier",
             "src": "176:11:30"
           }
         ],
         "contractDependencies": [
           1134,
-          6142,
-          9613
+          6147,
+          9618
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 9806,
+        "id": 9811,
         "linearizedBaseContracts": [
-          9806,
-          9613,
+          9811,
+          9618,
           1134,
-          6142
+          6147
         ],
         "name": "TestDepositUtils",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 9624,
+              "id": 9629,
               "nodeType": "Block",
               "src": "215:59:30",
               "statements": []
             },
             "documentation": null,
-            "id": 9625,
+            "id": 9630,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9622,
+              "id": 9627,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "205:2:30"
             },
             "returnParameters": {
-              "id": 9623,
+              "id": 9628,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "215:0:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "194:80:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -5013,7 +5013,7 @@
           },
           {
             "body": {
-              "id": 9634,
+              "id": 9639,
               "nodeType": "Block",
               "src": "397:53:30",
               "statements": [
@@ -5025,7 +5025,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9630,
+                        "id": 9635,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -5036,7 +5036,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9631,
+                      "id": 9636,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -5050,7 +5050,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer) view returns (uint256)"
                       }
                     },
-                    "id": 9632,
+                    "id": 9637,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5064,36 +5064,36 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 9629,
-                  "id": 9633,
+                  "functionReturnParameters": 9634,
+                  "id": 9638,
                   "nodeType": "Return",
                   "src": "407:36:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9635,
+            "id": 9640,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "currentBlockDifficulty",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9626,
+              "id": 9631,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "364:2:30"
             },
             "returnParameters": {
-              "id": 9629,
+              "id": 9634,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9628,
+                  "id": 9633,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9635,
+                  "scope": 9640,
                   "src": "388:7:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5102,7 +5102,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9627,
+                    "id": 9632,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "388:7:30",
@@ -5117,7 +5117,7 @@
               ],
               "src": "387:9:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "333:117:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -5125,7 +5125,7 @@
           },
           {
             "body": {
-              "id": 9644,
+              "id": 9649,
               "nodeType": "Block",
               "src": "521:54:30",
               "statements": [
@@ -5137,7 +5137,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9640,
+                        "id": 9645,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -5148,7 +5148,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9641,
+                      "id": 9646,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -5162,7 +5162,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer) view returns (uint256)"
                       }
                     },
-                    "id": 9642,
+                    "id": 9647,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5176,36 +5176,36 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 9639,
-                  "id": 9643,
+                  "functionReturnParameters": 9644,
+                  "id": 9648,
                   "nodeType": "Return",
                   "src": "531:37:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9645,
+            "id": 9650,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "previousBlockDifficulty",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9636,
+              "id": 9641,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "488:2:30"
             },
             "returnParameters": {
-              "id": 9639,
+              "id": 9644,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9638,
+                  "id": 9643,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9645,
+                  "scope": 9650,
                   "src": "512:7:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5214,7 +5214,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9637,
+                    "id": 9642,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "512:7:30",
@@ -5229,7 +5229,7 @@
               ],
               "src": "511:9:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "456:119:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -5237,7 +5237,7 @@
           },
           {
             "body": {
-              "id": 9655,
+              "id": 9660,
               "nodeType": "Block",
               "src": "656:69:30",
               "statements": [
@@ -5247,11 +5247,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 9652,
+                        "id": 9657,
                         "name": "_bitcoinHeaders",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9647,
+                        "referencedDeclaration": 9652,
                         "src": "702:15:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -5268,7 +5268,7 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9650,
+                        "id": 9655,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -5279,7 +5279,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9651,
+                      "id": 9656,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -5293,7 +5293,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer,bytes memory) view"
                       }
                     },
-                    "id": 9653,
+                    "id": 9658,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5307,30 +5307,30 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "functionReturnParameters": 9649,
-                  "id": 9654,
+                  "functionReturnParameters": 9654,
+                  "id": 9659,
                   "nodeType": "Return",
                   "src": "666:52:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9656,
+            "id": 9661,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "evaluateProofDifficulty",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9648,
+              "id": 9653,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9647,
+                  "id": 9652,
                   "name": "_bitcoinHeaders",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9656,
+                  "scope": 9661,
                   "src": "614:28:30",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -5339,7 +5339,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 9646,
+                    "id": 9651,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "614:5:30",
@@ -5355,12 +5355,12 @@
               "src": "613:30:30"
             },
             "returnParameters": {
-              "id": 9649,
+              "id": 9654,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "656:0:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "581:144:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -5368,14 +5368,14 @@
           },
           {
             "body": {
-              "id": 9675,
+              "id": 9680,
               "nodeType": "Block",
               "src": "839:121:30",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 9667,
+                    "id": 9672,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5384,7 +5384,7 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9663,
+                        "id": 9668,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -5395,7 +5395,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9665,
+                      "id": 9670,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -5413,11 +5413,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 9666,
+                      "id": 9671,
                       "name": "_signingGroupPubkeyX",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 9658,
+                      "referencedDeclaration": 9663,
                       "src": "876:20:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -5430,14 +5430,14 @@
                       "typeString": "bytes32"
                     }
                   },
-                  "id": 9668,
+                  "id": 9673,
                   "nodeType": "ExpressionStatement",
                   "src": "849:47:30"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 9673,
+                    "id": 9678,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5446,7 +5446,7 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9669,
+                        "id": 9674,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -5457,7 +5457,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9671,
+                      "id": 9676,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -5475,11 +5475,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 9672,
+                      "id": 9677,
                       "name": "_signingGroupPubkeyY",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 9660,
+                      "referencedDeclaration": 9665,
                       "src": "933:20:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -5492,29 +5492,29 @@
                       "typeString": "bytes32"
                     }
                   },
-                  "id": 9674,
+                  "id": 9679,
                   "nodeType": "ExpressionStatement",
                   "src": "906:47:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9676,
+            "id": 9681,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "setPubKey",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9661,
+              "id": 9666,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9658,
+                  "id": 9663,
                   "name": "_signingGroupPubkeyX",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9676,
+                  "scope": 9681,
                   "src": "759:28:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5523,7 +5523,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 9657,
+                    "id": 9662,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "759:7:30",
@@ -5537,10 +5537,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9660,
+                  "id": 9665,
                   "name": "_signingGroupPubkeyY",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9676,
+                  "scope": 9681,
                   "src": "797:28:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5549,7 +5549,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 9659,
+                    "id": 9664,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "797:7:30",
@@ -5565,12 +5565,12 @@
               "src": "749:82:30"
             },
             "returnParameters": {
-              "id": 9662,
+              "id": 9667,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "839:0:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "731:229:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -5578,7 +5578,7 @@
           },
           {
             "body": {
-              "id": 9691,
+              "id": 9696,
               "nodeType": "Block",
               "src": "1109:92:30",
               "statements": [
@@ -5588,11 +5588,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 9687,
+                        "id": 9692,
                         "name": "_txOutputVector",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9678,
+                        "referencedDeclaration": 9683,
                         "src": "1157:15:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -5601,11 +5601,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9688,
+                        "id": 9693,
                         "name": "_fundingOutputIndex",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9680,
+                        "referencedDeclaration": 9685,
                         "src": "1174:19:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
@@ -5626,7 +5626,7 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9685,
+                        "id": 9690,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -5637,7 +5637,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9686,
+                      "id": 9691,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -5651,7 +5651,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer,bytes memory,uint8) view returns (bytes8)"
                       }
                     },
-                    "id": 9689,
+                    "id": 9694,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5665,30 +5665,30 @@
                       "typeString": "bytes8"
                     }
                   },
-                  "functionReturnParameters": 9684,
-                  "id": 9690,
+                  "functionReturnParameters": 9689,
+                  "id": 9695,
                   "nodeType": "Return",
                   "src": "1119:75:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9692,
+            "id": 9697,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "findAndParseFundingOutput",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9681,
+              "id": 9686,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9678,
+                  "id": 9683,
                   "name": "_txOutputVector",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9692,
+                  "scope": 9697,
                   "src": "1010:28:30",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -5697,7 +5697,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 9677,
+                    "id": 9682,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1010:5:30",
@@ -5711,10 +5711,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9680,
+                  "id": 9685,
                   "name": "_fundingOutputIndex",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9692,
+                  "scope": 9697,
                   "src": "1048:25:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5723,7 +5723,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 9679,
+                    "id": 9684,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "1048:5:30",
@@ -5739,15 +5739,15 @@
               "src": "1000:79:30"
             },
             "returnParameters": {
-              "id": 9684,
+              "id": 9689,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9683,
+                  "id": 9688,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9692,
+                  "scope": 9697,
                   "src": "1101:6:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5756,7 +5756,7 @@
                     "typeString": "bytes8"
                   },
                   "typeName": {
-                    "id": 9682,
+                    "id": 9687,
                     "name": "bytes8",
                     "nodeType": "ElementaryTypeName",
                     "src": "1101:6:30",
@@ -5771,7 +5771,7 @@
               ],
               "src": "1100:8:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "966:235:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -5779,7 +5779,7 @@
           },
           {
             "body": {
-              "id": 9701,
+              "id": 9706,
               "nodeType": "Block",
               "src": "1258:44:30",
               "statements": [
@@ -5791,7 +5791,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9697,
+                        "id": 9702,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -5802,7 +5802,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9698,
+                      "id": 9703,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -5816,7 +5816,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer) view returns (uint256)"
                       }
                     },
-                    "id": 9699,
+                    "id": 9704,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5830,36 +5830,36 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 9696,
-                  "id": 9700,
+                  "functionReturnParameters": 9701,
+                  "id": 9705,
                   "nodeType": "Return",
                   "src": "1268:27:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9702,
+            "id": 9707,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "signerFee",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9693,
+              "id": 9698,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1225:2:30"
             },
             "returnParameters": {
-              "id": 9696,
+              "id": 9701,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9695,
+                  "id": 9700,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9702,
+                  "scope": 9707,
                   "src": "1249:7:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5868,7 +5868,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9694,
+                    "id": 9699,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1249:7:30",
@@ -5883,7 +5883,7 @@
               ],
               "src": "1248:9:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "1207:95:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -5891,7 +5891,7 @@
           },
           {
             "body": {
-              "id": 9711,
+              "id": 9716,
               "nodeType": "Block",
               "src": "1367:43:30",
               "statements": [
@@ -5903,7 +5903,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9707,
+                        "id": 9712,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -5914,7 +5914,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9708,
+                      "id": 9713,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -5928,7 +5928,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer) view returns (bytes memory)"
                       }
                     },
-                    "id": 9709,
+                    "id": 9714,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5942,36 +5942,36 @@
                       "typeString": "bytes memory"
                     }
                   },
-                  "functionReturnParameters": 9706,
-                  "id": 9710,
+                  "functionReturnParameters": 9711,
+                  "id": 9715,
                   "nodeType": "Return",
                   "src": "1377:26:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9712,
+            "id": 9717,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "signerPubkey",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9703,
+              "id": 9708,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1329:2:30"
             },
             "returnParameters": {
-              "id": 9706,
+              "id": 9711,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9705,
+                  "id": 9710,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9712,
+                  "scope": 9717,
                   "src": "1353:12:30",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -5980,7 +5980,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 9704,
+                    "id": 9709,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1353:5:30",
@@ -5995,7 +5995,7 @@
               ],
               "src": "1352:14:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "1308:102:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -6003,7 +6003,7 @@
           },
           {
             "body": {
-              "id": 9721,
+              "id": 9726,
               "nodeType": "Block",
               "src": "1467:40:30",
               "statements": [
@@ -6015,7 +6015,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9717,
+                        "id": 9722,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -6026,7 +6026,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9718,
+                      "id": 9723,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -6040,7 +6040,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer) view returns (bytes20)"
                       }
                     },
-                    "id": 9719,
+                    "id": 9724,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -6054,36 +6054,36 @@
                       "typeString": "bytes20"
                     }
                   },
-                  "functionReturnParameters": 9716,
-                  "id": 9720,
+                  "functionReturnParameters": 9721,
+                  "id": 9725,
                   "nodeType": "Return",
                   "src": "1477:23:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9722,
+            "id": 9727,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "signerPKH",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9713,
+              "id": 9718,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1434:2:30"
             },
             "returnParameters": {
-              "id": 9716,
+              "id": 9721,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9715,
+                  "id": 9720,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9722,
+                  "scope": 9727,
                   "src": "1458:7:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -6092,7 +6092,7 @@
                     "typeString": "bytes20"
                   },
                   "typeName": {
-                    "id": 9714,
+                    "id": 9719,
                     "name": "bytes20",
                     "nodeType": "ElementaryTypeName",
                     "src": "1458:7:30",
@@ -6107,7 +6107,7 @@
               ],
               "src": "1457:9:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "1416:91:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -6115,7 +6115,7 @@
           },
           {
             "body": {
-              "id": 9731,
+              "id": 9736,
               "nodeType": "Block",
               "src": "1572:48:30",
               "statements": [
@@ -6127,7 +6127,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9727,
+                        "id": 9732,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -6138,7 +6138,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9728,
+                      "id": 9733,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -6152,7 +6152,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer) view returns (uint256)"
                       }
                     },
-                    "id": 9729,
+                    "id": 9734,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -6166,36 +6166,36 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 9726,
-                  "id": 9730,
+                  "functionReturnParameters": 9731,
+                  "id": 9735,
                   "nodeType": "Return",
                   "src": "1582:31:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9732,
+            "id": 9737,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "fetchBitcoinPrice",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9723,
+              "id": 9728,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1539:2:30"
             },
             "returnParameters": {
-              "id": 9726,
+              "id": 9731,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9725,
+                  "id": 9730,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9732,
+                  "scope": 9737,
                   "src": "1563:7:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -6204,7 +6204,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9724,
+                    "id": 9729,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1563:7:30",
@@ -6219,7 +6219,7 @@
               ],
               "src": "1562:9:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "1513:107:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -6227,7 +6227,7 @@
           },
           {
             "body": {
-              "id": 9741,
+              "id": 9746,
               "nodeType": "Block",
               "src": "1683:46:30",
               "statements": [
@@ -6239,7 +6239,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9737,
+                        "id": 9742,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -6250,7 +6250,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9738,
+                      "id": 9743,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -6264,7 +6264,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer) view returns (uint256)"
                       }
                     },
-                    "id": 9739,
+                    "id": 9744,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -6278,36 +6278,36 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 9736,
-                  "id": 9740,
+                  "functionReturnParameters": 9741,
+                  "id": 9745,
                   "nodeType": "Return",
                   "src": "1693:29:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9742,
+            "id": 9747,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "fetchBondAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9733,
+              "id": 9738,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1650:2:30"
             },
             "returnParameters": {
-              "id": 9736,
+              "id": 9741,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9735,
+                  "id": 9740,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9742,
+                  "scope": 9747,
                   "src": "1674:7:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -6316,7 +6316,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9734,
+                    "id": 9739,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1674:7:30",
@@ -6331,7 +6331,7 @@
               ],
               "src": "1673:9:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "1626:103:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -6339,7 +6339,7 @@
           },
           {
             "body": {
-              "id": 9751,
+              "id": 9756,
               "nodeType": "Block",
               "src": "1805:51:30",
               "statements": [
@@ -6351,7 +6351,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9747,
+                        "id": 9752,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -6362,7 +6362,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9748,
+                      "id": 9753,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -6376,7 +6376,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer) view returns (address payable)"
                       }
                     },
-                    "id": 9749,
+                    "id": 9754,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -6390,36 +6390,36 @@
                       "typeString": "address payable"
                     }
                   },
-                  "functionReturnParameters": 9746,
-                  "id": 9750,
+                  "functionReturnParameters": 9751,
+                  "id": 9755,
                   "nodeType": "Return",
                   "src": "1815:34:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9752,
+            "id": 9757,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "feeRebateTokenHolder",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9743,
+              "id": 9748,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1764:2:30"
             },
             "returnParameters": {
-              "id": 9746,
+              "id": 9751,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9745,
+                  "id": 9750,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9752,
+                  "scope": 9757,
                   "src": "1788:15:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -6428,7 +6428,7 @@
                     "typeString": "address payable"
                   },
                   "typeName": {
-                    "id": 9744,
+                    "id": 9749,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1788:15:30",
@@ -6444,7 +6444,7 @@
               ],
               "src": "1787:17:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "1735:121:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -6452,7 +6452,7 @@
           },
           {
             "body": {
-              "id": 9759,
+              "id": 9764,
               "nodeType": "Block",
               "src": "1899:49:30",
               "statements": [
@@ -6464,7 +6464,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9755,
+                        "id": 9760,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -6475,7 +6475,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9756,
+                      "id": 9761,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -6489,7 +6489,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer)"
                       }
                     },
-                    "id": 9757,
+                    "id": 9762,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -6503,33 +6503,33 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "functionReturnParameters": 9754,
-                  "id": 9758,
+                  "functionReturnParameters": 9759,
+                  "id": 9763,
                   "nodeType": "Return",
                   "src": "1909:32:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9760,
+            "id": 9765,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "redemptionTeardown",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9753,
+              "id": 9758,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1889:2:30"
             },
             "returnParameters": {
-              "id": 9754,
+              "id": 9759,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1899:0:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "1862:86:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -6537,7 +6537,7 @@
           },
           {
             "body": {
-              "id": 9769,
+              "id": 9774,
               "nodeType": "Block",
               "src": "2007:47:30",
               "statements": [
@@ -6549,7 +6549,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9765,
+                        "id": 9770,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -6560,7 +6560,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9766,
+                      "id": 9771,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -6574,7 +6574,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer) returns (uint256)"
                       }
                     },
-                    "id": 9767,
+                    "id": 9772,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -6588,36 +6588,36 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 9764,
-                  "id": 9768,
+                  "functionReturnParameters": 9769,
+                  "id": 9773,
                   "nodeType": "Return",
                   "src": "2017:30:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9770,
+            "id": 9775,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "seizeSignerBonds",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9761,
+              "id": 9766,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1979:2:30"
             },
             "returnParameters": {
-              "id": 9764,
+              "id": 9769,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9763,
+                  "id": 9768,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9770,
+                  "scope": 9775,
                   "src": "1998:7:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -6626,7 +6626,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9762,
+                    "id": 9767,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1998:7:30",
@@ -6641,7 +6641,7 @@
               ],
               "src": "1997:9:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "1954:100:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -6649,7 +6649,7 @@
           },
           {
             "body": {
-              "id": 9777,
+              "id": 9782,
               "nodeType": "Block",
               "src": "2098:50:30",
               "statements": [
@@ -6661,7 +6661,7 @@
                       "argumentTypes": [],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9773,
+                        "id": 9778,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -6672,7 +6672,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9774,
+                      "id": 9779,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -6686,7 +6686,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer)"
                       }
                     },
-                    "id": 9775,
+                    "id": 9780,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -6700,33 +6700,33 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "functionReturnParameters": 9772,
-                  "id": 9776,
+                  "functionReturnParameters": 9777,
+                  "id": 9781,
                   "nodeType": "Return",
                   "src": "2108:33:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9778,
+            "id": 9783,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "distributeFeeRebate",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9771,
+              "id": 9776,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2088:2:30"
             },
             "returnParameters": {
-              "id": 9772,
+              "id": 9777,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2098:0:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "2060:88:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -6734,7 +6734,7 @@
           },
           {
             "body": {
-              "id": 9789,
+              "id": 9794,
               "nodeType": "Block",
               "src": "2210:53:30",
               "statements": [
@@ -6744,11 +6744,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 9786,
+                        "id": 9791,
                         "name": "_ethValue",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9780,
+                        "referencedDeclaration": 9785,
                         "src": "2246:9:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -6765,7 +6765,7 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9783,
+                        "id": 9788,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -6776,7 +6776,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9785,
+                      "id": 9790,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -6790,7 +6790,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer,uint256)"
                       }
                     },
-                    "id": 9787,
+                    "id": 9792,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -6804,29 +6804,29 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 9788,
+                  "id": 9793,
                   "nodeType": "ExpressionStatement",
                   "src": "2220:36:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9790,
+            "id": 9795,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "pushFundsToKeepGroup",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9781,
+              "id": 9786,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9780,
+                  "id": 9785,
                   "name": "_ethValue",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9790,
+                  "scope": 9795,
                   "src": "2184:17:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -6835,7 +6835,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9779,
+                    "id": 9784,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2184:7:30",
@@ -6851,20 +6851,20 @@
               "src": "2183:19:30"
             },
             "returnParameters": {
-              "id": 9782,
+              "id": 9787,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2210:0:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "2154:109:30",
             "stateMutability": "nonpayable",
-            "superFunction": 9602,
+            "superFunction": 9607,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 9804,
+              "id": 9809,
               "nodeType": "Block",
               "src": "2340:60:30",
               "statements": [
@@ -6874,11 +6874,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 9800,
+                        "id": 9805,
                         "name": "_withdrawer",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9792,
+                        "referencedDeclaration": 9797,
                         "src": "2372:11:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -6887,11 +6887,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9801,
+                        "id": 9806,
                         "name": "_amount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9794,
+                        "referencedDeclaration": 9799,
                         "src": "2385:7:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -6912,7 +6912,7 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9797,
+                        "id": 9802,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -6923,7 +6923,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9799,
+                      "id": 9804,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -6937,7 +6937,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer,address,uint256)"
                       }
                     },
-                    "id": 9802,
+                    "id": 9807,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -6951,29 +6951,29 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 9803,
+                  "id": 9808,
                   "nodeType": "ExpressionStatement",
                   "src": "2350:43:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9805,
+            "id": 9810,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "enableWithdrawal",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9795,
+              "id": 9800,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9792,
+                  "id": 9797,
                   "name": "_withdrawer",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9805,
+                  "scope": 9810,
                   "src": "2295:19:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -6982,7 +6982,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9791,
+                    "id": 9796,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2295:7:30",
@@ -6997,10 +6997,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9794,
+                  "id": 9799,
                   "name": "_amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9805,
+                  "scope": 9810,
                   "src": "2316:15:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -7009,7 +7009,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9793,
+                    "id": 9798,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2316:7:30",
@@ -7025,19 +7025,19 @@
               "src": "2294:38:30"
             },
             "returnParameters": {
-              "id": 9796,
+              "id": 9801,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2340:0:30"
             },
-            "scope": 9806,
+            "scope": 9811,
             "src": "2269:131:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 9893,
+        "scope": 9898,
         "src": "147:2255:30"
       },
       {
@@ -7046,66 +7046,66 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 9807,
+              "id": 9812,
               "name": "TestDeposit",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 9613,
+              "referencedDeclaration": 9618,
               "src": "2598:11:30",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_TestDeposit_$9613",
+                "typeIdentifier": "t_contract$_TestDeposit_$9618",
                 "typeString": "contract TestDeposit"
               }
             },
-            "id": 9808,
+            "id": 9813,
             "nodeType": "InheritanceSpecifier",
             "src": "2598:11:30"
           }
         ],
         "contractDependencies": [
           1134,
-          6142,
-          9613
+          6147,
+          9618
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 9892,
+        "id": 9897,
         "linearizedBaseContracts": [
-          9892,
-          9613,
+          9897,
+          9618,
           1134,
-          6142
+          6147
         ],
         "name": "TestDepositUtilsSPV",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 9811,
+              "id": 9816,
               "nodeType": "Block",
               "src": "2637:63:30",
               "statements": []
             },
             "documentation": null,
-            "id": 9812,
+            "id": 9817,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9809,
+              "id": 9814,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2627:2:30"
             },
             "returnParameters": {
-              "id": 9810,
+              "id": 9815,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2637:0:30"
             },
-            "scope": 9892,
+            "scope": 9897,
             "src": "2616:84:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -7113,14 +7113,14 @@
           },
           {
             "body": {
-              "id": 9831,
+              "id": 9836,
               "nodeType": "Block",
               "src": "2814:121:30",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 9823,
+                    "id": 9828,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -7129,7 +7129,7 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9819,
+                        "id": 9824,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -7140,7 +7140,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9821,
+                      "id": 9826,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -7158,11 +7158,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 9822,
+                      "id": 9827,
                       "name": "_signingGroupPubkeyX",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 9814,
+                      "referencedDeclaration": 9819,
                       "src": "2851:20:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -7175,14 +7175,14 @@
                       "typeString": "bytes32"
                     }
                   },
-                  "id": 9824,
+                  "id": 9829,
                   "nodeType": "ExpressionStatement",
                   "src": "2824:47:30"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 9829,
+                    "id": 9834,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -7191,7 +7191,7 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9825,
+                        "id": 9830,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -7202,7 +7202,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9827,
+                      "id": 9832,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -7220,11 +7220,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 9828,
+                      "id": 9833,
                       "name": "_signingGroupPubkeyY",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 9816,
+                      "referencedDeclaration": 9821,
                       "src": "2908:20:30",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -7237,29 +7237,29 @@
                       "typeString": "bytes32"
                     }
                   },
-                  "id": 9830,
+                  "id": 9835,
                   "nodeType": "ExpressionStatement",
                   "src": "2881:47:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9832,
+            "id": 9837,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "setPubKey",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9817,
+              "id": 9822,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9814,
+                  "id": 9819,
                   "name": "_signingGroupPubkeyX",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9832,
+                  "scope": 9837,
                   "src": "2734:28:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -7268,7 +7268,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 9813,
+                    "id": 9818,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "2734:7:30",
@@ -7282,10 +7282,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9816,
+                  "id": 9821,
                   "name": "_signingGroupPubkeyY",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9832,
+                  "scope": 9837,
                   "src": "2772:28:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -7294,7 +7294,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 9815,
+                    "id": 9820,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "2772:7:30",
@@ -7310,12 +7310,12 @@
               "src": "2724:82:30"
             },
             "returnParameters": {
-              "id": 9818,
+              "id": 9823,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2814:0:30"
             },
-            "scope": 9892,
+            "scope": 9897,
             "src": "2706:229:30",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -7323,7 +7323,7 @@
           },
           {
             "body": {
-              "id": 9867,
+              "id": 9872,
               "nodeType": "Block",
               "src": "3327:293:30",
               "statements": [
@@ -7333,11 +7333,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 9857,
+                        "id": 9862,
                         "name": "_txVersion",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9834,
+                        "referencedDeclaration": 9839,
                         "src": "3394:10:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes4",
@@ -7346,11 +7346,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9858,
+                        "id": 9863,
                         "name": "_txInputVector",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9836,
+                        "referencedDeclaration": 9841,
                         "src": "3418:14:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -7359,11 +7359,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9859,
+                        "id": 9864,
                         "name": "_txOutputVector",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9838,
+                        "referencedDeclaration": 9843,
                         "src": "3446:15:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -7372,11 +7372,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9860,
+                        "id": 9865,
                         "name": "_txLocktime",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9840,
+                        "referencedDeclaration": 9845,
                         "src": "3475:11:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes4",
@@ -7385,11 +7385,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9861,
+                        "id": 9866,
                         "name": "_fundingOutputIndex",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9842,
+                        "referencedDeclaration": 9847,
                         "src": "3500:19:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
@@ -7398,11 +7398,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9862,
+                        "id": 9867,
                         "name": "_merkleProof",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9844,
+                        "referencedDeclaration": 9849,
                         "src": "3533:12:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -7411,11 +7411,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9863,
+                        "id": 9868,
                         "name": "_txIndexInBlock",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9846,
+                        "referencedDeclaration": 9851,
                         "src": "3559:15:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -7424,11 +7424,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9864,
+                        "id": 9869,
                         "name": "_bitcoinHeaders",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9848,
+                        "referencedDeclaration": 9853,
                         "src": "3588:15:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -7473,7 +7473,7 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9855,
+                        "id": 9860,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -7484,7 +7484,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9856,
+                      "id": 9861,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -7498,7 +7498,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer,bytes4,bytes memory,bytes memory,bytes4,uint8,bytes memory,uint256,bytes memory) view returns (bytes8,bytes memory)"
                       }
                     },
-                    "id": 9865,
+                    "id": 9870,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -7512,30 +7512,30 @@
                       "typeString": "tuple(bytes8,bytes memory)"
                     }
                   },
-                  "functionReturnParameters": 9854,
-                  "id": 9866,
+                  "functionReturnParameters": 9859,
+                  "id": 9871,
                   "nodeType": "Return",
                   "src": "3337:276:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9868,
+            "id": 9873,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "validateAndParseFundingSPVProof",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9849,
+              "id": 9854,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9834,
+                  "id": 9839,
                   "name": "_txVersion",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9868,
+                  "scope": 9873,
                   "src": "2991:17:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -7544,7 +7544,7 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 9833,
+                    "id": 9838,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
                     "src": "2991:6:30",
@@ -7558,10 +7558,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9836,
+                  "id": 9841,
                   "name": "_txInputVector",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9868,
+                  "scope": 9873,
                   "src": "3018:27:30",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -7570,7 +7570,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 9835,
+                    "id": 9840,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "3018:5:30",
@@ -7584,10 +7584,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9838,
+                  "id": 9843,
                   "name": "_txOutputVector",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9868,
+                  "scope": 9873,
                   "src": "3055:28:30",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -7596,7 +7596,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 9837,
+                    "id": 9842,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "3055:5:30",
@@ -7610,10 +7610,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9840,
+                  "id": 9845,
                   "name": "_txLocktime",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9868,
+                  "scope": 9873,
                   "src": "3093:18:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -7622,7 +7622,7 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 9839,
+                    "id": 9844,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
                     "src": "3093:6:30",
@@ -7636,10 +7636,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9842,
+                  "id": 9847,
                   "name": "_fundingOutputIndex",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9868,
+                  "scope": 9873,
                   "src": "3121:25:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -7648,7 +7648,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 9841,
+                    "id": 9846,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "3121:5:30",
@@ -7662,10 +7662,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9844,
+                  "id": 9849,
                   "name": "_merkleProof",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9868,
+                  "scope": 9873,
                   "src": "3156:25:30",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -7674,7 +7674,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 9843,
+                    "id": 9848,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "3156:5:30",
@@ -7688,10 +7688,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9846,
+                  "id": 9851,
                   "name": "_txIndexInBlock",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9868,
+                  "scope": 9873,
                   "src": "3191:23:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -7700,7 +7700,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9845,
+                    "id": 9850,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3191:7:30",
@@ -7714,10 +7714,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9848,
+                  "id": 9853,
                   "name": "_bitcoinHeaders",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9868,
+                  "scope": 9873,
                   "src": "3224:28:30",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -7726,7 +7726,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 9847,
+                    "id": 9852,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "3224:5:30",
@@ -7742,15 +7742,15 @@
               "src": "2981:277:30"
             },
             "returnParameters": {
-              "id": 9854,
+              "id": 9859,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9851,
+                  "id": 9856,
                   "name": "_valueBytes",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9868,
+                  "scope": 9873,
                   "src": "3280:18:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -7759,7 +7759,7 @@
                     "typeString": "bytes8"
                   },
                   "typeName": {
-                    "id": 9850,
+                    "id": 9855,
                     "name": "bytes8",
                     "nodeType": "ElementaryTypeName",
                     "src": "3280:6:30",
@@ -7773,10 +7773,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9853,
+                  "id": 9858,
                   "name": "_utxoOutpoint",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9868,
+                  "scope": 9873,
                   "src": "3300:26:30",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -7785,7 +7785,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 9852,
+                    "id": 9857,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "3300:5:30",
@@ -7800,7 +7800,7 @@
               ],
               "src": "3279:48:30"
             },
-            "scope": 9892,
+            "scope": 9897,
             "src": "2941:679:30",
             "stateMutability": "view",
             "superFunction": null,
@@ -7808,7 +7808,7 @@
           },
           {
             "body": {
-              "id": 9890,
+              "id": 9895,
               "nodeType": "Block",
               "src": "3817:93:30",
               "statements": [
@@ -7818,11 +7818,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 9884,
+                        "id": 9889,
                         "name": "_bitcoinTxId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9870,
+                        "referencedDeclaration": 9875,
                         "src": "3851:12:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -7831,11 +7831,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9885,
+                        "id": 9890,
                         "name": "_merkleProof",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9872,
+                        "referencedDeclaration": 9877,
                         "src": "3865:12:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -7844,11 +7844,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9886,
+                        "id": 9891,
                         "name": "_index",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9874,
+                        "referencedDeclaration": 9879,
                         "src": "3879:6:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -7857,11 +7857,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9887,
+                        "id": 9892,
                         "name": "_bitcoinHeaders",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9876,
+                        "referencedDeclaration": 9881,
                         "src": "3887:15:30",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -7890,7 +7890,7 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 9881,
+                        "id": 9886,
                         "name": "self",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -7901,7 +7901,7 @@
                           "typeString": "struct DepositUtils.Deposit storage ref"
                         }
                       },
-                      "id": 9883,
+                      "id": 9888,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
@@ -7915,7 +7915,7 @@
                         "typeString": "function (struct DepositUtils.Deposit storage pointer,bytes32,bytes memory,uint256,bytes memory) view"
                       }
                     },
-                    "id": 9888,
+                    "id": 9893,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -7929,29 +7929,29 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 9889,
+                  "id": 9894,
                   "nodeType": "ExpressionStatement",
                   "src": "3827:76:30"
                 }
               ]
             },
             "documentation": null,
-            "id": 9891,
+            "id": 9896,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "checkProofFromTxId",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9877,
+              "id": 9882,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9870,
+                  "id": 9875,
                   "name": "_bitcoinTxId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9891,
+                  "scope": 9896,
                   "src": "3663:20:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -7960,7 +7960,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 9869,
+                    "id": 9874,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "3663:7:30",
@@ -7974,10 +7974,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9872,
+                  "id": 9877,
                   "name": "_merkleProof",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9891,
+                  "scope": 9896,
                   "src": "3693:25:30",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -7986,7 +7986,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 9871,
+                    "id": 9876,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "3693:5:30",
@@ -8000,10 +8000,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9874,
+                  "id": 9879,
                   "name": "_index",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9891,
+                  "scope": 9896,
                   "src": "3728:14:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -8012,7 +8012,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9873,
+                    "id": 9878,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3728:7:30",
@@ -8026,10 +8026,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9876,
+                  "id": 9881,
                   "name": "_bitcoinHeaders",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9891,
+                  "scope": 9896,
                   "src": "3752:28:30",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -8038,7 +8038,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 9875,
+                    "id": 9880,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "3752:5:30",
@@ -8054,15 +8054,15 @@
               "src": "3653:133:30"
             },
             "returnParameters": {
-              "id": 9880,
+              "id": 9885,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9879,
+                  "id": 9884,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9891,
+                  "scope": 9896,
                   "src": "3808:7:30",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -8071,7 +8071,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 9878,
+                    "id": 9883,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "3808:7:30",
@@ -8086,14 +8086,14 @@
               ],
               "src": "3807:9:30"
             },
-            "scope": 9892,
+            "scope": 9897,
             "src": "3626:284:30",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 9893,
+        "scope": 9898,
         "src": "2566:1346:30"
       }
     ],
@@ -8105,7 +8105,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.23",
-  "updatedAt": "2021-02-01T14:28:06.546Z",
+  "updatedAt": "2021-02-01T16:23:17.012Z",
   "devdoc": {
     "methods": {
       "auctionValue()": {

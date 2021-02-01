@@ -73,14 +73,14 @@
     "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/factory/CloneFactoryStub.sol",
     "exportedSymbols": {
       "CloneFactoryStub": [
-        9936
+        9941
       ]
     },
-    "id": 9937,
+    "id": 9942,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 9894,
+        "id": 9899,
         "literals": [
           "solidity",
           "0.5",
@@ -92,14 +92,14 @@
       {
         "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/proxy/CloneFactory.sol",
         "file": "../../../contracts/proxy/CloneFactory.sol",
-        "id": 9896,
+        "id": 9901,
         "nodeType": "ImportDirective",
-        "scope": 9937,
-        "sourceUnit": 5655,
+        "scope": 9942,
+        "sourceUnit": 5660,
         "src": "25:71:31",
         "symbolAliases": [
           {
-            "foreign": 9895,
+            "foreign": 9900,
             "local": null
           }
         ],
@@ -111,31 +111,31 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 9897,
+              "id": 9902,
               "name": "CloneFactory",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5654,
+              "referencedDeclaration": 5659,
               "src": "127:12:31",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_CloneFactory_$5654",
+                "typeIdentifier": "t_contract$_CloneFactory_$5659",
                 "typeString": "contract CloneFactory"
               }
             },
-            "id": 9898,
+            "id": 9903,
             "nodeType": "InheritanceSpecifier",
             "src": "127:12:31"
           }
         ],
         "contractDependencies": [
-          5654
+          5659
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 9936,
+        "id": 9941,
         "linearizedBaseContracts": [
-          9936,
-          5654
+          9941,
+          5659
         ],
         "name": "CloneFactoryStub",
         "nodeType": "ContractDefinition",
@@ -143,20 +143,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 9902,
+            "id": 9907,
             "name": "ContractCloneCreated",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 9901,
+              "id": 9906,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9900,
+                  "id": 9905,
                   "indexed": false,
                   "name": "contractCloneAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9902,
+                  "scope": 9907,
                   "src": "174:28:31",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -165,7 +165,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9899,
+                    "id": 9904,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "174:7:31",
@@ -185,21 +185,21 @@
           },
           {
             "body": {
-              "id": 9919,
+              "id": 9924,
               "nodeType": "Block",
               "src": "282:109:31",
               "statements": [
                 {
                   "assignments": [
-                    9910
+                    9915
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 9910,
+                      "id": 9915,
                       "name": "cloneAddress",
                       "nodeType": "VariableDeclaration",
-                      "scope": 9919,
+                      "scope": 9924,
                       "src": "292:20:31",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -208,7 +208,7 @@
                         "typeString": "address"
                       },
                       "typeName": {
-                        "id": 9909,
+                        "id": 9914,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
                         "src": "292:7:31",
@@ -222,17 +222,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 9914,
+                  "id": 9919,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 9912,
+                        "id": 9917,
                         "name": "_target",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9904,
+                        "referencedDeclaration": 9909,
                         "src": "327:7:31",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -247,18 +247,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 9911,
+                      "id": 9916,
                       "name": "createClone",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5636,
+                      "referencedDeclaration": 5641,
                       "src": "315:11:31",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$_t_address_$",
                         "typeString": "function (address) returns (address)"
                       }
                     },
-                    "id": 9913,
+                    "id": 9918,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -281,11 +281,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 9916,
+                        "id": 9921,
                         "name": "cloneAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9910,
+                        "referencedDeclaration": 9915,
                         "src": "371:12:31",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -300,18 +300,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 9915,
+                      "id": 9920,
                       "name": "ContractCloneCreated",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 9902,
+                      "referencedDeclaration": 9907,
                       "src": "350:20:31",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 9917,
+                    "id": 9922,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -325,29 +325,29 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 9918,
+                  "id": 9923,
                   "nodeType": "EmitStatement",
                   "src": "345:39:31"
                 }
               ]
             },
             "documentation": null,
-            "id": 9920,
+            "id": 9925,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "createClone_exposed",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9905,
+              "id": 9910,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9904,
+                  "id": 9909,
                   "name": "_target",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9920,
+                  "scope": 9925,
                   "src": "239:15:31",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -356,7 +356,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9903,
+                    "id": 9908,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "239:7:31",
@@ -373,15 +373,15 @@
               "src": "238:17:31"
             },
             "returnParameters": {
-              "id": 9908,
+              "id": 9913,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9907,
+                  "id": 9912,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9920,
+                  "scope": 9925,
                   "src": "274:7:31",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -390,7 +390,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9906,
+                    "id": 9911,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "274:7:31",
@@ -406,7 +406,7 @@
               ],
               "src": "273:9:31"
             },
-            "scope": 9936,
+            "scope": 9941,
             "src": "210:181:31",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -414,7 +414,7 @@
           },
           {
             "body": {
-              "id": 9934,
+              "id": 9939,
               "nodeType": "Block",
               "src": "489:48:31",
               "statements": [
@@ -424,11 +424,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 9930,
+                        "id": 9935,
                         "name": "_target",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9922,
+                        "referencedDeclaration": 9927,
                         "src": "514:7:31",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -437,11 +437,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9931,
+                        "id": 9936,
                         "name": "_query",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9924,
+                        "referencedDeclaration": 9929,
                         "src": "523:6:31",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -460,18 +460,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 9929,
+                      "id": 9934,
                       "name": "isClone",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5653,
+                      "referencedDeclaration": 5658,
                       "src": "506:7:31",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_address_$_t_address_$returns$_t_bool_$",
                         "typeString": "function (address,address) view returns (bool)"
                       }
                     },
-                    "id": 9932,
+                    "id": 9937,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -485,30 +485,30 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 9928,
-                  "id": 9933,
+                  "functionReturnParameters": 9933,
+                  "id": 9938,
                   "nodeType": "Return",
                   "src": "499:31:31"
                 }
               ]
             },
             "documentation": null,
-            "id": 9935,
+            "id": 9940,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "isClone_exposed",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9925,
+              "id": 9930,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9922,
+                  "id": 9927,
                   "name": "_target",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9935,
+                  "scope": 9940,
                   "src": "422:15:31",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -517,7 +517,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9921,
+                    "id": 9926,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "422:7:31",
@@ -532,10 +532,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9924,
+                  "id": 9929,
                   "name": "_query",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9935,
+                  "scope": 9940,
                   "src": "439:14:31",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -544,7 +544,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9923,
+                    "id": 9928,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "439:7:31",
@@ -561,15 +561,15 @@
               "src": "421:33:31"
             },
             "returnParameters": {
-              "id": 9928,
+              "id": 9933,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9927,
+                  "id": 9932,
                   "name": "result",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9935,
+                  "scope": 9940,
                   "src": "477:11:31",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -578,7 +578,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 9926,
+                    "id": 9931,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "477:4:31",
@@ -593,14 +593,14 @@
               ],
               "src": "476:13:31"
             },
-            "scope": 9936,
+            "scope": 9941,
             "src": "397:140:31",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 9937,
+        "scope": 9942,
         "src": "98:441:31"
       }
     ],
@@ -610,14 +610,14 @@
     "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/factory/CloneFactoryStub.sol",
     "exportedSymbols": {
       "CloneFactoryStub": [
-        9936
+        9941
       ]
     },
-    "id": 9937,
+    "id": 9942,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 9894,
+        "id": 9899,
         "literals": [
           "solidity",
           "0.5",
@@ -629,14 +629,14 @@
       {
         "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/proxy/CloneFactory.sol",
         "file": "../../../contracts/proxy/CloneFactory.sol",
-        "id": 9896,
+        "id": 9901,
         "nodeType": "ImportDirective",
-        "scope": 9937,
-        "sourceUnit": 5655,
+        "scope": 9942,
+        "sourceUnit": 5660,
         "src": "25:71:31",
         "symbolAliases": [
           {
-            "foreign": 9895,
+            "foreign": 9900,
             "local": null
           }
         ],
@@ -648,31 +648,31 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 9897,
+              "id": 9902,
               "name": "CloneFactory",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5654,
+              "referencedDeclaration": 5659,
               "src": "127:12:31",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_CloneFactory_$5654",
+                "typeIdentifier": "t_contract$_CloneFactory_$5659",
                 "typeString": "contract CloneFactory"
               }
             },
-            "id": 9898,
+            "id": 9903,
             "nodeType": "InheritanceSpecifier",
             "src": "127:12:31"
           }
         ],
         "contractDependencies": [
-          5654
+          5659
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 9936,
+        "id": 9941,
         "linearizedBaseContracts": [
-          9936,
-          5654
+          9941,
+          5659
         ],
         "name": "CloneFactoryStub",
         "nodeType": "ContractDefinition",
@@ -680,20 +680,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 9902,
+            "id": 9907,
             "name": "ContractCloneCreated",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 9901,
+              "id": 9906,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9900,
+                  "id": 9905,
                   "indexed": false,
                   "name": "contractCloneAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9902,
+                  "scope": 9907,
                   "src": "174:28:31",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -702,7 +702,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9899,
+                    "id": 9904,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "174:7:31",
@@ -722,21 +722,21 @@
           },
           {
             "body": {
-              "id": 9919,
+              "id": 9924,
               "nodeType": "Block",
               "src": "282:109:31",
               "statements": [
                 {
                   "assignments": [
-                    9910
+                    9915
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 9910,
+                      "id": 9915,
                       "name": "cloneAddress",
                       "nodeType": "VariableDeclaration",
-                      "scope": 9919,
+                      "scope": 9924,
                       "src": "292:20:31",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -745,7 +745,7 @@
                         "typeString": "address"
                       },
                       "typeName": {
-                        "id": 9909,
+                        "id": 9914,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
                         "src": "292:7:31",
@@ -759,17 +759,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 9914,
+                  "id": 9919,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 9912,
+                        "id": 9917,
                         "name": "_target",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9904,
+                        "referencedDeclaration": 9909,
                         "src": "327:7:31",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -784,18 +784,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 9911,
+                      "id": 9916,
                       "name": "createClone",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5636,
+                      "referencedDeclaration": 5641,
                       "src": "315:11:31",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$_t_address_$",
                         "typeString": "function (address) returns (address)"
                       }
                     },
-                    "id": 9913,
+                    "id": 9918,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -818,11 +818,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 9916,
+                        "id": 9921,
                         "name": "cloneAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9910,
+                        "referencedDeclaration": 9915,
                         "src": "371:12:31",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -837,18 +837,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 9915,
+                      "id": 9920,
                       "name": "ContractCloneCreated",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 9902,
+                      "referencedDeclaration": 9907,
                       "src": "350:20:31",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 9917,
+                    "id": 9922,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -862,29 +862,29 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 9918,
+                  "id": 9923,
                   "nodeType": "EmitStatement",
                   "src": "345:39:31"
                 }
               ]
             },
             "documentation": null,
-            "id": 9920,
+            "id": 9925,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "createClone_exposed",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9905,
+              "id": 9910,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9904,
+                  "id": 9909,
                   "name": "_target",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9920,
+                  "scope": 9925,
                   "src": "239:15:31",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -893,7 +893,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9903,
+                    "id": 9908,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "239:7:31",
@@ -910,15 +910,15 @@
               "src": "238:17:31"
             },
             "returnParameters": {
-              "id": 9908,
+              "id": 9913,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9907,
+                  "id": 9912,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9920,
+                  "scope": 9925,
                   "src": "274:7:31",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -927,7 +927,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9906,
+                    "id": 9911,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "274:7:31",
@@ -943,7 +943,7 @@
               ],
               "src": "273:9:31"
             },
-            "scope": 9936,
+            "scope": 9941,
             "src": "210:181:31",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -951,7 +951,7 @@
           },
           {
             "body": {
-              "id": 9934,
+              "id": 9939,
               "nodeType": "Block",
               "src": "489:48:31",
               "statements": [
@@ -961,11 +961,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 9930,
+                        "id": 9935,
                         "name": "_target",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9922,
+                        "referencedDeclaration": 9927,
                         "src": "514:7:31",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -974,11 +974,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 9931,
+                        "id": 9936,
                         "name": "_query",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 9924,
+                        "referencedDeclaration": 9929,
                         "src": "523:6:31",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -997,18 +997,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 9929,
+                      "id": 9934,
                       "name": "isClone",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5653,
+                      "referencedDeclaration": 5658,
                       "src": "506:7:31",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_address_$_t_address_$returns$_t_bool_$",
                         "typeString": "function (address,address) view returns (bool)"
                       }
                     },
-                    "id": 9932,
+                    "id": 9937,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1022,30 +1022,30 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 9928,
-                  "id": 9933,
+                  "functionReturnParameters": 9933,
+                  "id": 9938,
                   "nodeType": "Return",
                   "src": "499:31:31"
                 }
               ]
             },
             "documentation": null,
-            "id": 9935,
+            "id": 9940,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "isClone_exposed",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9925,
+              "id": 9930,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9922,
+                  "id": 9927,
                   "name": "_target",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9935,
+                  "scope": 9940,
                   "src": "422:15:31",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1054,7 +1054,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9921,
+                    "id": 9926,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "422:7:31",
@@ -1069,10 +1069,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9924,
+                  "id": 9929,
                   "name": "_query",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9935,
+                  "scope": 9940,
                   "src": "439:14:31",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1081,7 +1081,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9923,
+                    "id": 9928,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "439:7:31",
@@ -1098,15 +1098,15 @@
               "src": "421:33:31"
             },
             "returnParameters": {
-              "id": 9928,
+              "id": 9933,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9927,
+                  "id": 9932,
                   "name": "result",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9935,
+                  "scope": 9940,
                   "src": "477:11:31",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1115,7 +1115,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 9926,
+                    "id": 9931,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "477:4:31",
@@ -1130,14 +1130,14 @@
               ],
               "src": "476:13:31"
             },
-            "scope": 9936,
+            "scope": 9941,
             "src": "397:140:31",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 9937,
+        "scope": 9942,
         "src": "98:441:31"
       }
     ],
@@ -1149,7 +1149,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.23",
-  "updatedAt": "2021-02-01T14:28:06.551Z",
+  "updatedAt": "2021-02-01T16:23:17.017Z",
   "devdoc": {
     "methods": {}
   },

@@ -843,7 +843,7 @@
         "id": 512,
         "nodeType": "ImportDirective",
         "scope": 1135,
-        "sourceUnit": 17975,
+        "sourceUnit": 17980,
         "src": "357:81:2",
         "symbolAliases": [
           {
@@ -859,7 +859,7 @@
         "id": 514,
         "nodeType": "ImportDirective",
         "scope": 1135,
-        "sourceUnit": 8323,
+        "sourceUnit": 8328,
         "src": "439:50:2",
         "symbolAliases": [
           {
@@ -875,7 +875,7 @@
         "id": 516,
         "nodeType": "ImportDirective",
         "scope": 1135,
-        "sourceUnit": 6192,
+        "sourceUnit": 6197,
         "src": "490:60:2",
         "symbolAliases": [
           {
@@ -891,7 +891,7 @@
         "id": 517,
         "nodeType": "ImportDirective",
         "scope": 1135,
-        "sourceUnit": 6143,
+        "sourceUnit": 6148,
         "src": "552:47:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -905,10 +905,10 @@
               "id": 518,
               "name": "DepositFactoryAuthority",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6142,
+              "referencedDeclaration": 6147,
               "src": "1704:23:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_DepositFactoryAuthority_$6142",
+                "typeIdentifier": "t_contract$_DepositFactoryAuthority_$6147",
                 "typeString": "contract DepositFactoryAuthority"
               }
             },
@@ -918,7 +918,7 @@
           }
         ],
         "contractDependencies": [
-          6142
+          6147
         ],
         "contractKind": "contract",
         "documentation": "@title  tBTC Deposit\n @notice This is the main contract for tBTC. It is the state machine that\n         (through various libraries) handles bitcoin funding, bitcoin-spv\n         proofs, redemption, liquidation, and fraud logic.\n @dev This contract presents a public API that exposes the following\n      libraries:\n\n///       - `DepositFunding`\n       - `DepositLiquidaton`\n       - `DepositRedemption`,\n       - `DepositStates`\n       - `DepositUtils`\n       - `OutsourceDepositLogging`\n       - `TBTCConstants`\n\n///      Where these libraries require deposit state, this contract's state\n      variable `self` is used. `self` is a struct of type\n      `DepositUtils.Deposit` that contains all aspects of the deposit state\n      itself.",
@@ -926,7 +926,7 @@
         "id": 1134,
         "linearizedBaseContracts": [
           1134,
-          6142
+          6147
         ],
         "name": "Deposit",
         "nodeType": "ContractDefinition",
@@ -1182,7 +1182,7 @@
                       "name": "initialize",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6124,
+                      "referencedDeclaration": 6129,
                       "src": "2501:10:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
@@ -1265,7 +1265,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 18047,
+                              "referencedDeclaration": 18052,
                               "src": "2646:3:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -1360,10 +1360,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "2638:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2690,10 +2690,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "8220:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2930,10 +2930,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "9000:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -3264,10 +3264,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "9693:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -3839,7 +3839,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18047,
+                            "referencedDeclaration": 18052,
                             "src": "13586:3:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -3900,10 +3900,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "13542:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -7194,7 +7194,7 @@
                       "referencedDeclaration": 3830,
                       "src": "30305:14:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                        "typeIdentifier": "t_contract$_TBTCToken_$8327",
                         "typeString": "contract TBTCToken"
                       }
                     },
@@ -7209,13 +7209,13 @@
                       "referencedDeclaration": 1047,
                       "src": "30322:10:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                        "typeIdentifier": "t_contract$_TBTCToken_$8327",
                         "typeString": "contract TBTCToken"
                       }
                     },
                     "src": "30305:27:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                      "typeIdentifier": "t_contract$_TBTCToken_$8327",
                       "typeString": "contract TBTCToken"
                     }
                   },
@@ -7256,7 +7256,7 @@
                       "referencedDeclaration": 3832,
                       "src": "30342:21:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IERC721_$17974",
+                        "typeIdentifier": "t_contract$_IERC721_$17979",
                         "typeString": "contract IERC721"
                       }
                     },
@@ -7271,13 +7271,13 @@
                       "referencedDeclaration": 1049,
                       "src": "30366:17:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IERC721_$17974",
+                        "typeIdentifier": "t_contract$_IERC721_$17979",
                         "typeString": "contract IERC721"
                       }
                     },
                     "src": "30342:41:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC721_$17974",
+                      "typeIdentifier": "t_contract$_IERC721_$17979",
                       "typeString": "contract IERC721"
                     }
                   },
@@ -7318,7 +7318,7 @@
                       "referencedDeclaration": 3834,
                       "src": "30393:19:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                        "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
                         "typeString": "contract FeeRebateToken"
                       }
                     },
@@ -7333,13 +7333,13 @@
                       "referencedDeclaration": 1051,
                       "src": "30415:15:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                        "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
                         "typeString": "contract FeeRebateToken"
                       }
                     },
                     "src": "30393:37:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                      "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
                       "typeString": "contract FeeRebateToken"
                     }
                   },
@@ -7495,7 +7495,7 @@
                   "name": "onlyFactory",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 6141,
+                  "referencedDeclaration": 6146,
                   "src": "30236:11:2",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -7550,7 +7550,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                    "typeIdentifier": "t_contract$_TBTCToken_$8327",
                     "typeString": "contract TBTCToken"
                   },
                   "typeName": {
@@ -7558,10 +7558,10 @@
                     "id": 1046,
                     "name": "TBTCToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 8322,
+                    "referencedDeclaration": 8327,
                     "src": "30054:9:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                      "typeIdentifier": "t_contract$_TBTCToken_$8327",
                       "typeString": "contract TBTCToken"
                     }
                   },
@@ -7578,7 +7578,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IERC721_$17974",
+                    "typeIdentifier": "t_contract$_IERC721_$17979",
                     "typeString": "contract IERC721"
                   },
                   "typeName": {
@@ -7586,10 +7586,10 @@
                     "id": 1048,
                     "name": "IERC721",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 17974,
+                    "referencedDeclaration": 17979,
                     "src": "30084:7:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC721_$17974",
+                      "typeIdentifier": "t_contract$_IERC721_$17979",
                       "typeString": "contract IERC721"
                     }
                   },
@@ -7606,7 +7606,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                    "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
                     "typeString": "contract FeeRebateToken"
                   },
                   "typeName": {
@@ -7614,10 +7614,10 @@
                     "id": 1050,
                     "name": "FeeRebateToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 6191,
+                    "referencedDeclaration": 6196,
                     "src": "30119:14:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                      "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
                       "typeString": "contract FeeRebateToken"
                     }
                   },
@@ -7721,7 +7721,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18047,
+                            "referencedDeclaration": 18052,
                             "src": "31391:3:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -7813,10 +7813,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "31370:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -8265,7 +8265,7 @@
         "id": 512,
         "nodeType": "ImportDirective",
         "scope": 1135,
-        "sourceUnit": 17975,
+        "sourceUnit": 17980,
         "src": "357:81:2",
         "symbolAliases": [
           {
@@ -8281,7 +8281,7 @@
         "id": 514,
         "nodeType": "ImportDirective",
         "scope": 1135,
-        "sourceUnit": 8323,
+        "sourceUnit": 8328,
         "src": "439:50:2",
         "symbolAliases": [
           {
@@ -8297,7 +8297,7 @@
         "id": 516,
         "nodeType": "ImportDirective",
         "scope": 1135,
-        "sourceUnit": 6192,
+        "sourceUnit": 6197,
         "src": "490:60:2",
         "symbolAliases": [
           {
@@ -8313,7 +8313,7 @@
         "id": 517,
         "nodeType": "ImportDirective",
         "scope": 1135,
-        "sourceUnit": 6143,
+        "sourceUnit": 6148,
         "src": "552:47:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -8327,10 +8327,10 @@
               "id": 518,
               "name": "DepositFactoryAuthority",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6142,
+              "referencedDeclaration": 6147,
               "src": "1704:23:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_DepositFactoryAuthority_$6142",
+                "typeIdentifier": "t_contract$_DepositFactoryAuthority_$6147",
                 "typeString": "contract DepositFactoryAuthority"
               }
             },
@@ -8340,7 +8340,7 @@
           }
         ],
         "contractDependencies": [
-          6142
+          6147
         ],
         "contractKind": "contract",
         "documentation": "@title  tBTC Deposit\n @notice This is the main contract for tBTC. It is the state machine that\n         (through various libraries) handles bitcoin funding, bitcoin-spv\n         proofs, redemption, liquidation, and fraud logic.\n @dev This contract presents a public API that exposes the following\n      libraries:\n\n///       - `DepositFunding`\n       - `DepositLiquidaton`\n       - `DepositRedemption`,\n       - `DepositStates`\n       - `DepositUtils`\n       - `OutsourceDepositLogging`\n       - `TBTCConstants`\n\n///      Where these libraries require deposit state, this contract's state\n      variable `self` is used. `self` is a struct of type\n      `DepositUtils.Deposit` that contains all aspects of the deposit state\n      itself.",
@@ -8348,7 +8348,7 @@
         "id": 1134,
         "linearizedBaseContracts": [
           1134,
-          6142
+          6147
         ],
         "name": "Deposit",
         "nodeType": "ContractDefinition",
@@ -8604,7 +8604,7 @@
                       "name": "initialize",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6124,
+                      "referencedDeclaration": 6129,
                       "src": "2501:10:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
@@ -8687,7 +8687,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 18047,
+                              "referencedDeclaration": 18052,
                               "src": "2646:3:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -8782,10 +8782,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "2638:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -10112,10 +10112,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "8220:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -10352,10 +10352,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "9000:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -10686,10 +10686,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "9693:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -11261,7 +11261,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18047,
+                            "referencedDeclaration": 18052,
                             "src": "13586:3:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -11322,10 +11322,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "13542:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -14616,7 +14616,7 @@
                       "referencedDeclaration": 3830,
                       "src": "30305:14:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                        "typeIdentifier": "t_contract$_TBTCToken_$8327",
                         "typeString": "contract TBTCToken"
                       }
                     },
@@ -14631,13 +14631,13 @@
                       "referencedDeclaration": 1047,
                       "src": "30322:10:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                        "typeIdentifier": "t_contract$_TBTCToken_$8327",
                         "typeString": "contract TBTCToken"
                       }
                     },
                     "src": "30305:27:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                      "typeIdentifier": "t_contract$_TBTCToken_$8327",
                       "typeString": "contract TBTCToken"
                     }
                   },
@@ -14678,7 +14678,7 @@
                       "referencedDeclaration": 3832,
                       "src": "30342:21:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IERC721_$17974",
+                        "typeIdentifier": "t_contract$_IERC721_$17979",
                         "typeString": "contract IERC721"
                       }
                     },
@@ -14693,13 +14693,13 @@
                       "referencedDeclaration": 1049,
                       "src": "30366:17:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IERC721_$17974",
+                        "typeIdentifier": "t_contract$_IERC721_$17979",
                         "typeString": "contract IERC721"
                       }
                     },
                     "src": "30342:41:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC721_$17974",
+                      "typeIdentifier": "t_contract$_IERC721_$17979",
                       "typeString": "contract IERC721"
                     }
                   },
@@ -14740,7 +14740,7 @@
                       "referencedDeclaration": 3834,
                       "src": "30393:19:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                        "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
                         "typeString": "contract FeeRebateToken"
                       }
                     },
@@ -14755,13 +14755,13 @@
                       "referencedDeclaration": 1051,
                       "src": "30415:15:2",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                        "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
                         "typeString": "contract FeeRebateToken"
                       }
                     },
                     "src": "30393:37:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                      "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
                       "typeString": "contract FeeRebateToken"
                     }
                   },
@@ -14917,7 +14917,7 @@
                   "name": "onlyFactory",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 6141,
+                  "referencedDeclaration": 6146,
                   "src": "30236:11:2",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -14972,7 +14972,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                    "typeIdentifier": "t_contract$_TBTCToken_$8327",
                     "typeString": "contract TBTCToken"
                   },
                   "typeName": {
@@ -14980,10 +14980,10 @@
                     "id": 1046,
                     "name": "TBTCToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 8322,
+                    "referencedDeclaration": 8327,
                     "src": "30054:9:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                      "typeIdentifier": "t_contract$_TBTCToken_$8327",
                       "typeString": "contract TBTCToken"
                     }
                   },
@@ -15000,7 +15000,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IERC721_$17974",
+                    "typeIdentifier": "t_contract$_IERC721_$17979",
                     "typeString": "contract IERC721"
                   },
                   "typeName": {
@@ -15008,10 +15008,10 @@
                     "id": 1048,
                     "name": "IERC721",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 17974,
+                    "referencedDeclaration": 17979,
                     "src": "30084:7:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IERC721_$17974",
+                      "typeIdentifier": "t_contract$_IERC721_$17979",
                       "typeString": "contract IERC721"
                     }
                   },
@@ -15028,7 +15028,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                    "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
                     "typeString": "contract FeeRebateToken"
                   },
                   "typeName": {
@@ -15036,10 +15036,10 @@
                     "id": 1050,
                     "name": "FeeRebateToken",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 6191,
+                    "referencedDeclaration": 6196,
                     "src": "30119:14:2",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                      "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
                       "typeString": "contract FeeRebateToken"
                     }
                   },
@@ -15143,7 +15143,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18047,
+                            "referencedDeclaration": 18052,
                             "src": "31391:3:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -15235,10 +15235,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "31370:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -15573,19 +15573,19 @@
     "31": {
       "events": {},
       "links": {
-        "TBTCConstants": "0xfa6063C2991Ad510D52667AcA08fd7b06336E38E",
-        "DepositStates": "0xF2c124E86882a241554614Fd0344a358c904d9f4",
-        "DepositUtils": "0x0E71e06f9cF9717eB493c9CeB8781f0553152144",
-        "DepositLiquidation": "0xD542bC7068d3ba9B3c65Fb7E2f785b70D1E394CC",
-        "DepositRedemption": "0x8d300e43D00047d1aAB29Dc32259B86dbDEA9478",
-        "DepositFunding": "0x3e01E517ff47EeB4BA731E5fD523b748858b1621"
+        "TBTCConstants": "0x59180C06c8E82124d4f2D9Abc6A5c7Bc6E350Ed6",
+        "DepositStates": "0x2e36Ec58ce20A17408f33f862b0577d2be080736",
+        "DepositUtils": "0xaC8432Ab558deF588e981FA89b9f39cB3B05650B",
+        "DepositLiquidation": "0xFB07aD16903a244b0e0dB9f39FD889d24d469882",
+        "DepositRedemption": "0x97Dcc00617F0A7fCE405B496769F438Bb4C39647",
+        "DepositFunding": "0x99F76789E4bB504C8149A7D65C545Fe2A9304BA8"
       },
-      "address": "0xe18c93dBA5685629a9330F17Dd9B9D2950f68762",
-      "transactionHash": "0xca419886039238d255cfc46593102e0fa05b2722c832a7d1e60629833bf27815"
+      "address": "0xbfC29AD7474897709CdE23Ba55F9A9CfF13DC97D",
+      "transactionHash": "0x365faf6b4c48ede2f2fa804353319405a61ad75a57c06706e48d1af52140668a"
     }
   },
   "schemaVersion": "3.0.23",
-  "updatedAt": "2021-02-01T14:52:37.605Z",
+  "updatedAt": "2021-02-01T16:49:54.002Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "This contract presents a public API that exposes the following      libraries:  ///       - `DepositFunding`       - `DepositLiquidaton`       - `DepositRedemption`,       - `DepositStates`       - `DepositUtils`       - `OutsourceDepositLogging`       - `TBTCConstants`  ///      Where these libraries require deposit state, this contract's state      variable `self` is used. `self` is a struct of type      `DepositUtils.Deposit` that contains all aspects of the deposit state      itself.",

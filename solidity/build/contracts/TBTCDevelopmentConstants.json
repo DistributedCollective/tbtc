@@ -373,14 +373,14 @@
     "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCDevelopmentConstants.sol",
     "exportedSymbols": {
       "TBTCDevelopmentConstants": [
-        6906
+        6911
       ]
     },
-    "id": 6907,
+    "id": 6912,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 6737,
+        "id": 6742,
         "literals": [
           "solidity",
           "0.5",
@@ -395,19 +395,19 @@
         "contractKind": "library",
         "documentation": "@title TBTCDevelopmentConstants\n @notice Constants for development testnet usages; tuned for testing and\n         faster iteration rather than security. These should NOT be deployed\n         on mainnet or mainnet-like (\"staging\") environments.",
         "fullyImplemented": true,
-        "id": 6906,
+        "id": 6911,
         "linearizedBaseContracts": [
-          6906
+          6911
         ],
         "name": "TBTCDevelopmentConstants",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 6740,
+            "id": 6745,
             "name": "BENEFICIARY_FEE_DIVISOR",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "478:54:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -416,7 +416,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6738,
+              "id": 6743,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "478:7:23",
@@ -428,7 +428,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "31303030",
-              "id": 6739,
+              "id": 6744,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -447,10 +447,10 @@
           },
           {
             "constant": true,
-            "id": 6745,
+            "id": 6750,
             "name": "SATOSHI_MULTIPLIER",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "573:53:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -459,7 +459,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6741,
+              "id": 6746,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "573:7:23",
@@ -474,7 +474,7 @@
                 "typeIdentifier": "t_rational_10000000000_by_1",
                 "typeString": "int_const 10000000000"
               },
-              "id": 6744,
+              "id": 6749,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -482,7 +482,7 @@
               "leftExpression": {
                 "argumentTypes": null,
                 "hexValue": "3130",
-                "id": 6742,
+                "id": 6747,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -502,7 +502,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3130",
-                "id": 6743,
+                "id": 6748,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -527,10 +527,10 @@
           },
           {
             "constant": true,
-            "id": 6754,
+            "id": 6759,
             "name": "DEPOSIT_TERM_LENGTH",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "685:64:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -539,7 +539,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6746,
+              "id": 6751,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "685:7:23",
@@ -554,7 +554,7 @@
                 "typeIdentifier": "t_rational_15552000_by_1",
                 "typeString": "int_const 15552000"
               },
-              "id": 6753,
+              "id": 6758,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -565,7 +565,7 @@
                   "typeIdentifier": "t_rational_259200_by_1",
                   "typeString": "int_const 259200"
                 },
-                "id": 6751,
+                "id": 6756,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -576,7 +576,7 @@
                     "typeIdentifier": "t_rational_4320_by_1",
                     "typeString": "int_const 4320"
                   },
-                  "id": 6749,
+                  "id": 6754,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -584,7 +584,7 @@
                   "leftExpression": {
                     "argumentTypes": null,
                     "hexValue": "313830",
-                    "id": 6747,
+                    "id": 6752,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -604,7 +604,7 @@
                   "rightExpression": {
                     "argumentTypes": null,
                     "hexValue": "3234",
-                    "id": 6748,
+                    "id": 6753,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -630,7 +630,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 6750,
+                  "id": 6755,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -656,7 +656,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 6752,
+                "id": 6757,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -681,10 +681,10 @@
           },
           {
             "constant": true,
-            "id": 6757,
+            "id": 6762,
             "name": "TX_PROOF_DIFFICULTY_FACTOR",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "778:54:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -693,7 +693,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6755,
+              "id": 6760,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "778:7:23",
@@ -705,7 +705,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "31",
-              "id": 6756,
+              "id": 6761,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -724,10 +724,10 @@
           },
           {
             "constant": true,
-            "id": 6764,
+            "id": 6769,
             "name": "REDEMPTION_SIGNATURE_TIMEOUT",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "900:66:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -736,7 +736,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6758,
+              "id": 6763,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "900:7:23",
@@ -751,7 +751,7 @@
                 "typeIdentifier": "t_rational_7200_by_1",
                 "typeString": "int_const 7200"
               },
-              "id": 6763,
+              "id": 6768,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -762,7 +762,7 @@
                   "typeIdentifier": "t_rational_120_by_1",
                   "typeString": "int_const 120"
                 },
-                "id": 6761,
+                "id": 6766,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -770,7 +770,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "32",
-                  "id": 6759,
+                  "id": 6764,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -790,7 +790,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 6760,
+                  "id": 6765,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -816,7 +816,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 6762,
+                "id": 6767,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -841,10 +841,10 @@
           },
           {
             "constant": true,
-            "id": 6771,
+            "id": 6776,
             "name": "INCREASE_FEE_TIMER",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "984:56:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -853,7 +853,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6765,
+              "id": 6770,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "984:7:23",
@@ -868,7 +868,7 @@
                 "typeIdentifier": "t_rational_14400_by_1",
                 "typeString": "int_const 14400"
               },
-              "id": 6770,
+              "id": 6775,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -879,7 +879,7 @@
                   "typeIdentifier": "t_rational_240_by_1",
                   "typeString": "int_const 240"
                 },
-                "id": 6768,
+                "id": 6773,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -887,7 +887,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "34",
-                  "id": 6766,
+                  "id": 6771,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -907,7 +907,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 6767,
+                  "id": 6772,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -933,7 +933,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 6769,
+                "id": 6774,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -958,10 +958,10 @@
           },
           {
             "constant": true,
-            "id": 6778,
+            "id": 6783,
             "name": "REDEMPTION_PROOF_TIMEOUT",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "1058:62:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -970,7 +970,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6772,
+              "id": 6777,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1058:7:23",
@@ -985,7 +985,7 @@
                 "typeIdentifier": "t_rational_21600_by_1",
                 "typeString": "int_const 21600"
               },
-              "id": 6777,
+              "id": 6782,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -996,7 +996,7 @@
                   "typeIdentifier": "t_rational_360_by_1",
                   "typeString": "int_const 360"
                 },
-                "id": 6775,
+                "id": 6780,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1004,7 +1004,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "36",
-                  "id": 6773,
+                  "id": 6778,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1024,7 +1024,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 6774,
+                  "id": 6779,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1050,7 +1050,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 6776,
+                "id": 6781,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1075,10 +1075,10 @@
           },
           {
             "constant": true,
-            "id": 6781,
+            "id": 6786,
             "name": "MINIMUM_REDEMPTION_FEE",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "1138:52:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1087,7 +1087,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6779,
+              "id": 6784,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1138:7:23",
@@ -1099,7 +1099,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "313530",
-              "id": 6780,
+              "id": 6785,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1118,10 +1118,10 @@
           },
           {
             "constant": true,
-            "id": 6788,
+            "id": 6793,
             "name": "FUNDING_PROOF_TIMEOUT",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "1228:59:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1130,7 +1130,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6782,
+              "id": 6787,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1228:7:23",
@@ -1145,7 +1145,7 @@
                 "typeIdentifier": "t_rational_10800_by_1",
                 "typeString": "int_const 10800"
               },
-              "id": 6787,
+              "id": 6792,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1156,7 +1156,7 @@
                   "typeIdentifier": "t_rational_180_by_1",
                   "typeString": "int_const 180"
                 },
-                "id": 6785,
+                "id": 6790,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1164,7 +1164,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "33",
-                  "id": 6783,
+                  "id": 6788,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1184,7 +1184,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 6784,
+                  "id": 6789,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1210,7 +1210,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 6786,
+                "id": 6791,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1235,10 +1235,10 @@
           },
           {
             "constant": true,
-            "id": 6795,
+            "id": 6800,
             "name": "FORMATION_TIMEOUT",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "1304:55:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1247,7 +1247,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6789,
+              "id": 6794,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1304:7:23",
@@ -1262,7 +1262,7 @@
                 "typeIdentifier": "t_rational_10800_by_1",
                 "typeString": "int_const 10800"
               },
-              "id": 6794,
+              "id": 6799,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1273,7 +1273,7 @@
                   "typeIdentifier": "t_rational_180_by_1",
                   "typeString": "int_const 180"
                 },
-                "id": 6792,
+                "id": 6797,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1281,7 +1281,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "33",
-                  "id": 6790,
+                  "id": 6795,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1301,7 +1301,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 6791,
+                  "id": 6796,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1327,7 +1327,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 6793,
+                "id": 6798,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1352,10 +1352,10 @@
           },
           {
             "constant": true,
-            "id": 6802,
+            "id": 6807,
             "name": "COURTESY_CALL_DURATION",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "1401:60:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1364,7 +1364,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6796,
+              "id": 6801,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1401:7:23",
@@ -1379,7 +1379,7 @@
                 "typeIdentifier": "t_rational_21600_by_1",
                 "typeString": "int_const 21600"
               },
-              "id": 6801,
+              "id": 6806,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1390,7 +1390,7 @@
                   "typeIdentifier": "t_rational_360_by_1",
                   "typeString": "int_const 360"
                 },
-                "id": 6799,
+                "id": 6804,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1398,7 +1398,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "36",
-                  "id": 6797,
+                  "id": 6802,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1418,7 +1418,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 6798,
+                  "id": 6803,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1444,7 +1444,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 6800,
+                "id": 6805,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1469,10 +1469,10 @@
           },
           {
             "constant": true,
-            "id": 6809,
+            "id": 6814,
             "name": "AUCTION_DURATION",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "1478:55:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1481,7 +1481,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6803,
+              "id": 6808,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1478:7:23",
@@ -1496,7 +1496,7 @@
                 "typeIdentifier": "t_rational_86400_by_1",
                 "typeString": "int_const 86400"
               },
-              "id": 6808,
+              "id": 6813,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1507,7 +1507,7 @@
                   "typeIdentifier": "t_rational_1440_by_1",
                   "typeString": "int_const 1440"
                 },
-                "id": 6806,
+                "id": 6811,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1515,7 +1515,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "3234",
-                  "id": 6804,
+                  "id": 6809,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1535,7 +1535,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 6805,
+                  "id": 6810,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1561,7 +1561,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 6807,
+                "id": 6812,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1586,54 +1586,54 @@
           },
           {
             "body": {
-              "id": 6816,
+              "id": 6821,
               "nodeType": "Block",
               "src": "1653:35:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6814,
+                    "id": 6819,
                     "name": "BENEFICIARY_FEE_DIVISOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6740,
+                    "referencedDeclaration": 6745,
                     "src": "1662:23:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6813,
-                  "id": 6815,
+                  "functionReturnParameters": 6818,
+                  "id": 6820,
                   "nodeType": "Return",
                   "src": "1655:30:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6817,
+            "id": 6822,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getBeneficiaryRewardDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6810,
+              "id": 6815,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1618:2:23"
             },
             "returnParameters": {
-              "id": 6813,
+              "id": 6818,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6812,
+                  "id": 6817,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6817,
+                  "scope": 6822,
                   "src": "1644:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1642,7 +1642,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6811,
+                    "id": 6816,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1644:7:23",
@@ -1657,7 +1657,7 @@
               ],
               "src": "1643:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "1582:106:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1665,54 +1665,54 @@
           },
           {
             "body": {
-              "id": 6824,
+              "id": 6829,
               "nodeType": "Block",
               "src": "1757:30:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6822,
+                    "id": 6827,
                     "name": "SATOSHI_MULTIPLIER",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6745,
+                    "referencedDeclaration": 6750,
                     "src": "1766:18:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6821,
-                  "id": 6823,
+                  "functionReturnParameters": 6826,
+                  "id": 6828,
                   "nodeType": "Return",
                   "src": "1759:25:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6825,
+            "id": 6830,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getSatoshiMultiplier",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6818,
+              "id": 6823,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1722:2:23"
             },
             "returnParameters": {
-              "id": 6821,
+              "id": 6826,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6820,
+                  "id": 6825,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6825,
+                  "scope": 6830,
                   "src": "1748:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1721,7 +1721,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6819,
+                    "id": 6824,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1748:7:23",
@@ -1736,7 +1736,7 @@
               ],
               "src": "1747:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "1693:94:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1744,54 +1744,54 @@
           },
           {
             "body": {
-              "id": 6832,
+              "id": 6837,
               "nodeType": "Block",
               "src": "1850:31:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6830,
+                    "id": 6835,
                     "name": "DEPOSIT_TERM_LENGTH",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6754,
+                    "referencedDeclaration": 6759,
                     "src": "1859:19:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6829,
-                  "id": 6831,
+                  "functionReturnParameters": 6834,
+                  "id": 6836,
                   "nodeType": "Return",
                   "src": "1852:26:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6833,
+            "id": 6838,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getDepositTerm",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6826,
+              "id": 6831,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1815:2:23"
             },
             "returnParameters": {
-              "id": 6829,
+              "id": 6834,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6828,
+                  "id": 6833,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6833,
+                  "scope": 6838,
                   "src": "1841:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1800,7 +1800,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6827,
+                    "id": 6832,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1841:7:23",
@@ -1815,7 +1815,7 @@
               ],
               "src": "1840:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "1792:89:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1823,54 +1823,54 @@
           },
           {
             "body": {
-              "id": 6840,
+              "id": 6845,
               "nodeType": "Block",
               "src": "1956:38:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6838,
+                    "id": 6843,
                     "name": "TX_PROOF_DIFFICULTY_FACTOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6757,
+                    "referencedDeclaration": 6762,
                     "src": "1965:26:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6837,
-                  "id": 6839,
+                  "functionReturnParameters": 6842,
+                  "id": 6844,
                   "nodeType": "Return",
                   "src": "1958:33:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6841,
+            "id": 6846,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getTxProofDifficultyFactor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6834,
+              "id": 6839,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1921:2:23"
             },
             "returnParameters": {
-              "id": 6837,
+              "id": 6842,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6836,
+                  "id": 6841,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6841,
+                  "scope": 6846,
                   "src": "1947:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1879,7 +1879,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6835,
+                    "id": 6840,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1947:7:23",
@@ -1894,7 +1894,7 @@
               ],
               "src": "1946:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "1886:108:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1902,54 +1902,54 @@
           },
           {
             "body": {
-              "id": 6848,
+              "id": 6853,
               "nodeType": "Block",
               "src": "2063:40:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6846,
+                    "id": 6851,
                     "name": "REDEMPTION_SIGNATURE_TIMEOUT",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6764,
+                    "referencedDeclaration": 6769,
                     "src": "2072:28:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6845,
-                  "id": 6847,
+                  "functionReturnParameters": 6850,
+                  "id": 6852,
                   "nodeType": "Return",
                   "src": "2065:35:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6849,
+            "id": 6854,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getSignatureTimeout",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6842,
+              "id": 6847,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2028:2:23"
             },
             "returnParameters": {
-              "id": 6845,
+              "id": 6850,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6844,
+                  "id": 6849,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6849,
+                  "scope": 6854,
                   "src": "2054:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1958,7 +1958,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6843,
+                    "id": 6848,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2054:7:23",
@@ -1973,7 +1973,7 @@
               ],
               "src": "2053:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "2000:103:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1981,54 +1981,54 @@
           },
           {
             "body": {
-              "id": 6856,
+              "id": 6861,
               "nodeType": "Block",
               "src": "2171:30:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6854,
+                    "id": 6859,
                     "name": "INCREASE_FEE_TIMER",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6771,
+                    "referencedDeclaration": 6776,
                     "src": "2180:18:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6853,
-                  "id": 6855,
+                  "functionReturnParameters": 6858,
+                  "id": 6860,
                   "nodeType": "Return",
                   "src": "2173:25:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6857,
+            "id": 6862,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getIncreaseFeeTimer",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6850,
+              "id": 6855,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2136:2:23"
             },
             "returnParameters": {
-              "id": 6853,
+              "id": 6858,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6852,
+                  "id": 6857,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6857,
+                  "scope": 6862,
                   "src": "2162:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2037,7 +2037,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6851,
+                    "id": 6856,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2162:7:23",
@@ -2052,7 +2052,7 @@
               ],
               "src": "2161:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "2108:93:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -2060,54 +2060,54 @@
           },
           {
             "body": {
-              "id": 6864,
+              "id": 6869,
               "nodeType": "Block",
               "src": "2275:36:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6862,
+                    "id": 6867,
                     "name": "REDEMPTION_PROOF_TIMEOUT",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6778,
+                    "referencedDeclaration": 6783,
                     "src": "2284:24:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6861,
-                  "id": 6863,
+                  "functionReturnParameters": 6866,
+                  "id": 6868,
                   "nodeType": "Return",
                   "src": "2277:31:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6865,
+            "id": 6870,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getRedemptionProofTimeout",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6858,
+              "id": 6863,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2240:2:23"
             },
             "returnParameters": {
-              "id": 6861,
+              "id": 6866,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6860,
+                  "id": 6865,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6865,
+                  "scope": 6870,
                   "src": "2266:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2116,7 +2116,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6859,
+                    "id": 6864,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2266:7:23",
@@ -2131,7 +2131,7 @@
               ],
               "src": "2265:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "2206:105:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -2139,54 +2139,54 @@
           },
           {
             "body": {
-              "id": 6872,
+              "id": 6877,
               "nodeType": "Block",
               "src": "2383:34:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6870,
+                    "id": 6875,
                     "name": "MINIMUM_REDEMPTION_FEE",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6781,
+                    "referencedDeclaration": 6786,
                     "src": "2392:22:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6869,
-                  "id": 6871,
+                  "functionReturnParameters": 6874,
+                  "id": 6876,
                   "nodeType": "Return",
                   "src": "2385:29:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6873,
+            "id": 6878,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getMinimumRedemptionFee",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6866,
+              "id": 6871,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2348:2:23"
             },
             "returnParameters": {
-              "id": 6869,
+              "id": 6874,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6868,
+                  "id": 6873,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6873,
+                  "scope": 6878,
                   "src": "2374:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2195,7 +2195,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6867,
+                    "id": 6872,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2374:7:23",
@@ -2210,7 +2210,7 @@
               ],
               "src": "2373:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "2316:101:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -2218,54 +2218,54 @@
           },
           {
             "body": {
-              "id": 6880,
+              "id": 6885,
               "nodeType": "Block",
               "src": "2484:33:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6878,
+                    "id": 6883,
                     "name": "FUNDING_PROOF_TIMEOUT",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6788,
+                    "referencedDeclaration": 6793,
                     "src": "2493:21:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6877,
-                  "id": 6879,
+                  "functionReturnParameters": 6882,
+                  "id": 6884,
                   "nodeType": "Return",
                   "src": "2486:28:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6881,
+            "id": 6886,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getFundingTimeout",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6874,
+              "id": 6879,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2449:2:23"
             },
             "returnParameters": {
-              "id": 6877,
+              "id": 6882,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6876,
+                  "id": 6881,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6881,
+                  "scope": 6886,
                   "src": "2475:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2274,7 +2274,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6875,
+                    "id": 6880,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2475:7:23",
@@ -2289,7 +2289,7 @@
               ],
               "src": "2474:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "2423:94:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -2297,54 +2297,54 @@
           },
           {
             "body": {
-              "id": 6888,
+              "id": 6893,
               "nodeType": "Block",
               "src": "2597:29:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6886,
+                    "id": 6891,
                     "name": "FORMATION_TIMEOUT",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6795,
+                    "referencedDeclaration": 6800,
                     "src": "2606:17:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6885,
-                  "id": 6887,
+                  "functionReturnParameters": 6890,
+                  "id": 6892,
                   "nodeType": "Return",
                   "src": "2599:24:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6889,
+            "id": 6894,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getSigningGroupFormationTimeout",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6882,
+              "id": 6887,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2562:2:23"
             },
             "returnParameters": {
-              "id": 6885,
+              "id": 6890,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6884,
+                  "id": 6889,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6889,
+                  "scope": 6894,
                   "src": "2588:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2353,7 +2353,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6883,
+                    "id": 6888,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2588:7:23",
@@ -2368,7 +2368,7 @@
               ],
               "src": "2587:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "2522:104:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -2376,54 +2376,54 @@
           },
           {
             "body": {
-              "id": 6896,
+              "id": 6901,
               "nodeType": "Block",
               "src": "2698:34:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6894,
+                    "id": 6899,
                     "name": "COURTESY_CALL_DURATION",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6802,
+                    "referencedDeclaration": 6807,
                     "src": "2707:22:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6893,
-                  "id": 6895,
+                  "functionReturnParameters": 6898,
+                  "id": 6900,
                   "nodeType": "Return",
                   "src": "2700:29:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6897,
+            "id": 6902,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getCourtesyCallTimeout",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6890,
+              "id": 6895,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2663:2:23"
             },
             "returnParameters": {
-              "id": 6893,
+              "id": 6898,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6892,
+                  "id": 6897,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6897,
+                  "scope": 6902,
                   "src": "2689:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2432,7 +2432,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6891,
+                    "id": 6896,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2689:7:23",
@@ -2447,7 +2447,7 @@
               ],
               "src": "2688:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "2632:100:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -2455,54 +2455,54 @@
           },
           {
             "body": {
-              "id": 6904,
+              "id": 6909,
               "nodeType": "Block",
               "src": "2799:28:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6902,
+                    "id": 6907,
                     "name": "AUCTION_DURATION",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6809,
+                    "referencedDeclaration": 6814,
                     "src": "2808:16:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6901,
-                  "id": 6903,
+                  "functionReturnParameters": 6906,
+                  "id": 6908,
                   "nodeType": "Return",
                   "src": "2801:23:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6905,
+            "id": 6910,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getAuctionDuration",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6898,
+              "id": 6903,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2764:2:23"
             },
             "returnParameters": {
-              "id": 6901,
+              "id": 6906,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6900,
+                  "id": 6905,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6905,
+                  "scope": 6910,
                   "src": "2790:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2511,7 +2511,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6899,
+                    "id": 6904,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2790:7:23",
@@ -2526,14 +2526,14 @@
               ],
               "src": "2789:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "2737:90:23",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 6907,
+        "scope": 6912,
         "src": "282:2547:23"
       }
     ],
@@ -2543,14 +2543,14 @@
     "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCDevelopmentConstants.sol",
     "exportedSymbols": {
       "TBTCDevelopmentConstants": [
-        6906
+        6911
       ]
     },
-    "id": 6907,
+    "id": 6912,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 6737,
+        "id": 6742,
         "literals": [
           "solidity",
           "0.5",
@@ -2565,19 +2565,19 @@
         "contractKind": "library",
         "documentation": "@title TBTCDevelopmentConstants\n @notice Constants for development testnet usages; tuned for testing and\n         faster iteration rather than security. These should NOT be deployed\n         on mainnet or mainnet-like (\"staging\") environments.",
         "fullyImplemented": true,
-        "id": 6906,
+        "id": 6911,
         "linearizedBaseContracts": [
-          6906
+          6911
         ],
         "name": "TBTCDevelopmentConstants",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 6740,
+            "id": 6745,
             "name": "BENEFICIARY_FEE_DIVISOR",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "478:54:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2586,7 +2586,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6738,
+              "id": 6743,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "478:7:23",
@@ -2598,7 +2598,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "31303030",
-              "id": 6739,
+              "id": 6744,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2617,10 +2617,10 @@
           },
           {
             "constant": true,
-            "id": 6745,
+            "id": 6750,
             "name": "SATOSHI_MULTIPLIER",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "573:53:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2629,7 +2629,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6741,
+              "id": 6746,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "573:7:23",
@@ -2644,7 +2644,7 @@
                 "typeIdentifier": "t_rational_10000000000_by_1",
                 "typeString": "int_const 10000000000"
               },
-              "id": 6744,
+              "id": 6749,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2652,7 +2652,7 @@
               "leftExpression": {
                 "argumentTypes": null,
                 "hexValue": "3130",
-                "id": 6742,
+                "id": 6747,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -2672,7 +2672,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3130",
-                "id": 6743,
+                "id": 6748,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -2697,10 +2697,10 @@
           },
           {
             "constant": true,
-            "id": 6754,
+            "id": 6759,
             "name": "DEPOSIT_TERM_LENGTH",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "685:64:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2709,7 +2709,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6746,
+              "id": 6751,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "685:7:23",
@@ -2724,7 +2724,7 @@
                 "typeIdentifier": "t_rational_15552000_by_1",
                 "typeString": "int_const 15552000"
               },
-              "id": 6753,
+              "id": 6758,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2735,7 +2735,7 @@
                   "typeIdentifier": "t_rational_259200_by_1",
                   "typeString": "int_const 259200"
                 },
-                "id": 6751,
+                "id": 6756,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -2746,7 +2746,7 @@
                     "typeIdentifier": "t_rational_4320_by_1",
                     "typeString": "int_const 4320"
                   },
-                  "id": 6749,
+                  "id": 6754,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -2754,7 +2754,7 @@
                   "leftExpression": {
                     "argumentTypes": null,
                     "hexValue": "313830",
-                    "id": 6747,
+                    "id": 6752,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -2774,7 +2774,7 @@
                   "rightExpression": {
                     "argumentTypes": null,
                     "hexValue": "3234",
-                    "id": 6748,
+                    "id": 6753,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -2800,7 +2800,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 6750,
+                  "id": 6755,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -2826,7 +2826,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 6752,
+                "id": 6757,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -2851,10 +2851,10 @@
           },
           {
             "constant": true,
-            "id": 6757,
+            "id": 6762,
             "name": "TX_PROOF_DIFFICULTY_FACTOR",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "778:54:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2863,7 +2863,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6755,
+              "id": 6760,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "778:7:23",
@@ -2875,7 +2875,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "31",
-              "id": 6756,
+              "id": 6761,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2894,10 +2894,10 @@
           },
           {
             "constant": true,
-            "id": 6764,
+            "id": 6769,
             "name": "REDEMPTION_SIGNATURE_TIMEOUT",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "900:66:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2906,7 +2906,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6758,
+              "id": 6763,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "900:7:23",
@@ -2921,7 +2921,7 @@
                 "typeIdentifier": "t_rational_7200_by_1",
                 "typeString": "int_const 7200"
               },
-              "id": 6763,
+              "id": 6768,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2932,7 +2932,7 @@
                   "typeIdentifier": "t_rational_120_by_1",
                   "typeString": "int_const 120"
                 },
-                "id": 6761,
+                "id": 6766,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -2940,7 +2940,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "32",
-                  "id": 6759,
+                  "id": 6764,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -2960,7 +2960,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 6760,
+                  "id": 6765,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -2986,7 +2986,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 6762,
+                "id": 6767,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3011,10 +3011,10 @@
           },
           {
             "constant": true,
-            "id": 6771,
+            "id": 6776,
             "name": "INCREASE_FEE_TIMER",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "984:56:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3023,7 +3023,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6765,
+              "id": 6770,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "984:7:23",
@@ -3038,7 +3038,7 @@
                 "typeIdentifier": "t_rational_14400_by_1",
                 "typeString": "int_const 14400"
               },
-              "id": 6770,
+              "id": 6775,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3049,7 +3049,7 @@
                   "typeIdentifier": "t_rational_240_by_1",
                   "typeString": "int_const 240"
                 },
-                "id": 6768,
+                "id": 6773,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3057,7 +3057,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "34",
-                  "id": 6766,
+                  "id": 6771,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3077,7 +3077,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 6767,
+                  "id": 6772,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3103,7 +3103,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 6769,
+                "id": 6774,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3128,10 +3128,10 @@
           },
           {
             "constant": true,
-            "id": 6778,
+            "id": 6783,
             "name": "REDEMPTION_PROOF_TIMEOUT",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "1058:62:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3140,7 +3140,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6772,
+              "id": 6777,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1058:7:23",
@@ -3155,7 +3155,7 @@
                 "typeIdentifier": "t_rational_21600_by_1",
                 "typeString": "int_const 21600"
               },
-              "id": 6777,
+              "id": 6782,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3166,7 +3166,7 @@
                   "typeIdentifier": "t_rational_360_by_1",
                   "typeString": "int_const 360"
                 },
-                "id": 6775,
+                "id": 6780,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3174,7 +3174,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "36",
-                  "id": 6773,
+                  "id": 6778,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3194,7 +3194,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 6774,
+                  "id": 6779,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3220,7 +3220,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 6776,
+                "id": 6781,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3245,10 +3245,10 @@
           },
           {
             "constant": true,
-            "id": 6781,
+            "id": 6786,
             "name": "MINIMUM_REDEMPTION_FEE",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "1138:52:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3257,7 +3257,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6779,
+              "id": 6784,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1138:7:23",
@@ -3269,7 +3269,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "313530",
-              "id": 6780,
+              "id": 6785,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3288,10 +3288,10 @@
           },
           {
             "constant": true,
-            "id": 6788,
+            "id": 6793,
             "name": "FUNDING_PROOF_TIMEOUT",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "1228:59:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3300,7 +3300,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6782,
+              "id": 6787,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1228:7:23",
@@ -3315,7 +3315,7 @@
                 "typeIdentifier": "t_rational_10800_by_1",
                 "typeString": "int_const 10800"
               },
-              "id": 6787,
+              "id": 6792,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3326,7 +3326,7 @@
                   "typeIdentifier": "t_rational_180_by_1",
                   "typeString": "int_const 180"
                 },
-                "id": 6785,
+                "id": 6790,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3334,7 +3334,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "33",
-                  "id": 6783,
+                  "id": 6788,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3354,7 +3354,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 6784,
+                  "id": 6789,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3380,7 +3380,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 6786,
+                "id": 6791,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3405,10 +3405,10 @@
           },
           {
             "constant": true,
-            "id": 6795,
+            "id": 6800,
             "name": "FORMATION_TIMEOUT",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "1304:55:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3417,7 +3417,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6789,
+              "id": 6794,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1304:7:23",
@@ -3432,7 +3432,7 @@
                 "typeIdentifier": "t_rational_10800_by_1",
                 "typeString": "int_const 10800"
               },
-              "id": 6794,
+              "id": 6799,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3443,7 +3443,7 @@
                   "typeIdentifier": "t_rational_180_by_1",
                   "typeString": "int_const 180"
                 },
-                "id": 6792,
+                "id": 6797,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3451,7 +3451,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "33",
-                  "id": 6790,
+                  "id": 6795,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3471,7 +3471,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 6791,
+                  "id": 6796,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3497,7 +3497,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 6793,
+                "id": 6798,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3522,10 +3522,10 @@
           },
           {
             "constant": true,
-            "id": 6802,
+            "id": 6807,
             "name": "COURTESY_CALL_DURATION",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "1401:60:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3534,7 +3534,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6796,
+              "id": 6801,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1401:7:23",
@@ -3549,7 +3549,7 @@
                 "typeIdentifier": "t_rational_21600_by_1",
                 "typeString": "int_const 21600"
               },
-              "id": 6801,
+              "id": 6806,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3560,7 +3560,7 @@
                   "typeIdentifier": "t_rational_360_by_1",
                   "typeString": "int_const 360"
                 },
-                "id": 6799,
+                "id": 6804,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3568,7 +3568,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "36",
-                  "id": 6797,
+                  "id": 6802,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3588,7 +3588,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 6798,
+                  "id": 6803,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3614,7 +3614,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 6800,
+                "id": 6805,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3639,10 +3639,10 @@
           },
           {
             "constant": true,
-            "id": 6809,
+            "id": 6814,
             "name": "AUCTION_DURATION",
             "nodeType": "VariableDeclaration",
-            "scope": 6906,
+            "scope": 6911,
             "src": "1478:55:23",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3651,7 +3651,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 6803,
+              "id": 6808,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1478:7:23",
@@ -3666,7 +3666,7 @@
                 "typeIdentifier": "t_rational_86400_by_1",
                 "typeString": "int_const 86400"
               },
-              "id": 6808,
+              "id": 6813,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -3677,7 +3677,7 @@
                   "typeIdentifier": "t_rational_1440_by_1",
                   "typeString": "int_const 1440"
                 },
-                "id": 6806,
+                "id": 6811,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3685,7 +3685,7 @@
                 "leftExpression": {
                   "argumentTypes": null,
                   "hexValue": "3234",
-                  "id": 6804,
+                  "id": 6809,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3705,7 +3705,7 @@
                 "rightExpression": {
                   "argumentTypes": null,
                   "hexValue": "3630",
-                  "id": 6805,
+                  "id": 6810,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -3731,7 +3731,7 @@
               "rightExpression": {
                 "argumentTypes": null,
                 "hexValue": "3630",
-                "id": 6807,
+                "id": 6812,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -3756,54 +3756,54 @@
           },
           {
             "body": {
-              "id": 6816,
+              "id": 6821,
               "nodeType": "Block",
               "src": "1653:35:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6814,
+                    "id": 6819,
                     "name": "BENEFICIARY_FEE_DIVISOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6740,
+                    "referencedDeclaration": 6745,
                     "src": "1662:23:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6813,
-                  "id": 6815,
+                  "functionReturnParameters": 6818,
+                  "id": 6820,
                   "nodeType": "Return",
                   "src": "1655:30:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6817,
+            "id": 6822,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getBeneficiaryRewardDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6810,
+              "id": 6815,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1618:2:23"
             },
             "returnParameters": {
-              "id": 6813,
+              "id": 6818,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6812,
+                  "id": 6817,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6817,
+                  "scope": 6822,
                   "src": "1644:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3812,7 +3812,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6811,
+                    "id": 6816,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1644:7:23",
@@ -3827,7 +3827,7 @@
               ],
               "src": "1643:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "1582:106:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -3835,54 +3835,54 @@
           },
           {
             "body": {
-              "id": 6824,
+              "id": 6829,
               "nodeType": "Block",
               "src": "1757:30:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6822,
+                    "id": 6827,
                     "name": "SATOSHI_MULTIPLIER",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6745,
+                    "referencedDeclaration": 6750,
                     "src": "1766:18:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6821,
-                  "id": 6823,
+                  "functionReturnParameters": 6826,
+                  "id": 6828,
                   "nodeType": "Return",
                   "src": "1759:25:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6825,
+            "id": 6830,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getSatoshiMultiplier",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6818,
+              "id": 6823,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1722:2:23"
             },
             "returnParameters": {
-              "id": 6821,
+              "id": 6826,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6820,
+                  "id": 6825,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6825,
+                  "scope": 6830,
                   "src": "1748:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3891,7 +3891,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6819,
+                    "id": 6824,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1748:7:23",
@@ -3906,7 +3906,7 @@
               ],
               "src": "1747:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "1693:94:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -3914,54 +3914,54 @@
           },
           {
             "body": {
-              "id": 6832,
+              "id": 6837,
               "nodeType": "Block",
               "src": "1850:31:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6830,
+                    "id": 6835,
                     "name": "DEPOSIT_TERM_LENGTH",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6754,
+                    "referencedDeclaration": 6759,
                     "src": "1859:19:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6829,
-                  "id": 6831,
+                  "functionReturnParameters": 6834,
+                  "id": 6836,
                   "nodeType": "Return",
                   "src": "1852:26:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6833,
+            "id": 6838,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getDepositTerm",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6826,
+              "id": 6831,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1815:2:23"
             },
             "returnParameters": {
-              "id": 6829,
+              "id": 6834,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6828,
+                  "id": 6833,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6833,
+                  "scope": 6838,
                   "src": "1841:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3970,7 +3970,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6827,
+                    "id": 6832,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1841:7:23",
@@ -3985,7 +3985,7 @@
               ],
               "src": "1840:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "1792:89:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -3993,54 +3993,54 @@
           },
           {
             "body": {
-              "id": 6840,
+              "id": 6845,
               "nodeType": "Block",
               "src": "1956:38:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6838,
+                    "id": 6843,
                     "name": "TX_PROOF_DIFFICULTY_FACTOR",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6757,
+                    "referencedDeclaration": 6762,
                     "src": "1965:26:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6837,
-                  "id": 6839,
+                  "functionReturnParameters": 6842,
+                  "id": 6844,
                   "nodeType": "Return",
                   "src": "1958:33:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6841,
+            "id": 6846,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getTxProofDifficultyFactor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6834,
+              "id": 6839,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1921:2:23"
             },
             "returnParameters": {
-              "id": 6837,
+              "id": 6842,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6836,
+                  "id": 6841,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6841,
+                  "scope": 6846,
                   "src": "1947:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4049,7 +4049,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6835,
+                    "id": 6840,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1947:7:23",
@@ -4064,7 +4064,7 @@
               ],
               "src": "1946:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "1886:108:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4072,54 +4072,54 @@
           },
           {
             "body": {
-              "id": 6848,
+              "id": 6853,
               "nodeType": "Block",
               "src": "2063:40:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6846,
+                    "id": 6851,
                     "name": "REDEMPTION_SIGNATURE_TIMEOUT",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6764,
+                    "referencedDeclaration": 6769,
                     "src": "2072:28:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6845,
-                  "id": 6847,
+                  "functionReturnParameters": 6850,
+                  "id": 6852,
                   "nodeType": "Return",
                   "src": "2065:35:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6849,
+            "id": 6854,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getSignatureTimeout",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6842,
+              "id": 6847,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2028:2:23"
             },
             "returnParameters": {
-              "id": 6845,
+              "id": 6850,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6844,
+                  "id": 6849,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6849,
+                  "scope": 6854,
                   "src": "2054:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4128,7 +4128,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6843,
+                    "id": 6848,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2054:7:23",
@@ -4143,7 +4143,7 @@
               ],
               "src": "2053:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "2000:103:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4151,54 +4151,54 @@
           },
           {
             "body": {
-              "id": 6856,
+              "id": 6861,
               "nodeType": "Block",
               "src": "2171:30:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6854,
+                    "id": 6859,
                     "name": "INCREASE_FEE_TIMER",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6771,
+                    "referencedDeclaration": 6776,
                     "src": "2180:18:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6853,
-                  "id": 6855,
+                  "functionReturnParameters": 6858,
+                  "id": 6860,
                   "nodeType": "Return",
                   "src": "2173:25:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6857,
+            "id": 6862,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getIncreaseFeeTimer",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6850,
+              "id": 6855,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2136:2:23"
             },
             "returnParameters": {
-              "id": 6853,
+              "id": 6858,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6852,
+                  "id": 6857,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6857,
+                  "scope": 6862,
                   "src": "2162:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4207,7 +4207,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6851,
+                    "id": 6856,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2162:7:23",
@@ -4222,7 +4222,7 @@
               ],
               "src": "2161:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "2108:93:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4230,54 +4230,54 @@
           },
           {
             "body": {
-              "id": 6864,
+              "id": 6869,
               "nodeType": "Block",
               "src": "2275:36:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6862,
+                    "id": 6867,
                     "name": "REDEMPTION_PROOF_TIMEOUT",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6778,
+                    "referencedDeclaration": 6783,
                     "src": "2284:24:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6861,
-                  "id": 6863,
+                  "functionReturnParameters": 6866,
+                  "id": 6868,
                   "nodeType": "Return",
                   "src": "2277:31:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6865,
+            "id": 6870,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getRedemptionProofTimeout",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6858,
+              "id": 6863,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2240:2:23"
             },
             "returnParameters": {
-              "id": 6861,
+              "id": 6866,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6860,
+                  "id": 6865,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6865,
+                  "scope": 6870,
                   "src": "2266:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4286,7 +4286,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6859,
+                    "id": 6864,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2266:7:23",
@@ -4301,7 +4301,7 @@
               ],
               "src": "2265:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "2206:105:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4309,54 +4309,54 @@
           },
           {
             "body": {
-              "id": 6872,
+              "id": 6877,
               "nodeType": "Block",
               "src": "2383:34:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6870,
+                    "id": 6875,
                     "name": "MINIMUM_REDEMPTION_FEE",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6781,
+                    "referencedDeclaration": 6786,
                     "src": "2392:22:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6869,
-                  "id": 6871,
+                  "functionReturnParameters": 6874,
+                  "id": 6876,
                   "nodeType": "Return",
                   "src": "2385:29:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6873,
+            "id": 6878,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getMinimumRedemptionFee",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6866,
+              "id": 6871,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2348:2:23"
             },
             "returnParameters": {
-              "id": 6869,
+              "id": 6874,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6868,
+                  "id": 6873,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6873,
+                  "scope": 6878,
                   "src": "2374:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4365,7 +4365,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6867,
+                    "id": 6872,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2374:7:23",
@@ -4380,7 +4380,7 @@
               ],
               "src": "2373:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "2316:101:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4388,54 +4388,54 @@
           },
           {
             "body": {
-              "id": 6880,
+              "id": 6885,
               "nodeType": "Block",
               "src": "2484:33:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6878,
+                    "id": 6883,
                     "name": "FUNDING_PROOF_TIMEOUT",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6788,
+                    "referencedDeclaration": 6793,
                     "src": "2493:21:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6877,
-                  "id": 6879,
+                  "functionReturnParameters": 6882,
+                  "id": 6884,
                   "nodeType": "Return",
                   "src": "2486:28:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6881,
+            "id": 6886,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getFundingTimeout",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6874,
+              "id": 6879,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2449:2:23"
             },
             "returnParameters": {
-              "id": 6877,
+              "id": 6882,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6876,
+                  "id": 6881,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6881,
+                  "scope": 6886,
                   "src": "2475:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4444,7 +4444,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6875,
+                    "id": 6880,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2475:7:23",
@@ -4459,7 +4459,7 @@
               ],
               "src": "2474:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "2423:94:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4467,54 +4467,54 @@
           },
           {
             "body": {
-              "id": 6888,
+              "id": 6893,
               "nodeType": "Block",
               "src": "2597:29:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6886,
+                    "id": 6891,
                     "name": "FORMATION_TIMEOUT",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6795,
+                    "referencedDeclaration": 6800,
                     "src": "2606:17:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6885,
-                  "id": 6887,
+                  "functionReturnParameters": 6890,
+                  "id": 6892,
                   "nodeType": "Return",
                   "src": "2599:24:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6889,
+            "id": 6894,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getSigningGroupFormationTimeout",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6882,
+              "id": 6887,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2562:2:23"
             },
             "returnParameters": {
-              "id": 6885,
+              "id": 6890,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6884,
+                  "id": 6889,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6889,
+                  "scope": 6894,
                   "src": "2588:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4523,7 +4523,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6883,
+                    "id": 6888,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2588:7:23",
@@ -4538,7 +4538,7 @@
               ],
               "src": "2587:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "2522:104:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4546,54 +4546,54 @@
           },
           {
             "body": {
-              "id": 6896,
+              "id": 6901,
               "nodeType": "Block",
               "src": "2698:34:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6894,
+                    "id": 6899,
                     "name": "COURTESY_CALL_DURATION",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6802,
+                    "referencedDeclaration": 6807,
                     "src": "2707:22:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6893,
-                  "id": 6895,
+                  "functionReturnParameters": 6898,
+                  "id": 6900,
                   "nodeType": "Return",
                   "src": "2700:29:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6897,
+            "id": 6902,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getCourtesyCallTimeout",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6890,
+              "id": 6895,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2663:2:23"
             },
             "returnParameters": {
-              "id": 6893,
+              "id": 6898,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6892,
+                  "id": 6897,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6897,
+                  "scope": 6902,
                   "src": "2689:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4602,7 +4602,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6891,
+                    "id": 6896,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2689:7:23",
@@ -4617,7 +4617,7 @@
               ],
               "src": "2688:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "2632:100:23",
             "stateMutability": "pure",
             "superFunction": null,
@@ -4625,54 +4625,54 @@
           },
           {
             "body": {
-              "id": 6904,
+              "id": 6909,
               "nodeType": "Block",
               "src": "2799:28:23",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6902,
+                    "id": 6907,
                     "name": "AUCTION_DURATION",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 6809,
+                    "referencedDeclaration": 6814,
                     "src": "2808:16:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 6901,
-                  "id": 6903,
+                  "functionReturnParameters": 6906,
+                  "id": 6908,
                   "nodeType": "Return",
                   "src": "2801:23:23"
                 }
               ]
             },
             "documentation": null,
-            "id": 6905,
+            "id": 6910,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getAuctionDuration",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6898,
+              "id": 6903,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2764:2:23"
             },
             "returnParameters": {
-              "id": 6901,
+              "id": 6906,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6900,
+                  "id": 6905,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6905,
+                  "scope": 6910,
                   "src": "2790:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4681,7 +4681,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6899,
+                    "id": 6904,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2790:7:23",
@@ -4696,14 +4696,14 @@
               ],
               "src": "2789:9:23"
             },
-            "scope": 6906,
+            "scope": 6911,
             "src": "2737:90:23",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 6907,
+        "scope": 6912,
         "src": "282:2547:23"
       }
     ],
@@ -4715,7 +4715,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.23",
-  "updatedAt": "2021-02-01T14:48:54.221Z",
+  "updatedAt": "2021-02-01T16:47:02.711Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {},

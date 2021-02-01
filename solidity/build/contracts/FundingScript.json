@@ -70,14 +70,14 @@
     "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/scripts/FundingScript.sol",
     "exportedSymbols": {
       "FundingScript": [
-        5958
+        5963
       ]
     },
-    "id": 5959,
+    "id": 5964,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5803,
+        "id": 5808,
         "literals": [
           "solidity",
           "0.5",
@@ -89,14 +89,14 @@
       {
         "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/interfaces/ITokenRecipient.sol",
         "file": "../interfaces/ITokenRecipient.sol",
-        "id": 5805,
+        "id": 5810,
         "nodeType": "ImportDirective",
-        "scope": 5959,
+        "scope": 5964,
         "sourceUnit": 5513,
         "src": "25:66:16",
         "symbolAliases": [
           {
-            "foreign": 5804,
+            "foreign": 5809,
             "local": null
           }
         ],
@@ -105,14 +105,14 @@
       {
         "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCDepositToken.sol",
         "file": "../system/TBTCDepositToken.sol",
-        "id": 5807,
+        "id": 5812,
         "nodeType": "ImportDirective",
-        "scope": 5959,
-        "sourceUnit": 6736,
+        "scope": 5964,
+        "sourceUnit": 6741,
         "src": "92:64:16",
         "symbolAliases": [
           {
-            "foreign": 5806,
+            "foreign": 5811,
             "local": null
           }
         ],
@@ -121,14 +121,14 @@
       {
         "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCToken.sol",
         "file": "../system/TBTCToken.sol",
-        "id": 5809,
+        "id": 5814,
         "nodeType": "ImportDirective",
-        "scope": 5959,
-        "sourceUnit": 8323,
+        "scope": 5964,
+        "sourceUnit": 8328,
         "src": "157:50:16",
         "symbolAliases": [
           {
-            "foreign": 5808,
+            "foreign": 5813,
             "local": null
           }
         ],
@@ -137,14 +137,14 @@
       {
         "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/FeeRebateToken.sol",
         "file": "../system/FeeRebateToken.sol",
-        "id": 5811,
+        "id": 5816,
         "nodeType": "ImportDirective",
-        "scope": 5959,
-        "sourceUnit": 6192,
+        "scope": 5964,
+        "sourceUnit": 6197,
         "src": "208:60:16",
         "symbolAliases": [
           {
-            "foreign": 5810,
+            "foreign": 5815,
             "local": null
           }
         ],
@@ -153,14 +153,14 @@
       {
         "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/VendingMachine.sol",
         "file": "../system/VendingMachine.sol",
-        "id": 5813,
+        "id": 5818,
         "nodeType": "ImportDirective",
-        "scope": 5959,
-        "sourceUnit": 8885,
+        "scope": 5964,
+        "sourceUnit": 8890,
         "src": "269:60:16",
         "symbolAliases": [
           {
-            "foreign": 5812,
+            "foreign": 5817,
             "local": null
           }
         ],
@@ -172,7 +172,7 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 5814,
+              "id": 5819,
               "name": "ITokenRecipient",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 5512,
@@ -182,7 +182,7 @@
                 "typeString": "contract ITokenRecipient"
               }
             },
-            "id": 5815,
+            "id": 5820,
             "nodeType": "InheritanceSpecifier",
             "src": "706:15:16"
           }
@@ -193,9 +193,9 @@
         "contractKind": "contract",
         "documentation": "@notice A one-click script for minting TBTC from an unqualified TDT.\n @dev Wrapper script for VendingMachine.unqualifiedDepositToTbtc\n This contract implements receiveApproval() and can therefore use\n approveAndCall(). This pattern combines TBTC Token approval and\n vendingMachine.unqualifiedDepositToTbtc() in a single transaction.",
         "fullyImplemented": true,
-        "id": 5958,
+        "id": 5963,
         "linearizedBaseContracts": [
-          5958,
+          5963,
           5512
         ],
         "name": "FundingScript",
@@ -203,26 +203,26 @@
         "nodes": [
           {
             "constant": false,
-            "id": 5817,
+            "id": 5822,
             "name": "tbtcToken",
             "nodeType": "VariableDeclaration",
-            "scope": 5958,
+            "scope": 5963,
             "src": "728:19:16",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_TBTCToken_$8322",
+              "typeIdentifier": "t_contract$_TBTCToken_$8327",
               "typeString": "contract TBTCToken"
             },
             "typeName": {
               "contractScope": null,
-              "id": 5816,
+              "id": 5821,
               "name": "TBTCToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 8322,
+              "referencedDeclaration": 8327,
               "src": "728:9:16",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                "typeIdentifier": "t_contract$_TBTCToken_$8327",
                 "typeString": "contract TBTCToken"
               }
             },
@@ -231,26 +231,26 @@
           },
           {
             "constant": false,
-            "id": 5819,
+            "id": 5824,
             "name": "vendingMachine",
             "nodeType": "VariableDeclaration",
-            "scope": 5958,
+            "scope": 5963,
             "src": "753:29:16",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_VendingMachine_$8884",
+              "typeIdentifier": "t_contract$_VendingMachine_$8889",
               "typeString": "contract VendingMachine"
             },
             "typeName": {
               "contractScope": null,
-              "id": 5818,
+              "id": 5823,
               "name": "VendingMachine",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 8884,
+              "referencedDeclaration": 8889,
               "src": "753:14:16",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                "typeIdentifier": "t_contract$_VendingMachine_$8889",
                 "typeString": "contract VendingMachine"
               }
             },
@@ -259,26 +259,26 @@
           },
           {
             "constant": false,
-            "id": 5821,
+            "id": 5826,
             "name": "tbtcDepositToken",
             "nodeType": "VariableDeclaration",
-            "scope": 5958,
+            "scope": 5963,
             "src": "788:33:16",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+              "typeIdentifier": "t_contract$_TBTCDepositToken_$6740",
               "typeString": "contract TBTCDepositToken"
             },
             "typeName": {
               "contractScope": null,
-              "id": 5820,
+              "id": 5825,
               "name": "TBTCDepositToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6735,
+              "referencedDeclaration": 6740,
               "src": "788:16:16",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                "typeIdentifier": "t_contract$_TBTCDepositToken_$6740",
                 "typeString": "contract TBTCDepositToken"
               }
             },
@@ -287,26 +287,26 @@
           },
           {
             "constant": false,
-            "id": 5823,
+            "id": 5828,
             "name": "feeRebateToken",
             "nodeType": "VariableDeclaration",
-            "scope": 5958,
+            "scope": 5963,
             "src": "827:29:16",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+              "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
               "typeString": "contract FeeRebateToken"
             },
             "typeName": {
               "contractScope": null,
-              "id": 5822,
+              "id": 5827,
               "name": "FeeRebateToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6191,
+              "referencedDeclaration": 6196,
               "src": "827:14:16",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
                 "typeString": "contract FeeRebateToken"
               }
             },
@@ -315,28 +315,28 @@
           },
           {
             "body": {
-              "id": 5858,
+              "id": 5863,
               "nodeType": "Block",
               "src": "1017:230:16",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 5838,
+                    "id": 5843,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 5834,
+                      "id": 5839,
                       "name": "vendingMachine",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5819,
+                      "referencedDeclaration": 5824,
                       "src": "1027:14:16",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                        "typeIdentifier": "t_contract$_VendingMachine_$8889",
                         "typeString": "contract VendingMachine"
                       }
                     },
@@ -347,11 +347,11 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 5836,
+                          "id": 5841,
                           "name": "_VendingMachine",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5825,
+                          "referencedDeclaration": 5830,
                           "src": "1059:15:16",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -366,18 +366,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 5835,
+                        "id": 5840,
                         "name": "VendingMachine",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8884,
+                        "referencedDeclaration": 8889,
                         "src": "1044:14:16",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_VendingMachine_$8884_$",
+                          "typeIdentifier": "t_type$_t_contract$_VendingMachine_$8889_$",
                           "typeString": "type(contract VendingMachine)"
                         }
                       },
-                      "id": 5837,
+                      "id": 5842,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -387,38 +387,38 @@
                       "nodeType": "FunctionCall",
                       "src": "1044:31:16",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                        "typeIdentifier": "t_contract$_VendingMachine_$8889",
                         "typeString": "contract VendingMachine"
                       }
                     },
                     "src": "1027:48:16",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                      "typeIdentifier": "t_contract$_VendingMachine_$8889",
                       "typeString": "contract VendingMachine"
                     }
                   },
-                  "id": 5839,
+                  "id": 5844,
                   "nodeType": "ExpressionStatement",
                   "src": "1027:48:16"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 5844,
+                    "id": 5849,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 5840,
+                      "id": 5845,
                       "name": "tbtcToken",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5817,
+                      "referencedDeclaration": 5822,
                       "src": "1085:9:16",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                        "typeIdentifier": "t_contract$_TBTCToken_$8327",
                         "typeString": "contract TBTCToken"
                       }
                     },
@@ -429,11 +429,11 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 5842,
+                          "id": 5847,
                           "name": "_TBTCToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5827,
+                          "referencedDeclaration": 5832,
                           "src": "1107:10:16",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -448,18 +448,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 5841,
+                        "id": 5846,
                         "name": "TBTCToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8322,
+                        "referencedDeclaration": 8327,
                         "src": "1097:9:16",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_TBTCToken_$8322_$",
+                          "typeIdentifier": "t_type$_t_contract$_TBTCToken_$8327_$",
                           "typeString": "type(contract TBTCToken)"
                         }
                       },
-                      "id": 5843,
+                      "id": 5848,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -469,38 +469,38 @@
                       "nodeType": "FunctionCall",
                       "src": "1097:21:16",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                        "typeIdentifier": "t_contract$_TBTCToken_$8327",
                         "typeString": "contract TBTCToken"
                       }
                     },
                     "src": "1085:33:16",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                      "typeIdentifier": "t_contract$_TBTCToken_$8327",
                       "typeString": "contract TBTCToken"
                     }
                   },
-                  "id": 5845,
+                  "id": 5850,
                   "nodeType": "ExpressionStatement",
                   "src": "1085:33:16"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 5850,
+                    "id": 5855,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 5846,
+                      "id": 5851,
                       "name": "tbtcDepositToken",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5821,
+                      "referencedDeclaration": 5826,
                       "src": "1128:16:16",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                        "typeIdentifier": "t_contract$_TBTCDepositToken_$6740",
                         "typeString": "contract TBTCDepositToken"
                       }
                     },
@@ -511,11 +511,11 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 5848,
+                          "id": 5853,
                           "name": "_TBTCDepositToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5829,
+                          "referencedDeclaration": 5834,
                           "src": "1164:17:16",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -530,18 +530,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 5847,
+                        "id": 5852,
                         "name": "TBTCDepositToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6735,
+                        "referencedDeclaration": 6740,
                         "src": "1147:16:16",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_TBTCDepositToken_$6735_$",
+                          "typeIdentifier": "t_type$_t_contract$_TBTCDepositToken_$6740_$",
                           "typeString": "type(contract TBTCDepositToken)"
                         }
                       },
-                      "id": 5849,
+                      "id": 5854,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -551,38 +551,38 @@
                       "nodeType": "FunctionCall",
                       "src": "1147:35:16",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                        "typeIdentifier": "t_contract$_TBTCDepositToken_$6740",
                         "typeString": "contract TBTCDepositToken"
                       }
                     },
                     "src": "1128:54:16",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                      "typeIdentifier": "t_contract$_TBTCDepositToken_$6740",
                       "typeString": "contract TBTCDepositToken"
                     }
                   },
-                  "id": 5851,
+                  "id": 5856,
                   "nodeType": "ExpressionStatement",
                   "src": "1128:54:16"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 5856,
+                    "id": 5861,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 5852,
+                      "id": 5857,
                       "name": "feeRebateToken",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5823,
+                      "referencedDeclaration": 5828,
                       "src": "1192:14:16",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                        "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
                         "typeString": "contract FeeRebateToken"
                       }
                     },
@@ -593,11 +593,11 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 5854,
+                          "id": 5859,
                           "name": "_FeeRebateToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5831,
+                          "referencedDeclaration": 5836,
                           "src": "1224:15:16",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -612,18 +612,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 5853,
+                        "id": 5858,
                         "name": "FeeRebateToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6191,
+                        "referencedDeclaration": 6196,
                         "src": "1209:14:16",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_FeeRebateToken_$6191_$",
+                          "typeIdentifier": "t_type$_t_contract$_FeeRebateToken_$6196_$",
                           "typeString": "type(contract FeeRebateToken)"
                         }
                       },
-                      "id": 5855,
+                      "id": 5860,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -633,39 +633,39 @@
                       "nodeType": "FunctionCall",
                       "src": "1209:31:16",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                        "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
                         "typeString": "contract FeeRebateToken"
                       }
                     },
                     "src": "1192:48:16",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                      "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
                       "typeString": "contract FeeRebateToken"
                     }
                   },
-                  "id": 5857,
+                  "id": 5862,
                   "nodeType": "ExpressionStatement",
                   "src": "1192:48:16"
                 }
               ]
             },
             "documentation": null,
-            "id": 5859,
+            "id": 5864,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5832,
+              "id": 5837,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5825,
+                  "id": 5830,
                   "name": "_VendingMachine",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5859,
+                  "scope": 5864,
                   "src": "884:23:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -674,7 +674,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5824,
+                    "id": 5829,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "884:7:16",
@@ -689,10 +689,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 5827,
+                  "id": 5832,
                   "name": "_TBTCToken",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5859,
+                  "scope": 5864,
                   "src": "917:18:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -701,7 +701,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5826,
+                    "id": 5831,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "917:7:16",
@@ -716,10 +716,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 5829,
+                  "id": 5834,
                   "name": "_TBTCDepositToken",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5859,
+                  "scope": 5864,
                   "src": "945:25:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -728,7 +728,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5828,
+                    "id": 5833,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "945:7:16",
@@ -743,10 +743,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 5831,
+                  "id": 5836,
                   "name": "_FeeRebateToken",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5859,
+                  "scope": 5864,
                   "src": "980:23:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -755,7 +755,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5830,
+                    "id": 5835,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "980:7:16",
@@ -772,12 +772,12 @@
               "src": "874:135:16"
             },
             "returnParameters": {
-              "id": 5833,
+              "id": 5838,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1017:0:16"
             },
-            "scope": 5958,
+            "scope": 5963,
             "src": "863:384:16",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -785,7 +785,7 @@
           },
           {
             "body": {
-              "id": 5956,
+              "id": 5961,
               "nodeType": "Block",
               "src": "1796:1829:16",
               "statements": [
@@ -799,7 +799,7 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 5876,
+                        "id": 5881,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -808,18 +808,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 5871,
+                            "id": 5876,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18047,
+                            "referencedDeclaration": 18052,
                             "src": "1863:3:16",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 5872,
+                          "id": 5877,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -840,14 +840,14 @@
                           "arguments": [
                             {
                               "argumentTypes": null,
-                              "id": 5874,
+                              "id": 5879,
                               "name": "tbtcDepositToken",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 5821,
+                              "referencedDeclaration": 5826,
                               "src": "1885:16:16",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                                "typeIdentifier": "t_contract$_TBTCDepositToken_$6740",
                                 "typeString": "contract TBTCDepositToken"
                               }
                             }
@@ -855,11 +855,11 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                                "typeIdentifier": "t_contract$_TBTCDepositToken_$6740",
                                 "typeString": "contract TBTCDepositToken"
                               }
                             ],
-                            "id": 5873,
+                            "id": 5878,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -872,7 +872,7 @@
                             },
                             "typeName": "address"
                           },
-                          "id": 5875,
+                          "id": 5880,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -895,7 +895,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4f6e6c7920746f6b656e20636f6e74726163742063616e2063616c6c2072656365697665417070726f76616c",
-                        "id": 5877,
+                        "id": 5882,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -922,21 +922,21 @@
                           "typeString": "literal_string \"Only token contract can call receiveApproval\""
                         }
                       ],
-                      "id": 5870,
+                      "id": 5875,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "1855:7:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 5878,
+                    "id": 5883,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -950,7 +950,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5879,
+                  "id": 5884,
                   "nodeType": "ExpressionStatement",
                   "src": "1855:96:16"
                 },
@@ -960,11 +960,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 5883,
+                        "id": 5888,
                         "name": "_from",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5861,
+                        "referencedDeclaration": 5866,
                         "src": "1992:5:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -976,14 +976,14 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 5885,
+                            "id": 5890,
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18167,
+                            "referencedDeclaration": 18172,
                             "src": "2007:4:16",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_FundingScript_$5958",
+                              "typeIdentifier": "t_contract$_FundingScript_$5963",
                               "typeString": "contract FundingScript"
                             }
                           }
@@ -991,11 +991,11 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_FundingScript_$5958",
+                              "typeIdentifier": "t_contract$_FundingScript_$5963",
                               "typeString": "contract FundingScript"
                             }
                           ],
-                          "id": 5884,
+                          "id": 5889,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1008,7 +1008,7 @@
                           },
                           "typeName": "address"
                         },
-                        "id": 5886,
+                        "id": 5891,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1024,11 +1024,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 5887,
+                        "id": 5892,
                         "name": "_tokenId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5863,
+                        "referencedDeclaration": 5868,
                         "src": "2014:8:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1053,32 +1053,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 5880,
+                        "id": 5885,
                         "name": "tbtcDepositToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5821,
+                        "referencedDeclaration": 5826,
                         "src": "1962:16:16",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                          "typeIdentifier": "t_contract$_TBTCDepositToken_$6740",
                           "typeString": "contract TBTCDepositToken"
                         }
                       },
-                      "id": 5882,
+                      "id": 5887,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "transferFrom",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 17417,
+                      "referencedDeclaration": 17422,
                       "src": "1962:29:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,address,uint256) external"
                       }
                     },
-                    "id": 5888,
+                    "id": 5893,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1092,7 +1092,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5889,
+                  "id": 5894,
                   "nodeType": "ExpressionStatement",
                   "src": "1962:61:16"
                 },
@@ -1105,14 +1105,14 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 5894,
+                            "id": 5899,
                             "name": "vendingMachine",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5819,
+                            "referencedDeclaration": 5824,
                             "src": "2066:14:16",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                              "typeIdentifier": "t_contract$_VendingMachine_$8889",
                               "typeString": "contract VendingMachine"
                             }
                           }
@@ -1120,11 +1120,11 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                              "typeIdentifier": "t_contract$_VendingMachine_$8889",
                               "typeString": "contract VendingMachine"
                             }
                           ],
-                          "id": 5893,
+                          "id": 5898,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1137,7 +1137,7 @@
                           },
                           "typeName": "address"
                         },
-                        "id": 5895,
+                        "id": 5900,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1153,11 +1153,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 5896,
+                        "id": 5901,
                         "name": "_tokenId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5863,
+                        "referencedDeclaration": 5868,
                         "src": "2083:8:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1178,32 +1178,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 5890,
+                        "id": 5895,
                         "name": "tbtcDepositToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5821,
+                        "referencedDeclaration": 5826,
                         "src": "2033:16:16",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                          "typeIdentifier": "t_contract$_TBTCDepositToken_$6740",
                           "typeString": "contract TBTCDepositToken"
                         }
                       },
-                      "id": 5892,
+                      "id": 5897,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "approve",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 17325,
+                      "referencedDeclaration": 17330,
                       "src": "2033:24:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,uint256) external"
                       }
                     },
-                    "id": 5897,
+                    "id": 5902,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1217,21 +1217,21 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5898,
+                  "id": 5903,
                   "nodeType": "ExpressionStatement",
                   "src": "2033:59:16"
                 },
                 {
                   "assignments": [
-                    5900
+                    5905
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 5900,
+                      "id": 5905,
                       "name": "functionSignature",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5956,
+                      "scope": 5961,
                       "src": "2171:24:16",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1240,7 +1240,7 @@
                         "typeString": "bytes4"
                       },
                       "typeName": {
-                        "id": 5899,
+                        "id": 5904,
                         "name": "bytes4",
                         "nodeType": "ElementaryTypeName",
                         "src": "2171:6:16",
@@ -1253,7 +1253,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 5901,
+                  "id": 5906,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
                   "src": "2171:24:16"
@@ -1262,7 +1262,7 @@
                   "externalReferences": [
                     {
                       "functionSignature": {
-                        "declaration": 5900,
+                        "declaration": 5905,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "2228:17:16",
@@ -1271,7 +1271,7 @@
                     },
                     {
                       "_extraData": {
-                        "declaration": 5867,
+                        "declaration": 5872,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "2263:10:16",
@@ -1279,7 +1279,7 @@
                       }
                     }
                   ],
-                  "id": 5902,
+                  "id": 5907,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    functionSignature := and(mload(add(_extraData, 0x20)), not(0xff))\n}",
                   "src": "2205:98:16"
@@ -1294,18 +1294,18 @@
                           "typeIdentifier": "t_bytes4",
                           "typeString": "bytes4"
                         },
-                        "id": 5908,
+                        "id": 5913,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 5904,
+                          "id": 5909,
                           "name": "functionSignature",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5900,
+                          "referencedDeclaration": 5905,
                           "src": "2333:17:16",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes4",
@@ -1320,32 +1320,32 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 5905,
+                              "id": 5910,
                               "name": "vendingMachine",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 5819,
+                              "referencedDeclaration": 5824,
                               "src": "2354:14:16",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                                "typeIdentifier": "t_contract$_VendingMachine_$8889",
                                 "typeString": "contract VendingMachine"
                               }
                             },
-                            "id": 5906,
+                            "id": 5911,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "unqualifiedDepositToTbtc",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 8798,
+                            "referencedDeclaration": 8803,
                             "src": "2354:39:16",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_payable_$_t_bytes4_$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$_t_bytes4_$_t_uint8_$_t_bytes_memory_ptr_$_t_uint256_$_t_bytes_memory_ptr_$returns$__$",
                               "typeString": "function (address payable,bytes4,bytes memory,bytes memory,bytes4,uint8,bytes memory,uint256,bytes memory) external"
                             }
                           },
-                          "id": 5907,
+                          "id": 5912,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1368,7 +1368,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "426164205f657874726144617461207369676e61747572652e2043616c6c206d75737420626520746f20756e7175616c69666965644465706f736974546f546274632e",
-                        "id": 5909,
+                        "id": 5914,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1395,21 +1395,21 @@
                           "typeString": "literal_string \"Bad _extraData signature. Call must be to unqualifiedDepositToTbtc.\""
                         }
                       ],
-                      "id": 5903,
+                      "id": 5908,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "2312:7:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 5910,
+                    "id": 5915,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1423,22 +1423,22 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5911,
+                  "id": 5916,
                   "nodeType": "ExpressionStatement",
                   "src": "2312:183:16"
                 },
                 {
                   "assignments": [
-                    5913,
-                    5915
+                    5918,
+                    5920
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 5913,
+                      "id": 5918,
                       "name": "success",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5956,
+                      "scope": 5961,
                       "src": "2884:12:16",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1447,7 +1447,7 @@
                         "typeString": "bool"
                       },
                       "typeName": {
-                        "id": 5912,
+                        "id": 5917,
                         "name": "bool",
                         "nodeType": "ElementaryTypeName",
                         "src": "2884:4:16",
@@ -1461,10 +1461,10 @@
                     },
                     {
                       "constant": false,
-                      "id": 5915,
+                      "id": 5920,
                       "name": "returnData",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5956,
+                      "scope": 5961,
                       "src": "2898:23:16",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -1473,7 +1473,7 @@
                         "typeString": "bytes"
                       },
                       "typeName": {
-                        "id": 5914,
+                        "id": 5919,
                         "name": "bytes",
                         "nodeType": "ElementaryTypeName",
                         "src": "2898:5:16",
@@ -1486,17 +1486,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 5922,
+                  "id": 5927,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 5920,
+                        "id": 5925,
                         "name": "_extraData",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5867,
+                        "referencedDeclaration": 5872,
                         "src": "2954:10:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -1516,14 +1516,14 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 5917,
+                            "id": 5922,
                             "name": "vendingMachine",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5819,
+                            "referencedDeclaration": 5824,
                             "src": "2933:14:16",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                              "typeIdentifier": "t_contract$_VendingMachine_$8889",
                               "typeString": "contract VendingMachine"
                             }
                           }
@@ -1531,11 +1531,11 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                              "typeIdentifier": "t_contract$_VendingMachine_$8889",
                               "typeString": "contract VendingMachine"
                             }
                           ],
-                          "id": 5916,
+                          "id": 5921,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1548,7 +1548,7 @@
                           },
                           "typeName": "address"
                         },
-                        "id": 5918,
+                        "id": 5923,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1562,7 +1562,7 @@
                           "typeString": "address"
                         }
                       },
-                      "id": 5919,
+                      "id": 5924,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1576,7 +1576,7 @@
                         "typeString": "function (bytes memory) payable returns (bool,bytes memory)"
                       }
                     },
-                    "id": 5921,
+                    "id": 5926,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1595,15 +1595,15 @@
                 },
                 {
                   "assignments": [
-                    5924
+                    5929
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 5924,
+                      "id": 5929,
                       "name": "revertMessage",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5956,
+                      "scope": 5961,
                       "src": "2976:27:16",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -1612,7 +1612,7 @@
                         "typeString": "string"
                       },
                       "typeName": {
-                        "id": 5923,
+                        "id": 5928,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "2976:6:16",
@@ -1625,7 +1625,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 5925,
+                  "id": 5930,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
                   "src": "2976:27:16"
@@ -1634,7 +1634,7 @@
                   "externalReferences": [
                     {
                       "revertMessage": {
-                        "declaration": 5924,
+                        "declaration": 5929,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "3318:13:16",
@@ -1643,7 +1643,7 @@
                     },
                     {
                       "returnData": {
-                        "declaration": 5915,
+                        "declaration": 5920,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "3339:10:16",
@@ -1651,7 +1651,7 @@
                       }
                     }
                   ],
-                  "id": 5926,
+                  "id": 5931,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    revertMessage := add(returnData, 0x44)\n}",
                   "src": "3013:353:16"
@@ -1662,11 +1662,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 5928,
+                        "id": 5933,
                         "name": "success",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5913,
+                        "referencedDeclaration": 5918,
                         "src": "3384:7:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -1675,11 +1675,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 5929,
+                        "id": 5934,
                         "name": "revertMessage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5924,
+                        "referencedDeclaration": 5929,
                         "src": "3393:13:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -1698,21 +1698,21 @@
                           "typeString": "string memory"
                         }
                       ],
-                      "id": 5927,
+                      "id": 5932,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "3376:7:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 5930,
+                    "id": 5935,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1726,7 +1726,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5931,
+                  "id": 5936,
                   "nodeType": "ExpressionStatement",
                   "src": "3376:31:16"
                 },
@@ -1736,11 +1736,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 5935,
+                        "id": 5940,
                         "name": "_from",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5861,
+                        "referencedDeclaration": 5866,
                         "src": "3498:5:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1755,14 +1755,14 @@
                             "arguments": [
                               {
                                 "argumentTypes": null,
-                                "id": 5939,
+                                "id": 5944,
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 18167,
+                                "referencedDeclaration": 18172,
                                 "src": "3533:4:16",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_FundingScript_$5958",
+                                  "typeIdentifier": "t_contract$_FundingScript_$5963",
                                   "typeString": "contract FundingScript"
                                 }
                               }
@@ -1770,11 +1770,11 @@
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_FundingScript_$5958",
+                                  "typeIdentifier": "t_contract$_FundingScript_$5963",
                                   "typeString": "contract FundingScript"
                                 }
                               ],
-                              "id": 5938,
+                              "id": 5943,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -1787,7 +1787,7 @@
                               },
                               "typeName": "address"
                             },
-                            "id": 5940,
+                            "id": 5945,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -1811,32 +1811,32 @@
                           ],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 5936,
+                            "id": 5941,
                             "name": "tbtcToken",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5817,
+                            "referencedDeclaration": 5822,
                             "src": "3505:9:16",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                              "typeIdentifier": "t_contract$_TBTCToken_$8327",
                               "typeString": "contract TBTCToken"
                             }
                           },
-                          "id": 5937,
+                          "id": 5942,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "balanceOf",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 16694,
+                          "referencedDeclaration": 16699,
                           "src": "3505:19:16",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
                             "typeString": "function (address) view external returns (uint256)"
                           }
                         },
-                        "id": 5941,
+                        "id": 5946,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1864,32 +1864,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 5932,
+                        "id": 5937,
                         "name": "tbtcToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5817,
+                        "referencedDeclaration": 5822,
                         "src": "3479:9:16",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                          "typeIdentifier": "t_contract$_TBTCToken_$8327",
                           "typeString": "contract TBTCToken"
                         }
                       },
-                      "id": 5934,
+                      "id": 5939,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "transfer",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 16713,
+                      "referencedDeclaration": 16718,
                       "src": "3479:18:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
                         "typeString": "function (address,uint256) external returns (bool)"
                       }
                     },
-                    "id": 5942,
+                    "id": 5947,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1903,7 +1903,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 5943,
+                  "id": 5948,
                   "nodeType": "ExpressionStatement",
                   "src": "3479:61:16"
                 },
@@ -1916,14 +1916,14 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 5948,
+                            "id": 5953,
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18167,
+                            "referencedDeclaration": 18172,
                             "src": "3586:4:16",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_FundingScript_$5958",
+                              "typeIdentifier": "t_contract$_FundingScript_$5963",
                               "typeString": "contract FundingScript"
                             }
                           }
@@ -1931,11 +1931,11 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_FundingScript_$5958",
+                              "typeIdentifier": "t_contract$_FundingScript_$5963",
                               "typeString": "contract FundingScript"
                             }
                           ],
-                          "id": 5947,
+                          "id": 5952,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1948,7 +1948,7 @@
                           },
                           "typeName": "address"
                         },
-                        "id": 5949,
+                        "id": 5954,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1964,11 +1964,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 5950,
+                        "id": 5955,
                         "name": "_from",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5861,
+                        "referencedDeclaration": 5866,
                         "src": "3593:5:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1980,11 +1980,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 5952,
+                            "id": 5957,
                             "name": "_tokenId",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5863,
+                            "referencedDeclaration": 5868,
                             "src": "3608:8:16",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1999,7 +1999,7 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 5951,
+                          "id": 5956,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -2012,7 +2012,7 @@
                           },
                           "typeName": "uint256"
                         },
-                        "id": 5953,
+                        "id": 5958,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2044,32 +2044,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 5944,
+                        "id": 5949,
                         "name": "feeRebateToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5823,
+                        "referencedDeclaration": 5828,
                         "src": "3550:14:16",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                          "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
                           "typeString": "contract FeeRebateToken"
                         }
                       },
-                      "id": 5946,
+                      "id": 5951,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "transferFrom",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 17417,
+                      "referencedDeclaration": 17422,
                       "src": "3550:27:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,address,uint256) external"
                       }
                     },
-                    "id": 5954,
+                    "id": 5959,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2083,29 +2083,29 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5955,
+                  "id": 5960,
                   "nodeType": "ExpressionStatement",
                   "src": "3550:68:16"
                 }
               ]
             },
             "documentation": "@notice Receives approval for a TDT transfer, and calls `VendingMachine.unqualifiedDepositToTbtc` for a user.\n @dev Implements the approveAndCall receiver interface.\n @param _from The owner of the token who approved them for transfer.\n @param _tokenId Approved TDT for the transfer.\n @param _extraData Encoded function call to `VendingMachine.unqualifiedDepositToTbtc`.",
-            "id": 5957,
+            "id": 5962,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "receiveApproval",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5868,
+              "id": 5873,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5861,
+                  "id": 5866,
                   "name": "_from",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5957,
+                  "scope": 5962,
                   "src": "1693:13:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2114,7 +2114,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5860,
+                    "id": 5865,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1693:7:16",
@@ -2129,10 +2129,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 5863,
+                  "id": 5868,
                   "name": "_tokenId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5957,
+                  "scope": 5962,
                   "src": "1716:16:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2141,7 +2141,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5862,
+                    "id": 5867,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1716:7:16",
@@ -2155,10 +2155,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 5865,
+                  "id": 5870,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5957,
+                  "scope": 5962,
                   "src": "1742:7:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2167,7 +2167,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5864,
+                    "id": 5869,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1742:7:16",
@@ -2182,10 +2182,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 5867,
+                  "id": 5872,
                   "name": "_extraData",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5957,
+                  "scope": 5962,
                   "src": "1759:23:16",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2194,7 +2194,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 5866,
+                    "id": 5871,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1759:5:16",
@@ -2210,19 +2210,19 @@
               "src": "1683:105:16"
             },
             "returnParameters": {
-              "id": 5869,
+              "id": 5874,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1796:0:16"
             },
-            "scope": 5958,
+            "scope": 5963,
             "src": "1659:1966:16",
             "stateMutability": "nonpayable",
             "superFunction": 5511,
             "visibility": "public"
           }
         ],
-        "scope": 5959,
+        "scope": 5964,
         "src": "680:2947:16"
       }
     ],
@@ -2232,14 +2232,14 @@
     "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/scripts/FundingScript.sol",
     "exportedSymbols": {
       "FundingScript": [
-        5958
+        5963
       ]
     },
-    "id": 5959,
+    "id": 5964,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5803,
+        "id": 5808,
         "literals": [
           "solidity",
           "0.5",
@@ -2251,14 +2251,14 @@
       {
         "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/interfaces/ITokenRecipient.sol",
         "file": "../interfaces/ITokenRecipient.sol",
-        "id": 5805,
+        "id": 5810,
         "nodeType": "ImportDirective",
-        "scope": 5959,
+        "scope": 5964,
         "sourceUnit": 5513,
         "src": "25:66:16",
         "symbolAliases": [
           {
-            "foreign": 5804,
+            "foreign": 5809,
             "local": null
           }
         ],
@@ -2267,14 +2267,14 @@
       {
         "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCDepositToken.sol",
         "file": "../system/TBTCDepositToken.sol",
-        "id": 5807,
+        "id": 5812,
         "nodeType": "ImportDirective",
-        "scope": 5959,
-        "sourceUnit": 6736,
+        "scope": 5964,
+        "sourceUnit": 6741,
         "src": "92:64:16",
         "symbolAliases": [
           {
-            "foreign": 5806,
+            "foreign": 5811,
             "local": null
           }
         ],
@@ -2283,14 +2283,14 @@
       {
         "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCToken.sol",
         "file": "../system/TBTCToken.sol",
-        "id": 5809,
+        "id": 5814,
         "nodeType": "ImportDirective",
-        "scope": 5959,
-        "sourceUnit": 8323,
+        "scope": 5964,
+        "sourceUnit": 8328,
         "src": "157:50:16",
         "symbolAliases": [
           {
-            "foreign": 5808,
+            "foreign": 5813,
             "local": null
           }
         ],
@@ -2299,14 +2299,14 @@
       {
         "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/FeeRebateToken.sol",
         "file": "../system/FeeRebateToken.sol",
-        "id": 5811,
+        "id": 5816,
         "nodeType": "ImportDirective",
-        "scope": 5959,
-        "sourceUnit": 6192,
+        "scope": 5964,
+        "sourceUnit": 6197,
         "src": "208:60:16",
         "symbolAliases": [
           {
-            "foreign": 5810,
+            "foreign": 5815,
             "local": null
           }
         ],
@@ -2315,14 +2315,14 @@
       {
         "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/VendingMachine.sol",
         "file": "../system/VendingMachine.sol",
-        "id": 5813,
+        "id": 5818,
         "nodeType": "ImportDirective",
-        "scope": 5959,
-        "sourceUnit": 8885,
+        "scope": 5964,
+        "sourceUnit": 8890,
         "src": "269:60:16",
         "symbolAliases": [
           {
-            "foreign": 5812,
+            "foreign": 5817,
             "local": null
           }
         ],
@@ -2334,7 +2334,7 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 5814,
+              "id": 5819,
               "name": "ITokenRecipient",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 5512,
@@ -2344,7 +2344,7 @@
                 "typeString": "contract ITokenRecipient"
               }
             },
-            "id": 5815,
+            "id": 5820,
             "nodeType": "InheritanceSpecifier",
             "src": "706:15:16"
           }
@@ -2355,9 +2355,9 @@
         "contractKind": "contract",
         "documentation": "@notice A one-click script for minting TBTC from an unqualified TDT.\n @dev Wrapper script for VendingMachine.unqualifiedDepositToTbtc\n This contract implements receiveApproval() and can therefore use\n approveAndCall(). This pattern combines TBTC Token approval and\n vendingMachine.unqualifiedDepositToTbtc() in a single transaction.",
         "fullyImplemented": true,
-        "id": 5958,
+        "id": 5963,
         "linearizedBaseContracts": [
-          5958,
+          5963,
           5512
         ],
         "name": "FundingScript",
@@ -2365,26 +2365,26 @@
         "nodes": [
           {
             "constant": false,
-            "id": 5817,
+            "id": 5822,
             "name": "tbtcToken",
             "nodeType": "VariableDeclaration",
-            "scope": 5958,
+            "scope": 5963,
             "src": "728:19:16",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_TBTCToken_$8322",
+              "typeIdentifier": "t_contract$_TBTCToken_$8327",
               "typeString": "contract TBTCToken"
             },
             "typeName": {
               "contractScope": null,
-              "id": 5816,
+              "id": 5821,
               "name": "TBTCToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 8322,
+              "referencedDeclaration": 8327,
               "src": "728:9:16",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                "typeIdentifier": "t_contract$_TBTCToken_$8327",
                 "typeString": "contract TBTCToken"
               }
             },
@@ -2393,26 +2393,26 @@
           },
           {
             "constant": false,
-            "id": 5819,
+            "id": 5824,
             "name": "vendingMachine",
             "nodeType": "VariableDeclaration",
-            "scope": 5958,
+            "scope": 5963,
             "src": "753:29:16",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_VendingMachine_$8884",
+              "typeIdentifier": "t_contract$_VendingMachine_$8889",
               "typeString": "contract VendingMachine"
             },
             "typeName": {
               "contractScope": null,
-              "id": 5818,
+              "id": 5823,
               "name": "VendingMachine",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 8884,
+              "referencedDeclaration": 8889,
               "src": "753:14:16",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                "typeIdentifier": "t_contract$_VendingMachine_$8889",
                 "typeString": "contract VendingMachine"
               }
             },
@@ -2421,26 +2421,26 @@
           },
           {
             "constant": false,
-            "id": 5821,
+            "id": 5826,
             "name": "tbtcDepositToken",
             "nodeType": "VariableDeclaration",
-            "scope": 5958,
+            "scope": 5963,
             "src": "788:33:16",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+              "typeIdentifier": "t_contract$_TBTCDepositToken_$6740",
               "typeString": "contract TBTCDepositToken"
             },
             "typeName": {
               "contractScope": null,
-              "id": 5820,
+              "id": 5825,
               "name": "TBTCDepositToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6735,
+              "referencedDeclaration": 6740,
               "src": "788:16:16",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                "typeIdentifier": "t_contract$_TBTCDepositToken_$6740",
                 "typeString": "contract TBTCDepositToken"
               }
             },
@@ -2449,26 +2449,26 @@
           },
           {
             "constant": false,
-            "id": 5823,
+            "id": 5828,
             "name": "feeRebateToken",
             "nodeType": "VariableDeclaration",
-            "scope": 5958,
+            "scope": 5963,
             "src": "827:29:16",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+              "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
               "typeString": "contract FeeRebateToken"
             },
             "typeName": {
               "contractScope": null,
-              "id": 5822,
+              "id": 5827,
               "name": "FeeRebateToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6191,
+              "referencedDeclaration": 6196,
               "src": "827:14:16",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
                 "typeString": "contract FeeRebateToken"
               }
             },
@@ -2477,28 +2477,28 @@
           },
           {
             "body": {
-              "id": 5858,
+              "id": 5863,
               "nodeType": "Block",
               "src": "1017:230:16",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 5838,
+                    "id": 5843,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 5834,
+                      "id": 5839,
                       "name": "vendingMachine",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5819,
+                      "referencedDeclaration": 5824,
                       "src": "1027:14:16",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                        "typeIdentifier": "t_contract$_VendingMachine_$8889",
                         "typeString": "contract VendingMachine"
                       }
                     },
@@ -2509,11 +2509,11 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 5836,
+                          "id": 5841,
                           "name": "_VendingMachine",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5825,
+                          "referencedDeclaration": 5830,
                           "src": "1059:15:16",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -2528,18 +2528,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 5835,
+                        "id": 5840,
                         "name": "VendingMachine",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8884,
+                        "referencedDeclaration": 8889,
                         "src": "1044:14:16",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_VendingMachine_$8884_$",
+                          "typeIdentifier": "t_type$_t_contract$_VendingMachine_$8889_$",
                           "typeString": "type(contract VendingMachine)"
                         }
                       },
-                      "id": 5837,
+                      "id": 5842,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2549,38 +2549,38 @@
                       "nodeType": "FunctionCall",
                       "src": "1044:31:16",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                        "typeIdentifier": "t_contract$_VendingMachine_$8889",
                         "typeString": "contract VendingMachine"
                       }
                     },
                     "src": "1027:48:16",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                      "typeIdentifier": "t_contract$_VendingMachine_$8889",
                       "typeString": "contract VendingMachine"
                     }
                   },
-                  "id": 5839,
+                  "id": 5844,
                   "nodeType": "ExpressionStatement",
                   "src": "1027:48:16"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 5844,
+                    "id": 5849,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 5840,
+                      "id": 5845,
                       "name": "tbtcToken",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5817,
+                      "referencedDeclaration": 5822,
                       "src": "1085:9:16",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                        "typeIdentifier": "t_contract$_TBTCToken_$8327",
                         "typeString": "contract TBTCToken"
                       }
                     },
@@ -2591,11 +2591,11 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 5842,
+                          "id": 5847,
                           "name": "_TBTCToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5827,
+                          "referencedDeclaration": 5832,
                           "src": "1107:10:16",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -2610,18 +2610,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 5841,
+                        "id": 5846,
                         "name": "TBTCToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8322,
+                        "referencedDeclaration": 8327,
                         "src": "1097:9:16",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_TBTCToken_$8322_$",
+                          "typeIdentifier": "t_type$_t_contract$_TBTCToken_$8327_$",
                           "typeString": "type(contract TBTCToken)"
                         }
                       },
-                      "id": 5843,
+                      "id": 5848,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2631,38 +2631,38 @@
                       "nodeType": "FunctionCall",
                       "src": "1097:21:16",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                        "typeIdentifier": "t_contract$_TBTCToken_$8327",
                         "typeString": "contract TBTCToken"
                       }
                     },
                     "src": "1085:33:16",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                      "typeIdentifier": "t_contract$_TBTCToken_$8327",
                       "typeString": "contract TBTCToken"
                     }
                   },
-                  "id": 5845,
+                  "id": 5850,
                   "nodeType": "ExpressionStatement",
                   "src": "1085:33:16"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 5850,
+                    "id": 5855,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 5846,
+                      "id": 5851,
                       "name": "tbtcDepositToken",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5821,
+                      "referencedDeclaration": 5826,
                       "src": "1128:16:16",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                        "typeIdentifier": "t_contract$_TBTCDepositToken_$6740",
                         "typeString": "contract TBTCDepositToken"
                       }
                     },
@@ -2673,11 +2673,11 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 5848,
+                          "id": 5853,
                           "name": "_TBTCDepositToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5829,
+                          "referencedDeclaration": 5834,
                           "src": "1164:17:16",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -2692,18 +2692,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 5847,
+                        "id": 5852,
                         "name": "TBTCDepositToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6735,
+                        "referencedDeclaration": 6740,
                         "src": "1147:16:16",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_TBTCDepositToken_$6735_$",
+                          "typeIdentifier": "t_type$_t_contract$_TBTCDepositToken_$6740_$",
                           "typeString": "type(contract TBTCDepositToken)"
                         }
                       },
-                      "id": 5849,
+                      "id": 5854,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2713,38 +2713,38 @@
                       "nodeType": "FunctionCall",
                       "src": "1147:35:16",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                        "typeIdentifier": "t_contract$_TBTCDepositToken_$6740",
                         "typeString": "contract TBTCDepositToken"
                       }
                     },
                     "src": "1128:54:16",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                      "typeIdentifier": "t_contract$_TBTCDepositToken_$6740",
                       "typeString": "contract TBTCDepositToken"
                     }
                   },
-                  "id": 5851,
+                  "id": 5856,
                   "nodeType": "ExpressionStatement",
                   "src": "1128:54:16"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 5856,
+                    "id": 5861,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 5852,
+                      "id": 5857,
                       "name": "feeRebateToken",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5823,
+                      "referencedDeclaration": 5828,
                       "src": "1192:14:16",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                        "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
                         "typeString": "contract FeeRebateToken"
                       }
                     },
@@ -2755,11 +2755,11 @@
                       "arguments": [
                         {
                           "argumentTypes": null,
-                          "id": 5854,
+                          "id": 5859,
                           "name": "_FeeRebateToken",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5831,
+                          "referencedDeclaration": 5836,
                           "src": "1224:15:16",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -2774,18 +2774,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 5853,
+                        "id": 5858,
                         "name": "FeeRebateToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6191,
+                        "referencedDeclaration": 6196,
                         "src": "1209:14:16",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_FeeRebateToken_$6191_$",
+                          "typeIdentifier": "t_type$_t_contract$_FeeRebateToken_$6196_$",
                           "typeString": "type(contract FeeRebateToken)"
                         }
                       },
-                      "id": 5855,
+                      "id": 5860,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2795,39 +2795,39 @@
                       "nodeType": "FunctionCall",
                       "src": "1209:31:16",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                        "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
                         "typeString": "contract FeeRebateToken"
                       }
                     },
                     "src": "1192:48:16",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                      "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
                       "typeString": "contract FeeRebateToken"
                     }
                   },
-                  "id": 5857,
+                  "id": 5862,
                   "nodeType": "ExpressionStatement",
                   "src": "1192:48:16"
                 }
               ]
             },
             "documentation": null,
-            "id": 5859,
+            "id": 5864,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5832,
+              "id": 5837,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5825,
+                  "id": 5830,
                   "name": "_VendingMachine",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5859,
+                  "scope": 5864,
                   "src": "884:23:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2836,7 +2836,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5824,
+                    "id": 5829,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "884:7:16",
@@ -2851,10 +2851,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 5827,
+                  "id": 5832,
                   "name": "_TBTCToken",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5859,
+                  "scope": 5864,
                   "src": "917:18:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2863,7 +2863,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5826,
+                    "id": 5831,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "917:7:16",
@@ -2878,10 +2878,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 5829,
+                  "id": 5834,
                   "name": "_TBTCDepositToken",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5859,
+                  "scope": 5864,
                   "src": "945:25:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2890,7 +2890,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5828,
+                    "id": 5833,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "945:7:16",
@@ -2905,10 +2905,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 5831,
+                  "id": 5836,
                   "name": "_FeeRebateToken",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5859,
+                  "scope": 5864,
                   "src": "980:23:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2917,7 +2917,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5830,
+                    "id": 5835,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "980:7:16",
@@ -2934,12 +2934,12 @@
               "src": "874:135:16"
             },
             "returnParameters": {
-              "id": 5833,
+              "id": 5838,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1017:0:16"
             },
-            "scope": 5958,
+            "scope": 5963,
             "src": "863:384:16",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2947,7 +2947,7 @@
           },
           {
             "body": {
-              "id": 5956,
+              "id": 5961,
               "nodeType": "Block",
               "src": "1796:1829:16",
               "statements": [
@@ -2961,7 +2961,7 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 5876,
+                        "id": 5881,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2970,18 +2970,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 5871,
+                            "id": 5876,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18047,
+                            "referencedDeclaration": 18052,
                             "src": "1863:3:16",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 5872,
+                          "id": 5877,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3002,14 +3002,14 @@
                           "arguments": [
                             {
                               "argumentTypes": null,
-                              "id": 5874,
+                              "id": 5879,
                               "name": "tbtcDepositToken",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 5821,
+                              "referencedDeclaration": 5826,
                               "src": "1885:16:16",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                                "typeIdentifier": "t_contract$_TBTCDepositToken_$6740",
                                 "typeString": "contract TBTCDepositToken"
                               }
                             }
@@ -3017,11 +3017,11 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                                "typeIdentifier": "t_contract$_TBTCDepositToken_$6740",
                                 "typeString": "contract TBTCDepositToken"
                               }
                             ],
-                            "id": 5873,
+                            "id": 5878,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -3034,7 +3034,7 @@
                             },
                             "typeName": "address"
                           },
-                          "id": 5875,
+                          "id": 5880,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3057,7 +3057,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4f6e6c7920746f6b656e20636f6e74726163742063616e2063616c6c2072656365697665417070726f76616c",
-                        "id": 5877,
+                        "id": 5882,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3084,21 +3084,21 @@
                           "typeString": "literal_string \"Only token contract can call receiveApproval\""
                         }
                       ],
-                      "id": 5870,
+                      "id": 5875,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "1855:7:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 5878,
+                    "id": 5883,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3112,7 +3112,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5879,
+                  "id": 5884,
                   "nodeType": "ExpressionStatement",
                   "src": "1855:96:16"
                 },
@@ -3122,11 +3122,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 5883,
+                        "id": 5888,
                         "name": "_from",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5861,
+                        "referencedDeclaration": 5866,
                         "src": "1992:5:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -3138,14 +3138,14 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 5885,
+                            "id": 5890,
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18167,
+                            "referencedDeclaration": 18172,
                             "src": "2007:4:16",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_FundingScript_$5958",
+                              "typeIdentifier": "t_contract$_FundingScript_$5963",
                               "typeString": "contract FundingScript"
                             }
                           }
@@ -3153,11 +3153,11 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_FundingScript_$5958",
+                              "typeIdentifier": "t_contract$_FundingScript_$5963",
                               "typeString": "contract FundingScript"
                             }
                           ],
-                          "id": 5884,
+                          "id": 5889,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3170,7 +3170,7 @@
                           },
                           "typeName": "address"
                         },
-                        "id": 5886,
+                        "id": 5891,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3186,11 +3186,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 5887,
+                        "id": 5892,
                         "name": "_tokenId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5863,
+                        "referencedDeclaration": 5868,
                         "src": "2014:8:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3215,32 +3215,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 5880,
+                        "id": 5885,
                         "name": "tbtcDepositToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5821,
+                        "referencedDeclaration": 5826,
                         "src": "1962:16:16",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                          "typeIdentifier": "t_contract$_TBTCDepositToken_$6740",
                           "typeString": "contract TBTCDepositToken"
                         }
                       },
-                      "id": 5882,
+                      "id": 5887,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "transferFrom",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 17417,
+                      "referencedDeclaration": 17422,
                       "src": "1962:29:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,address,uint256) external"
                       }
                     },
-                    "id": 5888,
+                    "id": 5893,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3254,7 +3254,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5889,
+                  "id": 5894,
                   "nodeType": "ExpressionStatement",
                   "src": "1962:61:16"
                 },
@@ -3267,14 +3267,14 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 5894,
+                            "id": 5899,
                             "name": "vendingMachine",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5819,
+                            "referencedDeclaration": 5824,
                             "src": "2066:14:16",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                              "typeIdentifier": "t_contract$_VendingMachine_$8889",
                               "typeString": "contract VendingMachine"
                             }
                           }
@@ -3282,11 +3282,11 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                              "typeIdentifier": "t_contract$_VendingMachine_$8889",
                               "typeString": "contract VendingMachine"
                             }
                           ],
-                          "id": 5893,
+                          "id": 5898,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3299,7 +3299,7 @@
                           },
                           "typeName": "address"
                         },
-                        "id": 5895,
+                        "id": 5900,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3315,11 +3315,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 5896,
+                        "id": 5901,
                         "name": "_tokenId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5863,
+                        "referencedDeclaration": 5868,
                         "src": "2083:8:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3340,32 +3340,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 5890,
+                        "id": 5895,
                         "name": "tbtcDepositToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5821,
+                        "referencedDeclaration": 5826,
                         "src": "2033:16:16",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_TBTCDepositToken_$6735",
+                          "typeIdentifier": "t_contract$_TBTCDepositToken_$6740",
                           "typeString": "contract TBTCDepositToken"
                         }
                       },
-                      "id": 5892,
+                      "id": 5897,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "approve",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 17325,
+                      "referencedDeclaration": 17330,
                       "src": "2033:24:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,uint256) external"
                       }
                     },
-                    "id": 5897,
+                    "id": 5902,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3379,21 +3379,21 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5898,
+                  "id": 5903,
                   "nodeType": "ExpressionStatement",
                   "src": "2033:59:16"
                 },
                 {
                   "assignments": [
-                    5900
+                    5905
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 5900,
+                      "id": 5905,
                       "name": "functionSignature",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5956,
+                      "scope": 5961,
                       "src": "2171:24:16",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -3402,7 +3402,7 @@
                         "typeString": "bytes4"
                       },
                       "typeName": {
-                        "id": 5899,
+                        "id": 5904,
                         "name": "bytes4",
                         "nodeType": "ElementaryTypeName",
                         "src": "2171:6:16",
@@ -3415,7 +3415,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 5901,
+                  "id": 5906,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
                   "src": "2171:24:16"
@@ -3424,7 +3424,7 @@
                   "externalReferences": [
                     {
                       "functionSignature": {
-                        "declaration": 5900,
+                        "declaration": 5905,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "2228:17:16",
@@ -3433,7 +3433,7 @@
                     },
                     {
                       "_extraData": {
-                        "declaration": 5867,
+                        "declaration": 5872,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "2263:10:16",
@@ -3441,7 +3441,7 @@
                       }
                     }
                   ],
-                  "id": 5902,
+                  "id": 5907,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    functionSignature := and(mload(add(_extraData, 0x20)), not(0xff))\n}",
                   "src": "2205:98:16"
@@ -3456,18 +3456,18 @@
                           "typeIdentifier": "t_bytes4",
                           "typeString": "bytes4"
                         },
-                        "id": 5908,
+                        "id": 5913,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 5904,
+                          "id": 5909,
                           "name": "functionSignature",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5900,
+                          "referencedDeclaration": 5905,
                           "src": "2333:17:16",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes4",
@@ -3482,32 +3482,32 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 5905,
+                              "id": 5910,
                               "name": "vendingMachine",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 5819,
+                              "referencedDeclaration": 5824,
                               "src": "2354:14:16",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                                "typeIdentifier": "t_contract$_VendingMachine_$8889",
                                 "typeString": "contract VendingMachine"
                               }
                             },
-                            "id": 5906,
+                            "id": 5911,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "unqualifiedDepositToTbtc",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 8798,
+                            "referencedDeclaration": 8803,
                             "src": "2354:39:16",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_payable_$_t_bytes4_$_t_bytes_memory_ptr_$_t_bytes_memory_ptr_$_t_bytes4_$_t_uint8_$_t_bytes_memory_ptr_$_t_uint256_$_t_bytes_memory_ptr_$returns$__$",
                               "typeString": "function (address payable,bytes4,bytes memory,bytes memory,bytes4,uint8,bytes memory,uint256,bytes memory) external"
                             }
                           },
-                          "id": 5907,
+                          "id": 5912,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3530,7 +3530,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "426164205f657874726144617461207369676e61747572652e2043616c6c206d75737420626520746f20756e7175616c69666965644465706f736974546f546274632e",
-                        "id": 5909,
+                        "id": 5914,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3557,21 +3557,21 @@
                           "typeString": "literal_string \"Bad _extraData signature. Call must be to unqualifiedDepositToTbtc.\""
                         }
                       ],
-                      "id": 5903,
+                      "id": 5908,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "2312:7:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 5910,
+                    "id": 5915,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3585,22 +3585,22 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5911,
+                  "id": 5916,
                   "nodeType": "ExpressionStatement",
                   "src": "2312:183:16"
                 },
                 {
                   "assignments": [
-                    5913,
-                    5915
+                    5918,
+                    5920
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 5913,
+                      "id": 5918,
                       "name": "success",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5956,
+                      "scope": 5961,
                       "src": "2884:12:16",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -3609,7 +3609,7 @@
                         "typeString": "bool"
                       },
                       "typeName": {
-                        "id": 5912,
+                        "id": 5917,
                         "name": "bool",
                         "nodeType": "ElementaryTypeName",
                         "src": "2884:4:16",
@@ -3623,10 +3623,10 @@
                     },
                     {
                       "constant": false,
-                      "id": 5915,
+                      "id": 5920,
                       "name": "returnData",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5956,
+                      "scope": 5961,
                       "src": "2898:23:16",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -3635,7 +3635,7 @@
                         "typeString": "bytes"
                       },
                       "typeName": {
-                        "id": 5914,
+                        "id": 5919,
                         "name": "bytes",
                         "nodeType": "ElementaryTypeName",
                         "src": "2898:5:16",
@@ -3648,17 +3648,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 5922,
+                  "id": 5927,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 5920,
+                        "id": 5925,
                         "name": "_extraData",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5867,
+                        "referencedDeclaration": 5872,
                         "src": "2954:10:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
@@ -3678,14 +3678,14 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 5917,
+                            "id": 5922,
                             "name": "vendingMachine",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5819,
+                            "referencedDeclaration": 5824,
                             "src": "2933:14:16",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                              "typeIdentifier": "t_contract$_VendingMachine_$8889",
                               "typeString": "contract VendingMachine"
                             }
                           }
@@ -3693,11 +3693,11 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                              "typeIdentifier": "t_contract$_VendingMachine_$8889",
                               "typeString": "contract VendingMachine"
                             }
                           ],
-                          "id": 5916,
+                          "id": 5921,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3710,7 +3710,7 @@
                           },
                           "typeName": "address"
                         },
-                        "id": 5918,
+                        "id": 5923,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3724,7 +3724,7 @@
                           "typeString": "address"
                         }
                       },
-                      "id": 5919,
+                      "id": 5924,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -3738,7 +3738,7 @@
                         "typeString": "function (bytes memory) payable returns (bool,bytes memory)"
                       }
                     },
-                    "id": 5921,
+                    "id": 5926,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3757,15 +3757,15 @@
                 },
                 {
                   "assignments": [
-                    5924
+                    5929
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 5924,
+                      "id": 5929,
                       "name": "revertMessage",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5956,
+                      "scope": 5961,
                       "src": "2976:27:16",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -3774,7 +3774,7 @@
                         "typeString": "string"
                       },
                       "typeName": {
-                        "id": 5923,
+                        "id": 5928,
                         "name": "string",
                         "nodeType": "ElementaryTypeName",
                         "src": "2976:6:16",
@@ -3787,7 +3787,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 5925,
+                  "id": 5930,
                   "initialValue": null,
                   "nodeType": "VariableDeclarationStatement",
                   "src": "2976:27:16"
@@ -3796,7 +3796,7 @@
                   "externalReferences": [
                     {
                       "revertMessage": {
-                        "declaration": 5924,
+                        "declaration": 5929,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "3318:13:16",
@@ -3805,7 +3805,7 @@
                     },
                     {
                       "returnData": {
-                        "declaration": 5915,
+                        "declaration": 5920,
                         "isOffset": false,
                         "isSlot": false,
                         "src": "3339:10:16",
@@ -3813,7 +3813,7 @@
                       }
                     }
                   ],
-                  "id": 5926,
+                  "id": 5931,
                   "nodeType": "InlineAssembly",
                   "operations": "{\n    revertMessage := add(returnData, 0x44)\n}",
                   "src": "3013:353:16"
@@ -3824,11 +3824,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 5928,
+                        "id": 5933,
                         "name": "success",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5913,
+                        "referencedDeclaration": 5918,
                         "src": "3384:7:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -3837,11 +3837,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 5929,
+                        "id": 5934,
                         "name": "revertMessage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5924,
+                        "referencedDeclaration": 5929,
                         "src": "3393:13:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -3860,21 +3860,21 @@
                           "typeString": "string memory"
                         }
                       ],
-                      "id": 5927,
+                      "id": 5932,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "3376:7:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 5930,
+                    "id": 5935,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3888,7 +3888,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5931,
+                  "id": 5936,
                   "nodeType": "ExpressionStatement",
                   "src": "3376:31:16"
                 },
@@ -3898,11 +3898,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 5935,
+                        "id": 5940,
                         "name": "_from",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5861,
+                        "referencedDeclaration": 5866,
                         "src": "3498:5:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -3917,14 +3917,14 @@
                             "arguments": [
                               {
                                 "argumentTypes": null,
-                                "id": 5939,
+                                "id": 5944,
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 18167,
+                                "referencedDeclaration": 18172,
                                 "src": "3533:4:16",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_FundingScript_$5958",
+                                  "typeIdentifier": "t_contract$_FundingScript_$5963",
                                   "typeString": "contract FundingScript"
                                 }
                               }
@@ -3932,11 +3932,11 @@
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_FundingScript_$5958",
+                                  "typeIdentifier": "t_contract$_FundingScript_$5963",
                                   "typeString": "contract FundingScript"
                                 }
                               ],
-                              "id": 5938,
+                              "id": 5943,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -3949,7 +3949,7 @@
                               },
                               "typeName": "address"
                             },
-                            "id": 5940,
+                            "id": 5945,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -3973,32 +3973,32 @@
                           ],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 5936,
+                            "id": 5941,
                             "name": "tbtcToken",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5817,
+                            "referencedDeclaration": 5822,
                             "src": "3505:9:16",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                              "typeIdentifier": "t_contract$_TBTCToken_$8327",
                               "typeString": "contract TBTCToken"
                             }
                           },
-                          "id": 5937,
+                          "id": 5942,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "balanceOf",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 16694,
+                          "referencedDeclaration": 16699,
                           "src": "3505:19:16",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
                             "typeString": "function (address) view external returns (uint256)"
                           }
                         },
-                        "id": 5941,
+                        "id": 5946,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4026,32 +4026,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 5932,
+                        "id": 5937,
                         "name": "tbtcToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5817,
+                        "referencedDeclaration": 5822,
                         "src": "3479:9:16",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                          "typeIdentifier": "t_contract$_TBTCToken_$8327",
                           "typeString": "contract TBTCToken"
                         }
                       },
-                      "id": 5934,
+                      "id": 5939,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "transfer",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 16713,
+                      "referencedDeclaration": 16718,
                       "src": "3479:18:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
                         "typeString": "function (address,uint256) external returns (bool)"
                       }
                     },
-                    "id": 5942,
+                    "id": 5947,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4065,7 +4065,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 5943,
+                  "id": 5948,
                   "nodeType": "ExpressionStatement",
                   "src": "3479:61:16"
                 },
@@ -4078,14 +4078,14 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 5948,
+                            "id": 5953,
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18167,
+                            "referencedDeclaration": 18172,
                             "src": "3586:4:16",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_FundingScript_$5958",
+                              "typeIdentifier": "t_contract$_FundingScript_$5963",
                               "typeString": "contract FundingScript"
                             }
                           }
@@ -4093,11 +4093,11 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_FundingScript_$5958",
+                              "typeIdentifier": "t_contract$_FundingScript_$5963",
                               "typeString": "contract FundingScript"
                             }
                           ],
-                          "id": 5947,
+                          "id": 5952,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -4110,7 +4110,7 @@
                           },
                           "typeName": "address"
                         },
-                        "id": 5949,
+                        "id": 5954,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4126,11 +4126,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 5950,
+                        "id": 5955,
                         "name": "_from",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5861,
+                        "referencedDeclaration": 5866,
                         "src": "3593:5:16",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -4142,11 +4142,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 5952,
+                            "id": 5957,
                             "name": "_tokenId",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5863,
+                            "referencedDeclaration": 5868,
                             "src": "3608:8:16",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -4161,7 +4161,7 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 5951,
+                          "id": 5956,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -4174,7 +4174,7 @@
                           },
                           "typeName": "uint256"
                         },
-                        "id": 5953,
+                        "id": 5958,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4206,32 +4206,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 5944,
+                        "id": 5949,
                         "name": "feeRebateToken",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5823,
+                        "referencedDeclaration": 5828,
                         "src": "3550:14:16",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                          "typeIdentifier": "t_contract$_FeeRebateToken_$6196",
                           "typeString": "contract FeeRebateToken"
                         }
                       },
-                      "id": 5946,
+                      "id": 5951,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "transferFrom",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 17417,
+                      "referencedDeclaration": 17422,
                       "src": "3550:27:16",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,address,uint256) external"
                       }
                     },
-                    "id": 5954,
+                    "id": 5959,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4245,29 +4245,29 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5955,
+                  "id": 5960,
                   "nodeType": "ExpressionStatement",
                   "src": "3550:68:16"
                 }
               ]
             },
             "documentation": "@notice Receives approval for a TDT transfer, and calls `VendingMachine.unqualifiedDepositToTbtc` for a user.\n @dev Implements the approveAndCall receiver interface.\n @param _from The owner of the token who approved them for transfer.\n @param _tokenId Approved TDT for the transfer.\n @param _extraData Encoded function call to `VendingMachine.unqualifiedDepositToTbtc`.",
-            "id": 5957,
+            "id": 5962,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "receiveApproval",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5868,
+              "id": 5873,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5861,
+                  "id": 5866,
                   "name": "_from",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5957,
+                  "scope": 5962,
                   "src": "1693:13:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4276,7 +4276,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5860,
+                    "id": 5865,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1693:7:16",
@@ -4291,10 +4291,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 5863,
+                  "id": 5868,
                   "name": "_tokenId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5957,
+                  "scope": 5962,
                   "src": "1716:16:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4303,7 +4303,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5862,
+                    "id": 5867,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1716:7:16",
@@ -4317,10 +4317,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 5865,
+                  "id": 5870,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5957,
+                  "scope": 5962,
                   "src": "1742:7:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4329,7 +4329,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5864,
+                    "id": 5869,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1742:7:16",
@@ -4344,10 +4344,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 5867,
+                  "id": 5872,
                   "name": "_extraData",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5957,
+                  "scope": 5962,
                   "src": "1759:23:16",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -4356,7 +4356,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 5866,
+                    "id": 5871,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1759:5:16",
@@ -4372,19 +4372,19 @@
               "src": "1683:105:16"
             },
             "returnParameters": {
-              "id": 5869,
+              "id": 5874,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1796:0:16"
             },
-            "scope": 5958,
+            "scope": 5963,
             "src": "1659:1966:16",
             "stateMutability": "nonpayable",
             "superFunction": 5511,
             "visibility": "public"
           }
         ],
-        "scope": 5959,
+        "scope": 5964,
         "src": "680:2947:16"
       }
     ],
@@ -4398,12 +4398,12 @@
     "31": {
       "events": {},
       "links": {},
-      "address": "0xE313FFe9eD51436dFC9Af7ac2aA3d652A8C3e0De",
-      "transactionHash": "0xe6f1fb92d16145ee62fc25d108646fea0879642e3813b89190350156c5ba4b94"
+      "address": "0x93e5a947F3697D25568bbDc95259D707C60B14F1",
+      "transactionHash": "0x38b9d145dafabb833b32dbdd206e903c3ecf5651d910e32db27bf2571eae1b55"
     }
   },
   "schemaVersion": "3.0.23",
-  "updatedAt": "2021-02-01T14:48:54.248Z",
+  "updatedAt": "2021-02-01T16:47:02.738Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "Wrapper script for VendingMachine.unqualifiedDepositToTbtc This contract implements receiveApproval() and can therefore use approveAndCall(). This pattern combines TBTC Token approval and vendingMachine.unqualifiedDepositToTbtc() in a single transaction.",

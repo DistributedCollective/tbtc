@@ -34,7 +34,7 @@
         "id": 2334,
         "nodeType": "ImportDirective",
         "scope": 3270,
-        "sourceUnit": 12904,
+        "sourceUnit": 12909,
         "src": "25:74:5",
         "symbolAliases": [
           {
@@ -50,7 +50,7 @@
         "id": 2336,
         "nodeType": "ImportDirective",
         "scope": 3270,
-        "sourceUnit": 13120,
+        "sourceUnit": 13125,
         "src": "100:74:5",
         "symbolAliases": [
           {
@@ -66,7 +66,7 @@
         "id": 2338,
         "nodeType": "ImportDirective",
         "scope": 3270,
-        "sourceUnit": 13895,
+        "sourceUnit": 13900,
         "src": "175:80:5",
         "symbolAliases": [
           {
@@ -82,7 +82,7 @@
         "id": 2340,
         "nodeType": "ImportDirective",
         "scope": 3270,
-        "sourceUnit": 13512,
+        "sourceUnit": 13517,
         "src": "256:90:5",
         "symbolAliases": [
           {
@@ -98,7 +98,7 @@
         "id": 2342,
         "nodeType": "ImportDirective",
         "scope": 3270,
-        "sourceUnit": 17975,
+        "sourceUnit": 17980,
         "src": "347:81:5",
         "symbolAliases": [
           {
@@ -114,7 +114,7 @@
         "id": 2344,
         "nodeType": "ImportDirective",
         "scope": 3270,
-        "sourceUnit": 16543,
+        "sourceUnit": 16548,
         "src": "429:75:5",
         "symbolAliases": [
           {
@@ -130,7 +130,7 @@
         "id": 2346,
         "nodeType": "ImportDirective",
         "scope": 3270,
-        "sourceUnit": 11116,
+        "sourceUnit": 11121,
         "src": "505:93:5",
         "symbolAliases": [
           {
@@ -194,7 +194,7 @@
         "id": 2354,
         "nodeType": "ImportDirective",
         "scope": 3270,
-        "sourceUnit": 6649,
+        "sourceUnit": 6654,
         "src": "770:58:5",
         "symbolAliases": [
           {
@@ -210,7 +210,7 @@
         "id": 2356,
         "nodeType": "ImportDirective",
         "scope": 3270,
-        "sourceUnit": 8323,
+        "sourceUnit": 8328,
         "src": "829:50:5",
         "symbolAliases": [
           {
@@ -256,10 +256,10 @@
               "id": 2359,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 16542,
+              "referencedDeclaration": 16547,
               "src": "981:8:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$16542",
+                "typeIdentifier": "t_contract$_SafeMath_$16547",
                 "typeString": "library SafeMath"
               }
             },
@@ -283,10 +283,10 @@
               "id": 2362,
               "name": "CheckBitcoinSigs",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 13511,
+              "referencedDeclaration": 13516,
               "src": "1013:16:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_CheckBitcoinSigs_$13511",
+                "typeIdentifier": "t_contract$_CheckBitcoinSigs_$13516",
                 "typeString": "library CheckBitcoinSigs"
               }
             },
@@ -310,10 +310,10 @@
               "id": 2365,
               "name": "BytesLib",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 13119,
+              "referencedDeclaration": 13124,
               "src": "1051:8:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_BytesLib_$13119",
+                "typeIdentifier": "t_contract$_BytesLib_$13124",
                 "typeString": "library BytesLib"
               }
             },
@@ -337,10 +337,10 @@
               "id": 2368,
               "name": "BTCUtils",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 12903,
+              "referencedDeclaration": 12908,
               "src": "1081:8:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_BTCUtils_$12903",
+                "typeIdentifier": "t_contract$_BTCUtils_$12908",
                 "typeString": "library BTCUtils"
               }
             },
@@ -364,10 +364,10 @@
               "id": 2371,
               "name": "ValidateSPV",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 13894,
+              "referencedDeclaration": 13899,
               "src": "1111:11:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ValidateSPV_$13894",
+                "typeIdentifier": "t_contract$_ValidateSPV_$13899",
                 "typeString": "library ValidateSPV"
               }
             },
@@ -391,10 +391,10 @@
               "id": 2374,
               "name": "ValidateSPV",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 13894,
+              "referencedDeclaration": 13899,
               "src": "1144:11:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ValidateSPV_$13894",
+                "typeIdentifier": "t_contract$_ValidateSPV_$13899",
                 "typeString": "library ValidateSPV"
               }
             },
@@ -548,7 +548,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11115",
+                        "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11120",
                         "typeString": "contract IBondedECDSAKeep"
                       },
                       "typeName": {
@@ -556,10 +556,10 @@
                         "id": 2393,
                         "name": "IBondedECDSAKeep",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 11115,
+                        "referencedDeclaration": 11120,
                         "src": "1652:16:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11115",
+                          "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11120",
                           "typeString": "contract IBondedECDSAKeep"
                         }
                       },
@@ -612,10 +612,10 @@
                       "name": "IBondedECDSAKeep",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 11115,
+                      "referencedDeclaration": 11120,
                       "src": "1677:16:5",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IBondedECDSAKeep_$11115_$",
+                        "typeIdentifier": "t_type$_t_contract$_IBondedECDSAKeep_$11120_$",
                         "typeString": "type(contract IBondedECDSAKeep)"
                       }
                     },
@@ -629,7 +629,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1677:32:5",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11115",
+                      "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11120",
                       "typeString": "contract IBondedECDSAKeep"
                     }
                   },
@@ -752,7 +752,7 @@
                         "referencedDeclaration": 3830,
                         "src": "1720:12:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                          "typeIdentifier": "t_contract$_TBTCToken_$8327",
                           "typeString": "contract TBTCToken"
                         }
                       },
@@ -763,7 +763,7 @@
                       "lValueRequested": false,
                       "memberName": "approve",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 16748,
+                      "referencedDeclaration": 16753,
                       "src": "1720:20:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -820,7 +820,7 @@
                             "referencedDeclaration": 3830,
                             "src": "1822:12:5",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                              "typeIdentifier": "t_contract$_TBTCToken_$8327",
                               "typeString": "contract TBTCToken"
                             }
                           }
@@ -828,7 +828,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                              "typeIdentifier": "t_contract$_TBTCToken_$8327",
                               "typeString": "contract TBTCToken"
                             }
                           ],
@@ -926,7 +926,7 @@
                         "referencedDeclaration": 2394,
                         "src": "1786:5:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11115",
+                          "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11120",
                           "typeString": "contract IBondedECDSAKeep"
                         }
                       },
@@ -937,7 +937,7 @@
                       "lValueRequested": false,
                       "memberName": "distributeERC20Reward",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 11090,
+                      "referencedDeclaration": 11095,
                       "src": "1786:27:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$__$",
@@ -1093,10 +1093,10 @@
                           "name": "IBondedECDSAKeep",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11115,
+                          "referencedDeclaration": 11120,
                           "src": "2162:16:5",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_IBondedECDSAKeep_$11115_$",
+                            "typeIdentifier": "t_type$_t_contract$_IBondedECDSAKeep_$11120_$",
                             "typeString": "type(contract IBondedECDSAKeep)"
                           }
                         },
@@ -1110,7 +1110,7 @@
                         "nodeType": "FunctionCall",
                         "src": "2162:32:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11115",
+                          "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11120",
                           "typeString": "contract IBondedECDSAKeep"
                         }
                       },
@@ -1121,7 +1121,7 @@
                       "lValueRequested": false,
                       "memberName": "sign",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 11080,
+                      "referencedDeclaration": 11085,
                       "src": "2162:37:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$returns$__$",
@@ -1220,7 +1220,7 @@
                         "name": "block",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18037,
+                        "referencedDeclaration": 18042,
                         "src": "2249:5:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_block",
@@ -1836,7 +1836,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 18047,
+                                "referencedDeclaration": 18052,
                                 "src": "3136:3:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -1866,7 +1866,7 @@
                                   "name": "this",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 18129,
+                                  "referencedDeclaration": 18134,
                                   "src": "3156:4:5",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_contract$_DepositRedemption_$3269",
@@ -1962,7 +1962,7 @@
                               "referencedDeclaration": 3830,
                               "src": "3110:12:5",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                                "typeIdentifier": "t_contract$_TBTCToken_$8327",
                                 "typeString": "contract TBTCToken"
                               }
                             },
@@ -1973,7 +1973,7 @@
                             "lValueRequested": false,
                             "memberName": "transferFrom",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 16783,
+                            "referencedDeclaration": 16788,
                             "src": "3110:25:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -2179,7 +2179,7 @@
                                     "referencedDeclaration": 3830,
                                     "src": "3375:12:5",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                                      "typeIdentifier": "t_contract$_TBTCToken_$8327",
                                       "typeString": "contract TBTCToken"
                                     }
                                   },
@@ -2190,7 +2190,7 @@
                                   "lValueRequested": false,
                                   "memberName": "transfer",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 16713,
+                                  "referencedDeclaration": 16718,
                                   "src": "3375:21:5",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -2275,7 +2275,7 @@
                                     "referencedDeclaration": 3830,
                                     "src": "3298:12:5",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                                      "typeIdentifier": "t_contract$_TBTCToken_$8327",
                                       "typeString": "contract TBTCToken"
                                     }
                                   },
@@ -2286,7 +2286,7 @@
                                   "lValueRequested": false,
                                   "memberName": "burn",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 8285,
+                                  "referencedDeclaration": 8290,
                                   "src": "3298:17:5",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
@@ -2444,7 +2444,7 @@
                               "referencedDeclaration": 3830,
                               "src": "3503:12:5",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                                "typeIdentifier": "t_contract$_TBTCToken_$8327",
                                 "typeString": "contract TBTCToken"
                               }
                             },
@@ -2455,7 +2455,7 @@
                             "lValueRequested": false,
                             "memberName": "transfer",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 16713,
+                            "referencedDeclaration": 16718,
                             "src": "3503:21:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -2629,10 +2629,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "3786:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2737,7 +2737,7 @@
                         "name": "abi",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18034,
+                        "referencedDeclaration": 18039,
                         "src": "3909:3:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_abi",
@@ -2817,7 +2817,7 @@
                               "lValueRequested": false,
                               "memberName": "extractHash",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 12369,
+                              "referencedDeclaration": 12374,
                               "src": "3985:19:5",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$bound_to$_t_bytes_memory_ptr_$",
@@ -2912,10 +2912,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "3977:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -3129,7 +3129,7 @@
                                 "name": "abi",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 18034,
+                                "referencedDeclaration": 18039,
                                 "src": "4308:3:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_abi",
@@ -3171,7 +3171,7 @@
                           "lValueRequested": false,
                           "memberName": "reverseEndianness",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 11330,
+                          "referencedDeclaration": 11335,
                           "src": "4308:53:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$bound_to$_t_bytes_memory_ptr_$",
@@ -3199,7 +3199,7 @@
                       "lValueRequested": false,
                       "memberName": "bytesToUint",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 11477,
+                      "referencedDeclaration": 11482,
                       "src": "4308:67:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_uint256_$bound_to$_t_bytes_memory_ptr_$",
@@ -3333,7 +3333,7 @@
                       "lValueRequested": false,
                       "memberName": "sub",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 16461,
+                      "referencedDeclaration": 16466,
                       "src": "4411:18:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -3398,10 +3398,10 @@
                               "name": "TBTCConstants",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 6648,
+                              "referencedDeclaration": 6653,
                               "src": "4479:13:5",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6648_$",
+                                "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6653_$",
                                 "typeString": "type(library TBTCConstants)"
                               }
                             },
@@ -3412,7 +3412,7 @@
                             "lValueRequested": false,
                             "memberName": "getMinimumRedemptionFee",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 6607,
+                            "referencedDeclaration": 6612,
                             "src": "4479:37:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -3473,10 +3473,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "4454:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -3654,10 +3654,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "4547:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -3878,10 +3878,10 @@
                         "name": "CheckBitcoinSigs",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 13511,
+                        "referencedDeclaration": 13516,
                         "src": "4744:16:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_CheckBitcoinSigs_$13511_$",
+                          "typeIdentifier": "t_type$_t_contract$_CheckBitcoinSigs_$13516_$",
                           "typeString": "type(library CheckBitcoinSigs)"
                         }
                       },
@@ -3892,7 +3892,7 @@
                       "lValueRequested": false,
                       "memberName": "wpkhSpendSighash",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 13458,
+                      "referencedDeclaration": 13463,
                       "src": "4744:33:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$_t_bytes20_$_t_bytes8_$_t_bytes8_$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
@@ -4149,7 +4149,7 @@
                         "name": "block",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18037,
+                        "referencedDeclaration": 18042,
                         "src": "5161:5:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_block",
@@ -4721,7 +4721,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 18047,
+                          "referencedDeclaration": 18052,
                           "src": "6502:3:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -4767,7 +4767,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 18129,
+                                "referencedDeclaration": 18134,
                                 "src": "6547:4:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_DepositRedemption_$3269",
@@ -4885,7 +4885,7 @@
                         "referencedDeclaration": 3832,
                         "src": "6469:19:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC721_$17974",
+                          "typeIdentifier": "t_contract$_IERC721_$17979",
                           "typeString": "contract IERC721"
                         }
                       },
@@ -4896,7 +4896,7 @@
                       "lValueRequested": false,
                       "memberName": "transferFrom",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 17932,
+                      "referencedDeclaration": 17937,
                       "src": "6469:32:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
@@ -5218,7 +5218,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 18047,
+                          "referencedDeclaration": 18052,
                           "src": "7418:3:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -5486,10 +5486,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "8009:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -5640,10 +5640,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "8545:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -5816,7 +5816,7 @@
                           "lValueRequested": false,
                           "memberName": "checkSig",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 13313,
+                          "referencedDeclaration": 13318,
                           "src": "8850:26:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$_t_bytes32_$_t_uint8_$_t_bytes32_$_t_bytes32_$returns$_t_bool_$bound_to$_t_bytes_memory_ptr_$",
@@ -5871,10 +5871,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "8829:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -6294,10 +6294,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "9828:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -6345,7 +6345,7 @@
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18037,
+                            "referencedDeclaration": 18042,
                             "src": "9941:5:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
@@ -6382,10 +6382,10 @@
                                   "name": "TBTCConstants",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 6648,
+                                  "referencedDeclaration": 6653,
                                   "src": "9989:13:5",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6648_$",
+                                    "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6653_$",
                                     "typeString": "type(library TBTCConstants)"
                                   }
                                 },
@@ -6396,7 +6396,7 @@
                                 "lValueRequested": false,
                                 "memberName": "getIncreaseFeeTimer",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 6591,
+                                "referencedDeclaration": 6596,
                                 "src": "9989:33:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -6461,7 +6461,7 @@
                             "lValueRequested": false,
                             "memberName": "add",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 16436,
+                            "referencedDeclaration": 16441,
                             "src": "9960:28:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -6522,10 +6522,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "9933:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -6707,10 +6707,10 @@
                           "name": "TBTCConstants",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 6648,
+                          "referencedDeclaration": 6653,
                           "src": "10410:13:5",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6648_$",
+                            "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6653_$",
                             "typeString": "type(library TBTCConstants)"
                           }
                         },
@@ -6721,7 +6721,7 @@
                         "lValueRequested": false,
                         "memberName": "getMinimumUtxoValue",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 6615,
+                        "referencedDeclaration": 6620,
                         "src": "10410:33:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -6791,10 +6791,10 @@
                                 "name": "TBTCConstants",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 6648,
+                                "referencedDeclaration": 6653,
                                 "src": "10479:13:5",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6648_$",
+                                  "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6653_$",
                                   "typeString": "type(library TBTCConstants)"
                                 }
                               },
@@ -6805,7 +6805,7 @@
                               "lValueRequested": false,
                               "memberName": "getMinimumUtxoValue",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 6615,
+                              "referencedDeclaration": 6620,
                               "src": "10479:33:5",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -6955,7 +6955,7 @@
                         "lValueRequested": false,
                         "memberName": "sub",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 16461,
+                        "referencedDeclaration": 16466,
                         "src": "10560:18:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -7198,10 +7198,10 @@
                         "name": "CheckBitcoinSigs",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 13511,
+                        "referencedDeclaration": 13516,
                         "src": "10663:16:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_CheckBitcoinSigs_$13511_$",
+                          "typeIdentifier": "t_type$_t_contract$_CheckBitcoinSigs_$13516_$",
                           "typeString": "type(library CheckBitcoinSigs)"
                         }
                       },
@@ -7212,7 +7212,7 @@
                       "lValueRequested": false,
                       "memberName": "wpkhSpendSighash",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 13458,
+                      "referencedDeclaration": 13463,
                       "src": "10663:33:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$_t_bytes20_$_t_bytes8_$_t_bytes8_$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
@@ -7283,7 +7283,7 @@
                         "name": "block",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18037,
+                        "referencedDeclaration": 18042,
                         "src": "10957:5:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_block",
@@ -7510,7 +7510,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 18047,
+                          "referencedDeclaration": 18052,
                           "src": "11194:3:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -8122,7 +8122,7 @@
                             "lValueRequested": false,
                             "memberName": "sub",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 16461,
+                            "referencedDeclaration": 16466,
                             "src": "11856:24:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -8214,10 +8214,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "11848:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -8454,10 +8454,10 @@
                         "name": "CheckBitcoinSigs",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 13511,
+                        "referencedDeclaration": 13516,
                         "src": "12079:16:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_CheckBitcoinSigs_$13511_$",
+                          "typeIdentifier": "t_type$_t_contract$_CheckBitcoinSigs_$13516_$",
                           "typeString": "type(library CheckBitcoinSigs)"
                         }
                       },
@@ -8468,7 +8468,7 @@
                       "lValueRequested": false,
                       "memberName": "wpkhSpendSighash",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 13458,
+                      "referencedDeclaration": 13463,
                       "src": "12079:33:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$_t_bytes20_$_t_bytes8_$_t_bytes8_$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
@@ -8643,10 +8643,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "12287:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -8970,10 +8970,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "13814:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -9223,7 +9223,7 @@
                               "name": "abi",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 18034,
+                              "referencedDeclaration": 18039,
                               "src": "14010:3:5",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_abi",
@@ -9265,7 +9265,7 @@
                         "lValueRequested": false,
                         "memberName": "hash256",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 11538,
+                        "referencedDeclaration": 11543,
                         "src": "14010:82:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$bound_to$_t_bytes_memory_ptr_$",
@@ -9512,7 +9512,7 @@
                                 "lValueRequested": false,
                                 "memberName": "sub",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 16461,
+                                "referencedDeclaration": 16466,
                                 "src": "14200:18:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -9618,10 +9618,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "14191:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -10247,7 +10247,7 @@
                           "lValueRequested": false,
                           "memberName": "validateVin",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 12461,
+                          "referencedDeclaration": 12466,
                           "src": "15746:26:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bool_$bound_to$_t_bytes_memory_ptr_$",
@@ -10302,10 +10302,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "15738:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -10359,7 +10359,7 @@
                           "lValueRequested": false,
                           "memberName": "validateVout",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 12553,
+                          "referencedDeclaration": 12558,
                           "src": "15826:28:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bool_$bound_to$_t_bytes_memory_ptr_$",
@@ -10414,10 +10414,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "15818:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -10594,7 +10594,7 @@
                       "lValueRequested": false,
                       "memberName": "slice",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 12968,
+                      "referencedDeclaration": 12973,
                       "src": "15923:20:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$_t_uint256_$_t_uint256_$returns$_t_bytes_memory_ptr_$bound_to$_t_bytes_memory_ptr_$",
@@ -10661,7 +10661,7 @@
                                 "lValueRequested": false,
                                 "memberName": "extractOutpoint",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 11936,
+                                "referencedDeclaration": 11941,
                                 "src": "16013:22:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$bound_to$_t_bytes_memory_ptr_$",
@@ -10694,7 +10694,7 @@
                             "name": "keccak256",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18041,
+                            "referencedDeclaration": 18046,
                             "src": "16003:9:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
@@ -10761,7 +10761,7 @@
                             "name": "keccak256",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18041,
+                            "referencedDeclaration": 18046,
                             "src": "16042:9:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
@@ -10822,10 +10822,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "15982:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -11002,7 +11002,7 @@
                       "lValueRequested": false,
                       "memberName": "slice",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 12968,
+                      "referencedDeclaration": 12973,
                       "src": "16152:21:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$_t_uint256_$_t_uint256_$returns$_t_bytes_memory_ptr_$bound_to$_t_bytes_memory_ptr_$",
@@ -11259,10 +11259,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "16282:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -11387,7 +11387,7 @@
                                 "lValueRequested": false,
                                 "memberName": "slice",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 12968,
+                                "referencedDeclaration": 12973,
                                 "src": "16445:13:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$_t_uint256_$_t_uint256_$returns$_t_bytes_memory_ptr_$bound_to$_t_bytes_memory_ptr_$",
@@ -11420,7 +11420,7 @@
                             "name": "keccak256",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18041,
+                            "referencedDeclaration": 18046,
                             "src": "16435:9:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
@@ -11471,7 +11471,7 @@
                             "name": "keccak256",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18041,
+                            "referencedDeclaration": 18046,
                             "src": "16496:9:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
@@ -11532,10 +11532,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "16414:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -11592,7 +11592,7 @@
                               "lValueRequested": false,
                               "memberName": "extractValue",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 12183,
+                              "referencedDeclaration": 12188,
                               "src": "16617:20:5",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_uint64_$bound_to$_t_bytes_memory_ptr_$",
@@ -11892,10 +11892,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "16961:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -11943,7 +11943,7 @@
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18037,
+                            "referencedDeclaration": 18042,
                             "src": "17060:5:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
@@ -11980,10 +11980,10 @@
                                   "name": "TBTCConstants",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 6648,
+                                  "referencedDeclaration": 6653,
                                   "src": "17107:13:5",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6648_$",
+                                    "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6653_$",
                                     "typeString": "type(library TBTCConstants)"
                                   }
                                 },
@@ -11994,7 +11994,7 @@
                                 "lValueRequested": false,
                                 "memberName": "getSignatureTimeout",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 6583,
+                                "referencedDeclaration": 6588,
                                 "src": "17107:33:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -12059,7 +12059,7 @@
                             "lValueRequested": false,
                             "memberName": "add",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 16436,
+                            "referencedDeclaration": 16441,
                             "src": "17078:28:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -12120,10 +12120,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "17052:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -12369,10 +12369,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "17566:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -12420,7 +12420,7 @@
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18037,
+                            "referencedDeclaration": 18042,
                             "src": "17668:5:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
@@ -12457,10 +12457,10 @@
                                   "name": "TBTCConstants",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 6648,
+                                  "referencedDeclaration": 6653,
                                   "src": "17715:13:5",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6648_$",
+                                    "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6653_$",
                                     "typeString": "type(library TBTCConstants)"
                                   }
                                 },
@@ -12471,7 +12471,7 @@
                                 "lValueRequested": false,
                                 "memberName": "getRedemptionProofTimeout",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 6599,
+                                "referencedDeclaration": 6604,
                                 "src": "17715:39:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -12536,7 +12536,7 @@
                             "lValueRequested": false,
                             "memberName": "add",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 16436,
+                            "referencedDeclaration": 16441,
                             "src": "17686:28:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -12597,10 +12597,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "17660:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -12789,7 +12789,7 @@
         "id": 2334,
         "nodeType": "ImportDirective",
         "scope": 3270,
-        "sourceUnit": 12904,
+        "sourceUnit": 12909,
         "src": "25:74:5",
         "symbolAliases": [
           {
@@ -12805,7 +12805,7 @@
         "id": 2336,
         "nodeType": "ImportDirective",
         "scope": 3270,
-        "sourceUnit": 13120,
+        "sourceUnit": 13125,
         "src": "100:74:5",
         "symbolAliases": [
           {
@@ -12821,7 +12821,7 @@
         "id": 2338,
         "nodeType": "ImportDirective",
         "scope": 3270,
-        "sourceUnit": 13895,
+        "sourceUnit": 13900,
         "src": "175:80:5",
         "symbolAliases": [
           {
@@ -12837,7 +12837,7 @@
         "id": 2340,
         "nodeType": "ImportDirective",
         "scope": 3270,
-        "sourceUnit": 13512,
+        "sourceUnit": 13517,
         "src": "256:90:5",
         "symbolAliases": [
           {
@@ -12853,7 +12853,7 @@
         "id": 2342,
         "nodeType": "ImportDirective",
         "scope": 3270,
-        "sourceUnit": 17975,
+        "sourceUnit": 17980,
         "src": "347:81:5",
         "symbolAliases": [
           {
@@ -12869,7 +12869,7 @@
         "id": 2344,
         "nodeType": "ImportDirective",
         "scope": 3270,
-        "sourceUnit": 16543,
+        "sourceUnit": 16548,
         "src": "429:75:5",
         "symbolAliases": [
           {
@@ -12885,7 +12885,7 @@
         "id": 2346,
         "nodeType": "ImportDirective",
         "scope": 3270,
-        "sourceUnit": 11116,
+        "sourceUnit": 11121,
         "src": "505:93:5",
         "symbolAliases": [
           {
@@ -12949,7 +12949,7 @@
         "id": 2354,
         "nodeType": "ImportDirective",
         "scope": 3270,
-        "sourceUnit": 6649,
+        "sourceUnit": 6654,
         "src": "770:58:5",
         "symbolAliases": [
           {
@@ -12965,7 +12965,7 @@
         "id": 2356,
         "nodeType": "ImportDirective",
         "scope": 3270,
-        "sourceUnit": 8323,
+        "sourceUnit": 8328,
         "src": "829:50:5",
         "symbolAliases": [
           {
@@ -13011,10 +13011,10 @@
               "id": 2359,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 16542,
+              "referencedDeclaration": 16547,
               "src": "981:8:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$16542",
+                "typeIdentifier": "t_contract$_SafeMath_$16547",
                 "typeString": "library SafeMath"
               }
             },
@@ -13038,10 +13038,10 @@
               "id": 2362,
               "name": "CheckBitcoinSigs",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 13511,
+              "referencedDeclaration": 13516,
               "src": "1013:16:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_CheckBitcoinSigs_$13511",
+                "typeIdentifier": "t_contract$_CheckBitcoinSigs_$13516",
                 "typeString": "library CheckBitcoinSigs"
               }
             },
@@ -13065,10 +13065,10 @@
               "id": 2365,
               "name": "BytesLib",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 13119,
+              "referencedDeclaration": 13124,
               "src": "1051:8:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_BytesLib_$13119",
+                "typeIdentifier": "t_contract$_BytesLib_$13124",
                 "typeString": "library BytesLib"
               }
             },
@@ -13092,10 +13092,10 @@
               "id": 2368,
               "name": "BTCUtils",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 12903,
+              "referencedDeclaration": 12908,
               "src": "1081:8:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_BTCUtils_$12903",
+                "typeIdentifier": "t_contract$_BTCUtils_$12908",
                 "typeString": "library BTCUtils"
               }
             },
@@ -13119,10 +13119,10 @@
               "id": 2371,
               "name": "ValidateSPV",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 13894,
+              "referencedDeclaration": 13899,
               "src": "1111:11:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ValidateSPV_$13894",
+                "typeIdentifier": "t_contract$_ValidateSPV_$13899",
                 "typeString": "library ValidateSPV"
               }
             },
@@ -13146,10 +13146,10 @@
               "id": 2374,
               "name": "ValidateSPV",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 13894,
+              "referencedDeclaration": 13899,
               "src": "1144:11:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ValidateSPV_$13894",
+                "typeIdentifier": "t_contract$_ValidateSPV_$13899",
                 "typeString": "library ValidateSPV"
               }
             },
@@ -13303,7 +13303,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11115",
+                        "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11120",
                         "typeString": "contract IBondedECDSAKeep"
                       },
                       "typeName": {
@@ -13311,10 +13311,10 @@
                         "id": 2393,
                         "name": "IBondedECDSAKeep",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 11115,
+                        "referencedDeclaration": 11120,
                         "src": "1652:16:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11115",
+                          "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11120",
                           "typeString": "contract IBondedECDSAKeep"
                         }
                       },
@@ -13367,10 +13367,10 @@
                       "name": "IBondedECDSAKeep",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 11115,
+                      "referencedDeclaration": 11120,
                       "src": "1677:16:5",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IBondedECDSAKeep_$11115_$",
+                        "typeIdentifier": "t_type$_t_contract$_IBondedECDSAKeep_$11120_$",
                         "typeString": "type(contract IBondedECDSAKeep)"
                       }
                     },
@@ -13384,7 +13384,7 @@
                     "nodeType": "FunctionCall",
                     "src": "1677:32:5",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11115",
+                      "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11120",
                       "typeString": "contract IBondedECDSAKeep"
                     }
                   },
@@ -13507,7 +13507,7 @@
                         "referencedDeclaration": 3830,
                         "src": "1720:12:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                          "typeIdentifier": "t_contract$_TBTCToken_$8327",
                           "typeString": "contract TBTCToken"
                         }
                       },
@@ -13518,7 +13518,7 @@
                       "lValueRequested": false,
                       "memberName": "approve",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 16748,
+                      "referencedDeclaration": 16753,
                       "src": "1720:20:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -13575,7 +13575,7 @@
                             "referencedDeclaration": 3830,
                             "src": "1822:12:5",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                              "typeIdentifier": "t_contract$_TBTCToken_$8327",
                               "typeString": "contract TBTCToken"
                             }
                           }
@@ -13583,7 +13583,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                              "typeIdentifier": "t_contract$_TBTCToken_$8327",
                               "typeString": "contract TBTCToken"
                             }
                           ],
@@ -13681,7 +13681,7 @@
                         "referencedDeclaration": 2394,
                         "src": "1786:5:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11115",
+                          "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11120",
                           "typeString": "contract IBondedECDSAKeep"
                         }
                       },
@@ -13692,7 +13692,7 @@
                       "lValueRequested": false,
                       "memberName": "distributeERC20Reward",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 11090,
+                      "referencedDeclaration": 11095,
                       "src": "1786:27:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$__$",
@@ -13848,10 +13848,10 @@
                           "name": "IBondedECDSAKeep",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11115,
+                          "referencedDeclaration": 11120,
                           "src": "2162:16:5",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_IBondedECDSAKeep_$11115_$",
+                            "typeIdentifier": "t_type$_t_contract$_IBondedECDSAKeep_$11120_$",
                             "typeString": "type(contract IBondedECDSAKeep)"
                           }
                         },
@@ -13865,7 +13865,7 @@
                         "nodeType": "FunctionCall",
                         "src": "2162:32:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11115",
+                          "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11120",
                           "typeString": "contract IBondedECDSAKeep"
                         }
                       },
@@ -13876,7 +13876,7 @@
                       "lValueRequested": false,
                       "memberName": "sign",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 11080,
+                      "referencedDeclaration": 11085,
                       "src": "2162:37:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$returns$__$",
@@ -13975,7 +13975,7 @@
                         "name": "block",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18037,
+                        "referencedDeclaration": 18042,
                         "src": "2249:5:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_block",
@@ -14591,7 +14591,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 18047,
+                                "referencedDeclaration": 18052,
                                 "src": "3136:3:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -14621,7 +14621,7 @@
                                   "name": "this",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 18129,
+                                  "referencedDeclaration": 18134,
                                   "src": "3156:4:5",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_contract$_DepositRedemption_$3269",
@@ -14717,7 +14717,7 @@
                               "referencedDeclaration": 3830,
                               "src": "3110:12:5",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                                "typeIdentifier": "t_contract$_TBTCToken_$8327",
                                 "typeString": "contract TBTCToken"
                               }
                             },
@@ -14728,7 +14728,7 @@
                             "lValueRequested": false,
                             "memberName": "transferFrom",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 16783,
+                            "referencedDeclaration": 16788,
                             "src": "3110:25:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -14934,7 +14934,7 @@
                                     "referencedDeclaration": 3830,
                                     "src": "3375:12:5",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                                      "typeIdentifier": "t_contract$_TBTCToken_$8327",
                                       "typeString": "contract TBTCToken"
                                     }
                                   },
@@ -14945,7 +14945,7 @@
                                   "lValueRequested": false,
                                   "memberName": "transfer",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 16713,
+                                  "referencedDeclaration": 16718,
                                   "src": "3375:21:5",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -15030,7 +15030,7 @@
                                     "referencedDeclaration": 3830,
                                     "src": "3298:12:5",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                                      "typeIdentifier": "t_contract$_TBTCToken_$8327",
                                       "typeString": "contract TBTCToken"
                                     }
                                   },
@@ -15041,7 +15041,7 @@
                                   "lValueRequested": false,
                                   "memberName": "burn",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 8285,
+                                  "referencedDeclaration": 8290,
                                   "src": "3298:17:5",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
@@ -15199,7 +15199,7 @@
                               "referencedDeclaration": 3830,
                               "src": "3503:12:5",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                                "typeIdentifier": "t_contract$_TBTCToken_$8327",
                                 "typeString": "contract TBTCToken"
                               }
                             },
@@ -15210,7 +15210,7 @@
                             "lValueRequested": false,
                             "memberName": "transfer",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 16713,
+                            "referencedDeclaration": 16718,
                             "src": "3503:21:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -15384,10 +15384,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "3786:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -15492,7 +15492,7 @@
                         "name": "abi",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18034,
+                        "referencedDeclaration": 18039,
                         "src": "3909:3:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_abi",
@@ -15572,7 +15572,7 @@
                               "lValueRequested": false,
                               "memberName": "extractHash",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 12369,
+                              "referencedDeclaration": 12374,
                               "src": "3985:19:5",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$bound_to$_t_bytes_memory_ptr_$",
@@ -15667,10 +15667,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "3977:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -15884,7 +15884,7 @@
                                 "name": "abi",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 18034,
+                                "referencedDeclaration": 18039,
                                 "src": "4308:3:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_abi",
@@ -15926,7 +15926,7 @@
                           "lValueRequested": false,
                           "memberName": "reverseEndianness",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 11330,
+                          "referencedDeclaration": 11335,
                           "src": "4308:53:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$bound_to$_t_bytes_memory_ptr_$",
@@ -15954,7 +15954,7 @@
                       "lValueRequested": false,
                       "memberName": "bytesToUint",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 11477,
+                      "referencedDeclaration": 11482,
                       "src": "4308:67:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_uint256_$bound_to$_t_bytes_memory_ptr_$",
@@ -16088,7 +16088,7 @@
                       "lValueRequested": false,
                       "memberName": "sub",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 16461,
+                      "referencedDeclaration": 16466,
                       "src": "4411:18:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -16153,10 +16153,10 @@
                               "name": "TBTCConstants",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 6648,
+                              "referencedDeclaration": 6653,
                               "src": "4479:13:5",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6648_$",
+                                "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6653_$",
                                 "typeString": "type(library TBTCConstants)"
                               }
                             },
@@ -16167,7 +16167,7 @@
                             "lValueRequested": false,
                             "memberName": "getMinimumRedemptionFee",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 6607,
+                            "referencedDeclaration": 6612,
                             "src": "4479:37:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -16228,10 +16228,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "4454:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -16409,10 +16409,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "4547:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -16633,10 +16633,10 @@
                         "name": "CheckBitcoinSigs",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 13511,
+                        "referencedDeclaration": 13516,
                         "src": "4744:16:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_CheckBitcoinSigs_$13511_$",
+                          "typeIdentifier": "t_type$_t_contract$_CheckBitcoinSigs_$13516_$",
                           "typeString": "type(library CheckBitcoinSigs)"
                         }
                       },
@@ -16647,7 +16647,7 @@
                       "lValueRequested": false,
                       "memberName": "wpkhSpendSighash",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 13458,
+                      "referencedDeclaration": 13463,
                       "src": "4744:33:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$_t_bytes20_$_t_bytes8_$_t_bytes8_$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
@@ -16904,7 +16904,7 @@
                         "name": "block",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18037,
+                        "referencedDeclaration": 18042,
                         "src": "5161:5:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_block",
@@ -17476,7 +17476,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 18047,
+                          "referencedDeclaration": 18052,
                           "src": "6502:3:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -17522,7 +17522,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 18129,
+                                "referencedDeclaration": 18134,
                                 "src": "6547:4:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_DepositRedemption_$3269",
@@ -17640,7 +17640,7 @@
                         "referencedDeclaration": 3832,
                         "src": "6469:19:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IERC721_$17974",
+                          "typeIdentifier": "t_contract$_IERC721_$17979",
                           "typeString": "contract IERC721"
                         }
                       },
@@ -17651,7 +17651,7 @@
                       "lValueRequested": false,
                       "memberName": "transferFrom",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 17932,
+                      "referencedDeclaration": 17937,
                       "src": "6469:32:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
@@ -17973,7 +17973,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 18047,
+                          "referencedDeclaration": 18052,
                           "src": "7418:3:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -18241,10 +18241,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "8009:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -18395,10 +18395,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "8545:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -18571,7 +18571,7 @@
                           "lValueRequested": false,
                           "memberName": "checkSig",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 13313,
+                          "referencedDeclaration": 13318,
                           "src": "8850:26:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$_t_bytes32_$_t_uint8_$_t_bytes32_$_t_bytes32_$returns$_t_bool_$bound_to$_t_bytes_memory_ptr_$",
@@ -18626,10 +18626,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "8829:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -19049,10 +19049,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "9828:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -19100,7 +19100,7 @@
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18037,
+                            "referencedDeclaration": 18042,
                             "src": "9941:5:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
@@ -19137,10 +19137,10 @@
                                   "name": "TBTCConstants",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 6648,
+                                  "referencedDeclaration": 6653,
                                   "src": "9989:13:5",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6648_$",
+                                    "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6653_$",
                                     "typeString": "type(library TBTCConstants)"
                                   }
                                 },
@@ -19151,7 +19151,7 @@
                                 "lValueRequested": false,
                                 "memberName": "getIncreaseFeeTimer",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 6591,
+                                "referencedDeclaration": 6596,
                                 "src": "9989:33:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -19216,7 +19216,7 @@
                             "lValueRequested": false,
                             "memberName": "add",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 16436,
+                            "referencedDeclaration": 16441,
                             "src": "9960:28:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -19277,10 +19277,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "9933:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -19462,10 +19462,10 @@
                           "name": "TBTCConstants",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 6648,
+                          "referencedDeclaration": 6653,
                           "src": "10410:13:5",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6648_$",
+                            "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6653_$",
                             "typeString": "type(library TBTCConstants)"
                           }
                         },
@@ -19476,7 +19476,7 @@
                         "lValueRequested": false,
                         "memberName": "getMinimumUtxoValue",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 6615,
+                        "referencedDeclaration": 6620,
                         "src": "10410:33:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -19546,10 +19546,10 @@
                                 "name": "TBTCConstants",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 6648,
+                                "referencedDeclaration": 6653,
                                 "src": "10479:13:5",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6648_$",
+                                  "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6653_$",
                                   "typeString": "type(library TBTCConstants)"
                                 }
                               },
@@ -19560,7 +19560,7 @@
                               "lValueRequested": false,
                               "memberName": "getMinimumUtxoValue",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 6615,
+                              "referencedDeclaration": 6620,
                               "src": "10479:33:5",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -19710,7 +19710,7 @@
                         "lValueRequested": false,
                         "memberName": "sub",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 16461,
+                        "referencedDeclaration": 16466,
                         "src": "10560:18:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -19953,10 +19953,10 @@
                         "name": "CheckBitcoinSigs",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 13511,
+                        "referencedDeclaration": 13516,
                         "src": "10663:16:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_CheckBitcoinSigs_$13511_$",
+                          "typeIdentifier": "t_type$_t_contract$_CheckBitcoinSigs_$13516_$",
                           "typeString": "type(library CheckBitcoinSigs)"
                         }
                       },
@@ -19967,7 +19967,7 @@
                       "lValueRequested": false,
                       "memberName": "wpkhSpendSighash",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 13458,
+                      "referencedDeclaration": 13463,
                       "src": "10663:33:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$_t_bytes20_$_t_bytes8_$_t_bytes8_$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
@@ -20038,7 +20038,7 @@
                         "name": "block",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18037,
+                        "referencedDeclaration": 18042,
                         "src": "10957:5:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_block",
@@ -20265,7 +20265,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 18047,
+                          "referencedDeclaration": 18052,
                           "src": "11194:3:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -20877,7 +20877,7 @@
                             "lValueRequested": false,
                             "memberName": "sub",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 16461,
+                            "referencedDeclaration": 16466,
                             "src": "11856:24:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -20969,10 +20969,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "11848:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -21209,10 +21209,10 @@
                         "name": "CheckBitcoinSigs",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 13511,
+                        "referencedDeclaration": 13516,
                         "src": "12079:16:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_CheckBitcoinSigs_$13511_$",
+                          "typeIdentifier": "t_type$_t_contract$_CheckBitcoinSigs_$13516_$",
                           "typeString": "type(library CheckBitcoinSigs)"
                         }
                       },
@@ -21223,7 +21223,7 @@
                       "lValueRequested": false,
                       "memberName": "wpkhSpendSighash",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 13458,
+                      "referencedDeclaration": 13463,
                       "src": "12079:33:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$_t_bytes20_$_t_bytes8_$_t_bytes8_$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
@@ -21398,10 +21398,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "12287:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -21725,10 +21725,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "13814:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -21978,7 +21978,7 @@
                               "name": "abi",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 18034,
+                              "referencedDeclaration": 18039,
                               "src": "14010:3:5",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_abi",
@@ -22020,7 +22020,7 @@
                         "lValueRequested": false,
                         "memberName": "hash256",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 11538,
+                        "referencedDeclaration": 11543,
                         "src": "14010:82:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$bound_to$_t_bytes_memory_ptr_$",
@@ -22267,7 +22267,7 @@
                                 "lValueRequested": false,
                                 "memberName": "sub",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 16461,
+                                "referencedDeclaration": 16466,
                                 "src": "14200:18:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -22373,10 +22373,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "14191:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -23002,7 +23002,7 @@
                           "lValueRequested": false,
                           "memberName": "validateVin",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 12461,
+                          "referencedDeclaration": 12466,
                           "src": "15746:26:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bool_$bound_to$_t_bytes_memory_ptr_$",
@@ -23057,10 +23057,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "15738:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -23114,7 +23114,7 @@
                           "lValueRequested": false,
                           "memberName": "validateVout",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 12553,
+                          "referencedDeclaration": 12558,
                           "src": "15826:28:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bool_$bound_to$_t_bytes_memory_ptr_$",
@@ -23169,10 +23169,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "15818:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -23349,7 +23349,7 @@
                       "lValueRequested": false,
                       "memberName": "slice",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 12968,
+                      "referencedDeclaration": 12973,
                       "src": "15923:20:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$_t_uint256_$_t_uint256_$returns$_t_bytes_memory_ptr_$bound_to$_t_bytes_memory_ptr_$",
@@ -23416,7 +23416,7 @@
                                 "lValueRequested": false,
                                 "memberName": "extractOutpoint",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 11936,
+                                "referencedDeclaration": 11941,
                                 "src": "16013:22:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bytes_memory_ptr_$bound_to$_t_bytes_memory_ptr_$",
@@ -23449,7 +23449,7 @@
                             "name": "keccak256",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18041,
+                            "referencedDeclaration": 18046,
                             "src": "16003:9:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
@@ -23516,7 +23516,7 @@
                             "name": "keccak256",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18041,
+                            "referencedDeclaration": 18046,
                             "src": "16042:9:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
@@ -23577,10 +23577,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "15982:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -23757,7 +23757,7 @@
                       "lValueRequested": false,
                       "memberName": "slice",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 12968,
+                      "referencedDeclaration": 12973,
                       "src": "16152:21:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$_t_uint256_$_t_uint256_$returns$_t_bytes_memory_ptr_$bound_to$_t_bytes_memory_ptr_$",
@@ -24014,10 +24014,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "16282:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -24142,7 +24142,7 @@
                                 "lValueRequested": false,
                                 "memberName": "slice",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 12968,
+                                "referencedDeclaration": 12973,
                                 "src": "16445:13:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$_t_uint256_$_t_uint256_$returns$_t_bytes_memory_ptr_$bound_to$_t_bytes_memory_ptr_$",
@@ -24175,7 +24175,7 @@
                             "name": "keccak256",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18041,
+                            "referencedDeclaration": 18046,
                             "src": "16435:9:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
@@ -24226,7 +24226,7 @@
                             "name": "keccak256",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18041,
+                            "referencedDeclaration": 18046,
                             "src": "16496:9:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
@@ -24287,10 +24287,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "16414:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -24347,7 +24347,7 @@
                               "lValueRequested": false,
                               "memberName": "extractValue",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 12183,
+                              "referencedDeclaration": 12188,
                               "src": "16617:20:5",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_uint64_$bound_to$_t_bytes_memory_ptr_$",
@@ -24647,10 +24647,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "16961:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -24698,7 +24698,7 @@
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18037,
+                            "referencedDeclaration": 18042,
                             "src": "17060:5:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
@@ -24735,10 +24735,10 @@
                                   "name": "TBTCConstants",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 6648,
+                                  "referencedDeclaration": 6653,
                                   "src": "17107:13:5",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6648_$",
+                                    "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6653_$",
                                     "typeString": "type(library TBTCConstants)"
                                   }
                                 },
@@ -24749,7 +24749,7 @@
                                 "lValueRequested": false,
                                 "memberName": "getSignatureTimeout",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 6583,
+                                "referencedDeclaration": 6588,
                                 "src": "17107:33:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -24814,7 +24814,7 @@
                             "lValueRequested": false,
                             "memberName": "add",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 16436,
+                            "referencedDeclaration": 16441,
                             "src": "17078:28:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -24875,10 +24875,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "17052:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -25124,10 +25124,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "17566:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -25175,7 +25175,7 @@
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18037,
+                            "referencedDeclaration": 18042,
                             "src": "17668:5:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
@@ -25212,10 +25212,10 @@
                                   "name": "TBTCConstants",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 6648,
+                                  "referencedDeclaration": 6653,
                                   "src": "17715:13:5",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6648_$",
+                                    "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6653_$",
                                     "typeString": "type(library TBTCConstants)"
                                   }
                                 },
@@ -25226,7 +25226,7 @@
                                 "lValueRequested": false,
                                 "memberName": "getRedemptionProofTimeout",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 6599,
+                                "referencedDeclaration": 6604,
                                 "src": "17715:39:5",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -25291,7 +25291,7 @@
                             "lValueRequested": false,
                             "memberName": "add",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 16436,
+                            "referencedDeclaration": 16441,
                             "src": "17686:28:5",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -25352,10 +25352,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "17660:7:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -25526,17 +25526,17 @@
     "31": {
       "events": {},
       "links": {
-        "TBTCConstants": "0xfa6063C2991Ad510D52667AcA08fd7b06336E38E",
-        "OutsourceDepositLogging": "0x73DE28efC97aeD39E8680d352aA943d450219d16",
-        "DepositStates": "0xF2c124E86882a241554614Fd0344a358c904d9f4",
-        "DepositUtils": "0x0E71e06f9cF9717eB493c9CeB8781f0553152144"
+        "TBTCConstants": "0x59180C06c8E82124d4f2D9Abc6A5c7Bc6E350Ed6",
+        "OutsourceDepositLogging": "0x749A90A7a4afBc1274DDEe078098be6737974030",
+        "DepositStates": "0x2e36Ec58ce20A17408f33f862b0577d2be080736",
+        "DepositUtils": "0xaC8432Ab558deF588e981FA89b9f39cB3B05650B"
       },
-      "address": "0x8d300e43D00047d1aAB29Dc32259B86dbDEA9478",
-      "transactionHash": "0xda6d06ebba7007087269b6af52dc5961619701f7df697a1583670eb523098eec"
+      "address": "0x97Dcc00617F0A7fCE405B496769F438Bb4C39647",
+      "transactionHash": "0xcd0f0a40c4a6c62c401afce228a882ce41b23989c3cd2a3f6281a9470380ca8e"
     }
   },
   "schemaVersion": "3.0.23",
-  "updatedAt": "2021-02-01T14:48:54.160Z",
+  "updatedAt": "2021-02-01T16:47:02.646Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {

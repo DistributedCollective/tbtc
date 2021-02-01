@@ -34,7 +34,7 @@
         "id": 1138,
         "nodeType": "ImportDirective",
         "scope": 1758,
-        "sourceUnit": 13120,
+        "sourceUnit": 13125,
         "src": "25:74:3",
         "symbolAliases": [
           {
@@ -50,7 +50,7 @@
         "id": 1140,
         "nodeType": "ImportDirective",
         "scope": 1758,
-        "sourceUnit": 12904,
+        "sourceUnit": 12909,
         "src": "100:74:3",
         "symbolAliases": [
           {
@@ -66,7 +66,7 @@
         "id": 1142,
         "nodeType": "ImportDirective",
         "scope": 1758,
-        "sourceUnit": 11116,
+        "sourceUnit": 11121,
         "src": "175:93:3",
         "symbolAliases": [
           {
@@ -82,7 +82,7 @@
         "id": 1144,
         "nodeType": "ImportDirective",
         "scope": 1758,
-        "sourceUnit": 16543,
+        "sourceUnit": 16548,
         "src": "269:75:3",
         "symbolAliases": [
           {
@@ -98,7 +98,7 @@
         "id": 1146,
         "nodeType": "ImportDirective",
         "scope": 1758,
-        "sourceUnit": 8323,
+        "sourceUnit": 8328,
         "src": "345:50:3",
         "symbolAliases": [
           {
@@ -178,7 +178,7 @@
         "id": 1156,
         "nodeType": "ImportDirective",
         "scope": 1758,
-        "sourceUnit": 6649,
+        "sourceUnit": 6654,
         "src": "628:58:3",
         "symbolAliases": [
           {
@@ -208,10 +208,10 @@
               "id": 1157,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 16542,
+              "referencedDeclaration": 16547,
               "src": "724:8:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$16542",
+                "typeIdentifier": "t_contract$_SafeMath_$16547",
                 "typeString": "library SafeMath"
               }
             },
@@ -235,10 +235,10 @@
               "id": 1160,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 16542,
+              "referencedDeclaration": 16547,
               "src": "756:8:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$16542",
+                "typeIdentifier": "t_contract$_SafeMath_$16547",
                 "typeString": "library SafeMath"
               }
             },
@@ -262,10 +262,10 @@
               "id": 1163,
               "name": "BTCUtils",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 12903,
+              "referencedDeclaration": 12908,
               "src": "787:8:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_BTCUtils_$12903",
+                "typeIdentifier": "t_contract$_BTCUtils_$12908",
                 "typeString": "library BTCUtils"
               }
             },
@@ -289,10 +289,10 @@
               "id": 1166,
               "name": "BytesLib",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 13119,
+              "referencedDeclaration": 13124,
               "src": "817:8:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_BytesLib_$13119",
+                "typeIdentifier": "t_contract$_BytesLib_$13124",
                 "typeString": "library BytesLib"
               }
             },
@@ -1238,10 +1238,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "2360:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1350,10 +1350,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "2446:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1617,10 +1617,10 @@
                               "name": "TBTCConstants",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 6648,
+                              "referencedDeclaration": 6653,
                               "src": "3106:13:3",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6648_$",
+                                "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6653_$",
                                 "typeString": "type(library TBTCConstants)"
                               }
                             },
@@ -1631,7 +1631,7 @@
                             "lValueRequested": false,
                             "memberName": "getDepositTerm",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 6567,
+                            "referencedDeclaration": 6572,
                             "src": "3106:28:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -1673,7 +1673,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 18047,
+                              "referencedDeclaration": 18052,
                               "src": "3052:3:3",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -1931,10 +1931,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "3157:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2450,7 +2450,7 @@
                         "name": "block",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18037,
+                        "referencedDeclaration": 18042,
                         "src": "3677:5:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_block",
@@ -2790,10 +2790,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "4003:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2841,7 +2841,7 @@
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18037,
+                            "referencedDeclaration": 18042,
                             "src": "4091:5:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
@@ -2878,10 +2878,10 @@
                                   "name": "TBTCConstants",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 6648,
+                                  "referencedDeclaration": 6653,
                                   "src": "4140:13:3",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6648_$",
+                                    "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6653_$",
                                     "typeString": "type(library TBTCConstants)"
                                   }
                                 },
@@ -2892,7 +2892,7 @@
                                 "lValueRequested": false,
                                 "memberName": "getSigningGroupFormationTimeout",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 6631,
+                                "referencedDeclaration": 6636,
                                 "src": "4140:45:3",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -2957,7 +2957,7 @@
                             "lValueRequested": false,
                             "memberName": "add",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 16436,
+                            "referencedDeclaration": 16441,
                             "src": "4109:30:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -3018,10 +3018,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "4070:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -3399,7 +3399,7 @@
                                 "lValueRequested": false,
                                 "memberName": "sub",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 16461,
+                                "referencedDeclaration": 16466,
                                 "src": "4624:11:3",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -3778,10 +3778,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "5117:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -3888,10 +3888,10 @@
                           "name": "IBondedECDSAKeep",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11115,
+                          "referencedDeclaration": 11120,
                           "src": "5228:16:3",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_IBondedECDSAKeep_$11115_$",
+                            "typeIdentifier": "t_type$_t_contract$_IBondedECDSAKeep_$11120_$",
                             "typeString": "type(contract IBondedECDSAKeep)"
                           }
                         },
@@ -3905,7 +3905,7 @@
                         "nodeType": "FunctionCall",
                         "src": "5228:32:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11115",
+                          "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11120",
                           "typeString": "contract IBondedECDSAKeep"
                         }
                       },
@@ -3916,7 +3916,7 @@
                       "lValueRequested": false,
                       "memberName": "getPublicKey",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 11070,
+                      "referencedDeclaration": 11075,
                       "src": "5228:45:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$__$returns$_t_bytes_memory_ptr_$",
@@ -4044,10 +4044,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "5285:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -4187,7 +4187,7 @@
                             "lValueRequested": false,
                             "memberName": "slice",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 12968,
+                            "referencedDeclaration": 12973,
                             "src": "5396:16:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$_t_uint256_$_t_uint256_$returns$_t_bytes_memory_ptr_$bound_to$_t_bytes_memory_ptr_$",
@@ -4215,7 +4215,7 @@
                         "lValueRequested": false,
                         "memberName": "toBytes32",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 13087,
+                        "referencedDeclaration": 13092,
                         "src": "5396:33:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$bound_to$_t_bytes_memory_ptr_$",
@@ -4361,7 +4361,7 @@
                             "lValueRequested": false,
                             "memberName": "slice",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 12968,
+                            "referencedDeclaration": 12973,
                             "src": "5466:16:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$_t_uint256_$_t_uint256_$returns$_t_bytes_memory_ptr_$bound_to$_t_bytes_memory_ptr_$",
@@ -4389,7 +4389,7 @@
                         "lValueRequested": false,
                         "memberName": "toBytes32",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 13087,
+                        "referencedDeclaration": 13092,
                         "src": "5466:34:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$bound_to$_t_bytes_memory_ptr_$",
@@ -4685,10 +4685,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "5512:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -4760,7 +4760,7 @@
                         "name": "block",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18037,
+                        "referencedDeclaration": 18042,
                         "src": "5663:5:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_block",
@@ -5107,10 +5107,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "6360:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -5158,7 +5158,7 @@
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18037,
+                            "referencedDeclaration": 18042,
                             "src": "6465:5:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
@@ -5195,10 +5195,10 @@
                                   "name": "TBTCConstants",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 6648,
+                                  "referencedDeclaration": 6653,
                                   "src": "6513:13:3",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6648_$",
+                                    "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6653_$",
                                     "typeString": "type(library TBTCConstants)"
                                   }
                                 },
@@ -5209,7 +5209,7 @@
                                 "lValueRequested": false,
                                 "memberName": "getFundingTimeout",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 6623,
+                                "referencedDeclaration": 6628,
                                 "src": "6513:31:3",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -5274,7 +5274,7 @@
                             "lValueRequested": false,
                             "memberName": "add",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 16436,
+                            "referencedDeclaration": 16441,
                             "src": "6483:29:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -5335,10 +5335,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "6444:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -5716,10 +5716,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "7619:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -5986,10 +5986,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "8694:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -6837,10 +6837,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "10846:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -7357,7 +7357,7 @@
                         "name": "block",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18037,
+                        "referencedDeclaration": 18042,
                         "src": "11465:5:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_block",
@@ -7507,7 +7507,7 @@
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18034,
+                            "referencedDeclaration": 18039,
                             "src": "11507:3:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_abi",
@@ -7549,7 +7549,7 @@
                       "lValueRequested": false,
                       "memberName": "hash256",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 11538,
+                      "referencedDeclaration": 11543,
                       "src": "11507:82:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$bound_to$_t_bytes_memory_ptr_$",
@@ -8045,7 +8045,7 @@
         "id": 1138,
         "nodeType": "ImportDirective",
         "scope": 1758,
-        "sourceUnit": 13120,
+        "sourceUnit": 13125,
         "src": "25:74:3",
         "symbolAliases": [
           {
@@ -8061,7 +8061,7 @@
         "id": 1140,
         "nodeType": "ImportDirective",
         "scope": 1758,
-        "sourceUnit": 12904,
+        "sourceUnit": 12909,
         "src": "100:74:3",
         "symbolAliases": [
           {
@@ -8077,7 +8077,7 @@
         "id": 1142,
         "nodeType": "ImportDirective",
         "scope": 1758,
-        "sourceUnit": 11116,
+        "sourceUnit": 11121,
         "src": "175:93:3",
         "symbolAliases": [
           {
@@ -8093,7 +8093,7 @@
         "id": 1144,
         "nodeType": "ImportDirective",
         "scope": 1758,
-        "sourceUnit": 16543,
+        "sourceUnit": 16548,
         "src": "269:75:3",
         "symbolAliases": [
           {
@@ -8109,7 +8109,7 @@
         "id": 1146,
         "nodeType": "ImportDirective",
         "scope": 1758,
-        "sourceUnit": 8323,
+        "sourceUnit": 8328,
         "src": "345:50:3",
         "symbolAliases": [
           {
@@ -8189,7 +8189,7 @@
         "id": 1156,
         "nodeType": "ImportDirective",
         "scope": 1758,
-        "sourceUnit": 6649,
+        "sourceUnit": 6654,
         "src": "628:58:3",
         "symbolAliases": [
           {
@@ -8219,10 +8219,10 @@
               "id": 1157,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 16542,
+              "referencedDeclaration": 16547,
               "src": "724:8:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$16542",
+                "typeIdentifier": "t_contract$_SafeMath_$16547",
                 "typeString": "library SafeMath"
               }
             },
@@ -8246,10 +8246,10 @@
               "id": 1160,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 16542,
+              "referencedDeclaration": 16547,
               "src": "756:8:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$16542",
+                "typeIdentifier": "t_contract$_SafeMath_$16547",
                 "typeString": "library SafeMath"
               }
             },
@@ -8273,10 +8273,10 @@
               "id": 1163,
               "name": "BTCUtils",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 12903,
+              "referencedDeclaration": 12908,
               "src": "787:8:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_BTCUtils_$12903",
+                "typeIdentifier": "t_contract$_BTCUtils_$12908",
                 "typeString": "library BTCUtils"
               }
             },
@@ -8300,10 +8300,10 @@
               "id": 1166,
               "name": "BytesLib",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 13119,
+              "referencedDeclaration": 13124,
               "src": "817:8:3",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_BytesLib_$13119",
+                "typeIdentifier": "t_contract$_BytesLib_$13124",
                 "typeString": "library BytesLib"
               }
             },
@@ -9249,10 +9249,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "2360:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -9361,10 +9361,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "2446:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -9628,10 +9628,10 @@
                               "name": "TBTCConstants",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 6648,
+                              "referencedDeclaration": 6653,
                               "src": "3106:13:3",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6648_$",
+                                "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6653_$",
                                 "typeString": "type(library TBTCConstants)"
                               }
                             },
@@ -9642,7 +9642,7 @@
                             "lValueRequested": false,
                             "memberName": "getDepositTerm",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 6567,
+                            "referencedDeclaration": 6572,
                             "src": "3106:28:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -9684,7 +9684,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 18047,
+                              "referencedDeclaration": 18052,
                               "src": "3052:3:3",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -9942,10 +9942,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "3157:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -10461,7 +10461,7 @@
                         "name": "block",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18037,
+                        "referencedDeclaration": 18042,
                         "src": "3677:5:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_block",
@@ -10801,10 +10801,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "4003:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -10852,7 +10852,7 @@
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18037,
+                            "referencedDeclaration": 18042,
                             "src": "4091:5:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
@@ -10889,10 +10889,10 @@
                                   "name": "TBTCConstants",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 6648,
+                                  "referencedDeclaration": 6653,
                                   "src": "4140:13:3",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6648_$",
+                                    "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6653_$",
                                     "typeString": "type(library TBTCConstants)"
                                   }
                                 },
@@ -10903,7 +10903,7 @@
                                 "lValueRequested": false,
                                 "memberName": "getSigningGroupFormationTimeout",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 6631,
+                                "referencedDeclaration": 6636,
                                 "src": "4140:45:3",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -10968,7 +10968,7 @@
                             "lValueRequested": false,
                             "memberName": "add",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 16436,
+                            "referencedDeclaration": 16441,
                             "src": "4109:30:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -11029,10 +11029,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "4070:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -11410,7 +11410,7 @@
                                 "lValueRequested": false,
                                 "memberName": "sub",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 16461,
+                                "referencedDeclaration": 16466,
                                 "src": "4624:11:3",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -11789,10 +11789,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "5117:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -11899,10 +11899,10 @@
                           "name": "IBondedECDSAKeep",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 11115,
+                          "referencedDeclaration": 11120,
                           "src": "5228:16:3",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_contract$_IBondedECDSAKeep_$11115_$",
+                            "typeIdentifier": "t_type$_t_contract$_IBondedECDSAKeep_$11120_$",
                             "typeString": "type(contract IBondedECDSAKeep)"
                           }
                         },
@@ -11916,7 +11916,7 @@
                         "nodeType": "FunctionCall",
                         "src": "5228:32:3",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11115",
+                          "typeIdentifier": "t_contract$_IBondedECDSAKeep_$11120",
                           "typeString": "contract IBondedECDSAKeep"
                         }
                       },
@@ -11927,7 +11927,7 @@
                       "lValueRequested": false,
                       "memberName": "getPublicKey",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 11070,
+                      "referencedDeclaration": 11075,
                       "src": "5228:45:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$__$returns$_t_bytes_memory_ptr_$",
@@ -12055,10 +12055,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "5285:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -12198,7 +12198,7 @@
                             "lValueRequested": false,
                             "memberName": "slice",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 12968,
+                            "referencedDeclaration": 12973,
                             "src": "5396:16:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$_t_uint256_$_t_uint256_$returns$_t_bytes_memory_ptr_$bound_to$_t_bytes_memory_ptr_$",
@@ -12226,7 +12226,7 @@
                         "lValueRequested": false,
                         "memberName": "toBytes32",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 13087,
+                        "referencedDeclaration": 13092,
                         "src": "5396:33:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$bound_to$_t_bytes_memory_ptr_$",
@@ -12372,7 +12372,7 @@
                             "lValueRequested": false,
                             "memberName": "slice",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 12968,
+                            "referencedDeclaration": 12973,
                             "src": "5466:16:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$_t_uint256_$_t_uint256_$returns$_t_bytes_memory_ptr_$bound_to$_t_bytes_memory_ptr_$",
@@ -12400,7 +12400,7 @@
                         "lValueRequested": false,
                         "memberName": "toBytes32",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 13087,
+                        "referencedDeclaration": 13092,
                         "src": "5466:34:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$bound_to$_t_bytes_memory_ptr_$",
@@ -12696,10 +12696,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "5512:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -12771,7 +12771,7 @@
                         "name": "block",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18037,
+                        "referencedDeclaration": 18042,
                         "src": "5663:5:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_block",
@@ -13118,10 +13118,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "6360:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -13169,7 +13169,7 @@
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18037,
+                            "referencedDeclaration": 18042,
                             "src": "6465:5:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_block",
@@ -13206,10 +13206,10 @@
                                   "name": "TBTCConstants",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 6648,
+                                  "referencedDeclaration": 6653,
                                   "src": "6513:13:3",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6648_$",
+                                    "typeIdentifier": "t_type$_t_contract$_TBTCConstants_$6653_$",
                                     "typeString": "type(library TBTCConstants)"
                                   }
                                 },
@@ -13220,7 +13220,7 @@
                                 "lValueRequested": false,
                                 "memberName": "getFundingTimeout",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 6623,
+                                "referencedDeclaration": 6628,
                                 "src": "6513:31:3",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_uint256_$",
@@ -13285,7 +13285,7 @@
                             "lValueRequested": false,
                             "memberName": "add",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 16436,
+                            "referencedDeclaration": 16441,
                             "src": "6483:29:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -13346,10 +13346,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "6444:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -13727,10 +13727,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "7619:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -13997,10 +13997,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "8694:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -14848,10 +14848,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        18050,
-                        18051
+                        18055,
+                        18056
                       ],
-                      "referencedDeclaration": 18051,
+                      "referencedDeclaration": 18056,
                       "src": "10846:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -15368,7 +15368,7 @@
                         "name": "block",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 18037,
+                        "referencedDeclaration": 18042,
                         "src": "11465:5:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_block",
@@ -15518,7 +15518,7 @@
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 18034,
+                            "referencedDeclaration": 18039,
                             "src": "11507:3:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_abi",
@@ -15560,7 +15560,7 @@
                       "lValueRequested": false,
                       "memberName": "hash256",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 11538,
+                      "referencedDeclaration": 11543,
                       "src": "11507:82:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$bound_to$_t_bytes_memory_ptr_$",
@@ -16038,18 +16038,18 @@
     "31": {
       "events": {},
       "links": {
-        "TBTCConstants": "0xfa6063C2991Ad510D52667AcA08fd7b06336E38E",
-        "OutsourceDepositLogging": "0x73DE28efC97aeD39E8680d352aA943d450219d16",
-        "DepositStates": "0xF2c124E86882a241554614Fd0344a358c904d9f4",
-        "DepositUtils": "0x0E71e06f9cF9717eB493c9CeB8781f0553152144",
-        "DepositLiquidation": "0xD542bC7068d3ba9B3c65Fb7E2f785b70D1E394CC"
+        "TBTCConstants": "0x59180C06c8E82124d4f2D9Abc6A5c7Bc6E350Ed6",
+        "OutsourceDepositLogging": "0x749A90A7a4afBc1274DDEe078098be6737974030",
+        "DepositStates": "0x2e36Ec58ce20A17408f33f862b0577d2be080736",
+        "DepositUtils": "0xaC8432Ab558deF588e981FA89b9f39cB3B05650B",
+        "DepositLiquidation": "0xFB07aD16903a244b0e0dB9f39FD889d24d469882"
       },
-      "address": "0x3e01E517ff47EeB4BA731E5fD523b748858b1621",
-      "transactionHash": "0xa156595a333a59f6f1e0ac80851de28514abe15a1d534bd5ee183dd590920159"
+      "address": "0x99F76789E4bB504C8149A7D65C545Fe2A9304BA8",
+      "transactionHash": "0x2ce9271b33098aa0e05664f7ae0d766931b2b0466cdbfa977a2230df7a6be6d1"
     }
   },
   "schemaVersion": "3.0.23",
-  "updatedAt": "2021-02-01T14:48:54.152Z",
+  "updatedAt": "2021-02-01T16:47:02.635Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {
