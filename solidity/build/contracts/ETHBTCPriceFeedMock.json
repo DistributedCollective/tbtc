@@ -1,0 +1,969 @@
+{
+  "contractName": "ETHBTCPriceFeedMock",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getPrice",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "answer",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "latestAnswer",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "_value",
+          "type": "int256"
+        }
+      ],
+      "name": "setValue",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "value",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getPrice\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"answer\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"latestAnswer\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"int256\",\"name\":\"_value\",\"type\":\"int256\"}],\"name\":\"setValue\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"value\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/price-feed/MockPriceOracle.sol\":\"ETHBTCPriceFeedMock\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/external/PriceOracle.sol\":{\"keccak256\":\"0x5271ee7847babcdbc286898517f06edb35719634e72c38e5796d41c8078a43af\",\"urls\":[\"bzz-raw://787cf5fbcb9007316bc082ce62ed3cd03bd009d4ebbef1b172620f0c2b3c423b\",\"dweb:/ipfs/QmXbgL9tNJRcL7radddckWaCNBcm3PPVH1cn5cxdmkMQgS\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/price-feed/MockPriceOracle.sol\":{\"keccak256\":\"0xe8766d75979f957286189aa7dd32c4b8920c1224e2394aee1e0a73d46f171d56\",\"urls\":[\"bzz-raw://b8b0514b45a5af8824f3f8bec655d9b593510f76c5c5953c59892e332a23cd72\",\"dweb:/ipfs/QmXQ2sZpdTCX3fCxoLNqctD3dDZ6CvXYeDxZeS5dfA8fsm\"]}},\"version\":1}",
+  "bytecode": "0x608060405260cb806100126000396000f3fe6080604052348015600f57600080fd5b506004361060465760003560e01c80633fa4f24514604b5780635093dc7d14606357806350d25bcd14607f57806398d5fdca14607f575b600080fd5b60516085565b60408051918252519081900360200190f35b607d60048036036020811015607757600080fd5b5035608b565b005b60516090565b60005481565b600055565b6000549056fea265627a7a723158207ed819fe391519e33d41176701e3035e10a5f5a0492454d83fa96ae0426de74464736f6c63430005110032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060465760003560e01c80633fa4f24514604b5780635093dc7d14606357806350d25bcd14607f57806398d5fdca14607f575b600080fd5b60516085565b60408051918252519081900360200190f35b607d60048036036020811015607757600080fd5b5035608b565b005b60516090565b60005481565b600055565b6000549056fea265627a7a723158207ed819fe391519e33d41176701e3035e10a5f5a0492454d83fa96ae0426de74464736f6c63430005110032",
+  "sourceMap": "652:103:35:-;;;;;;;;;",
+  "deployedSourceMap": "652:103:35:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;652:103:35;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;276:19;;;:::i;:::-;;;;;;;;;;;;;;;;575:73;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;575:73:35;;:::i;:::-;;392:84;;;:::i;276:19::-;;;;:::o;575:73::-;627:5;:14;575:73::o;392:84::-;439:6;464:5;392:84;:::o",
+  "source": "pragma solidity 0.5.17;\n\nimport \"../../../contracts/external/PriceOracle.sol\";\n\n/// @title A mock implementation of a medianizer price oracle.\n/// @dev This is used in the Keep testnets only. Mainnet uses the MakerDAO medianizer.\ncontract MockPriceOracle is PriceOracle {\n    int256 public value;\n\n    constructor() public {\n        // solium-disable-previous-line no-empty-blocks\n    }\n\n    function latestAnswer() external view returns (int256) {\n        return value;\n    }\n\n    function getPrice() external view returns (int256 answer) {\n        return value;\n    }\n\n    function setValue(int256 _value) external {\n        value = _value;\n    }\n}\n\ncontract ETHBTCPriceFeedMock is MockPriceOracle {\n    // solium-disable-previous-line no-empty-blocks\n}\n",
+  "sourcePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/price-feed/MockPriceOracle.sol",
+  "ast": {
+    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/price-feed/MockPriceOracle.sol",
+    "exportedSymbols": {
+      "ETHBTCPriceFeedMock": [
+        10324
+      ],
+      "MockPriceOracle": [
+        10321
+      ]
+    },
+    "id": 10325,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10285,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:35"
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/external/PriceOracle.sol",
+        "file": "../../../contracts/external/PriceOracle.sol",
+        "id": 10286,
+        "nodeType": "ImportDirective",
+        "scope": 10325,
+        "sourceUnit": 5427,
+        "src": "25:53:35",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 10287,
+              "name": "PriceOracle",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 5426,
+              "src": "258:11:35",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_PriceOracle_$5426",
+                "typeString": "contract PriceOracle"
+              }
+            },
+            "id": 10288,
+            "nodeType": "InheritanceSpecifier",
+            "src": "258:11:35"
+          }
+        ],
+        "contractDependencies": [
+          5426
+        ],
+        "contractKind": "contract",
+        "documentation": "@title A mock implementation of a medianizer price oracle.\n @dev This is used in the Keep testnets only. Mainnet uses the MakerDAO medianizer.",
+        "fullyImplemented": true,
+        "id": 10321,
+        "linearizedBaseContracts": [
+          10321,
+          5426
+        ],
+        "name": "MockPriceOracle",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 10290,
+            "name": "value",
+            "nodeType": "VariableDeclaration",
+            "scope": 10321,
+            "src": "276:19:35",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_int256",
+              "typeString": "int256"
+            },
+            "typeName": {
+              "id": 10289,
+              "name": "int256",
+              "nodeType": "ElementaryTypeName",
+              "src": "276:6:35",
+              "typeDescriptions": {
+                "typeIdentifier": "t_int256",
+                "typeString": "int256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10293,
+              "nodeType": "Block",
+              "src": "323:63:35",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 10294,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10291,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "313:2:35"
+            },
+            "returnParameters": {
+              "id": 10292,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "323:0:35"
+            },
+            "scope": 10321,
+            "src": "302:84:35",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10301,
+              "nodeType": "Block",
+              "src": "447:29:35",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10299,
+                    "name": "value",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 10290,
+                    "src": "464:5:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "functionReturnParameters": 10298,
+                  "id": 10300,
+                  "nodeType": "Return",
+                  "src": "457:12:35"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10302,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "latestAnswer",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10295,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "413:2:35"
+            },
+            "returnParameters": {
+              "id": 10298,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10297,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10302,
+                  "src": "439:6:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 10296,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "439:6:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "438:8:35"
+            },
+            "scope": 10321,
+            "src": "392:84:35",
+            "stateMutability": "view",
+            "superFunction": 5425,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 10309,
+              "nodeType": "Block",
+              "src": "540:29:35",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10307,
+                    "name": "value",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 10290,
+                    "src": "557:5:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "functionReturnParameters": 10306,
+                  "id": 10308,
+                  "nodeType": "Return",
+                  "src": "550:12:35"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10310,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPrice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10303,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "499:2:35"
+            },
+            "returnParameters": {
+              "id": 10306,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10305,
+                  "name": "answer",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10310,
+                  "src": "525:13:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 10304,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "525:6:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "524:15:35"
+            },
+            "scope": 10321,
+            "src": "482:87:35",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 10319,
+              "nodeType": "Block",
+              "src": "617:31:35",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10317,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 10315,
+                      "name": "value",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10290,
+                      "src": "627:5:35",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 10316,
+                      "name": "_value",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10312,
+                      "src": "635:6:35",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "src": "627:14:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "id": 10318,
+                  "nodeType": "ExpressionStatement",
+                  "src": "627:14:35"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10320,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setValue",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10313,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10312,
+                  "name": "_value",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10320,
+                  "src": "593:13:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 10311,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "593:6:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "592:15:35"
+            },
+            "returnParameters": {
+              "id": 10314,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "617:0:35"
+            },
+            "scope": 10321,
+            "src": "575:73:35",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10325,
+        "src": "230:420:35"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 10322,
+              "name": "MockPriceOracle",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 10321,
+              "src": "684:15:35",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_MockPriceOracle_$10321",
+                "typeString": "contract MockPriceOracle"
+              }
+            },
+            "id": 10323,
+            "nodeType": "InheritanceSpecifier",
+            "src": "684:15:35"
+          }
+        ],
+        "contractDependencies": [
+          5426,
+          10321
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 10324,
+        "linearizedBaseContracts": [
+          10324,
+          10321,
+          5426
+        ],
+        "name": "ETHBTCPriceFeedMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 10325,
+        "src": "652:103:35"
+      }
+    ],
+    "src": "0:756:35"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/price-feed/MockPriceOracle.sol",
+    "exportedSymbols": {
+      "ETHBTCPriceFeedMock": [
+        10324
+      ],
+      "MockPriceOracle": [
+        10321
+      ]
+    },
+    "id": 10325,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10285,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:35"
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/external/PriceOracle.sol",
+        "file": "../../../contracts/external/PriceOracle.sol",
+        "id": 10286,
+        "nodeType": "ImportDirective",
+        "scope": 10325,
+        "sourceUnit": 5427,
+        "src": "25:53:35",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 10287,
+              "name": "PriceOracle",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 5426,
+              "src": "258:11:35",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_PriceOracle_$5426",
+                "typeString": "contract PriceOracle"
+              }
+            },
+            "id": 10288,
+            "nodeType": "InheritanceSpecifier",
+            "src": "258:11:35"
+          }
+        ],
+        "contractDependencies": [
+          5426
+        ],
+        "contractKind": "contract",
+        "documentation": "@title A mock implementation of a medianizer price oracle.\n @dev This is used in the Keep testnets only. Mainnet uses the MakerDAO medianizer.",
+        "fullyImplemented": true,
+        "id": 10321,
+        "linearizedBaseContracts": [
+          10321,
+          5426
+        ],
+        "name": "MockPriceOracle",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 10290,
+            "name": "value",
+            "nodeType": "VariableDeclaration",
+            "scope": 10321,
+            "src": "276:19:35",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_int256",
+              "typeString": "int256"
+            },
+            "typeName": {
+              "id": 10289,
+              "name": "int256",
+              "nodeType": "ElementaryTypeName",
+              "src": "276:6:35",
+              "typeDescriptions": {
+                "typeIdentifier": "t_int256",
+                "typeString": "int256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10293,
+              "nodeType": "Block",
+              "src": "323:63:35",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 10294,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10291,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "313:2:35"
+            },
+            "returnParameters": {
+              "id": 10292,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "323:0:35"
+            },
+            "scope": 10321,
+            "src": "302:84:35",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10301,
+              "nodeType": "Block",
+              "src": "447:29:35",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10299,
+                    "name": "value",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 10290,
+                    "src": "464:5:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "functionReturnParameters": 10298,
+                  "id": 10300,
+                  "nodeType": "Return",
+                  "src": "457:12:35"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10302,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "latestAnswer",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10295,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "413:2:35"
+            },
+            "returnParameters": {
+              "id": 10298,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10297,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10302,
+                  "src": "439:6:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 10296,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "439:6:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "438:8:35"
+            },
+            "scope": 10321,
+            "src": "392:84:35",
+            "stateMutability": "view",
+            "superFunction": 5425,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 10309,
+              "nodeType": "Block",
+              "src": "540:29:35",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10307,
+                    "name": "value",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 10290,
+                    "src": "557:5:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "functionReturnParameters": 10306,
+                  "id": 10308,
+                  "nodeType": "Return",
+                  "src": "550:12:35"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10310,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPrice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10303,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "499:2:35"
+            },
+            "returnParameters": {
+              "id": 10306,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10305,
+                  "name": "answer",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10310,
+                  "src": "525:13:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 10304,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "525:6:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "524:15:35"
+            },
+            "scope": 10321,
+            "src": "482:87:35",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 10319,
+              "nodeType": "Block",
+              "src": "617:31:35",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 10317,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 10315,
+                      "name": "value",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10290,
+                      "src": "627:5:35",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 10316,
+                      "name": "_value",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10312,
+                      "src": "635:6:35",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "src": "627:14:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "id": 10318,
+                  "nodeType": "ExpressionStatement",
+                  "src": "627:14:35"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 10320,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setValue",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10313,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10312,
+                  "name": "_value",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10320,
+                  "src": "593:13:35",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 10311,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "593:6:35",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "592:15:35"
+            },
+            "returnParameters": {
+              "id": 10314,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "617:0:35"
+            },
+            "scope": 10321,
+            "src": "575:73:35",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 10325,
+        "src": "230:420:35"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 10322,
+              "name": "MockPriceOracle",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 10321,
+              "src": "684:15:35",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_MockPriceOracle_$10321",
+                "typeString": "contract MockPriceOracle"
+              }
+            },
+            "id": 10323,
+            "nodeType": "InheritanceSpecifier",
+            "src": "684:15:35"
+          }
+        ],
+        "contractDependencies": [
+          5426,
+          10321
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 10324,
+        "linearizedBaseContracts": [
+          10324,
+          10321,
+          5426
+        ],
+        "name": "ETHBTCPriceFeedMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 10325,
+        "src": "652:103:35"
+      }
+    ],
+    "src": "0:756:35"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.17+commit.d19bba13.Emscripten.clang"
+  },
+  "networks": {
+    "31": {
+      "events": {},
+      "links": {},
+      "address": "0x5824794AbEb979cC46543b178E8300aCCe4d0B15",
+      "transactionHash": "0xafc13143ecbeba84b5be9d34bd12b64499af3a2397d40853bd2a75b64fa5dae4"
+    }
+  },
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2021-02-01T14:52:37.600Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

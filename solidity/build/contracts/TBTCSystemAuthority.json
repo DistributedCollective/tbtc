@@ -1,0 +1,696 @@
+{
+  "contractName": "TBTCSystemAuthority",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_tbtcSystemAddress",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_tbtcSystemAddress\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"details\":\"The `TBTCSystem` contract address is passed as a constructor parameter.\",\"methods\":{},\"title\":\"TBTC System Authority.\"},\"userdoc\":{\"methods\":{\"constructor\":\"Set the address of the System contract on contract initialization.\"},\"notice\":\"Contract to secure function calls to the TBTC System contract.\"}},\"settings\":{\"compilationTarget\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCSystemAuthority.sol\":\"TBTCSystemAuthority\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCSystemAuthority.sol\":{\"keccak256\":\"0x6e17b6142810febc4ae734cf7940e3af7128de67dd1bcc28bb25f97d6977c1dd\",\"urls\":[\"bzz-raw://d0b9b5068ecb32abae1dabae7719da42bcff2f416cb652d4a15a64d113c69b0c\",\"dweb:/ipfs/QmTMPTj7yzcW2fY9EYSefMpWwaA9KJfwCTK6tYdvnt12M2\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50604051609d380380609d83398181016040526020811015602f57600080fd5b5051600080546001600160a01b039092166001600160a01b0319909216919091179055603e80605f6000396000f3fe6080604052600080fdfea265627a7a72315820c473bd4ceb638eba7dc6e495b3674cf946d56be87bca60676077f856b05ca9d564736f6c63430005110032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a72315820c473bd4ceb638eba7dc6e495b3674cf946d56be87bca60676077f856b05ca9d564736f6c63430005110032",
+  "sourceMap": "219:491:25:-;;;379:102;8:9:-1;5:2;;;30:1;27;20:12;5:2;379:102:25;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;379:102:25;436:17;:38;;-1:-1:-1;;;;;436:38:25;;;-1:-1:-1;;;;;;436:38:25;;;;;;;;;219:491;;;;;;",
+  "deployedSourceMap": "219:491:25:-;;;;;",
+  "source": "pragma solidity 0.5.17;\n\n/// @title  TBTC System Authority.\n/// @notice Contract to secure function calls to the TBTC System contract.\n/// @dev    The `TBTCSystem` contract address is passed as a constructor parameter.\ncontract TBTCSystemAuthority {\n\n    address internal tbtcSystemAddress;\n\n    /// @notice Set the address of the System contract on contract initialization.\n    constructor(address _tbtcSystemAddress) public {\n        tbtcSystemAddress = _tbtcSystemAddress;\n    }\n\n    /// @notice Function modifier ensures modified function is only called by TBTCSystem.\n    modifier onlyTbtcSystem(){\n        require(msg.sender == tbtcSystemAddress, \"Caller must be tbtcSystem contract\");\n        _;\n    }\n}\n",
+  "sourcePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCSystemAuthority.sol",
+  "ast": {
+    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCSystemAuthority.sol",
+    "exportedSymbols": {
+      "TBTCSystemAuthority": [
+        8211
+      ]
+    },
+    "id": 8212,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8186,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:25"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title  TBTC System Authority.\n @notice Contract to secure function calls to the TBTC System contract.\n @dev    The `TBTCSystem` contract address is passed as a constructor parameter.",
+        "fullyImplemented": true,
+        "id": 8211,
+        "linearizedBaseContracts": [
+          8211
+        ],
+        "name": "TBTCSystemAuthority",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 8188,
+            "name": "tbtcSystemAddress",
+            "nodeType": "VariableDeclaration",
+            "scope": 8211,
+            "src": "255:34:25",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 8187,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "255:7:25",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 8197,
+              "nodeType": "Block",
+              "src": "426:55:25",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 8195,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 8193,
+                      "name": "tbtcSystemAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 8188,
+                      "src": "436:17:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 8194,
+                      "name": "_tbtcSystemAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 8190,
+                      "src": "456:18:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "436:38:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 8196,
+                  "nodeType": "ExpressionStatement",
+                  "src": "436:38:25"
+                }
+              ]
+            },
+            "documentation": "@notice Set the address of the System contract on contract initialization.",
+            "id": 8198,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8191,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8190,
+                  "name": "_tbtcSystemAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8198,
+                  "src": "391:26:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8189,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "391:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "390:28:25"
+            },
+            "returnParameters": {
+              "id": 8192,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "426:0:25"
+            },
+            "scope": 8211,
+            "src": "379:102:25",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 8209,
+              "nodeType": "Block",
+              "src": "602:106:25",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 8204,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 8201,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 18047,
+                            "src": "620:3:25",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 8202,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "620:10:25",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 8203,
+                          "name": "tbtcSystemAddress",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 8188,
+                          "src": "634:17:25",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "620:31:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "43616c6c6572206d757374206265207462746353797374656d20636f6e7472616374",
+                        "id": 8205,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "653:36:25",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_34f16208e81741f0daa2d2dee420727a4d4a14dfbdc86819fa3495cd846a7336",
+                          "typeString": "literal_string \"Caller must be tbtcSystem contract\""
+                        },
+                        "value": "Caller must be tbtcSystem contract"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_34f16208e81741f0daa2d2dee420727a4d4a14dfbdc86819fa3495cd846a7336",
+                          "typeString": "literal_string \"Caller must be tbtcSystem contract\""
+                        }
+                      ],
+                      "id": 8200,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        18050,
+                        18051
+                      ],
+                      "referencedDeclaration": 18051,
+                      "src": "612:7:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 8206,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "612:78:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 8207,
+                  "nodeType": "ExpressionStatement",
+                  "src": "612:78:25"
+                },
+                {
+                  "id": 8208,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "700:1:25"
+                }
+              ]
+            },
+            "documentation": "@notice Function modifier ensures modified function is only called by TBTCSystem.",
+            "id": 8210,
+            "name": "onlyTbtcSystem",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 8199,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "600:2:25"
+            },
+            "src": "577:131:25",
+            "visibility": "internal"
+          }
+        ],
+        "scope": 8212,
+        "src": "219:491:25"
+      }
+    ],
+    "src": "0:711:25"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCSystemAuthority.sol",
+    "exportedSymbols": {
+      "TBTCSystemAuthority": [
+        8211
+      ]
+    },
+    "id": 8212,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 8186,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:25"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@title  TBTC System Authority.\n @notice Contract to secure function calls to the TBTC System contract.\n @dev    The `TBTCSystem` contract address is passed as a constructor parameter.",
+        "fullyImplemented": true,
+        "id": 8211,
+        "linearizedBaseContracts": [
+          8211
+        ],
+        "name": "TBTCSystemAuthority",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 8188,
+            "name": "tbtcSystemAddress",
+            "nodeType": "VariableDeclaration",
+            "scope": 8211,
+            "src": "255:34:25",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 8187,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "255:7:25",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 8197,
+              "nodeType": "Block",
+              "src": "426:55:25",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 8195,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 8193,
+                      "name": "tbtcSystemAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 8188,
+                      "src": "436:17:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 8194,
+                      "name": "_tbtcSystemAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 8190,
+                      "src": "456:18:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "436:38:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 8196,
+                  "nodeType": "ExpressionStatement",
+                  "src": "436:38:25"
+                }
+              ]
+            },
+            "documentation": "@notice Set the address of the System contract on contract initialization.",
+            "id": 8198,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 8191,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 8190,
+                  "name": "_tbtcSystemAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 8198,
+                  "src": "391:26:25",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 8189,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "391:7:25",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "390:28:25"
+            },
+            "returnParameters": {
+              "id": 8192,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "426:0:25"
+            },
+            "scope": 8211,
+            "src": "379:102:25",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 8209,
+              "nodeType": "Block",
+              "src": "602:106:25",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 8204,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 8201,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 18047,
+                            "src": "620:3:25",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 8202,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "620:10:25",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 8203,
+                          "name": "tbtcSystemAddress",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 8188,
+                          "src": "634:17:25",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "620:31:25",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "43616c6c6572206d757374206265207462746353797374656d20636f6e7472616374",
+                        "id": 8205,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "653:36:25",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_34f16208e81741f0daa2d2dee420727a4d4a14dfbdc86819fa3495cd846a7336",
+                          "typeString": "literal_string \"Caller must be tbtcSystem contract\""
+                        },
+                        "value": "Caller must be tbtcSystem contract"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_34f16208e81741f0daa2d2dee420727a4d4a14dfbdc86819fa3495cd846a7336",
+                          "typeString": "literal_string \"Caller must be tbtcSystem contract\""
+                        }
+                      ],
+                      "id": 8200,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        18050,
+                        18051
+                      ],
+                      "referencedDeclaration": 18051,
+                      "src": "612:7:25",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 8206,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "612:78:25",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 8207,
+                  "nodeType": "ExpressionStatement",
+                  "src": "612:78:25"
+                },
+                {
+                  "id": 8208,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "700:1:25"
+                }
+              ]
+            },
+            "documentation": "@notice Function modifier ensures modified function is only called by TBTCSystem.",
+            "id": 8210,
+            "name": "onlyTbtcSystem",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 8199,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "600:2:25"
+            },
+            "src": "577:131:25",
+            "visibility": "internal"
+          }
+        ],
+        "scope": 8212,
+        "src": "219:491:25"
+      }
+    ],
+    "src": "0:711:25"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.17+commit.d19bba13.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2021-02-01T14:28:06.536Z",
+  "devdoc": {
+    "details": "The `TBTCSystem` contract address is passed as a constructor parameter.",
+    "methods": {},
+    "title": "TBTC System Authority."
+  },
+  "userdoc": {
+    "methods": {
+      "constructor": "Set the address of the System contract on contract initialization."
+    },
+    "notice": "Contract to secure function calls to the TBTC System contract."
+  }
+}

@@ -1,0 +1,573 @@
+{
+  "contractName": "Dummy",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "state",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_state",
+          "type": "uint256"
+        }
+      ],
+      "name": "setState",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getState",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getState\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_state\",\"type\":\"uint256\"}],\"name\":\"setState\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"state\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Dummy contract to used to test clone factory.      This contract will be cloned\",\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/factory/Dummy.sol\":\"Dummy\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/factory/Dummy.sol\":{\"keccak256\":\"0x649f769a7ad721190c0ef143f7bf1536409abc15c5cc38103885a02e7d4e12fa\",\"urls\":[\"bzz-raw://4591c7468b9066e4c52165b864328710611f8dbd5b38d43c07a032299a871767\",\"dweb:/ipfs/Qmbqrmig3N3nhjY8EdMnqKibMBprN48WK2w51krmFx9y6f\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060c18061001f6000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c80631865c57d146041578063a9e966b7146059578063c19d93fb146075575b600080fd5b6047607b565b60408051918252519081900360200190f35b607360048036036020811015606d57600080fd5b50356081565b005b60476086565b60005490565b600055565b6000548156fea265627a7a72315820a0c3553fc5821c3f3144774c0d38da88bf7410c8c059934803275bd258264e8064736f6c63430005110032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b5060043610603c5760003560e01c80631865c57d146041578063a9e966b7146059578063c19d93fb146075575b600080fd5b6047607b565b60408051918252519081900360200190f35b607360048036036020811015606d57600080fd5b50356081565b005b60476086565b60005490565b600055565b6000548156fea265627a7a72315820a0c3553fc5821c3f3144774c0d38da88bf7410c8c059934803275bd258264e8064736f6c63430005110032",
+  "sourceMap": "118:206:32:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;118:206:32;;;;;;;",
+  "deployedSourceMap": "118:206:32:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;118:206:32;;;;;;;;;;;;;;;;;;;;;;;;;;;;;244:78;;;:::i;:::-;;;;;;;;;;;;;;;;166:72;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;166:72:32;;:::i;:::-;;139:20;;;:::i;244:78::-;284:7;310:5;244:78;:::o;166:72::-;217:5;:14;166:72::o;139:20::-;;;;:::o",
+  "source": "pragma solidity 0.5.17;\n\n/// @dev Dummy contract to used to test clone factory.\n///      This contract will be cloned\ncontract Dummy{\n\n    uint256 public state;\n\n    function setState(uint256 _state) public {\n        state = _state;\n    }\n\n    function getState()public view returns (uint256) {\n        return state;\n    }\n}\n",
+  "sourcePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/factory/Dummy.sol",
+  "ast": {
+    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/factory/Dummy.sol",
+    "exportedSymbols": {
+      "Dummy": [
+        9959
+      ]
+    },
+    "id": 9960,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 9938,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:32"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@dev Dummy contract to used to test clone factory.\n      This contract will be cloned",
+        "fullyImplemented": true,
+        "id": 9959,
+        "linearizedBaseContracts": [
+          9959
+        ],
+        "name": "Dummy",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 9940,
+            "name": "state",
+            "nodeType": "VariableDeclaration",
+            "scope": 9959,
+            "src": "139:20:32",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 9939,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "139:7:32",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 9949,
+              "nodeType": "Block",
+              "src": "207:31:32",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 9947,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 9945,
+                      "name": "state",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 9940,
+                      "src": "217:5:32",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 9946,
+                      "name": "_state",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 9942,
+                      "src": "225:6:32",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "217:14:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 9948,
+                  "nodeType": "ExpressionStatement",
+                  "src": "217:14:32"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 9950,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setState",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9943,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9942,
+                  "name": "_state",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9950,
+                  "src": "184:14:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9941,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "184:7:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "183:16:32"
+            },
+            "returnParameters": {
+              "id": 9944,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "207:0:32"
+            },
+            "scope": 9959,
+            "src": "166:72:32",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 9957,
+              "nodeType": "Block",
+              "src": "293:29:32",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 9955,
+                    "name": "state",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 9940,
+                    "src": "310:5:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 9954,
+                  "id": 9956,
+                  "nodeType": "Return",
+                  "src": "303:12:32"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 9958,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getState",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9951,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "261:2:32"
+            },
+            "returnParameters": {
+              "id": 9954,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9953,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9958,
+                  "src": "284:7:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9952,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "284:7:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "283:9:32"
+            },
+            "scope": 9959,
+            "src": "244:78:32",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 9960,
+        "src": "118:206:32"
+      }
+    ],
+    "src": "0:325:32"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/factory/Dummy.sol",
+    "exportedSymbols": {
+      "Dummy": [
+        9959
+      ]
+    },
+    "id": 9960,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 9938,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:32"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "@dev Dummy contract to used to test clone factory.\n      This contract will be cloned",
+        "fullyImplemented": true,
+        "id": 9959,
+        "linearizedBaseContracts": [
+          9959
+        ],
+        "name": "Dummy",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 9940,
+            "name": "state",
+            "nodeType": "VariableDeclaration",
+            "scope": 9959,
+            "src": "139:20:32",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 9939,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "139:7:32",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 9949,
+              "nodeType": "Block",
+              "src": "207:31:32",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 9947,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 9945,
+                      "name": "state",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 9940,
+                      "src": "217:5:32",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 9946,
+                      "name": "_state",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 9942,
+                      "src": "225:6:32",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "217:14:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 9948,
+                  "nodeType": "ExpressionStatement",
+                  "src": "217:14:32"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 9950,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setState",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9943,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9942,
+                  "name": "_state",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9950,
+                  "src": "184:14:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9941,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "184:7:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "183:16:32"
+            },
+            "returnParameters": {
+              "id": 9944,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "207:0:32"
+            },
+            "scope": 9959,
+            "src": "166:72:32",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 9957,
+              "nodeType": "Block",
+              "src": "293:29:32",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 9955,
+                    "name": "state",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 9940,
+                    "src": "310:5:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 9954,
+                  "id": 9956,
+                  "nodeType": "Return",
+                  "src": "303:12:32"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 9958,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getState",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 9951,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "261:2:32"
+            },
+            "returnParameters": {
+              "id": 9954,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9953,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 9958,
+                  "src": "284:7:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 9952,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "284:7:32",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "283:9:32"
+            },
+            "scope": 9959,
+            "src": "244:78:32",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 9960,
+        "src": "118:206:32"
+      }
+    ],
+    "src": "0:325:32"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.17+commit.d19bba13.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2021-02-01T14:28:06.551Z",
+  "devdoc": {
+    "details": "Dummy contract to used to test clone factory.      This contract will be cloned",
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

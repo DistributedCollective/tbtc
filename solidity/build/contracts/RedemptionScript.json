@@ -1,0 +1,3554 @@
+{
+  "contractName": "RedemptionScript",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_VendingMachine",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_TBTCToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_FeeRebateToken",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_extraData",
+          "type": "bytes"
+        }
+      ],
+      "name": "receiveApproval",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_VendingMachine\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_TBTCToken\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_FeeRebateToken\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"_extraData\",\"type\":\"bytes\"}],\"name\":\"receiveApproval\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Wrapper script for VendingMachine.tbtcToBtc This contract implements receiveApproval() and can therefore use approveAndCall(). This pattern combines TBTC Token approval and vendingMachine.tbtcToBtc() in a single transaction.\",\"methods\":{\"receiveApproval(address,uint256,address,bytes)\":{\"details\":\"Implements the approveAndCall receiver interface.\",\"params\":{\"_amount\":\"Approved TBTC amount for the transfer.\",\"_extraData\":\"Encoded function call to `VendingMachine.tbtcToBtc`.\",\"_from\":\"The owner of the token who approved them for transfer.\"}}}},\"userdoc\":{\"methods\":{\"receiveApproval(address,uint256,address,bytes)\":{\"notice\":\"Receives approval for a TBTC transfer, and calls `VendingMachine.tbtcToBtc` for a user.\"}},\"notice\":\"A one-click script for redeeming TBTC into BTC.\"}},\"settings\":{\"compilationTarget\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/scripts/RedemptionScript.sol\":\"RedemptionScript\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/DepositLog.sol\":{\"keccak256\":\"0xd2422abaf64bf2d28f4c0548bc31c3d0e4c5f3e4414486c149b773bea0c9db0a\",\"urls\":[\"bzz-raw://c4b0e3caea108ce67da5922906753dc1a1f87cee923e7c32260239150f2152bb\",\"dweb:/ipfs/QmcHcftf4M6ZyuFG725QiFGHuAtz6zDQZ9HCEaoP5Wb6Fd\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/deposit/Deposit.sol\":{\"keccak256\":\"0x7a9df31ad626248459fe8b2dc58c3fe493bf15607163d4265e89e9fa4ecf5821\",\"urls\":[\"bzz-raw://a6a7482d4efc3d7628169ebf1b27efdac4caeb131a35ccaeaa589eb571de96be\",\"dweb:/ipfs/QmdtQTuBbG4WWoLzGZF582TnXjeGsn6HEzR6TEZruCooVr\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/deposit/DepositFunding.sol\":{\"keccak256\":\"0xe742137d7ce4eb157ff687fa46d6816b3adceaf9fdafb50bc2955c9a0bb18b3f\",\"urls\":[\"bzz-raw://36b72b4fd80c9964cd93b80f4d67a777ea30d4ad7a040823f6a0cca77b02ede5\",\"dweb:/ipfs/QmdbJ2gF2WCqxdXp9BgNwtEn3Pik7J9oXK44Q37Zd6X12E\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/deposit/DepositLiquidation.sol\":{\"keccak256\":\"0x29621caae685780eda6271de5215804cb54284814dee422d4cb23b0370dd845f\",\"urls\":[\"bzz-raw://414bba9cb3cfaac642e820079aa9cb33e659749d5dc3259e007bd85fb30cd4b1\",\"dweb:/ipfs/QmWn8JumPKGGm9X3BPqYsCnxt3QyLfwcgnVZwf2wptDJ6T\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/deposit/DepositRedemption.sol\":{\"keccak256\":\"0x356eb75775a6d84baefdb7b967a92056ce302567c3e4f17396faccc0815b76b5\",\"urls\":[\"bzz-raw://a9f3e2363cf7e339f27dcc89886a9f87e1ec35fa9d2c19c3a7a96c4ba983d3d6\",\"dweb:/ipfs/QmfTvP96LbJA5UGsEUSiVMGCWzfFadKkRSLJtAvecbqSmV\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/deposit/DepositStates.sol\":{\"keccak256\":\"0x5ec59ee85fb559a1a85677000acfb650981ad1dcba9db739ccd509df1e64f0be\",\"urls\":[\"bzz-raw://966ff2b55c286a30934af8397fa581e31d4d7f8ce154a58973ade03e7f171ce6\",\"dweb:/ipfs/QmXKdfbBzmsGgjExobtpz2YJYTwpwYTmWnuqJM2UrPRxbH\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/deposit/DepositUtils.sol\":{\"keccak256\":\"0x1a72a88825376a93f8eacef069115398bd36899efddb01c844233107899e6c34\",\"urls\":[\"bzz-raw://fb72e51e6b20f827f88f8672aff2d5cd587c91303128624c5c45d620adf5fa75\",\"dweb:/ipfs/QmTkkEbuweQsGerWHSsVUSb2fFmfWhVfShGphmgFnxQPet\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/deposit/OutsourceDepositLogging.sol\":{\"keccak256\":\"0x97f73731fecda2306e2c5d1d44038515d3d484b06f0ddb11a3471c6630ccc70d\",\"urls\":[\"bzz-raw://37d9cb8532dfa28f38ae0fba8750b80b9caa24561141e21a75c93f28d0670e91\",\"dweb:/ipfs/QmQdHFaFkPrDdCegD4BrLv8xMTJCs82fafLJu6me3QNPuj\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/interfaces/ITBTCSystem.sol\":{\"keccak256\":\"0xdae4f0fa4b6d02f2a45c54be47d06d9e6106eee7cab170bfc5f469475492fcef\",\"urls\":[\"bzz-raw://1b80448536b598d8ec5f115773bd959f5ce75d654346a21fcd981c12811a9b77\",\"dweb:/ipfs/QmcpEoUxPXRhKw9VHGC7TsD6koVenP1e9iin5xYNZ3K1VY\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/interfaces/ITokenRecipient.sol\":{\"keccak256\":\"0x4ac6830ad44d0b0d70ebabc60150e9c915c7c0bd0129ef868d5d2cd8da0c32bd\",\"urls\":[\"bzz-raw://a5c6465285add41f07a951f90405800a8802e323ea11e9c7bdb5625ce109c7f7\",\"dweb:/ipfs/QmRf7B4WxsS7gbSwUotgQM633BQc2ye7rhYC1RNVFamBfp\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/scripts/RedemptionScript.sol\":{\"keccak256\":\"0x4ef73bc73a5e1f654190179422b0b3e3d084cf3d2ae8862ae8e7755946ea6d91\",\"urls\":[\"bzz-raw://9099edfe434ab5ec58bcdd9d81d75eb0704a97810de932eb153544b2905b6e25\",\"dweb:/ipfs/QmY2hxXSGmfjKPNxv3JgZk1nygj1DKPVro4dkDxfWH6i6f\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/DepositFactoryAuthority.sol\":{\"keccak256\":\"0x022479e32c12f6be988fb0d7dfd51038177511b92f02a5b19bb72b0e4f09d851\",\"urls\":[\"bzz-raw://9eeb54aded5ad8073a5e3525c0051b1b6ee891ec097270e4d9271d14c4f19057\",\"dweb:/ipfs/QmVvcwW2jw9zBjdWJdqkBTNfU6K9vMT8EYDwoYF1nxMHXd\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/FeeRebateToken.sol\":{\"keccak256\":\"0x1524c58a04b7607141b7858cdb8822f3afd15a51111ad48c8ed74a2b5a48b058\",\"urls\":[\"bzz-raw://104073ebf4f1c028f42cc9d66e520ba8dbcd5ef3228cc7306da1934830f5dc80\",\"dweb:/ipfs/Qmd4MR2ak1FLLKVet9YXRVJbUFZYB3cp1fEw324vJhTQKW\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCConstants.sol\":{\"keccak256\":\"0xba7ebfbbe1a10904fb87d8fc0998aa15d64968e6619fd7a1347bd14636491bb0\",\"urls\":[\"bzz-raw://763cc6118e03fd481d1835272f9e65d97277680a5d7b10ab5680910eaf9917d0\",\"dweb:/ipfs/QmTAA1x9j1f7XcNPkJsTaY2fqbFWLCw5ovhrY1dAzy8uwh\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCDepositToken.sol\":{\"keccak256\":\"0xffb53d47231c83d85651040b76aa7f700450d7e100d22c783d9ff4c6d09c5631\",\"urls\":[\"bzz-raw://2cb5b13739c83a0808d0c83e0dbda81a727c1e9fe6a965bd3e3390ebcabc9cba\",\"dweb:/ipfs/QmVycxi9QZvJaRs2DDP1QEdEbJUPpXCZSUeM71utPCt3iJ\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCSystemAuthority.sol\":{\"keccak256\":\"0x6e17b6142810febc4ae734cf7940e3af7128de67dd1bcc28bb25f97d6977c1dd\",\"urls\":[\"bzz-raw://d0b9b5068ecb32abae1dabae7719da42bcff2f416cb652d4a15a64d113c69b0c\",\"dweb:/ipfs/QmTMPTj7yzcW2fY9EYSefMpWwaA9KJfwCTK6tYdvnt12M2\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCToken.sol\":{\"keccak256\":\"0xeb02cb2492f35f0edbc913dc074db23497dfbaba065b46d52e1dba0f4b72054b\",\"urls\":[\"bzz-raw://2a99f79eef217e086fd28614d8e95030a7da8c9bfaf5679a9461b0cdc1179f1d\",\"dweb:/ipfs/Qmdv9u2x3C5yynx97dtgeW9PtJS8adikMkQJDCoGw3AYTJ\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/VendingMachine.sol\":{\"keccak256\":\"0x3d33d0617fd632b85ebe690c6f8ad83effc5834b2bb6a3566a0554ba46d36e80\",\"urls\":[\"bzz-raw://7d20bf8982e5f7e911de748fc1ce9b47cdfc9e9736826fa2fa2b32d673f3eb6b\",\"dweb:/ipfs/QmP2wzZ3LXBwA1JDcFTR9QEd11ygYauJnAV7Puxam9G2Xk\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/VendingMachineAuthority.sol\":{\"keccak256\":\"0xdc58e152bd6e4649e403970257791f2c01295d616b4a26f333604a2f69a18287\",\"urls\":[\"bzz-raw://ca421ef0e6bb73e11faaed675c16d670ba61fec3a3ad96f6e1739e6f6f69bb3d\",\"dweb:/ipfs/QmVbdwJCzLrcUFUzBQ5KiW86aFotawMGm3bqoopZjYaY7p\"]},\"@keep-network/keep-ecdsa/contracts/api/IBondedECDSAKeep.sol\":{\"keccak256\":\"0xbfb2ab8aaf8d53b708ee7506a49285baac34d5f3c3f86fa52d68c6d2daf2e481\",\"urls\":[\"bzz-raw://31d6bcdda38444ad1eba3d868a94b7514aaeb4336aabc0b34de9b1c936eda827\",\"dweb:/ipfs/QmZCkXewTXFpztpM1Ep1ySgjwn5bvfRZHLB8ex63hZeiUf\"]},\"@summa-tx/bitcoin-spv-sol/contracts/BTCUtils.sol\":{\"keccak256\":\"0x461cc52e40ba53e646f5c9505b992baa3d5b3c98ae5718561e61b3bc6c726d52\",\"urls\":[\"bzz-raw://90cf2e608b660671642a616ec044e2a39e8ceb7079315b6133ec978c47af9f98\",\"dweb:/ipfs/QmX4hyYS99RYWiQ7BwLXuvQpU5x62YbjJWLgYFwrPkYbzT\"]},\"@summa-tx/bitcoin-spv-sol/contracts/BytesLib.sol\":{\"keccak256\":\"0x43451fdb4c4d55c01122411a4cf89a5c544c2bd4b646ee1d1f306626275324bf\",\"urls\":[\"bzz-raw://db93f07c32fa294d416aaab1b19a205772f2a3fa573fd380e5641e7770193ccf\",\"dweb:/ipfs/QmVE4y8cFKWZGKEfTM9Q3YreAArpMTTALHNr2tcvcNDnbi\"]},\"@summa-tx/bitcoin-spv-sol/contracts/CheckBitcoinSigs.sol\":{\"keccak256\":\"0x2fcbfa2440f69e346d5e14d960b14498f6484f83713fe7cec1ecf4abea3835a1\",\"urls\":[\"bzz-raw://4a385ef55a53dd0dcd1b687a47dbf6785580883a0be0cb10c617c338a35f3a8b\",\"dweb:/ipfs/QmZp9AT146beL3SoETJCWsJ4zzAZQavy9oGCYPiwAofEtq\"]},\"@summa-tx/bitcoin-spv-sol/contracts/SafeMath.sol\":{\"keccak256\":\"0x22d34c04c68c2a77ee83e2ef3756f6e6bad6ad675560d777e612315d7eb83935\",\"urls\":[\"bzz-raw://b642c61be1d34e153e4f9cc139291fa26f4ecf31a3acc5b960aad20f4f689eeb\",\"dweb:/ipfs/QmWADdVTCSyvtgb76AxFFkAr9h9jbY57Mj5X6xiEqCqmMu\"]},\"@summa-tx/bitcoin-spv-sol/contracts/ValidateSPV.sol\":{\"keccak256\":\"0x9af3b3f36de63e95977f09548617989e391b3c511cf0383ee35cefd5da7d3bfd\",\"urls\":[\"bzz-raw://97ce025c7d18540e4c24578db61cc5e33828be8e9a82b5cb5f46c99212f75ed1\",\"dweb:/ipfs/QmRrdWnd95rgCZzeaNiU4KUcGe1j7oDBj7LatpXhUmjbEE\"]},\"openzeppelin-solidity/contracts/drafts/Counters.sol\":{\"keccak256\":\"0x5eb69360d3441ab2ee799bd7c007cccbffb0896f12b2dfe1456193e2aa180a11\",\"urls\":[\"bzz-raw://072e8b5a1b5acfc2acba9b6fb87d1dc57065aad44572617ad46b014074969eb3\",\"dweb:/ipfs/QmVTDHUriaxBJqiWCWgWC8vYaYYfXSz883LsowzTx1DcpK\"]},\"openzeppelin-solidity/contracts/introspection/ERC165.sol\":{\"keccak256\":\"0xac2eacd7e7762e275442f28f21d821544df5aae2ed7698af13be8c41b7005e2e\",\"urls\":[\"bzz-raw://8bdbefb642e7b08535c66bbf074e576cfef2300cdf910c1e0b211f6393833a28\",\"dweb:/ipfs/QmQhfx2Ufr8a2gFXm3KogL66xGgAuAWMwcamkWFKGG6Vya\"]},\"openzeppelin-solidity/contracts/introspection/IERC165.sol\":{\"keccak256\":\"0x661553e43d7c4fbb2de504e5999fd5c104d367488350ed5bf023031bd1ba5ac5\",\"urls\":[\"bzz-raw://b40442c5b350b57b88a081a1eacd2bac962d4ecc1f029f5447a18986f08f6f14\",\"dweb:/ipfs/QmV7wjtRf11ibUHh4g8JjuhMpy68pPhV95L2y46UBoRfsZ\"]},\"openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x4ccf2d7b51873db1ccfd54ca2adae5eac3b184f9699911ed4490438419f1c690\",\"urls\":[\"bzz-raw://d62d769b2219d5de39013093412623e624fa887f871826ea3bae6052ee893610\",\"dweb:/ipfs/QmV3yVktya1s617QmuzQR2CfuJgUi3dR2xEZY9ecmqZ2G1\"]},\"openzeppelin-solidity/contracts/token/ERC20/ERC20.sol\":{\"keccak256\":\"0x852793a3c2f86d336a683b30d688ec3dcfc57451af5a2bf5975cda3b7191a901\",\"urls\":[\"bzz-raw://4f5b57664069671648fb81f55b0082faecdf1b2f159eec6b1fa6cef9b7d73bc5\",\"dweb:/ipfs/QmcyytaLs7zFdb4Uu7C5PmQRhQdB3wA3fUdkV6mkYfdDFH\"]},\"openzeppelin-solidity/contracts/token/ERC20/ERC20Detailed.sol\":{\"keccak256\":\"0xc61b3603089b09a730d8ca72e9133a496cc4405da40e9b87c12f073245d774bf\",\"urls\":[\"bzz-raw://de8bb0003d53de236913f0e0102e7a9d015e02098f2495edd000f207fe2be2f4\",\"dweb:/ipfs/QmbtwNwAJEehWWL7yGGyyMoenQvcqtz91pqLgQPpLRoLYC\"]},\"openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x90e8c2521653bbb1768b05889c5760031e688d9cd361f167489b89215e201b95\",\"urls\":[\"bzz-raw://d0abb99bb8bfc2bc0a89902b8ed1dc0442ad08cc78cee64c291b3df6a27bcccc\",\"dweb:/ipfs/QmP5NaEwZthQeM2ESz4WTT3osrP7jhbvu7ocbttBi2JAw6\"]},\"openzeppelin-solidity/contracts/token/ERC721/ERC721.sol\":{\"keccak256\":\"0xf151df411bbf4eaef1fc8e8480cd10c2cd985f1a36517e63981517610213efc1\",\"urls\":[\"bzz-raw://2a277b3cc3a1a03af5c039bc75cd16bb2d23b529cb2564cc0bea1b1e0eb4dd68\",\"dweb:/ipfs/QmNRxggY8qmjjuLnxggRqE8uBueuCktLwi9YYHagWoaEJ8\"]},\"openzeppelin-solidity/contracts/token/ERC721/ERC721Metadata.sol\":{\"keccak256\":\"0xe5e28b1a405164faa98f8ecd8ed2b00907b89e3d58b2b2bb8ac8b12bc5714489\",\"urls\":[\"bzz-raw://0d5d3f0caa7e7ec91f8a2894e1a6a3513a0c79aa91a498ebf8fdbdd07c12286f\",\"dweb:/ipfs/QmP7r4jQMRxXb5JHy5V9bgMz5FmTezcSDd7ivyzJN88pTR\"]},\"openzeppelin-solidity/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0xce48937a8007c580b8e2e35705738c922dd17540de89ebee6df06d2917a3f9fc\",\"urls\":[\"bzz-raw://1d117265103ee3efcd454d3aafb3e79a115f9bca6dec78a1229558eb30d14d05\",\"dweb:/ipfs/QmTm5Z1c7zzPiG3Cfj1eBMB23AeiEFGgvmTFQVaeEWXVCw\"]},\"openzeppelin-solidity/contracts/token/ERC721/IERC721Metadata.sol\":{\"keccak256\":\"0x2b2b99dc7fe8fcd1f9427d00822b99cbc683dc21f5dd7532bd7e2281fd2c2ca2\",\"urls\":[\"bzz-raw://a8024c00e34efaf328f9592e76823c79f25fa0f6006bdf4a1e7fea204afd4773\",\"dweb:/ipfs/QmZns9jTr7843njq3J2iL2LLoWXK5mdzN1bDGd9GL3ahhD\"]},\"openzeppelin-solidity/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0xadbfb7028fb0f851dc848a48b9e54e7c89ffd2c2edc12fa4ba9bb383dfaa83d9\",\"urls\":[\"bzz-raw://90dceab42713246639100b87d6650037d68e4a2ab2dd4b5768c3ed35d6b3a4a0\",\"dweb:/ipfs/QmQ42UW5nchMoYP9bU9F1AJga5chG8j92fCPkURpiDKsCu\"]},\"openzeppelin-solidity/contracts/utils/Address.sol\":{\"keccak256\":\"0xf3358e5819ca73357abd6c90bdfffd0474af54364897f6b3e3234c4b71fbe9a1\",\"urls\":[\"bzz-raw://75ae8d04454d1511a2ed986cc8585736f05c5c25280683b3d24712a9f414a4bf\",\"dweb:/ipfs/Qmb3kNCoBUZdah1AgBBD4zMk898j5Qw8ahT1w5cCMYp5Y3\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161051d38038061051d8339818101604052606081101561003357600080fd5b5080516020820151604090920151600180546001600160a01b039384166001600160a01b031991821617909155600080549484169482169490941790935560028054929091169190921617905561048e8061008f6000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80638f4ffcb114610030575b600080fd5b6100f56004803603608081101561004657600080fd5b6001600160a01b03823581169260208101359260408201359092169181019060808101606082013564010000000081111561008057600080fd5b82018360208201111561009257600080fd5b803590602001918460018302840111640100000000831117156100b457600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506100f7945050505050565b005b6000546001600160a01b031633146101405760405162461bcd60e51b815260040180806020018281038252602c8152602001806103fa602c913960400191505060405180910390fd5b60008054604080516323b872dd60e01b81526001600160a01b03888116600483015230602483015260448201889052915191909216926323b872dd92606480820193602093909283900390910190829087803b15801561019f57600080fd5b505af11580156101b3573d6000803e3d6000fd5b505050506040513d60208110156101c957600080fd5b5050600080546001546040805163095ea7b360e01b81526001600160a01b039283166004820152602481018890529051919092169263095ea7b392604480820193602093909283900390910190829087803b15801561022757600080fd5b505af115801561023b573d6000803e3d6000fd5b505050506040513d602081101561025157600080fd5b5050602081015160ff198116906001600160e01b03191663be138da760e01b146102ac5760405162461bcd60e51b81526004018080602001828103825260348152602001806104266034913960400191505060405180910390fd5b60015460405183516000926060926001600160a01b0390911691869190819060208401908083835b602083106102f35780518252601f1990920191602091820191016102d4565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d8060008114610355576040519150601f19603f3d011682016040523d82523d6000602084013e61035a565b606091505b5090925090506044810180836103ee5760405162461bcd60e51b81526004018080602001828103825283818151815260200191508051906020019080838360005b838110156103b357818101518382015260200161039b565b50505050905090810190601f1680156103e05780820380516001836020036101000a031916815260200191505b509250505060405180910390fd5b50505050505050505056fe4f6e6c7920746f6b656e20636f6e74726163742063616e2063616c6c2072656365697665417070726f76616c426164205f657874726144617461207369676e61747572652e2043616c6c206d75737420626520746f2074627463546f4274632ea265627a7a723158208f94324cab9689640cd76f6f823f5ca2f2a0106c04583550f40ceca58d1a72cd64736f6c63430005110032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80638f4ffcb114610030575b600080fd5b6100f56004803603608081101561004657600080fd5b6001600160a01b03823581169260208101359260408201359092169181019060808101606082013564010000000081111561008057600080fd5b82018360208201111561009257600080fd5b803590602001918460018302840111640100000000831117156100b457600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506100f7945050505050565b005b6000546001600160a01b031633146101405760405162461bcd60e51b815260040180806020018281038252602c8152602001806103fa602c913960400191505060405180910390fd5b60008054604080516323b872dd60e01b81526001600160a01b03888116600483015230602483015260448201889052915191909216926323b872dd92606480820193602093909283900390910190829087803b15801561019f57600080fd5b505af11580156101b3573d6000803e3d6000fd5b505050506040513d60208110156101c957600080fd5b5050600080546001546040805163095ea7b360e01b81526001600160a01b039283166004820152602481018890529051919092169263095ea7b392604480820193602093909283900390910190829087803b15801561022757600080fd5b505af115801561023b573d6000803e3d6000fd5b505050506040513d602081101561025157600080fd5b5050602081015160ff198116906001600160e01b03191663be138da760e01b146102ac5760405162461bcd60e51b81526004018080602001828103825260348152602001806104266034913960400191505060405180910390fd5b60015460405183516000926060926001600160a01b0390911691869190819060208401908083835b602083106102f35780518252601f1990920191602091820191016102d4565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d8060008114610355576040519150601f19603f3d011682016040523d82523d6000602084013e61035a565b606091505b5090925090506044810180836103ee5760405162461bcd60e51b81526004018080602001828103825283818151815260200191508051906020019080838360005b838110156103b357818101518382015260200161039b565b50505050905090810190601f1680156103e05780820380516001836020036101000a031916815260200191505b509250505060405180910390fd5b50505050505050505056fe4f6e6c7920746f6b656e20636f6e74726163742063616e2063616c6c2072656365697665417070726f76616c426164205f657874726144617461207369676e61747572652e2043616c6c206d75737420626520746f2074627463546f4274632ea265627a7a723158208f94324cab9689640cd76f6f823f5ca2f2a0106c04583550f40ceca58d1a72cd64736f6c63430005110032",
+  "sourceMap": "760:2348:17:-;;;938:285;8:9:-1;5:2;;;30:1;27;20:12;5:2;938:285:17;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;938:285:17;;;;;;;;;;;1067:14;:48;;-1:-1:-1;;;;;1067:48:17;;;-1:-1:-1;;;;;;1067:48:17;;;;;;;:14;1125:33;;;;;;;;;;;;;;;1168:14;:48;;;;;;;;;;;;;760:2348;;;;;;",
+  "deployedSourceMap": "760:2348:17:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;760:2348:17;;;;;;;;;;;;;;;;;;;1613:1493;;;;;;13:3:-1;8;5:12;2:2;;;30:1;27;20:12;2:2;-1:-1;;;;;1613:1493:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;21:11:-1;5:28;;2:2;;;46:1;43;36:12;2:2;1613:1493:17;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;1613:1493:17;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;1613:1493:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;1613:1493:17;;-1:-1:-1;1613:1493:17;;-1:-1:-1;;;;;1613:1493:17:i;:::-;;;1838:9;;-1:-1:-1;;;;;1838:9:17;1816:10;:32;1808:89;;;;-1:-1:-1;;;1808:89:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1908:9;;;:53;;;-1:-1:-1;;;1908:53:17;;-1:-1:-1;;;;;1908:53:17;;;;;;;1946:4;1908:53;;;;;;;;;;;;:9;;;;;:22;;:53;;;;;;;;;;;;;;;;;;:9;:53;;;5:2:-1;;;;30:1;27;20:12;5:2;1908:53:17;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1908:53:17;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;1971:9:17;;;;1997:14;1971:51;;;-1:-1:-1;;;1971:51:17;;-1:-1:-1;;;;;1997:14:17;;;1971:51;;;;;;;;;;;;:9;;;;;:17;;:51;;;;;1908:53;;1971:51;;;;;;;;;;;:9;:51;;;5:2:-1;;;;30:1;27;20:12;5:2;1971:51:17;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1971:51:17;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;1971:51:17;2174:21;;2168:28;-1:-1:-1;;2164:44:17;;;-1:-1:-1;;;;;;2248:54:17;-1:-1:-1;;;2248:54:17;2227:153;;;;-1:-1:-1;;;2227:153:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2625:14;;2617:40;;;;2576:12;;2590:23;;-1:-1:-1;;;;;2625:14:17;;;;2646:10;;2617:40;;;;;;;;;;36:153:-1;66:2;61:3;58:11;36:153;;176:10;;164:23;;-1:-1;;139:12;;;;98:2;89:12;;;;114;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;2617:40:17;;;;;;;;;;;;;;;;;;;;;;;;14:1:-1;21;16:31;;;;75:4;69:11;64:16;;144:4;140:9;133:4;115:16;111:27;107:43;104:1;100:51;94:4;87:65;169:16;166:1;159:27;225:16;222:1;215:4;212:1;208:12;193:49;7:242;;16:31;36:4;31:9;;7:242;-1:-1;2575:82:17;;-1:-1:-1;2575:82:17;-1:-1:-1;3043:4:17;3027:21;;;2575:82;3068:31;;;;-1:-1:-1;;;3068:31:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;3068:31:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1613:1493;;;;;;;;:::o",
+  "source": "pragma solidity 0.5.17;\n\nimport {ITokenRecipient} from \"../interfaces/ITokenRecipient.sol\";\nimport {TBTCDepositToken} from \"../system/TBTCDepositToken.sol\";\nimport {TBTCToken} from \"../system/TBTCToken.sol\";\nimport {FeeRebateToken} from \"../system/FeeRebateToken.sol\";\nimport {VendingMachine} from \"../system/VendingMachine.sol\";\nimport {Deposit} from \"../deposit/Deposit.sol\";\nimport {BytesLib} from \"@summa-tx/bitcoin-spv-sol/contracts/BytesLib.sol\";\n\n/// @notice A one-click script for redeeming TBTC into BTC.\n/// @dev Wrapper script for VendingMachine.tbtcToBtc\n/// This contract implements receiveApproval() and can therefore use\n/// approveAndCall(). This pattern combines TBTC Token approval and\n/// vendingMachine.tbtcToBtc() in a single transaction.\ncontract RedemptionScript is ITokenRecipient {\n    using BytesLib for bytes;\n\n    TBTCToken tbtcToken;\n    VendingMachine vendingMachine;\n    FeeRebateToken feeRebateToken;\n\n    constructor(\n        address _VendingMachine,\n        address _TBTCToken,\n        address _FeeRebateToken\n    ) public {\n        vendingMachine = VendingMachine(_VendingMachine);\n        tbtcToken = TBTCToken(_TBTCToken);\n        feeRebateToken = FeeRebateToken(_FeeRebateToken);\n    }\n\n    /// @notice Receives approval for a TBTC transfer, and calls `VendingMachine.tbtcToBtc` for a user.\n    /// @dev Implements the approveAndCall receiver interface.\n    /// @param _from The owner of the token who approved them for transfer.\n    /// @param _amount Approved TBTC amount for the transfer.\n    /// @param _extraData Encoded function call to `VendingMachine.tbtcToBtc`.\n    function receiveApproval(\n        address _from,\n        uint256 _amount,\n        address,\n        bytes memory _extraData\n    ) public { // not external to allow bytes memory parameters\n        require(msg.sender == address(tbtcToken), \"Only token contract can call receiveApproval\");\n\n        tbtcToken.transferFrom(_from, address(this), _amount);\n        tbtcToken.approve(address(vendingMachine), _amount);\n\n        // Verify _extraData is a call to tbtcToBtc.\n        bytes4 functionSignature;\n        assembly {\n            functionSignature := and(mload(add(_extraData, 0x20)), not(0xff))\n        }\n        require(\n            functionSignature == vendingMachine.tbtcToBtc.selector,\n            \"Bad _extraData signature. Call must be to tbtcToBtc.\"\n        );\n\n        // We capture the `returnData` in order to forward any nested revert message\n        // from the contract call.\n        // solium-disable-next-line security/no-low-level-calls\n        (bool success, bytes memory returnData) = address(vendingMachine).call(_extraData);\n\n        string memory revertMessage;\n        assembly {\n            // A revert message is ABI-encoded as a call to Error(string).\n            // Slicing the Error() signature (4 bytes) and Data offset (4 bytes)\n            // leaves us with a pre-encoded string.\n            // We also slice off the ABI-coded length of returnData (32).\n            revertMessage := add(returnData, 0x44)\n        }\n\n        require(success, revertMessage);\n    }\n}\n",
+  "sourcePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/scripts/RedemptionScript.sol",
+  "ast": {
+    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/scripts/RedemptionScript.sol",
+    "exportedSymbols": {
+      "RedemptionScript": [
+        6088
+      ]
+    },
+    "id": 6089,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5960,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:17"
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/interfaces/ITokenRecipient.sol",
+        "file": "../interfaces/ITokenRecipient.sol",
+        "id": 5962,
+        "nodeType": "ImportDirective",
+        "scope": 6089,
+        "sourceUnit": 5513,
+        "src": "25:66:17",
+        "symbolAliases": [
+          {
+            "foreign": 5961,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCDepositToken.sol",
+        "file": "../system/TBTCDepositToken.sol",
+        "id": 5964,
+        "nodeType": "ImportDirective",
+        "scope": 6089,
+        "sourceUnit": 6736,
+        "src": "92:64:17",
+        "symbolAliases": [
+          {
+            "foreign": 5963,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCToken.sol",
+        "file": "../system/TBTCToken.sol",
+        "id": 5966,
+        "nodeType": "ImportDirective",
+        "scope": 6089,
+        "sourceUnit": 8323,
+        "src": "157:50:17",
+        "symbolAliases": [
+          {
+            "foreign": 5965,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/FeeRebateToken.sol",
+        "file": "../system/FeeRebateToken.sol",
+        "id": 5968,
+        "nodeType": "ImportDirective",
+        "scope": 6089,
+        "sourceUnit": 6192,
+        "src": "208:60:17",
+        "symbolAliases": [
+          {
+            "foreign": 5967,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/VendingMachine.sol",
+        "file": "../system/VendingMachine.sol",
+        "id": 5970,
+        "nodeType": "ImportDirective",
+        "scope": 6089,
+        "sourceUnit": 8885,
+        "src": "269:60:17",
+        "symbolAliases": [
+          {
+            "foreign": 5969,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/deposit/Deposit.sol",
+        "file": "../deposit/Deposit.sol",
+        "id": 5972,
+        "nodeType": "ImportDirective",
+        "scope": 6089,
+        "sourceUnit": 1135,
+        "src": "330:47:17",
+        "symbolAliases": [
+          {
+            "foreign": 5971,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@summa-tx/bitcoin-spv-sol/contracts/BytesLib.sol",
+        "file": "@summa-tx/bitcoin-spv-sol/contracts/BytesLib.sol",
+        "id": 5974,
+        "nodeType": "ImportDirective",
+        "scope": 6089,
+        "sourceUnit": 13120,
+        "src": "378:74:17",
+        "symbolAliases": [
+          {
+            "foreign": 5973,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 5975,
+              "name": "ITokenRecipient",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 5512,
+              "src": "789:15:17",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ITokenRecipient_$5512",
+                "typeString": "contract ITokenRecipient"
+              }
+            },
+            "id": 5976,
+            "nodeType": "InheritanceSpecifier",
+            "src": "789:15:17"
+          }
+        ],
+        "contractDependencies": [
+          5512
+        ],
+        "contractKind": "contract",
+        "documentation": "@notice A one-click script for redeeming TBTC into BTC.\n @dev Wrapper script for VendingMachine.tbtcToBtc\n This contract implements receiveApproval() and can therefore use\n approveAndCall(). This pattern combines TBTC Token approval and\n vendingMachine.tbtcToBtc() in a single transaction.",
+        "fullyImplemented": true,
+        "id": 6088,
+        "linearizedBaseContracts": [
+          6088,
+          5512
+        ],
+        "name": "RedemptionScript",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 5979,
+            "libraryName": {
+              "contractScope": null,
+              "id": 5977,
+              "name": "BytesLib",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 13119,
+              "src": "817:8:17",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_BytesLib_$13119",
+                "typeString": "library BytesLib"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "811:25:17",
+            "typeName": {
+              "id": 5978,
+              "name": "bytes",
+              "nodeType": "ElementaryTypeName",
+              "src": "830:5:17",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes_storage_ptr",
+                "typeString": "bytes"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 5981,
+            "name": "tbtcToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 6088,
+            "src": "842:19:17",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_TBTCToken_$8322",
+              "typeString": "contract TBTCToken"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 5980,
+              "name": "TBTCToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 8322,
+              "src": "842:9:17",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                "typeString": "contract TBTCToken"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 5983,
+            "name": "vendingMachine",
+            "nodeType": "VariableDeclaration",
+            "scope": 6088,
+            "src": "867:29:17",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_VendingMachine_$8884",
+              "typeString": "contract VendingMachine"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 5982,
+              "name": "VendingMachine",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 8884,
+              "src": "867:14:17",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                "typeString": "contract VendingMachine"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 5985,
+            "name": "feeRebateToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 6088,
+            "src": "902:29:17",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+              "typeString": "contract FeeRebateToken"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 5984,
+              "name": "FeeRebateToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6191,
+              "src": "902:14:17",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                "typeString": "contract FeeRebateToken"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 6012,
+              "nodeType": "Block",
+              "src": "1057:166:17",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 5998,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 5994,
+                      "name": "vendingMachine",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5983,
+                      "src": "1067:14:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                        "typeString": "contract VendingMachine"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 5996,
+                          "name": "_VendingMachine",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 5987,
+                          "src": "1099:15:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 5995,
+                        "name": "VendingMachine",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 8884,
+                        "src": "1084:14:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_VendingMachine_$8884_$",
+                          "typeString": "type(contract VendingMachine)"
+                        }
+                      },
+                      "id": 5997,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1084:31:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                        "typeString": "contract VendingMachine"
+                      }
+                    },
+                    "src": "1067:48:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                      "typeString": "contract VendingMachine"
+                    }
+                  },
+                  "id": 5999,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1067:48:17"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 6004,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 6000,
+                      "name": "tbtcToken",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5981,
+                      "src": "1125:9:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                        "typeString": "contract TBTCToken"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 6002,
+                          "name": "_TBTCToken",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 5989,
+                          "src": "1147:10:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 6001,
+                        "name": "TBTCToken",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 8322,
+                        "src": "1137:9:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_TBTCToken_$8322_$",
+                          "typeString": "type(contract TBTCToken)"
+                        }
+                      },
+                      "id": 6003,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1137:21:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                        "typeString": "contract TBTCToken"
+                      }
+                    },
+                    "src": "1125:33:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                      "typeString": "contract TBTCToken"
+                    }
+                  },
+                  "id": 6005,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1125:33:17"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 6010,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 6006,
+                      "name": "feeRebateToken",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5985,
+                      "src": "1168:14:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                        "typeString": "contract FeeRebateToken"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 6008,
+                          "name": "_FeeRebateToken",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 5991,
+                          "src": "1200:15:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 6007,
+                        "name": "FeeRebateToken",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6191,
+                        "src": "1185:14:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_FeeRebateToken_$6191_$",
+                          "typeString": "type(contract FeeRebateToken)"
+                        }
+                      },
+                      "id": 6009,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1185:31:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                        "typeString": "contract FeeRebateToken"
+                      }
+                    },
+                    "src": "1168:48:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                      "typeString": "contract FeeRebateToken"
+                    }
+                  },
+                  "id": 6011,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1168:48:17"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 6013,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5992,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5987,
+                  "name": "_VendingMachine",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6013,
+                  "src": "959:23:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5986,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "959:7:17",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5989,
+                  "name": "_TBTCToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6013,
+                  "src": "992:18:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5988,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "992:7:17",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5991,
+                  "name": "_FeeRebateToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6013,
+                  "src": "1020:23:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5990,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1020:7:17",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "949:100:17"
+            },
+            "returnParameters": {
+              "id": 5993,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1057:0:17"
+            },
+            "scope": 6088,
+            "src": "938:285:17",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 6086,
+              "nodeType": "Block",
+              "src": "1749:1357:17",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 6030,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 6025,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 18047,
+                            "src": "1816:3:17",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 6026,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "1816:10:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "id": 6028,
+                              "name": "tbtcToken",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 5981,
+                              "src": "1838:9:17",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                                "typeString": "contract TBTCToken"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                                "typeString": "contract TBTCToken"
+                              }
+                            ],
+                            "id": 6027,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "1830:7:17",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_address_$",
+                              "typeString": "type(address)"
+                            },
+                            "typeName": "address"
+                          },
+                          "id": 6029,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1830:18:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "1816:32:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "4f6e6c7920746f6b656e20636f6e74726163742063616e2063616c6c2072656365697665417070726f76616c",
+                        "id": 6031,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1850:46:17",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_5ad58abfd7682657d2caeadc3413ef383abfb8158a9ea3126c46a6e085548c17",
+                          "typeString": "literal_string \"Only token contract can call receiveApproval\""
+                        },
+                        "value": "Only token contract can call receiveApproval"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_5ad58abfd7682657d2caeadc3413ef383abfb8158a9ea3126c46a6e085548c17",
+                          "typeString": "literal_string \"Only token contract can call receiveApproval\""
+                        }
+                      ],
+                      "id": 6024,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        18050,
+                        18051
+                      ],
+                      "referencedDeclaration": 18051,
+                      "src": "1808:7:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 6032,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1808:89:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 6033,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1808:89:17"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 6037,
+                        "name": "_from",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6015,
+                        "src": "1931:5:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 6039,
+                            "name": "this",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 18169,
+                            "src": "1946:4:17",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_RedemptionScript_$6088",
+                              "typeString": "contract RedemptionScript"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_RedemptionScript_$6088",
+                              "typeString": "contract RedemptionScript"
+                            }
+                          ],
+                          "id": 6038,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1938:7:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": "address"
+                        },
+                        "id": 6040,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1938:13:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 6041,
+                        "name": "_amount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6017,
+                        "src": "1953:7:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 6034,
+                        "name": "tbtcToken",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5981,
+                        "src": "1908:9:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                          "typeString": "contract TBTCToken"
+                        }
+                      },
+                      "id": 6036,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "transferFrom",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 16783,
+                      "src": "1908:22:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$_t_bool_$",
+                        "typeString": "function (address,address,uint256) external returns (bool)"
+                      }
+                    },
+                    "id": 6042,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1908:53:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 6043,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1908:53:17"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 6048,
+                            "name": "vendingMachine",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 5983,
+                            "src": "1997:14:17",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                              "typeString": "contract VendingMachine"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                              "typeString": "contract VendingMachine"
+                            }
+                          ],
+                          "id": 6047,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1989:7:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": "address"
+                        },
+                        "id": 6049,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1989:23:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 6050,
+                        "name": "_amount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6017,
+                        "src": "2014:7:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 6044,
+                        "name": "tbtcToken",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5981,
+                        "src": "1971:9:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                          "typeString": "contract TBTCToken"
+                        }
+                      },
+                      "id": 6046,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "approve",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 16748,
+                      "src": "1971:17:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
+                        "typeString": "function (address,uint256) external returns (bool)"
+                      }
+                    },
+                    "id": 6051,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1971:51:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 6052,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1971:51:17"
+                },
+                {
+                  "assignments": [
+                    6054
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 6054,
+                      "name": "functionSignature",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 6086,
+                      "src": "2086:24:17",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes4",
+                        "typeString": "bytes4"
+                      },
+                      "typeName": {
+                        "id": 6053,
+                        "name": "bytes4",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2086:6:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes4",
+                          "typeString": "bytes4"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 6055,
+                  "initialValue": null,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "2086:24:17"
+                },
+                {
+                  "externalReferences": [
+                    {
+                      "functionSignature": {
+                        "declaration": 6054,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "2143:17:17",
+                        "valueSize": 1
+                      }
+                    },
+                    {
+                      "_extraData": {
+                        "declaration": 6021,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "2178:10:17",
+                        "valueSize": 1
+                      }
+                    }
+                  ],
+                  "id": 6056,
+                  "nodeType": "InlineAssembly",
+                  "operations": "{\n    functionSignature := and(mload(add(_extraData, 0x20)), not(0xff))\n}",
+                  "src": "2120:98:17"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_bytes4",
+                          "typeString": "bytes4"
+                        },
+                        "id": 6062,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 6058,
+                          "name": "functionSignature",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 6054,
+                          "src": "2248:17:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes4",
+                            "typeString": "bytes4"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 6059,
+                              "name": "vendingMachine",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 5983,
+                              "src": "2269:14:17",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                                "typeString": "contract VendingMachine"
+                              }
+                            },
+                            "id": 6060,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "tbtcToBtc",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 8883,
+                            "src": "2269:24:17",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_nonpayable$_t_address_payable_$_t_bytes8_$_t_bytes_memory_ptr_$returns$__$",
+                              "typeString": "function (address payable,bytes8,bytes memory) external"
+                            }
+                          },
+                          "id": 6061,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "selector",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "2269:33:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes4",
+                            "typeString": "bytes4"
+                          }
+                        },
+                        "src": "2248:54:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "426164205f657874726144617461207369676e61747572652e2043616c6c206d75737420626520746f2074627463546f4274632e",
+                        "id": 6063,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2316:54:17",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_883463e9264686ff6579152095fa8091087bec17866dd00fe5d0be20efb0af5b",
+                          "typeString": "literal_string \"Bad _extraData signature. Call must be to tbtcToBtc.\""
+                        },
+                        "value": "Bad _extraData signature. Call must be to tbtcToBtc."
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_883463e9264686ff6579152095fa8091087bec17866dd00fe5d0be20efb0af5b",
+                          "typeString": "literal_string \"Bad _extraData signature. Call must be to tbtcToBtc.\""
+                        }
+                      ],
+                      "id": 6057,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        18050,
+                        18051
+                      ],
+                      "referencedDeclaration": 18051,
+                      "src": "2227:7:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 6064,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2227:153:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 6065,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2227:153:17"
+                },
+                {
+                  "assignments": [
+                    6067,
+                    6069
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 6067,
+                      "name": "success",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 6086,
+                      "src": "2576:12:17",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "typeName": {
+                        "id": 6066,
+                        "name": "bool",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2576:4:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    {
+                      "constant": false,
+                      "id": 6069,
+                      "name": "returnData",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 6086,
+                      "src": "2590:23:17",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes_memory_ptr",
+                        "typeString": "bytes"
+                      },
+                      "typeName": {
+                        "id": 6068,
+                        "name": "bytes",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2590:5:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_storage_ptr",
+                          "typeString": "bytes"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 6076,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 6074,
+                        "name": "_extraData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6021,
+                        "src": "2646:10:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 6071,
+                            "name": "vendingMachine",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 5983,
+                            "src": "2625:14:17",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                              "typeString": "contract VendingMachine"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                              "typeString": "contract VendingMachine"
+                            }
+                          ],
+                          "id": 6070,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "2617:7:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": "address"
+                        },
+                        "id": 6072,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "2617:23:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "id": 6073,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "call",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "2617:28:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_barecall_payable$_t_bytes_memory_ptr_$returns$_t_bool_$_t_bytes_memory_ptr_$",
+                        "typeString": "function (bytes memory) payable returns (bool,bytes memory)"
+                      }
+                    },
+                    "id": 6075,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2617:40:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_bool_$_t_bytes_memory_ptr_$",
+                      "typeString": "tuple(bool,bytes memory)"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "2575:82:17"
+                },
+                {
+                  "assignments": [
+                    6078
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 6078,
+                      "name": "revertMessage",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 6086,
+                      "src": "2668:27:17",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string"
+                      },
+                      "typeName": {
+                        "id": 6077,
+                        "name": "string",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2668:6:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_storage_ptr",
+                          "typeString": "string"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 6079,
+                  "initialValue": null,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "2668:27:17"
+                },
+                {
+                  "externalReferences": [
+                    {
+                      "revertMessage": {
+                        "declaration": 6078,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "3010:13:17",
+                        "valueSize": 1
+                      }
+                    },
+                    {
+                      "returnData": {
+                        "declaration": 6069,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "3031:10:17",
+                        "valueSize": 1
+                      }
+                    }
+                  ],
+                  "id": 6080,
+                  "nodeType": "InlineAssembly",
+                  "operations": "{\n    revertMessage := add(returnData, 0x44)\n}",
+                  "src": "2705:353:17"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 6082,
+                        "name": "success",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6067,
+                        "src": "3076:7:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 6083,
+                        "name": "revertMessage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6078,
+                        "src": "3085:13:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "id": 6081,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        18050,
+                        18051
+                      ],
+                      "referencedDeclaration": 18051,
+                      "src": "3068:7:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 6084,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3068:31:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 6085,
+                  "nodeType": "ExpressionStatement",
+                  "src": "3068:31:17"
+                }
+              ]
+            },
+            "documentation": "@notice Receives approval for a TBTC transfer, and calls `VendingMachine.tbtcToBtc` for a user.\n @dev Implements the approveAndCall receiver interface.\n @param _from The owner of the token who approved them for transfer.\n @param _amount Approved TBTC amount for the transfer.\n @param _extraData Encoded function call to `VendingMachine.tbtcToBtc`.",
+            "id": 6087,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "receiveApproval",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6022,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6015,
+                  "name": "_from",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6087,
+                  "src": "1647:13:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 6014,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1647:7:17",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 6017,
+                  "name": "_amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6087,
+                  "src": "1670:15:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6016,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1670:7:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 6019,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6087,
+                  "src": "1695:7:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 6018,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1695:7:17",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 6021,
+                  "name": "_extraData",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6087,
+                  "src": "1712:23:17",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 6020,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1712:5:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1637:104:17"
+            },
+            "returnParameters": {
+              "id": 6023,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1749:0:17"
+            },
+            "scope": 6088,
+            "src": "1613:1493:17",
+            "stateMutability": "nonpayable",
+            "superFunction": 5511,
+            "visibility": "public"
+          }
+        ],
+        "scope": 6089,
+        "src": "760:2348:17"
+      }
+    ],
+    "src": "0:3109:17"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/scripts/RedemptionScript.sol",
+    "exportedSymbols": {
+      "RedemptionScript": [
+        6088
+      ]
+    },
+    "id": 6089,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5960,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:17"
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/interfaces/ITokenRecipient.sol",
+        "file": "../interfaces/ITokenRecipient.sol",
+        "id": 5962,
+        "nodeType": "ImportDirective",
+        "scope": 6089,
+        "sourceUnit": 5513,
+        "src": "25:66:17",
+        "symbolAliases": [
+          {
+            "foreign": 5961,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCDepositToken.sol",
+        "file": "../system/TBTCDepositToken.sol",
+        "id": 5964,
+        "nodeType": "ImportDirective",
+        "scope": 6089,
+        "sourceUnit": 6736,
+        "src": "92:64:17",
+        "symbolAliases": [
+          {
+            "foreign": 5963,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/TBTCToken.sol",
+        "file": "../system/TBTCToken.sol",
+        "id": 5966,
+        "nodeType": "ImportDirective",
+        "scope": 6089,
+        "sourceUnit": 8323,
+        "src": "157:50:17",
+        "symbolAliases": [
+          {
+            "foreign": 5965,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/FeeRebateToken.sol",
+        "file": "../system/FeeRebateToken.sol",
+        "id": 5968,
+        "nodeType": "ImportDirective",
+        "scope": 6089,
+        "sourceUnit": 6192,
+        "src": "208:60:17",
+        "symbolAliases": [
+          {
+            "foreign": 5967,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/VendingMachine.sol",
+        "file": "../system/VendingMachine.sol",
+        "id": 5970,
+        "nodeType": "ImportDirective",
+        "scope": 6089,
+        "sourceUnit": 8885,
+        "src": "269:60:17",
+        "symbolAliases": [
+          {
+            "foreign": 5969,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/deposit/Deposit.sol",
+        "file": "../deposit/Deposit.sol",
+        "id": 5972,
+        "nodeType": "ImportDirective",
+        "scope": 6089,
+        "sourceUnit": 1135,
+        "src": "330:47:17",
+        "symbolAliases": [
+          {
+            "foreign": 5971,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@summa-tx/bitcoin-spv-sol/contracts/BytesLib.sol",
+        "file": "@summa-tx/bitcoin-spv-sol/contracts/BytesLib.sol",
+        "id": 5974,
+        "nodeType": "ImportDirective",
+        "scope": 6089,
+        "sourceUnit": 13120,
+        "src": "378:74:17",
+        "symbolAliases": [
+          {
+            "foreign": 5973,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 5975,
+              "name": "ITokenRecipient",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 5512,
+              "src": "789:15:17",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ITokenRecipient_$5512",
+                "typeString": "contract ITokenRecipient"
+              }
+            },
+            "id": 5976,
+            "nodeType": "InheritanceSpecifier",
+            "src": "789:15:17"
+          }
+        ],
+        "contractDependencies": [
+          5512
+        ],
+        "contractKind": "contract",
+        "documentation": "@notice A one-click script for redeeming TBTC into BTC.\n @dev Wrapper script for VendingMachine.tbtcToBtc\n This contract implements receiveApproval() and can therefore use\n approveAndCall(). This pattern combines TBTC Token approval and\n vendingMachine.tbtcToBtc() in a single transaction.",
+        "fullyImplemented": true,
+        "id": 6088,
+        "linearizedBaseContracts": [
+          6088,
+          5512
+        ],
+        "name": "RedemptionScript",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 5979,
+            "libraryName": {
+              "contractScope": null,
+              "id": 5977,
+              "name": "BytesLib",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 13119,
+              "src": "817:8:17",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_BytesLib_$13119",
+                "typeString": "library BytesLib"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "811:25:17",
+            "typeName": {
+              "id": 5978,
+              "name": "bytes",
+              "nodeType": "ElementaryTypeName",
+              "src": "830:5:17",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes_storage_ptr",
+                "typeString": "bytes"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 5981,
+            "name": "tbtcToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 6088,
+            "src": "842:19:17",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_TBTCToken_$8322",
+              "typeString": "contract TBTCToken"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 5980,
+              "name": "TBTCToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 8322,
+              "src": "842:9:17",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                "typeString": "contract TBTCToken"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 5983,
+            "name": "vendingMachine",
+            "nodeType": "VariableDeclaration",
+            "scope": 6088,
+            "src": "867:29:17",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_VendingMachine_$8884",
+              "typeString": "contract VendingMachine"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 5982,
+              "name": "VendingMachine",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 8884,
+              "src": "867:14:17",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                "typeString": "contract VendingMachine"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 5985,
+            "name": "feeRebateToken",
+            "nodeType": "VariableDeclaration",
+            "scope": 6088,
+            "src": "902:29:17",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+              "typeString": "contract FeeRebateToken"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 5984,
+              "name": "FeeRebateToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6191,
+              "src": "902:14:17",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                "typeString": "contract FeeRebateToken"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 6012,
+              "nodeType": "Block",
+              "src": "1057:166:17",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 5998,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 5994,
+                      "name": "vendingMachine",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5983,
+                      "src": "1067:14:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                        "typeString": "contract VendingMachine"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 5996,
+                          "name": "_VendingMachine",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 5987,
+                          "src": "1099:15:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 5995,
+                        "name": "VendingMachine",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 8884,
+                        "src": "1084:14:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_VendingMachine_$8884_$",
+                          "typeString": "type(contract VendingMachine)"
+                        }
+                      },
+                      "id": 5997,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1084:31:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                        "typeString": "contract VendingMachine"
+                      }
+                    },
+                    "src": "1067:48:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                      "typeString": "contract VendingMachine"
+                    }
+                  },
+                  "id": 5999,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1067:48:17"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 6004,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 6000,
+                      "name": "tbtcToken",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5981,
+                      "src": "1125:9:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                        "typeString": "contract TBTCToken"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 6002,
+                          "name": "_TBTCToken",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 5989,
+                          "src": "1147:10:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 6001,
+                        "name": "TBTCToken",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 8322,
+                        "src": "1137:9:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_TBTCToken_$8322_$",
+                          "typeString": "type(contract TBTCToken)"
+                        }
+                      },
+                      "id": 6003,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1137:21:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                        "typeString": "contract TBTCToken"
+                      }
+                    },
+                    "src": "1125:33:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                      "typeString": "contract TBTCToken"
+                    }
+                  },
+                  "id": 6005,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1125:33:17"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 6010,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 6006,
+                      "name": "feeRebateToken",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5985,
+                      "src": "1168:14:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                        "typeString": "contract FeeRebateToken"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 6008,
+                          "name": "_FeeRebateToken",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 5991,
+                          "src": "1200:15:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        ],
+                        "id": 6007,
+                        "name": "FeeRebateToken",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6191,
+                        "src": "1185:14:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_FeeRebateToken_$6191_$",
+                          "typeString": "type(contract FeeRebateToken)"
+                        }
+                      },
+                      "id": 6009,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1185:31:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                        "typeString": "contract FeeRebateToken"
+                      }
+                    },
+                    "src": "1168:48:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                      "typeString": "contract FeeRebateToken"
+                    }
+                  },
+                  "id": 6011,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1168:48:17"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 6013,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5992,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5987,
+                  "name": "_VendingMachine",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6013,
+                  "src": "959:23:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5986,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "959:7:17",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5989,
+                  "name": "_TBTCToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6013,
+                  "src": "992:18:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5988,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "992:7:17",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5991,
+                  "name": "_FeeRebateToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6013,
+                  "src": "1020:23:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5990,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1020:7:17",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "949:100:17"
+            },
+            "returnParameters": {
+              "id": 5993,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1057:0:17"
+            },
+            "scope": 6088,
+            "src": "938:285:17",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 6086,
+              "nodeType": "Block",
+              "src": "1749:1357:17",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 6030,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 6025,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 18047,
+                            "src": "1816:3:17",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 6026,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "1816:10:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            {
+                              "argumentTypes": null,
+                              "id": 6028,
+                              "name": "tbtcToken",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 5981,
+                              "src": "1838:9:17",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                                "typeString": "contract TBTCToken"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                                "typeString": "contract TBTCToken"
+                              }
+                            ],
+                            "id": 6027,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "1830:7:17",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_address_$",
+                              "typeString": "type(address)"
+                            },
+                            "typeName": "address"
+                          },
+                          "id": 6029,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1830:18:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "1816:32:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "4f6e6c7920746f6b656e20636f6e74726163742063616e2063616c6c2072656365697665417070726f76616c",
+                        "id": 6031,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1850:46:17",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_5ad58abfd7682657d2caeadc3413ef383abfb8158a9ea3126c46a6e085548c17",
+                          "typeString": "literal_string \"Only token contract can call receiveApproval\""
+                        },
+                        "value": "Only token contract can call receiveApproval"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_5ad58abfd7682657d2caeadc3413ef383abfb8158a9ea3126c46a6e085548c17",
+                          "typeString": "literal_string \"Only token contract can call receiveApproval\""
+                        }
+                      ],
+                      "id": 6024,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        18050,
+                        18051
+                      ],
+                      "referencedDeclaration": 18051,
+                      "src": "1808:7:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 6032,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1808:89:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 6033,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1808:89:17"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 6037,
+                        "name": "_from",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6015,
+                        "src": "1931:5:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 6039,
+                            "name": "this",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 18169,
+                            "src": "1946:4:17",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_RedemptionScript_$6088",
+                              "typeString": "contract RedemptionScript"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_RedemptionScript_$6088",
+                              "typeString": "contract RedemptionScript"
+                            }
+                          ],
+                          "id": 6038,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1938:7:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": "address"
+                        },
+                        "id": 6040,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1938:13:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 6041,
+                        "name": "_amount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6017,
+                        "src": "1953:7:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 6034,
+                        "name": "tbtcToken",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5981,
+                        "src": "1908:9:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                          "typeString": "contract TBTCToken"
+                        }
+                      },
+                      "id": 6036,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "transferFrom",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 16783,
+                      "src": "1908:22:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$_t_bool_$",
+                        "typeString": "function (address,address,uint256) external returns (bool)"
+                      }
+                    },
+                    "id": 6042,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1908:53:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 6043,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1908:53:17"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 6048,
+                            "name": "vendingMachine",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 5983,
+                            "src": "1997:14:17",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                              "typeString": "contract VendingMachine"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                              "typeString": "contract VendingMachine"
+                            }
+                          ],
+                          "id": 6047,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1989:7:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": "address"
+                        },
+                        "id": 6049,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1989:23:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 6050,
+                        "name": "_amount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6017,
+                        "src": "2014:7:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 6044,
+                        "name": "tbtcToken",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 5981,
+                        "src": "1971:9:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_TBTCToken_$8322",
+                          "typeString": "contract TBTCToken"
+                        }
+                      },
+                      "id": 6046,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "approve",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 16748,
+                      "src": "1971:17:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
+                        "typeString": "function (address,uint256) external returns (bool)"
+                      }
+                    },
+                    "id": 6051,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1971:51:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 6052,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1971:51:17"
+                },
+                {
+                  "assignments": [
+                    6054
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 6054,
+                      "name": "functionSignature",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 6086,
+                      "src": "2086:24:17",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes4",
+                        "typeString": "bytes4"
+                      },
+                      "typeName": {
+                        "id": 6053,
+                        "name": "bytes4",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2086:6:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes4",
+                          "typeString": "bytes4"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 6055,
+                  "initialValue": null,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "2086:24:17"
+                },
+                {
+                  "externalReferences": [
+                    {
+                      "functionSignature": {
+                        "declaration": 6054,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "2143:17:17",
+                        "valueSize": 1
+                      }
+                    },
+                    {
+                      "_extraData": {
+                        "declaration": 6021,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "2178:10:17",
+                        "valueSize": 1
+                      }
+                    }
+                  ],
+                  "id": 6056,
+                  "nodeType": "InlineAssembly",
+                  "operations": "{\n    functionSignature := and(mload(add(_extraData, 0x20)), not(0xff))\n}",
+                  "src": "2120:98:17"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_bytes4",
+                          "typeString": "bytes4"
+                        },
+                        "id": 6062,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "id": 6058,
+                          "name": "functionSignature",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 6054,
+                          "src": "2248:17:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes4",
+                            "typeString": "bytes4"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 6059,
+                              "name": "vendingMachine",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 5983,
+                              "src": "2269:14:17",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                                "typeString": "contract VendingMachine"
+                              }
+                            },
+                            "id": 6060,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "tbtcToBtc",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 8883,
+                            "src": "2269:24:17",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_nonpayable$_t_address_payable_$_t_bytes8_$_t_bytes_memory_ptr_$returns$__$",
+                              "typeString": "function (address payable,bytes8,bytes memory) external"
+                            }
+                          },
+                          "id": 6061,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "selector",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "2269:33:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes4",
+                            "typeString": "bytes4"
+                          }
+                        },
+                        "src": "2248:54:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "426164205f657874726144617461207369676e61747572652e2043616c6c206d75737420626520746f2074627463546f4274632e",
+                        "id": 6063,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2316:54:17",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_883463e9264686ff6579152095fa8091087bec17866dd00fe5d0be20efb0af5b",
+                          "typeString": "literal_string \"Bad _extraData signature. Call must be to tbtcToBtc.\""
+                        },
+                        "value": "Bad _extraData signature. Call must be to tbtcToBtc."
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_883463e9264686ff6579152095fa8091087bec17866dd00fe5d0be20efb0af5b",
+                          "typeString": "literal_string \"Bad _extraData signature. Call must be to tbtcToBtc.\""
+                        }
+                      ],
+                      "id": 6057,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        18050,
+                        18051
+                      ],
+                      "referencedDeclaration": 18051,
+                      "src": "2227:7:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 6064,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2227:153:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 6065,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2227:153:17"
+                },
+                {
+                  "assignments": [
+                    6067,
+                    6069
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 6067,
+                      "name": "success",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 6086,
+                      "src": "2576:12:17",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "typeName": {
+                        "id": 6066,
+                        "name": "bool",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2576:4:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    {
+                      "constant": false,
+                      "id": 6069,
+                      "name": "returnData",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 6086,
+                      "src": "2590:23:17",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes_memory_ptr",
+                        "typeString": "bytes"
+                      },
+                      "typeName": {
+                        "id": 6068,
+                        "name": "bytes",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2590:5:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_storage_ptr",
+                          "typeString": "bytes"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 6076,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 6074,
+                        "name": "_extraData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6021,
+                        "src": "2646:10:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 6071,
+                            "name": "vendingMachine",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 5983,
+                            "src": "2625:14:17",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                              "typeString": "contract VendingMachine"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_contract$_VendingMachine_$8884",
+                              "typeString": "contract VendingMachine"
+                            }
+                          ],
+                          "id": 6070,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "2617:7:17",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_address_$",
+                            "typeString": "type(address)"
+                          },
+                          "typeName": "address"
+                        },
+                        "id": 6072,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "2617:23:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "id": 6073,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "call",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "2617:28:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_barecall_payable$_t_bytes_memory_ptr_$returns$_t_bool_$_t_bytes_memory_ptr_$",
+                        "typeString": "function (bytes memory) payable returns (bool,bytes memory)"
+                      }
+                    },
+                    "id": 6075,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2617:40:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_bool_$_t_bytes_memory_ptr_$",
+                      "typeString": "tuple(bool,bytes memory)"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "2575:82:17"
+                },
+                {
+                  "assignments": [
+                    6078
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 6078,
+                      "name": "revertMessage",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 6086,
+                      "src": "2668:27:17",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string"
+                      },
+                      "typeName": {
+                        "id": 6077,
+                        "name": "string",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2668:6:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_storage_ptr",
+                          "typeString": "string"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 6079,
+                  "initialValue": null,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "2668:27:17"
+                },
+                {
+                  "externalReferences": [
+                    {
+                      "revertMessage": {
+                        "declaration": 6078,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "3010:13:17",
+                        "valueSize": 1
+                      }
+                    },
+                    {
+                      "returnData": {
+                        "declaration": 6069,
+                        "isOffset": false,
+                        "isSlot": false,
+                        "src": "3031:10:17",
+                        "valueSize": 1
+                      }
+                    }
+                  ],
+                  "id": 6080,
+                  "nodeType": "InlineAssembly",
+                  "operations": "{\n    revertMessage := add(returnData, 0x44)\n}",
+                  "src": "2705:353:17"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 6082,
+                        "name": "success",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6067,
+                        "src": "3076:7:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 6083,
+                        "name": "revertMessage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6078,
+                        "src": "3085:13:17",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      ],
+                      "id": 6081,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        18050,
+                        18051
+                      ],
+                      "referencedDeclaration": 18051,
+                      "src": "3068:7:17",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 6084,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3068:31:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 6085,
+                  "nodeType": "ExpressionStatement",
+                  "src": "3068:31:17"
+                }
+              ]
+            },
+            "documentation": "@notice Receives approval for a TBTC transfer, and calls `VendingMachine.tbtcToBtc` for a user.\n @dev Implements the approveAndCall receiver interface.\n @param _from The owner of the token who approved them for transfer.\n @param _amount Approved TBTC amount for the transfer.\n @param _extraData Encoded function call to `VendingMachine.tbtcToBtc`.",
+            "id": 6087,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "receiveApproval",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6022,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6015,
+                  "name": "_from",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6087,
+                  "src": "1647:13:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 6014,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1647:7:17",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 6017,
+                  "name": "_amount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6087,
+                  "src": "1670:15:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 6016,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1670:7:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 6019,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6087,
+                  "src": "1695:7:17",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 6018,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1695:7:17",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 6021,
+                  "name": "_extraData",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 6087,
+                  "src": "1712:23:17",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 6020,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1712:5:17",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1637:104:17"
+            },
+            "returnParameters": {
+              "id": 6023,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1749:0:17"
+            },
+            "scope": 6088,
+            "src": "1613:1493:17",
+            "stateMutability": "nonpayable",
+            "superFunction": 5511,
+            "visibility": "public"
+          }
+        ],
+        "scope": 6089,
+        "src": "760:2348:17"
+      }
+    ],
+    "src": "0:3109:17"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.17+commit.d19bba13.Emscripten.clang"
+  },
+  "networks": {
+    "31": {
+      "events": {},
+      "links": {},
+      "address": "0x74D62406dC02c47047A902cfDA5BBA2e4A4dc909",
+      "transactionHash": "0xe515f68d7f8f4fbe966c4f89b32c1fa26506940c2be15f29cd63115939515bf4"
+    }
+  },
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2021-02-01T14:48:54.250Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "details": "Wrapper script for VendingMachine.tbtcToBtc This contract implements receiveApproval() and can therefore use approveAndCall(). This pattern combines TBTC Token approval and vendingMachine.tbtcToBtc() in a single transaction.",
+    "methods": {
+      "receiveApproval(address,uint256,address,bytes)": {
+        "details": "Implements the approveAndCall receiver interface.",
+        "params": {
+          "_amount": "Approved TBTC amount for the transfer.",
+          "_extraData": "Encoded function call to `VendingMachine.tbtcToBtc`.",
+          "_from": "The owner of the token who approved them for transfer."
+        }
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {
+      "receiveApproval(address,uint256,address,bytes)": {
+        "notice": "Receives approval for a TBTC transfer, and calls `VendingMachine.tbtcToBtc` for a user."
+      }
+    },
+    "notice": "A one-click script for redeeming TBTC into BTC."
+  }
+}

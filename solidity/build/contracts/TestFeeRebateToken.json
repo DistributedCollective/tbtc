@@ -1,0 +1,1668 @@
+{
+  "contractName": "TestFeeRebateToken",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_vendingMachine",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "approved",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Approval",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "approved",
+          "type": "bool"
+        }
+      ],
+      "name": "ApprovalForAll",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "approve",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "exists",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getApproved",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "isApprovedForAll",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "mint",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "ownerOf",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "safeTransferFrom",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "safeTransferFrom",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "approved",
+          "type": "bool"
+        }
+      ],
+      "name": "setApprovalForAll",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "interfaceId",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "symbol",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "tokenURI",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferFrom",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_account",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_frtId",
+          "type": "uint256"
+        }
+      ],
+      "name": "forceMint",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_frtId",
+          "type": "uint256"
+        }
+      ],
+      "name": "burn",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_vendingMachine\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"approved\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_frtId\",\"type\":\"uint256\"}],\"name\":\"burn\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"exists\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_account\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_frtId\",\"type\":\"uint256\"}],\"name\":\"forceMint\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getApproved\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"mint\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"tokenURI\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"approve(address,uint256)\":{\"details\":\"Approves another address to transfer the given token ID The zero address indicates there is no approved address. There can only be one approved address per token at a given time. Can only be called by the token owner or an approved operator.\",\"params\":{\"to\":\"address to be approved for the given token ID\",\"tokenId\":\"uint256 ID of the token to be approved\"}},\"balanceOf(address)\":{\"details\":\"Gets the balance of the specified address.\",\"params\":{\"owner\":\"address to query the balance of\"},\"return\":\"uint256 representing the amount owned by the passed address\"},\"burn(uint256)\":{\"details\":\"Delete a feeRebateToken. This function is used to                  test cases where the existence of an FRT impacts test outcomes.                  Must be called my the token owner.\",\"params\":{\"_frtId\":\"The Fee Rebate Token ID.\"}},\"exists(uint256)\":{\"details\":\"Returns whether the specified token exists.\",\"params\":{\"_tokenId\":\"uint256 ID of the token to query the existence of.\"},\"return\":\"bool whether the token exists.\"},\"forceMint(address,uint256)\":{\"details\":\"We can't call FeeRebateToken mint function from tests because of ACL.                  This function bypasses ACL and can be called in tests.                  Mints a token and assigns it to an account.                  Uses the internal _mint function.\",\"params\":{\"_account\":\"The account that will receive the token.\",\"_frtId\":\"The Fee Rebate Token ID.\"}},\"getApproved(uint256)\":{\"details\":\"Gets the approved address for a token ID, or zero if no address set Reverts if the token ID does not exist.\",\"params\":{\"tokenId\":\"uint256 ID of the token to query the approval of\"},\"return\":\"address currently approved for the given token ID\"},\"isApprovedForAll(address,address)\":{\"details\":\"Tells whether an operator is approved by a given owner.\",\"params\":{\"operator\":\"operator address which you want to query the approval of\",\"owner\":\"owner address which you want to query the approval of\"},\"return\":\"bool whether the given operator is approved by the given owner\"},\"mint(address,uint256)\":{\"details\":\"Mints a new token. Reverts if the given token ID already exists.\",\"params\":{\"_to\":\"The address that will own the minted token.\",\"_tokenId\":\"uint256 ID of the token to be minted.\"}},\"name()\":{\"details\":\"Gets the token name.\",\"return\":\"string representing the token name\"},\"ownerOf(uint256)\":{\"details\":\"Gets the owner of the specified token ID.\",\"params\":{\"tokenId\":\"uint256 ID of the token to query the owner of\"},\"return\":\"address currently marked as the owner of the given token ID\"},\"safeTransferFrom(address,address,uint256)\":{\"details\":\"Safely transfers the ownership of a given token ID to another address If the target address is a contract, it must implement `onERC721Received`, which is called upon a safe transfer, and return the magic value `bytes4(keccak256(\\\"onERC721Received(address,address,uint256,bytes)\\\"))`; otherwise, the transfer is reverted. Requires the msg.sender to be the owner, approved, or operator\",\"params\":{\"from\":\"current owner of the token\",\"to\":\"address to receive the ownership of the given token ID\",\"tokenId\":\"uint256 ID of the token to be transferred\"}},\"safeTransferFrom(address,address,uint256,bytes)\":{\"details\":\"Safely transfers the ownership of a given token ID to another address If the target address is a contract, it must implement `onERC721Received`, which is called upon a safe transfer, and return the magic value `bytes4(keccak256(\\\"onERC721Received(address,address,uint256,bytes)\\\"))`; otherwise, the transfer is reverted. Requires the msg.sender to be the owner, approved, or operator\",\"params\":{\"_data\":\"bytes data to send along with a safe transfer check\",\"from\":\"current owner of the token\",\"to\":\"address to receive the ownership of the given token ID\",\"tokenId\":\"uint256 ID of the token to be transferred\"}},\"setApprovalForAll(address,bool)\":{\"details\":\"Sets or unsets the approval of a given operator An operator is allowed to transfer all tokens of the sender on their behalf.\",\"params\":{\"approved\":\"representing the status of the approval to be set\",\"to\":\"operator address to set the approval\"}},\"supportsInterface(bytes4)\":{\"details\":\"See `IERC165.supportsInterface`.     * Time complexity O(1), guaranteed to always use less than 30 000 gas.\"},\"symbol()\":{\"details\":\"Gets the token symbol.\",\"return\":\"string representing the token symbol\"},\"tokenURI(uint256)\":{\"details\":\"Returns an URI for a given token ID. Throws if the token ID does not exist. May return an empty string.\",\"params\":{\"tokenId\":\"uint256 ID of the token to query\"}},\"transferFrom(address,address,uint256)\":{\"details\":\"Transfers the ownership of a given token ID to another address. Usage of this method is discouraged, use `safeTransferFrom` whenever possible. Requires the msg.sender to be the owner, approved, or operator.\",\"params\":{\"from\":\"current owner of the token\",\"to\":\"address to receive the ownership of the given token ID\",\"tokenId\":\"uint256 ID of the token to be transferred\"}}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/system/TestFeeRebateToken.sol\":\"TestFeeRebateToken\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/FeeRebateToken.sol\":{\"keccak256\":\"0x1524c58a04b7607141b7858cdb8822f3afd15a51111ad48c8ed74a2b5a48b058\",\"urls\":[\"bzz-raw://104073ebf4f1c028f42cc9d66e520ba8dbcd5ef3228cc7306da1934830f5dc80\",\"dweb:/ipfs/Qmd4MR2ak1FLLKVet9YXRVJbUFZYB3cp1fEw324vJhTQKW\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/VendingMachineAuthority.sol\":{\"keccak256\":\"0xdc58e152bd6e4649e403970257791f2c01295d616b4a26f333604a2f69a18287\",\"urls\":[\"bzz-raw://ca421ef0e6bb73e11faaed675c16d670ba61fec3a3ad96f6e1739e6f6f69bb3d\",\"dweb:/ipfs/QmVbdwJCzLrcUFUzBQ5KiW86aFotawMGm3bqoopZjYaY7p\"]},\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/system/TestFeeRebateToken.sol\":{\"keccak256\":\"0x6fa3c2b8fa2134b17e807720401c1fd34dd7a2aed7c883b4535c1f4e8a1c12ac\",\"urls\":[\"bzz-raw://900286be6eb8df04b61e0b83a4fded1ba01f9eb9a0b5cb61c4eaedb6609c8094\",\"dweb:/ipfs/QmS6xvWW5318m7nYLH8nodp9z3Fv143QKfW425MNpLeb4A\"]},\"openzeppelin-solidity/contracts/drafts/Counters.sol\":{\"keccak256\":\"0x5eb69360d3441ab2ee799bd7c007cccbffb0896f12b2dfe1456193e2aa180a11\",\"urls\":[\"bzz-raw://072e8b5a1b5acfc2acba9b6fb87d1dc57065aad44572617ad46b014074969eb3\",\"dweb:/ipfs/QmVTDHUriaxBJqiWCWgWC8vYaYYfXSz883LsowzTx1DcpK\"]},\"openzeppelin-solidity/contracts/introspection/ERC165.sol\":{\"keccak256\":\"0xac2eacd7e7762e275442f28f21d821544df5aae2ed7698af13be8c41b7005e2e\",\"urls\":[\"bzz-raw://8bdbefb642e7b08535c66bbf074e576cfef2300cdf910c1e0b211f6393833a28\",\"dweb:/ipfs/QmQhfx2Ufr8a2gFXm3KogL66xGgAuAWMwcamkWFKGG6Vya\"]},\"openzeppelin-solidity/contracts/introspection/IERC165.sol\":{\"keccak256\":\"0x661553e43d7c4fbb2de504e5999fd5c104d367488350ed5bf023031bd1ba5ac5\",\"urls\":[\"bzz-raw://b40442c5b350b57b88a081a1eacd2bac962d4ecc1f029f5447a18986f08f6f14\",\"dweb:/ipfs/QmV7wjtRf11ibUHh4g8JjuhMpy68pPhV95L2y46UBoRfsZ\"]},\"openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x4ccf2d7b51873db1ccfd54ca2adae5eac3b184f9699911ed4490438419f1c690\",\"urls\":[\"bzz-raw://d62d769b2219d5de39013093412623e624fa887f871826ea3bae6052ee893610\",\"dweb:/ipfs/QmV3yVktya1s617QmuzQR2CfuJgUi3dR2xEZY9ecmqZ2G1\"]},\"openzeppelin-solidity/contracts/token/ERC721/ERC721.sol\":{\"keccak256\":\"0xf151df411bbf4eaef1fc8e8480cd10c2cd985f1a36517e63981517610213efc1\",\"urls\":[\"bzz-raw://2a277b3cc3a1a03af5c039bc75cd16bb2d23b529cb2564cc0bea1b1e0eb4dd68\",\"dweb:/ipfs/QmNRxggY8qmjjuLnxggRqE8uBueuCktLwi9YYHagWoaEJ8\"]},\"openzeppelin-solidity/contracts/token/ERC721/ERC721Metadata.sol\":{\"keccak256\":\"0xe5e28b1a405164faa98f8ecd8ed2b00907b89e3d58b2b2bb8ac8b12bc5714489\",\"urls\":[\"bzz-raw://0d5d3f0caa7e7ec91f8a2894e1a6a3513a0c79aa91a498ebf8fdbdd07c12286f\",\"dweb:/ipfs/QmP7r4jQMRxXb5JHy5V9bgMz5FmTezcSDd7ivyzJN88pTR\"]},\"openzeppelin-solidity/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0xce48937a8007c580b8e2e35705738c922dd17540de89ebee6df06d2917a3f9fc\",\"urls\":[\"bzz-raw://1d117265103ee3efcd454d3aafb3e79a115f9bca6dec78a1229558eb30d14d05\",\"dweb:/ipfs/QmTm5Z1c7zzPiG3Cfj1eBMB23AeiEFGgvmTFQVaeEWXVCw\"]},\"openzeppelin-solidity/contracts/token/ERC721/IERC721Metadata.sol\":{\"keccak256\":\"0x2b2b99dc7fe8fcd1f9427d00822b99cbc683dc21f5dd7532bd7e2281fd2c2ca2\",\"urls\":[\"bzz-raw://a8024c00e34efaf328f9592e76823c79f25fa0f6006bdf4a1e7fea204afd4773\",\"dweb:/ipfs/QmZns9jTr7843njq3J2iL2LLoWXK5mdzN1bDGd9GL3ahhD\"]},\"openzeppelin-solidity/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0xadbfb7028fb0f851dc848a48b9e54e7c89ffd2c2edc12fa4ba9bb383dfaa83d9\",\"urls\":[\"bzz-raw://90dceab42713246639100b87d6650037d68e4a2ab2dd4b5768c3ed35d6b3a4a0\",\"dweb:/ipfs/QmQ42UW5nchMoYP9bU9F1AJga5chG8j92fCPkURpiDKsCu\"]},\"openzeppelin-solidity/contracts/utils/Address.sol\":{\"keccak256\":\"0xf3358e5819ca73357abd6c90bdfffd0474af54364897f6b3e3234c4b71fbe9a1\",\"urls\":[\"bzz-raw://75ae8d04454d1511a2ed986cc8585736f05c5c25280683b3d24712a9f414a4bf\",\"dweb:/ipfs/Qmb3kNCoBUZdah1AgBBD4zMk898j5Qw8ahT1w5cCMYp5Y3\"]}},\"version\":1}",
+  "bytecode": "0x60806040523480156200001157600080fd5b50604051620016b0380380620016b0833981810160405260208110156200003757600080fd5b5051604080518082018252601581527f74425443204665652052656261746520546f6b656e00000000000000000000006020828101919091528251808401909352600383526211949560ea1b908301528291829190620000a76301ffc9a760e01b6001600160e01b036200013416565b620000c26380ac58cd60e01b6001600160e01b036200013416565b8151620000d7906005906020850190620001b9565b508051620000ed906006906020840190620001b9565b5062000109635b5e139f60e01b6001600160e01b036200013416565b5050600880546001600160a01b0319166001600160a01b0392909216919091179055506200025e9050565b6001600160e01b0319808216141562000194576040805162461bcd60e51b815260206004820152601c60248201527f4552433136353a20696e76616c696420696e7465726661636520696400000000604482015290519081900360640190fd5b6001600160e01b0319166000908152602081905260409020805460ff19166001179055565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f10620001fc57805160ff19168380011785556200022c565b828001600101855582156200022c579182015b828111156200022c5782518255916020019190600101906200020f565b506200023a9291506200023e565b5090565b6200025b91905b808211156200023a576000815560010162000245565b90565b611442806200026e6000396000f3fe608060405234801561001057600080fd5b506004361061010b5760003560e01c80634f558e79116100a257806395d89b411161007157806395d89b4114610382578063a22cb4651461038a578063b88d4fde146103b8578063c87b56dd1461047e578063e985e9c51461049b5761010b565b80634f558e79146102e45780636352211e146103015780636a9d5c841461031e57806370a082311461034a5761010b565b806323b872dd116100de57806323b872dd1461022f57806340c10f191461026557806342842e0e1461029157806342966c68146102c75761010b565b806301ffc9a71461011057806306fdde031461014b578063081812fc146101c8578063095ea7b314610201575b600080fd5b6101376004803603602081101561012657600080fd5b50356001600160e01b0319166104c9565b604080519115158252519081900360200190f35b6101536104e8565b6040805160208082528351818301528351919283929083019185019080838360005b8381101561018d578181015183820152602001610175565b50505050905090810190601f1680156101ba5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6101e5600480360360208110156101de57600080fd5b503561057f565b604080516001600160a01b039092168252519081900360200190f35b61022d6004803603604081101561021757600080fd5b506001600160a01b0381351690602001356105e1565b005b61022d6004803603606081101561024557600080fd5b506001600160a01b038135811691602081013590911690604001356106f2565b61022d6004803603604081101561027b57600080fd5b506001600160a01b038135169060200135610747565b61022d600480360360608110156102a757600080fd5b506001600160a01b0381358116916020810135909116906040013561079e565b61022d600480360360208110156102dd57600080fd5b50356107b9565b610137600480360360208110156102fa57600080fd5b50356107c6565b6101e56004803603602081101561031757600080fd5b50356107d7565b6101376004803603604081101561033457600080fd5b506001600160a01b03813516906020013561082b565b6103706004803603602081101561036057600080fd5b50356001600160a01b0316610840565b60408051918252519081900360200190f35b6101536108a8565b61022d600480360360408110156103a057600080fd5b506001600160a01b0381351690602001351515610909565b61022d600480360360808110156103ce57600080fd5b6001600160a01b0382358116926020810135909116916040820135919081019060808101606082013564010000000081111561040957600080fd5b82018360208201111561041b57600080fd5b8035906020019184600183028401116401000000008311171561043d57600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506109d5945050505050565b6101536004803603602081101561049457600080fd5b5035610a2d565b610137600480360360408110156104b157600080fd5b506001600160a01b0381358116916020013516610b12565b6001600160e01b03191660009081526020819052604090205460ff1690565b60058054604080516020601f60026000196101006001881615020190951694909404938401819004810282018101909252828152606093909290918301828280156105745780601f1061054957610100808354040283529160200191610574565b820191906000526020600020905b81548152906001019060200180831161055757829003601f168201915b505050505090505b90565b600061058a82610b40565b6105c55760405162461bcd60e51b815260040180806020018281038252602c815260200180611313602c913960400191505060405180910390fd5b506000908152600260205260409020546001600160a01b031690565b60006105ec826107d7565b9050806001600160a01b0316836001600160a01b0316141561063f5760405162461bcd60e51b81526004018080602001828103825260218152602001806113976021913960400191505060405180910390fd5b336001600160a01b038216148061065b575061065b8133610b12565b6106965760405162461bcd60e51b81526004018080602001828103825260388152602001806112886038913960400191505060405180910390fd5b60008281526002602052604080822080546001600160a01b0319166001600160a01b0387811691821790925591518593918516917f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b92591a4505050565b6106fc3382610b5d565b6107375760405162461bcd60e51b81526004018080602001828103825260318152602001806113b86031913960400191505060405180910390fd5b610742838383610c01565b505050565b6008546001600160a01b031633146107905760405162461bcd60e51b81526004018080602001828103825260228152602001806111e46022913960400191505060405180910390fd5b61079a8282610d45565b5050565b610742838383604051806020016040528060008152506109d5565b6107c33382610e76565b50565b60006107d182610b40565b92915050565b6000818152600160205260408120546001600160a01b0316806107d15760405162461bcd60e51b81526004018080602001828103825260298152602001806112ea6029913960400191505060405180910390fd5b60006108378383610d45565b50600192915050565b60006001600160a01b0382166108875760405162461bcd60e51b815260040180806020018281038252602a8152602001806112c0602a913960400191505060405180910390fd5b6001600160a01b03821660009081526003602052604090206107d190610ebe565b60068054604080516020601f60026000196101006001881615020190951694909404938401819004810282018101909252828152606093909290918301828280156105745780601f1061054957610100808354040283529160200191610574565b6001600160a01b038216331415610967576040805162461bcd60e51b815260206004820152601960248201527f4552433732313a20617070726f766520746f2063616c6c657200000000000000604482015290519081900360640190fd5b3360008181526004602090815260408083206001600160a01b03871680855290835292819020805460ff1916861515908117909155815190815290519293927f17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31929181900390910190a35050565b6109e08484846106f2565b6109ec84848484610ec2565b610a275760405162461bcd60e51b81526004018080602001828103825260328152602001806112066032913960400191505060405180910390fd5b50505050565b6060610a3882610b40565b610a735760405162461bcd60e51b815260040180806020018281038252602f815260200180611368602f913960400191505060405180910390fd5b60008281526007602090815260409182902080548351601f600260001961010060018616150201909316929092049182018490048402810184019094528084529091830182828015610b065780601f10610adb57610100808354040283529160200191610b06565b820191906000526020600020905b815481529060010190602001808311610ae957829003601f168201915b50505050509050919050565b6001600160a01b03918216600090815260046020908152604080832093909416825291909152205460ff1690565b6000908152600160205260409020546001600160a01b0316151590565b6000610b6882610b40565b610ba35760405162461bcd60e51b815260040180806020018281038252602c81526020018061125c602c913960400191505060405180910390fd5b6000610bae836107d7565b9050806001600160a01b0316846001600160a01b03161480610be95750836001600160a01b0316610bde8461057f565b6001600160a01b0316145b80610bf95750610bf98185610b12565b949350505050565b826001600160a01b0316610c14826107d7565b6001600160a01b031614610c595760405162461bcd60e51b815260040180806020018281038252602981526020018061133f6029913960400191505060405180910390fd5b6001600160a01b038216610c9e5760405162461bcd60e51b81526004018080602001828103825260248152602001806112386024913960400191505060405180910390fd5b610ca781610ff5565b6001600160a01b0383166000908152600360205260409020610cc890611030565b6001600160a01b0382166000908152600360205260409020610ce990611047565b60008181526001602052604080822080546001600160a01b0319166001600160a01b0386811691821790925591518493918716917fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef91a4505050565b6001600160a01b038216610da0576040805162461bcd60e51b815260206004820181905260248201527f4552433732313a206d696e7420746f20746865207a65726f2061646472657373604482015290519081900360640190fd5b610da981610b40565b15610dfb576040805162461bcd60e51b815260206004820152601c60248201527f4552433732313a20746f6b656e20616c7265616479206d696e74656400000000604482015290519081900360640190fd5b600081815260016020908152604080832080546001600160a01b0319166001600160a01b038716908117909155835260039091529020610e3a90611047565b60405181906001600160a01b038416906000907fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef908290a45050565b610e808282611050565b600081815260076020526040902054600260001961010060018416150201909116041561079a57600081815260076020526040812061079a9161118a565b5490565b6000610ed6846001600160a01b0316611127565b610ee257506001610bf9565b604051630a85bd0160e11b815233600482018181526001600160a01b03888116602485015260448401879052608060648501908152865160848601528651600095928a169463150b7a029490938c938b938b939260a4019060208501908083838e5b83811015610f5c578181015183820152602001610f44565b50505050905090810190601f168015610f895780820380516001836020036101000a031916815260200191505b5095505050505050602060405180830381600087803b158015610fab57600080fd5b505af1158015610fbf573d6000803e3d6000fd5b505050506040513d6020811015610fd557600080fd5b50516001600160e01b031916630a85bd0160e11b14915050949350505050565b6000818152600260205260409020546001600160a01b0316156107c357600090815260026020526040902080546001600160a01b0319169055565b805461104390600163ffffffff61112d16565b9055565b80546001019055565b816001600160a01b0316611063826107d7565b6001600160a01b0316146110a85760405162461bcd60e51b81526004018080602001828103825260258152602001806113e96025913960400191505060405180910390fd5b6110b181610ff5565b6001600160a01b03821660009081526003602052604090206110d290611030565b60008181526001602052604080822080546001600160a01b0319169055518291906001600160a01b038516907fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef908390a45050565b3b151590565b600082821115611184576040805162461bcd60e51b815260206004820152601e60248201527f536166654d6174683a207375627472616374696f6e206f766572666c6f770000604482015290519081900360640190fd5b50900390565b50805460018160011615610100020316600290046000825580601f106111b057506107c3565b60009182526020918290206107c39261057c92601f01048101905b808211156111df57600081556001016111cb565b509056fe63616c6c6572206d757374206265207468652076656e64696e67206d616368696e654552433732313a207472616e7366657220746f206e6f6e20455243373231526563656976657220696d706c656d656e7465724552433732313a207472616e7366657220746f20746865207a65726f20616464726573734552433732313a206f70657261746f7220717565727920666f72206e6f6e6578697374656e7420746f6b656e4552433732313a20617070726f76652063616c6c6572206973206e6f74206f776e6572206e6f7220617070726f76656420666f7220616c6c4552433732313a2062616c616e636520717565727920666f7220746865207a65726f20616464726573734552433732313a206f776e657220717565727920666f72206e6f6e6578697374656e7420746f6b656e4552433732313a20617070726f76656420717565727920666f72206e6f6e6578697374656e7420746f6b656e4552433732313a207472616e73666572206f6620746f6b656e2074686174206973206e6f74206f776e4552433732314d657461646174613a2055524920717565727920666f72206e6f6e6578697374656e7420746f6b656e4552433732313a20617070726f76616c20746f2063757272656e74206f776e65724552433732313a207472616e736665722063616c6c6572206973206e6f74206f776e6572206e6f7220617070726f7665644552433732313a206275726e206f6620746f6b656e2074686174206973206e6f74206f776ea265627a7a7231582002a68266c39a2bee7f956f99a2faf26ea01eb485f052d416d5238e59a951f63f64736f6c63430005110032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061010b5760003560e01c80634f558e79116100a257806395d89b411161007157806395d89b4114610382578063a22cb4651461038a578063b88d4fde146103b8578063c87b56dd1461047e578063e985e9c51461049b5761010b565b80634f558e79146102e45780636352211e146103015780636a9d5c841461031e57806370a082311461034a5761010b565b806323b872dd116100de57806323b872dd1461022f57806340c10f191461026557806342842e0e1461029157806342966c68146102c75761010b565b806301ffc9a71461011057806306fdde031461014b578063081812fc146101c8578063095ea7b314610201575b600080fd5b6101376004803603602081101561012657600080fd5b50356001600160e01b0319166104c9565b604080519115158252519081900360200190f35b6101536104e8565b6040805160208082528351818301528351919283929083019185019080838360005b8381101561018d578181015183820152602001610175565b50505050905090810190601f1680156101ba5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6101e5600480360360208110156101de57600080fd5b503561057f565b604080516001600160a01b039092168252519081900360200190f35b61022d6004803603604081101561021757600080fd5b506001600160a01b0381351690602001356105e1565b005b61022d6004803603606081101561024557600080fd5b506001600160a01b038135811691602081013590911690604001356106f2565b61022d6004803603604081101561027b57600080fd5b506001600160a01b038135169060200135610747565b61022d600480360360608110156102a757600080fd5b506001600160a01b0381358116916020810135909116906040013561079e565b61022d600480360360208110156102dd57600080fd5b50356107b9565b610137600480360360208110156102fa57600080fd5b50356107c6565b6101e56004803603602081101561031757600080fd5b50356107d7565b6101376004803603604081101561033457600080fd5b506001600160a01b03813516906020013561082b565b6103706004803603602081101561036057600080fd5b50356001600160a01b0316610840565b60408051918252519081900360200190f35b6101536108a8565b61022d600480360360408110156103a057600080fd5b506001600160a01b0381351690602001351515610909565b61022d600480360360808110156103ce57600080fd5b6001600160a01b0382358116926020810135909116916040820135919081019060808101606082013564010000000081111561040957600080fd5b82018360208201111561041b57600080fd5b8035906020019184600183028401116401000000008311171561043d57600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506109d5945050505050565b6101536004803603602081101561049457600080fd5b5035610a2d565b610137600480360360408110156104b157600080fd5b506001600160a01b0381358116916020013516610b12565b6001600160e01b03191660009081526020819052604090205460ff1690565b60058054604080516020601f60026000196101006001881615020190951694909404938401819004810282018101909252828152606093909290918301828280156105745780601f1061054957610100808354040283529160200191610574565b820191906000526020600020905b81548152906001019060200180831161055757829003601f168201915b505050505090505b90565b600061058a82610b40565b6105c55760405162461bcd60e51b815260040180806020018281038252602c815260200180611313602c913960400191505060405180910390fd5b506000908152600260205260409020546001600160a01b031690565b60006105ec826107d7565b9050806001600160a01b0316836001600160a01b0316141561063f5760405162461bcd60e51b81526004018080602001828103825260218152602001806113976021913960400191505060405180910390fd5b336001600160a01b038216148061065b575061065b8133610b12565b6106965760405162461bcd60e51b81526004018080602001828103825260388152602001806112886038913960400191505060405180910390fd5b60008281526002602052604080822080546001600160a01b0319166001600160a01b0387811691821790925591518593918516917f8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b92591a4505050565b6106fc3382610b5d565b6107375760405162461bcd60e51b81526004018080602001828103825260318152602001806113b86031913960400191505060405180910390fd5b610742838383610c01565b505050565b6008546001600160a01b031633146107905760405162461bcd60e51b81526004018080602001828103825260228152602001806111e46022913960400191505060405180910390fd5b61079a8282610d45565b5050565b610742838383604051806020016040528060008152506109d5565b6107c33382610e76565b50565b60006107d182610b40565b92915050565b6000818152600160205260408120546001600160a01b0316806107d15760405162461bcd60e51b81526004018080602001828103825260298152602001806112ea6029913960400191505060405180910390fd5b60006108378383610d45565b50600192915050565b60006001600160a01b0382166108875760405162461bcd60e51b815260040180806020018281038252602a8152602001806112c0602a913960400191505060405180910390fd5b6001600160a01b03821660009081526003602052604090206107d190610ebe565b60068054604080516020601f60026000196101006001881615020190951694909404938401819004810282018101909252828152606093909290918301828280156105745780601f1061054957610100808354040283529160200191610574565b6001600160a01b038216331415610967576040805162461bcd60e51b815260206004820152601960248201527f4552433732313a20617070726f766520746f2063616c6c657200000000000000604482015290519081900360640190fd5b3360008181526004602090815260408083206001600160a01b03871680855290835292819020805460ff1916861515908117909155815190815290519293927f17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31929181900390910190a35050565b6109e08484846106f2565b6109ec84848484610ec2565b610a275760405162461bcd60e51b81526004018080602001828103825260328152602001806112066032913960400191505060405180910390fd5b50505050565b6060610a3882610b40565b610a735760405162461bcd60e51b815260040180806020018281038252602f815260200180611368602f913960400191505060405180910390fd5b60008281526007602090815260409182902080548351601f600260001961010060018616150201909316929092049182018490048402810184019094528084529091830182828015610b065780601f10610adb57610100808354040283529160200191610b06565b820191906000526020600020905b815481529060010190602001808311610ae957829003601f168201915b50505050509050919050565b6001600160a01b03918216600090815260046020908152604080832093909416825291909152205460ff1690565b6000908152600160205260409020546001600160a01b0316151590565b6000610b6882610b40565b610ba35760405162461bcd60e51b815260040180806020018281038252602c81526020018061125c602c913960400191505060405180910390fd5b6000610bae836107d7565b9050806001600160a01b0316846001600160a01b03161480610be95750836001600160a01b0316610bde8461057f565b6001600160a01b0316145b80610bf95750610bf98185610b12565b949350505050565b826001600160a01b0316610c14826107d7565b6001600160a01b031614610c595760405162461bcd60e51b815260040180806020018281038252602981526020018061133f6029913960400191505060405180910390fd5b6001600160a01b038216610c9e5760405162461bcd60e51b81526004018080602001828103825260248152602001806112386024913960400191505060405180910390fd5b610ca781610ff5565b6001600160a01b0383166000908152600360205260409020610cc890611030565b6001600160a01b0382166000908152600360205260409020610ce990611047565b60008181526001602052604080822080546001600160a01b0319166001600160a01b0386811691821790925591518493918716917fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef91a4505050565b6001600160a01b038216610da0576040805162461bcd60e51b815260206004820181905260248201527f4552433732313a206d696e7420746f20746865207a65726f2061646472657373604482015290519081900360640190fd5b610da981610b40565b15610dfb576040805162461bcd60e51b815260206004820152601c60248201527f4552433732313a20746f6b656e20616c7265616479206d696e74656400000000604482015290519081900360640190fd5b600081815260016020908152604080832080546001600160a01b0319166001600160a01b038716908117909155835260039091529020610e3a90611047565b60405181906001600160a01b038416906000907fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef908290a45050565b610e808282611050565b600081815260076020526040902054600260001961010060018416150201909116041561079a57600081815260076020526040812061079a9161118a565b5490565b6000610ed6846001600160a01b0316611127565b610ee257506001610bf9565b604051630a85bd0160e11b815233600482018181526001600160a01b03888116602485015260448401879052608060648501908152865160848601528651600095928a169463150b7a029490938c938b938b939260a4019060208501908083838e5b83811015610f5c578181015183820152602001610f44565b50505050905090810190601f168015610f895780820380516001836020036101000a031916815260200191505b5095505050505050602060405180830381600087803b158015610fab57600080fd5b505af1158015610fbf573d6000803e3d6000fd5b505050506040513d6020811015610fd557600080fd5b50516001600160e01b031916630a85bd0160e11b14915050949350505050565b6000818152600260205260409020546001600160a01b0316156107c357600090815260026020526040902080546001600160a01b0319169055565b805461104390600163ffffffff61112d16565b9055565b80546001019055565b816001600160a01b0316611063826107d7565b6001600160a01b0316146110a85760405162461bcd60e51b81526004018080602001828103825260258152602001806113e96025913960400191505060405180910390fd5b6110b181610ff5565b6001600160a01b03821660009081526003602052604090206110d290611030565b60008181526001602052604080822080546001600160a01b0319169055518291906001600160a01b038516907fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef908390a45050565b3b151590565b600082821115611184576040805162461bcd60e51b815260206004820152601e60248201527f536166654d6174683a207375627472616374696f6e206f766572666c6f770000604482015290519081900360640190fd5b50900390565b50805460018160011615610100020316600290046000825580601f106111b057506107c3565b60009182526020918290206107c39261057c92601f01048101905b808211156111df57600081556001016111cb565b509056fe63616c6c6572206d757374206265207468652076656e64696e67206d616368696e654552433732313a207472616e7366657220746f206e6f6e20455243373231526563656976657220696d706c656d656e7465724552433732313a207472616e7366657220746f20746865207a65726f20616464726573734552433732313a206f70657261746f7220717565727920666f72206e6f6e6578697374656e7420746f6b656e4552433732313a20617070726f76652063616c6c6572206973206e6f74206f776e6572206e6f7220617070726f76656420666f7220616c6c4552433732313a2062616c616e636520717565727920666f7220746865207a65726f20616464726573734552433732313a206f776e657220717565727920666f72206e6f6e6578697374656e7420746f6b656e4552433732313a20617070726f76656420717565727920666f72206e6f6e6578697374656e7420746f6b656e4552433732313a207472616e73666572206f6620746f6b656e2074686174206973206e6f74206f776e4552433732314d657461646174613a2055524920717565727920666f72206e6f6e6578697374656e7420746f6b656e4552433732313a20617070726f76616c20746f2063757272656e74206f776e65724552433732313a207472616e736665722063616c6c6572206973206e6f74206f776e6572206e6f7220617070726f7665644552433732313a206275726e206f6620746f6b656e2074686174206973206e6f74206f776ea265627a7a7231582002a68266c39a2bee7f956f99a2faf26ea01eb485f052d416d5238e59a951f63f64736f6c63430005110032",
+  "sourceMap": "81:1064:40:-;;;134:89;8:9:-1;5:2;;;30:1;27;20:12;5:2;134:89:40;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;134:89:40;753:254:64;;;;;;;;;;;;134:89:40;753:254:64;;;;;;;;;;;;;;;;;;-1:-1:-1;;;753:254:64;;;;134:89:40;;;;753:254:64;718:40:56;-1:-1:-1;;;;;;;;718:18:56;:40;:::i;:::-;2220::63;-1:-1:-1;;;;;;;;2220:18:63;:40;:::i;:::-;825:12:64;;;;:5;;:12;;;;;:::i;:::-;-1:-1:-1;847:16:64;;;;:7;;:16;;;;;:::i;:::-;-1:-1:-1;951:49:64;-1:-1:-1;;;;;;;;951:18:64;:49;:::i;:::-;-1:-1:-1;;413:14:28;:32;;-1:-1:-1;;;;;;413:32:28;-1:-1:-1;;;;;413:32:28;;;;;;;;;;-1:-1:-1;81:1064:40;;-1:-1:-1;81:1064:40;1442:190:56;-1:-1:-1;;;;;;1517:25:56;;;;;1509:66;;;;;-1:-1:-1;;;1509:66:56;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;1585:33:56;:20;:33;;;;;;;;;;:40;;-1:-1:-1;;1585:40:56;1621:4;1585:40;;;1442:190::o;81:1064:40:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;81:1064:40;;;-1:-1:-1;81:1064:40;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "81:1064:40:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;81:1064:40;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;915:133:56;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;915:133:56;-1:-1:-1;;;;;;915:133:56;;:::i;:::-;;;;;;;;;;;;;;;;;;1112:83:64;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:100:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;1112:83:64;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4237:200:63;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;4237:200:63;;:::i;:::-;;;;-1:-1:-1;;;;;4237:200:63;;;;;;;;;;;;;;3541:411;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;;;;;3541:411:63;;;;;;;;:::i;:::-;;5877:285;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;;;;;5877:285:63;;;;;;;;;;;;;;;;;:::i;1355:110:19:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;;;;;1355:110:19;;;;;;;;:::i;6795:132:63:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;;;;;6795:132:63;;;;;;;;;;;;;;;;;:::i;1064:79:40:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;1064:79:40;;:::i;1650:104:19:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;1650:104:19;;:::i;2897:223:63:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;2897:223:63;;:::i;648:136:40:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;;;;;648:136:40;;;;;;;;:::i;2471:207:63:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;2471:207:63;-1:-1:-1;;;;;2471:207:63;;:::i;:::-;;;;;;;;;;;;;;;;1304:87:64;;;:::i;4730:243:63:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;;;;;4730:243:63;;;;;;;;;;:::i;7632:265::-;;;;;;13:3:-1;8;5:12;2:2;;;30:1;27;20:12;2:2;-1:-1;;;;;7632:265:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;21:11:-1;5:28;;2:2;;;46:1;43;36:12;2:2;7632:265:63;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;7632:265:63;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;7632:265:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;7632:265:63;;-1:-1:-1;7632:265:63;;-1:-1:-1;;;;;7632:265:63:i;1591:202:64:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;1591:202:64;;:::i;5295:145:63:-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;;;;;5295:145:63;;;;;;;;;;:::i;915:133:56:-;-1:-1:-1;;;;;;1008:33:56;985:4;1008:33;;;;;;;;;;;;;;915:133::o;1112:83:64:-;1183:5;1176:12;;;;;;;;-1:-1:-1;;1176:12:64;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1151:13;;1176:12;;1183:5;;1176:12;;1183:5;1176:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1112:83;;:::o;4237:200:63:-;4296:7;4323:16;4331:7;4323;:16::i;:::-;4315:73;;;;-1:-1:-1;;;4315:73:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;4406:24:63;;;;:15;:24;;;;;;-1:-1:-1;;;;;4406:24:63;;4237:200::o;3541:411::-;3604:13;3620:16;3628:7;3620;:16::i;:::-;3604:32;;3660:5;-1:-1:-1;;;;;3654:11:63;:2;-1:-1:-1;;;;;3654:11:63;;;3646:57;;;;-1:-1:-1;;;3646:57:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3722:10;-1:-1:-1;;;;;3722:19:63;;;;:58;;;3745:35;3762:5;3769:10;3745:16;:35::i;:::-;3714:148;;;;-1:-1:-1;;;3714:148:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;3873:24;;;;:15;:24;;;;;;:29;;-1:-1:-1;;;;;;3873:29:63;-1:-1:-1;;;;;3873:29:63;;;;;;;;;3917:28;;3873:24;;3917:28;;;;;;;3541:411;;;:::o;5877:285::-;6019:39;6038:10;6050:7;6019:18;:39::i;:::-;6011:101;;;;-1:-1:-1;;;6011:101:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;6123:32;6137:4;6143:2;6147:7;6123:13;:32::i;:::-;5877:285;;;:::o;1355:110:19:-;619:14:28;;-1:-1:-1;;;;;619:14:28;605:10;:28;597:75;;;;-1:-1:-1;;;597:75:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1438:20:19;1444:3;1449:8;1438:5;:20::i;:::-;1355:110;;:::o;6795:132:63:-;6881:39;6898:4;6904:2;6908:7;6881:39;;;;;;;;;;;;:16;:39::i;1064:79:40:-;1111:25;1117:10;1129:6;1111:5;:25::i;:::-;1064:79;:::o;1650:104:19:-;1707:4;1730:17;1738:8;1730:7;:17::i;:::-;1723:24;1650:104;-1:-1:-1;;1650:104:19:o;2897:223:63:-;2952:7;2987:20;;;:11;:20;;;;;;-1:-1:-1;;;;;2987:20:63;3025:19;3017:73;;;;-1:-1:-1;;;3017:73:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;648:136:40;717:4;733:23;739:8;749:6;733:5;:23::i;:::-;-1:-1:-1;773:4:40;648:136;;;;:::o;2471:207:63:-;2526:7;-1:-1:-1;;;;;2553:19:63;;2545:74;;;;-1:-1:-1;;;2545:74:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;2637:24:63;;;;;;:17;:24;;;;;:34;;:32;:34::i;1304:87:64:-;1377:7;1370:14;;;;;;;;-1:-1:-1;;1370:14:64;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1345:13;;1370:14;;1377:7;;1370:14;;1377:7;1370:14;;;;;;;;;;;;;;;;;;;;;;;;4730:243:63;-1:-1:-1;;;;;4809:16:63;;4815:10;4809:16;;4801:54;;;;;-1:-1:-1;;;4801:54:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;4885:10;4866:30;;;;:18;:30;;;;;;;;-1:-1:-1;;;;;4866:34:63;;;;;;;;;;;;:45;;-1:-1:-1;;4866:45:63;;;;;;;;;;4926:40;;;;;;;4866:34;;4885:10;4926:40;;;;;;;;;;;4730:243;;:::o;7632:265::-;7738:31;7751:4;7757:2;7761:7;7738:12;:31::i;:::-;7787:48;7810:4;7816:2;7820:7;7829:5;7787:22;:48::i;:::-;7779:111;;;;-1:-1:-1;;;7779:111:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;7632:265;;;;:::o;1591:202:64:-;1649:13;1682:16;1690:7;1682;:16::i;:::-;1674:76;;;;-1:-1:-1;;;1674:76:64;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1767:19;;;;:10;:19;;;;;;;;;1760:26;;;;;;-1:-1:-1;;1760:26:64;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1767:19;;1760:26;;1767:19;1760:26;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1591:202;;;:::o;5295:145:63:-;-1:-1:-1;;;;;5398:25:63;;;5375:4;5398:25;;;:18;:25;;;;;;;;:35;;;;;;;;;;;;;;;5295:145::o;8092:152::-;8149:4;8181:20;;;:11;:20;;;;;;-1:-1:-1;;;;;8181:20:63;8218:19;;;8092:152::o;8605:329::-;8690:4;8714:16;8722:7;8714;:16::i;:::-;8706:73;;;;-1:-1:-1;;;8706:73:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8789:13;8805:16;8813:7;8805;:16::i;:::-;8789:32;;8850:5;-1:-1:-1;;;;;8839:16:63;:7;-1:-1:-1;;;;;8839:16:63;;:51;;;;8883:7;-1:-1:-1;;;;;8859:31:63;:20;8871:7;8859:11;:20::i;:::-;-1:-1:-1;;;;;8859:31:63;;8839:51;:87;;;;8894:32;8911:5;8918:7;8894:16;:32::i;:::-;8831:96;8605:329;-1:-1:-1;;;;8605:329:63:o;10751:447::-;10864:4;-1:-1:-1;;;;;10844:24:63;:16;10852:7;10844;:16::i;:::-;-1:-1:-1;;;;;10844:24:63;;10836:78;;;;-1:-1:-1;;;10836:78:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;10932:16:63;;10924:65;;;;-1:-1:-1;;;10924:65:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;11000:23;11015:7;11000:14;:23::i;:::-;-1:-1:-1;;;;;11034:23:63;;;;;;:17;:23;;;;;:35;;:33;:35::i;:::-;-1:-1:-1;;;;;11079:21:63;;;;;;:17;:21;;;;;:33;;:31;:33::i;:::-;11123:20;;;;:11;:20;;;;;;:25;;-1:-1:-1;;;;;;11123:25:63;-1:-1:-1;;;;;11123:25:63;;;;;;;;;11164:27;;11123:20;;11164:27;;;;;;;10751:447;;;:::o;9179:327::-;-1:-1:-1;;;;;9250:16:63;;9242:61;;;;;-1:-1:-1;;;9242:61:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;9322:16;9330:7;9322;:16::i;:::-;9321:17;9313:58;;;;;-1:-1:-1;;;9313:58:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;9382:20;;;;:11;:20;;;;;;;;:25;;-1:-1:-1;;;;;;9382:25:63;-1:-1:-1;;;;;9382:25:63;;;;;;;;9417:21;;:17;:21;;;;;:33;;:31;:33::i;:::-;9466;;9491:7;;-1:-1:-1;;;;;9466:33:63;;;9483:1;;9466:33;;9483:1;;9466:33;9179:327;;:::o;2517:240:64:-;2583:27;2595:5;2602:7;2583:11;:27::i;:::-;2666:19;;;;:10;:19;;;;;2660:33;;-1:-1:-1;;2660:33:64;;;;;;;;;;;:38;2656:95;;2721:19;;;;:10;:19;;;;;2714:26;;;:::i;1063:112:55:-;1154:14;;1063:112::o;11771:347:63:-;11892:4;11917:15;:2;-1:-1:-1;;;;;11917:13:63;;:15::i;:::-;11912:58;;-1:-1:-1;11955:4:63;11948:11;;11912:58;11996:70;;-1:-1:-1;;;11996:70:63;;12033:10;11996:70;;;;;;-1:-1:-1;;;;;11996:70:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;11980:13;;11996:36;;;;;;12033:10;;12045:4;;12051:7;;12060:5;;11996:70;;;;;;;;;;;11980:13;8:100:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;11996:70:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;11996:70:63;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;11996:70:63;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;11996:70:63;-1:-1:-1;;;;;;12084:26:63;-1:-1:-1;;;12084:26:63;;-1:-1:-1;;11771:347:63;;;;;;:::o;12280:171::-;12379:1;12343:24;;;:15;:24;;;;;;-1:-1:-1;;;;;12343:24:63;:38;12339:106;;12432:1;12397:24;;;:15;:24;;;;;:37;;-1:-1:-1;;;;;;12397:37:63;;;12280:171::o;1276:108:55:-;1356:14;;:21;;1375:1;1356:21;:18;:21;:::i;:::-;1339:38;;1276:108::o;1181:89::-;1244:19;;1262:1;1244:19;;;1181:89::o;9781:324:63:-;9875:5;-1:-1:-1;;;;;9855:25:63;:16;9863:7;9855;:16::i;:::-;-1:-1:-1;;;;;9855:25:63;;9847:75;;;;-1:-1:-1;;;9847:75:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;9933:23;9948:7;9933:14;:23::i;:::-;-1:-1:-1;;;;;9967:24:63;;;;;;:17;:24;;;;;:36;;:34;:36::i;:::-;10044:1;10013:20;;;:11;:20;;;;;;:33;;-1:-1:-1;;;;;;10013:33:63;;;10062:36;10025:7;;10044:1;-1:-1:-1;;;;;10062:36:63;;;;;10044:1;;10062:36;9781:324;;:::o;542:413:68:-;902:20;940:8;;;542:413::o;1274:179:58:-;1332:7;1364:1;1359;:6;;1351:49;;;;;-1:-1:-1;;;1351:49:58;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;1422:5:58;;;1274:179::o;81:1064:40:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "source": "pragma solidity 0.5.17;\n\nimport \"../../../contracts/system/FeeRebateToken.sol\";\n\ncontract TestFeeRebateToken is FeeRebateToken {\n\n    constructor(address _vendingMachine)\n        FeeRebateToken(_vendingMachine)\n    public{}\n\n    /// @dev             We can't call FeeRebateToken mint function from tests because of ACL.\n    ///                  This function bypasses ACL and can be called in tests.\n    ///                  Mints a token and assigns it to an account.\n    ///                  Uses the internal _mint function.\n    /// @param _account  The account that will receive the token.\n    /// @param _frtId    The Fee Rebate Token ID.\n    function forceMint(address _account, uint256 _frtId) public returns (bool) {\n        _mint(_account, _frtId);\n        return true;\n    }\n\n    /// @dev             Delete a feeRebateToken. This function is used to\n    ///                  test cases where the existence of an FRT impacts test outcomes.\n    ///                  Must be called my the token owner.\n    /// @param _frtId    The Fee Rebate Token ID.\n    function burn(uint256 _frtId) public {\n        _burn(msg.sender, _frtId);\n    }\n}\n",
+  "sourcePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/system/TestFeeRebateToken.sol",
+  "ast": {
+    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/system/TestFeeRebateToken.sol",
+    "exportedSymbols": {
+      "TestFeeRebateToken": [
+        10710
+      ]
+    },
+    "id": 10711,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10668,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:40"
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/FeeRebateToken.sol",
+        "file": "../../../contracts/system/FeeRebateToken.sol",
+        "id": 10669,
+        "nodeType": "ImportDirective",
+        "scope": 10711,
+        "sourceUnit": 6192,
+        "src": "25:54:40",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 10670,
+              "name": "FeeRebateToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6191,
+              "src": "112:14:40",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                "typeString": "contract FeeRebateToken"
+              }
+            },
+            "id": 10671,
+            "nodeType": "InheritanceSpecifier",
+            "src": "112:14:40"
+          }
+        ],
+        "contractDependencies": [
+          6191,
+          8911,
+          16399,
+          16409,
+          17742,
+          17871,
+          17974,
+          17997
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 10710,
+        "linearizedBaseContracts": [
+          10710,
+          6191,
+          8911,
+          17871,
+          17997,
+          17742,
+          17974,
+          16399,
+          16409
+        ],
+        "name": "TestFeeRebateToken",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 10679,
+              "nodeType": "Block",
+              "src": "221:2:40",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 10680,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 10676,
+                    "name": "_vendingMachine",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 10673,
+                    "src": "194:15:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 10677,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 10675,
+                  "name": "FeeRebateToken",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 6191,
+                  "src": "179:14:40",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_FeeRebateToken_$6191_$",
+                    "typeString": "type(contract FeeRebateToken)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "179:31:40"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10674,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10673,
+                  "name": "_vendingMachine",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10680,
+                  "src": "146:23:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10672,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "146:7:40",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "145:25:40"
+            },
+            "returnParameters": {
+              "id": 10678,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "221:0:40"
+            },
+            "scope": 10710,
+            "src": "134:89:40",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10696,
+              "nodeType": "Block",
+              "src": "723:61:40",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 10690,
+                        "name": "_account",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10682,
+                        "src": "739:8:40",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 10691,
+                        "name": "_frtId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10684,
+                        "src": "749:6:40",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 10689,
+                      "name": "_mint",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17566,
+                      "src": "733:5:40",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,uint256)"
+                      }
+                    },
+                    "id": 10692,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "733:23:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 10693,
+                  "nodeType": "ExpressionStatement",
+                  "src": "733:23:40"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "74727565",
+                    "id": 10694,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "773:4:40",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "true"
+                  },
+                  "functionReturnParameters": 10688,
+                  "id": 10695,
+                  "nodeType": "Return",
+                  "src": "766:11:40"
+                }
+              ]
+            },
+            "documentation": "@dev             We can't call FeeRebateToken mint function from tests because of ACL.\n                  This function bypasses ACL and can be called in tests.\n                  Mints a token and assigns it to an account.\n                  Uses the internal _mint function.\n @param _account  The account that will receive the token.\n @param _frtId    The Fee Rebate Token ID.",
+            "id": 10697,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "forceMint",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10685,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10682,
+                  "name": "_account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10697,
+                  "src": "667:16:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10681,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "667:7:40",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10684,
+                  "name": "_frtId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10697,
+                  "src": "685:14:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10683,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "685:7:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "666:34:40"
+            },
+            "returnParameters": {
+              "id": 10688,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10687,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10697,
+                  "src": "717:4:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 10686,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "717:4:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "716:6:40"
+            },
+            "scope": 10710,
+            "src": "648:136:40",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10708,
+              "nodeType": "Block",
+              "src": "1101:42:40",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 10703,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 18047,
+                          "src": "1117:3:40",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 10704,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "1117:10:40",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 10705,
+                        "name": "_frtId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10699,
+                        "src": "1129:6:40",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 10702,
+                      "name": "_burn",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        17870,
+                        17622
+                      ],
+                      "referencedDeclaration": 17870,
+                      "src": "1111:5:40",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,uint256)"
+                      }
+                    },
+                    "id": 10706,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1111:25:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 10707,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1111:25:40"
+                }
+              ]
+            },
+            "documentation": "@dev             Delete a feeRebateToken. This function is used to\n                  test cases where the existence of an FRT impacts test outcomes.\n                  Must be called my the token owner.\n @param _frtId    The Fee Rebate Token ID.",
+            "id": 10709,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "burn",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10700,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10699,
+                  "name": "_frtId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10709,
+                  "src": "1078:14:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10698,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1078:7:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1077:16:40"
+            },
+            "returnParameters": {
+              "id": 10701,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1101:0:40"
+            },
+            "scope": 10710,
+            "src": "1064:79:40",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 10711,
+        "src": "81:1064:40"
+      }
+    ],
+    "src": "0:1146:40"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/system/TestFeeRebateToken.sol",
+    "exportedSymbols": {
+      "TestFeeRebateToken": [
+        10710
+      ]
+    },
+    "id": 10711,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 10668,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:40"
+      },
+      {
+        "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/system/FeeRebateToken.sol",
+        "file": "../../../contracts/system/FeeRebateToken.sol",
+        "id": 10669,
+        "nodeType": "ImportDirective",
+        "scope": 10711,
+        "sourceUnit": 6192,
+        "src": "25:54:40",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 10670,
+              "name": "FeeRebateToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6191,
+              "src": "112:14:40",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_FeeRebateToken_$6191",
+                "typeString": "contract FeeRebateToken"
+              }
+            },
+            "id": 10671,
+            "nodeType": "InheritanceSpecifier",
+            "src": "112:14:40"
+          }
+        ],
+        "contractDependencies": [
+          6191,
+          8911,
+          16399,
+          16409,
+          17742,
+          17871,
+          17974,
+          17997
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 10710,
+        "linearizedBaseContracts": [
+          10710,
+          6191,
+          8911,
+          17871,
+          17997,
+          17742,
+          17974,
+          16399,
+          16409
+        ],
+        "name": "TestFeeRebateToken",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 10679,
+              "nodeType": "Block",
+              "src": "221:2:40",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 10680,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "id": 10676,
+                    "name": "_vendingMachine",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 10673,
+                    "src": "194:15:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 10677,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 10675,
+                  "name": "FeeRebateToken",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 6191,
+                  "src": "179:14:40",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_FeeRebateToken_$6191_$",
+                    "typeString": "type(contract FeeRebateToken)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "179:31:40"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10674,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10673,
+                  "name": "_vendingMachine",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10680,
+                  "src": "146:23:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10672,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "146:7:40",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "145:25:40"
+            },
+            "returnParameters": {
+              "id": 10678,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "221:0:40"
+            },
+            "scope": 10710,
+            "src": "134:89:40",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10696,
+              "nodeType": "Block",
+              "src": "723:61:40",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 10690,
+                        "name": "_account",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10682,
+                        "src": "739:8:40",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 10691,
+                        "name": "_frtId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10684,
+                        "src": "749:6:40",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 10689,
+                      "name": "_mint",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17566,
+                      "src": "733:5:40",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,uint256)"
+                      }
+                    },
+                    "id": 10692,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "733:23:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 10693,
+                  "nodeType": "ExpressionStatement",
+                  "src": "733:23:40"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "74727565",
+                    "id": 10694,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "773:4:40",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "true"
+                  },
+                  "functionReturnParameters": 10688,
+                  "id": 10695,
+                  "nodeType": "Return",
+                  "src": "766:11:40"
+                }
+              ]
+            },
+            "documentation": "@dev             We can't call FeeRebateToken mint function from tests because of ACL.\n                  This function bypasses ACL and can be called in tests.\n                  Mints a token and assigns it to an account.\n                  Uses the internal _mint function.\n @param _account  The account that will receive the token.\n @param _frtId    The Fee Rebate Token ID.",
+            "id": 10697,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "forceMint",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10685,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10682,
+                  "name": "_account",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10697,
+                  "src": "667:16:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 10681,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "667:7:40",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 10684,
+                  "name": "_frtId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10697,
+                  "src": "685:14:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10683,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "685:7:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "666:34:40"
+            },
+            "returnParameters": {
+              "id": 10688,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10687,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10697,
+                  "src": "717:4:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 10686,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "717:4:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "716:6:40"
+            },
+            "scope": 10710,
+            "src": "648:136:40",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 10708,
+              "nodeType": "Block",
+              "src": "1101:42:40",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 10703,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 18047,
+                          "src": "1117:3:40",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 10704,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "1117:10:40",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 10705,
+                        "name": "_frtId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10699,
+                        "src": "1129:6:40",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 10702,
+                      "name": "_burn",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        17870,
+                        17622
+                      ],
+                      "referencedDeclaration": 17870,
+                      "src": "1111:5:40",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,uint256)"
+                      }
+                    },
+                    "id": 10706,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1111:25:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 10707,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1111:25:40"
+                }
+              ]
+            },
+            "documentation": "@dev             Delete a feeRebateToken. This function is used to\n                  test cases where the existence of an FRT impacts test outcomes.\n                  Must be called my the token owner.\n @param _frtId    The Fee Rebate Token ID.",
+            "id": 10709,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "burn",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10700,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 10699,
+                  "name": "_frtId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 10709,
+                  "src": "1078:14:40",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10698,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1078:7:40",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1077:16:40"
+            },
+            "returnParameters": {
+              "id": 10701,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1101:0:40"
+            },
+            "scope": 10710,
+            "src": "1064:79:40",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 10711,
+        "src": "81:1064:40"
+      }
+    ],
+    "src": "0:1146:40"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.17+commit.d19bba13.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.23",
+  "updatedAt": "2021-02-01T14:28:06.558Z",
+  "devdoc": {
+    "methods": {
+      "approve(address,uint256)": {
+        "details": "Approves another address to transfer the given token ID The zero address indicates there is no approved address. There can only be one approved address per token at a given time. Can only be called by the token owner or an approved operator.",
+        "params": {
+          "to": "address to be approved for the given token ID",
+          "tokenId": "uint256 ID of the token to be approved"
+        }
+      },
+      "balanceOf(address)": {
+        "details": "Gets the balance of the specified address.",
+        "params": {
+          "owner": "address to query the balance of"
+        },
+        "return": "uint256 representing the amount owned by the passed address"
+      },
+      "burn(uint256)": {
+        "details": "Delete a feeRebateToken. This function is used to                  test cases where the existence of an FRT impacts test outcomes.                  Must be called my the token owner.",
+        "params": {
+          "_frtId": "The Fee Rebate Token ID."
+        }
+      },
+      "exists(uint256)": {
+        "details": "Returns whether the specified token exists.",
+        "params": {
+          "_tokenId": "uint256 ID of the token to query the existence of."
+        },
+        "return": "bool whether the token exists."
+      },
+      "forceMint(address,uint256)": {
+        "details": "We can't call FeeRebateToken mint function from tests because of ACL.                  This function bypasses ACL and can be called in tests.                  Mints a token and assigns it to an account.                  Uses the internal _mint function.",
+        "params": {
+          "_account": "The account that will receive the token.",
+          "_frtId": "The Fee Rebate Token ID."
+        }
+      },
+      "getApproved(uint256)": {
+        "details": "Gets the approved address for a token ID, or zero if no address set Reverts if the token ID does not exist.",
+        "params": {
+          "tokenId": "uint256 ID of the token to query the approval of"
+        },
+        "return": "address currently approved for the given token ID"
+      },
+      "isApprovedForAll(address,address)": {
+        "details": "Tells whether an operator is approved by a given owner.",
+        "params": {
+          "operator": "operator address which you want to query the approval of",
+          "owner": "owner address which you want to query the approval of"
+        },
+        "return": "bool whether the given operator is approved by the given owner"
+      },
+      "mint(address,uint256)": {
+        "details": "Mints a new token. Reverts if the given token ID already exists.",
+        "params": {
+          "_to": "The address that will own the minted token.",
+          "_tokenId": "uint256 ID of the token to be minted."
+        }
+      },
+      "name()": {
+        "details": "Gets the token name.",
+        "return": "string representing the token name"
+      },
+      "ownerOf(uint256)": {
+        "details": "Gets the owner of the specified token ID.",
+        "params": {
+          "tokenId": "uint256 ID of the token to query the owner of"
+        },
+        "return": "address currently marked as the owner of the given token ID"
+      },
+      "safeTransferFrom(address,address,uint256)": {
+        "details": "Safely transfers the ownership of a given token ID to another address If the target address is a contract, it must implement `onERC721Received`, which is called upon a safe transfer, and return the magic value `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`; otherwise, the transfer is reverted. Requires the msg.sender to be the owner, approved, or operator",
+        "params": {
+          "from": "current owner of the token",
+          "to": "address to receive the ownership of the given token ID",
+          "tokenId": "uint256 ID of the token to be transferred"
+        }
+      },
+      "safeTransferFrom(address,address,uint256,bytes)": {
+        "details": "Safely transfers the ownership of a given token ID to another address If the target address is a contract, it must implement `onERC721Received`, which is called upon a safe transfer, and return the magic value `bytes4(keccak256(\"onERC721Received(address,address,uint256,bytes)\"))`; otherwise, the transfer is reverted. Requires the msg.sender to be the owner, approved, or operator",
+        "params": {
+          "_data": "bytes data to send along with a safe transfer check",
+          "from": "current owner of the token",
+          "to": "address to receive the ownership of the given token ID",
+          "tokenId": "uint256 ID of the token to be transferred"
+        }
+      },
+      "setApprovalForAll(address,bool)": {
+        "details": "Sets or unsets the approval of a given operator An operator is allowed to transfer all tokens of the sender on their behalf.",
+        "params": {
+          "approved": "representing the status of the approval to be set",
+          "to": "operator address to set the approval"
+        }
+      },
+      "supportsInterface(bytes4)": {
+        "details": "See `IERC165.supportsInterface`.     * Time complexity O(1), guaranteed to always use less than 30 000 gas."
+      },
+      "symbol()": {
+        "details": "Gets the token symbol.",
+        "return": "string representing the token symbol"
+      },
+      "tokenURI(uint256)": {
+        "details": "Returns an URI for a given token ID. Throws if the token ID does not exist. May return an empty string.",
+        "params": {
+          "tokenId": "uint256 ID of the token to query"
+        }
+      },
+      "transferFrom(address,address,uint256)": {
+        "details": "Transfers the ownership of a given token ID to another address. Usage of this method is discouraged, use `safeTransferFrom` whenever possible. Requires the msg.sender to be the owner, approved, or operator.",
+        "params": {
+          "from": "current owner of the token",
+          "to": "address to receive the ownership of the given token ID",
+          "tokenId": "uint256 ID of the token to be transferred"
+        }
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
