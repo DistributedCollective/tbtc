@@ -39,7 +39,7 @@ contract SatWeiPriceFeed is Ownable, ISatWeiPriceFeed {
         int256 price = priceFeed.latestAnswer();
 
         require(price != 0, "Price feed offline");
-        return uint256(price);
+        return uint256(price).div(10**8);
     }
 
     function setOracleAddress(address _SOVBTCPriceFeed)
