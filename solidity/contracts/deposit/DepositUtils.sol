@@ -444,7 +444,7 @@ library DepositUtils {
         require(address(this).balance >= _ethValue, "Not enough funds to send");
         if(_ethValue > 0){
             IBondedECDSAKeep _keep = IBondedECDSAKeep(_d.keepAddress);
-            _keep.returnPartialSignerBonds.value(_ethValue)();
+            _keep.returnPartialSignerBonds(_ethValue);
         }
     }
 
