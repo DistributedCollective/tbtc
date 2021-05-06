@@ -17,25 +17,25 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"latestAnswer\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/external/PriceOracle.sol\":\"PriceOracle\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/external/PriceOracle.sol\":{\"keccak256\":\"0x5271ee7847babcdbc286898517f06edb35719634e72c38e5796d41c8078a43af\",\"urls\":[\"bzz-raw://787cf5fbcb9007316bc082ce62ed3cd03bd009d4ebbef1b172620f0c2b3c423b\",\"dweb:/ipfs/QmXbgL9tNJRcL7radddckWaCNBcm3PPVH1cn5cxdmkMQgS\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"latestAnswer\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/konrad/Desktop/rumble/fin/local-setup/tbtc/solidity/contracts/external/PriceOracle.sol\":\"PriceOracle\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/konrad/Desktop/rumble/fin/local-setup/tbtc/solidity/contracts/external/PriceOracle.sol\":{\"keccak256\":\"0x5271ee7847babcdbc286898517f06edb35719634e72c38e5796d41c8078a43af\",\"urls\":[\"bzz-raw://787cf5fbcb9007316bc082ce62ed3cd03bd009d4ebbef1b172620f0c2b3c423b\",\"dweb:/ipfs/QmXbgL9tNJRcL7radddckWaCNBcm3PPVH1cn5cxdmkMQgS\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity 0.5.17;\n\n// SPDX-License-Identifier: MIT\ncontract PriceOracle {\n    function latestAnswer() external view returns (int256);\n}\n",
-  "sourcePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/external/PriceOracle.sol",
+  "sourcePath": "/Users/konrad/Desktop/rumble/fin/local-setup/tbtc/solidity/contracts/external/PriceOracle.sol",
   "ast": {
-    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/external/PriceOracle.sol",
+    "absolutePath": "/Users/konrad/Desktop/rumble/fin/local-setup/tbtc/solidity/contracts/external/PriceOracle.sol",
     "exportedSymbols": {
       "PriceOracle": [
-        5426
+        5423
       ]
     },
-    "id": 5427,
+    "id": 5424,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5420,
+        "id": 5417,
         "literals": [
           "solidity",
           "0.5",
@@ -50,9 +50,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 5426,
+        "id": 5423,
         "linearizedBaseContracts": [
-          5426
+          5423
         ],
         "name": "PriceOracle",
         "nodeType": "ContractDefinition",
@@ -60,28 +60,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5425,
+            "id": 5422,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "latestAnswer",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5421,
+              "id": 5418,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "105:2:9"
             },
             "returnParameters": {
-              "id": 5424,
+              "id": 5421,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5423,
+                  "id": 5420,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5425,
+                  "scope": 5422,
                   "src": "131:6:9",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -90,7 +90,7 @@
                     "typeString": "int256"
                   },
                   "typeName": {
-                    "id": 5422,
+                    "id": 5419,
                     "name": "int256",
                     "nodeType": "ElementaryTypeName",
                     "src": "131:6:9",
@@ -105,111 +105,133 @@
               ],
               "src": "130:8:9"
             },
-            "scope": 5426,
+            "scope": 5423,
             "src": "84:55:9",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 5427,
+        "scope": 5424,
         "src": "57:84:9"
       }
     ],
     "src": "0:142:9"
   },
   "legacyAST": {
-    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/external/PriceOracle.sol",
-    "exportedSymbols": {
-      "PriceOracle": [
-        5426
-      ]
+    "attributes": {
+      "absolutePath": "/Users/konrad/Desktop/rumble/fin/local-setup/tbtc/solidity/contracts/external/PriceOracle.sol",
+      "exportedSymbols": {
+        "PriceOracle": [
+          5423
+        ]
+      }
     },
-    "id": 5427,
-    "nodeType": "SourceUnit",
-    "nodes": [
+    "children": [
       {
-        "id": 5420,
-        "literals": [
-          "solidity",
-          "0.5",
-          ".17"
-        ],
-        "nodeType": "PragmaDirective",
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.5",
+            ".17"
+          ]
+        },
+        "id": 5417,
+        "name": "PragmaDirective",
         "src": "0:23:9"
       },
       {
-        "baseContracts": [],
-        "contractDependencies": [],
-        "contractKind": "contract",
-        "documentation": null,
-        "fullyImplemented": false,
-        "id": 5426,
-        "linearizedBaseContracts": [
-          5426
-        ],
-        "name": "PriceOracle",
-        "nodeType": "ContractDefinition",
-        "nodes": [
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            5423
+          ],
+          "name": "PriceOracle",
+          "scope": 5424
+        },
+        "children": [
           {
-            "body": null,
-            "documentation": null,
-            "id": 5425,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "latestAnswer",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 5421,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "105:2:9"
-            },
-            "returnParameters": {
-              "id": 5424,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5423,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5425,
-                  "src": "131:6:9",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_int256",
-                    "typeString": "int256"
-                  },
-                  "typeName": {
-                    "id": 5422,
-                    "name": "int256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "131:6:9",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_int256",
-                      "typeString": "int256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
               ],
-              "src": "130:8:9"
+              "name": "latestAnswer",
+              "scope": 5423,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "external"
             },
-            "scope": 5426,
-            "src": "84:55:9",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "external"
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5418,
+                "name": "ParameterList",
+                "src": "105:2:9"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 5422,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "int256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "int256",
+                          "type": "int256"
+                        },
+                        "id": 5419,
+                        "name": "ElementaryTypeName",
+                        "src": "131:6:9"
+                      }
+                    ],
+                    "id": 5420,
+                    "name": "VariableDeclaration",
+                    "src": "131:6:9"
+                  }
+                ],
+                "id": 5421,
+                "name": "ParameterList",
+                "src": "130:8:9"
+              }
+            ],
+            "id": 5422,
+            "name": "FunctionDefinition",
+            "src": "84:55:9"
           }
         ],
-        "scope": 5427,
+        "id": 5423,
+        "name": "ContractDefinition",
         "src": "57:84:9"
       }
     ],
+    "id": 5424,
+    "name": "SourceUnit",
     "src": "0:142:9"
   },
   "compiler": {
@@ -217,8 +239,8 @@
     "version": "0.5.17+commit.d19bba13.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.23",
-  "updatedAt": "2021-02-01T16:23:16.977Z",
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-04-30T09:32:13.257Z",
   "devdoc": {
     "methods": {}
   },

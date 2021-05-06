@@ -184,25 +184,25 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"fetchBitcoinPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"fetchRelayCurrentDifficulty\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"fetchRelayPreviousDifficulty\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getAllowNewDeposits\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getInitialCollateralizedPercent\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getNewDepositFeeEstimate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getSeverelyUndercollateralizedThresholdPercent\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getSignerFeeDivisor\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getUndercollateralizedThresholdPercent\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint64\",\"name\":\"_requestedLotSizeSatoshis\",\"type\":\"uint64\"}],\"name\":\"isAllowedLotSize\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint64\",\"name\":\"_requestedLotSizeSatoshis\",\"type\":\"uint64\"},{\"internalType\":\"uint256\",\"name\":\"_maxSecuredLifetime\",\"type\":\"uint256\"}],\"name\":\"requestNewKeep\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{},\"title\":\"Keep interface\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/interfaces/ITBTCSystem.sol\":\"ITBTCSystem\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/interfaces/ITBTCSystem.sol\":{\"keccak256\":\"0xdae4f0fa4b6d02f2a45c54be47d06d9e6106eee7cab170bfc5f469475492fcef\",\"urls\":[\"bzz-raw://1b80448536b598d8ec5f115773bd959f5ce75d654346a21fcd981c12811a9b77\",\"dweb:/ipfs/QmcpEoUxPXRhKw9VHGC7TsD6koVenP1e9iin5xYNZ3K1VY\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"fetchBitcoinPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"fetchRelayCurrentDifficulty\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"fetchRelayPreviousDifficulty\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getAllowNewDeposits\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getInitialCollateralizedPercent\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getNewDepositFeeEstimate\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getSeverelyUndercollateralizedThresholdPercent\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getSignerFeeDivisor\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getUndercollateralizedThresholdPercent\",\"outputs\":[{\"internalType\":\"uint16\",\"name\":\"\",\"type\":\"uint16\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint64\",\"name\":\"_requestedLotSizeSatoshis\",\"type\":\"uint64\"}],\"name\":\"isAllowedLotSize\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint64\",\"name\":\"_requestedLotSizeSatoshis\",\"type\":\"uint64\"},{\"internalType\":\"uint256\",\"name\":\"_maxSecuredLifetime\",\"type\":\"uint256\"}],\"name\":\"requestNewKeep\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{},\"title\":\"Keep interface\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/konrad/Desktop/rumble/fin/local-setup/tbtc/solidity/contracts/interfaces/ITBTCSystem.sol\":\"ITBTCSystem\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/konrad/Desktop/rumble/fin/local-setup/tbtc/solidity/contracts/interfaces/ITBTCSystem.sol\":{\"keccak256\":\"0xdae4f0fa4b6d02f2a45c54be47d06d9e6106eee7cab170bfc5f469475492fcef\",\"urls\":[\"bzz-raw://1b80448536b598d8ec5f115773bd959f5ce75d654346a21fcd981c12811a9b77\",\"dweb:/ipfs/QmcpEoUxPXRhKw9VHGC7TsD6koVenP1e9iin5xYNZ3K1VY\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity 0.5.17;\n\n/**\n * @title Keep interface\n */\n\ninterface ITBTCSystem {\n\n    // expected behavior:\n    // return the price of 1 sat in wei\n    // these are the native units of the deposit contract\n    function fetchBitcoinPrice() external view returns (uint256);\n\n    // passthrough requests for the oracle\n    function fetchRelayCurrentDifficulty() external view returns (uint256);\n    function fetchRelayPreviousDifficulty() external view returns (uint256);\n    function getNewDepositFeeEstimate() external view returns (uint256);\n    function getAllowNewDeposits() external view returns (bool);\n    function isAllowedLotSize(uint64 _requestedLotSizeSatoshis) external view returns (bool);\n    function requestNewKeep(uint64 _requestedLotSizeSatoshis, uint256 _maxSecuredLifetime) external payable returns (address);\n    function getSignerFeeDivisor() external view returns (uint16);\n    function getInitialCollateralizedPercent() external view returns (uint16);\n    function getUndercollateralizedThresholdPercent() external view returns (uint16);\n    function getSeverelyUndercollateralizedThresholdPercent() external view returns (uint16);\n}\n",
-  "sourcePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/interfaces/ITBTCSystem.sol",
+  "sourcePath": "/Users/konrad/Desktop/rumble/fin/local-setup/tbtc/solidity/contracts/interfaces/ITBTCSystem.sol",
   "ast": {
-    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/interfaces/ITBTCSystem.sol",
+    "absolutePath": "/Users/konrad/Desktop/rumble/fin/local-setup/tbtc/solidity/contracts/interfaces/ITBTCSystem.sol",
     "exportedSymbols": {
       "ITBTCSystem": [
-        5498
+        5495
       ]
     },
-    "id": 5499,
+    "id": 5496,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5436,
+        "id": 5433,
         "literals": [
           "solidity",
           "0.5",
@@ -217,9 +217,9 @@
         "contractKind": "interface",
         "documentation": "@title Keep interface",
         "fullyImplemented": false,
-        "id": 5498,
+        "id": 5495,
         "linearizedBaseContracts": [
-          5498
+          5495
         ],
         "name": "ITBTCSystem",
         "nodeType": "ContractDefinition",
@@ -227,28 +227,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5441,
+            "id": 5438,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "fetchBitcoinPrice",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5437,
+              "id": 5434,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "238:2:11"
             },
             "returnParameters": {
-              "id": 5440,
+              "id": 5437,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5439,
+                  "id": 5436,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5441,
+                  "scope": 5438,
                   "src": "264:7:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -257,7 +257,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5438,
+                    "id": 5435,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "264:7:11",
@@ -272,7 +272,7 @@
               ],
               "src": "263:9:11"
             },
-            "scope": 5498,
+            "scope": 5495,
             "src": "212:61:11",
             "stateMutability": "view",
             "superFunction": null,
@@ -281,28 +281,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5446,
+            "id": 5443,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "fetchRelayCurrentDifficulty",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5442,
+              "id": 5439,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "358:2:11"
             },
             "returnParameters": {
-              "id": 5445,
+              "id": 5442,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5444,
+                  "id": 5441,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5446,
+                  "scope": 5443,
                   "src": "384:7:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -311,7 +311,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5443,
+                    "id": 5440,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "384:7:11",
@@ -326,7 +326,7 @@
               ],
               "src": "383:9:11"
             },
-            "scope": 5498,
+            "scope": 5495,
             "src": "322:71:11",
             "stateMutability": "view",
             "superFunction": null,
@@ -335,28 +335,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5451,
+            "id": 5448,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "fetchRelayPreviousDifficulty",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5447,
+              "id": 5444,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "435:2:11"
             },
             "returnParameters": {
-              "id": 5450,
+              "id": 5447,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5449,
+                  "id": 5446,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5451,
+                  "scope": 5448,
                   "src": "461:7:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -365,7 +365,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5448,
+                    "id": 5445,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "461:7:11",
@@ -380,7 +380,7 @@
               ],
               "src": "460:9:11"
             },
-            "scope": 5498,
+            "scope": 5495,
             "src": "398:72:11",
             "stateMutability": "view",
             "superFunction": null,
@@ -389,28 +389,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5456,
+            "id": 5453,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getNewDepositFeeEstimate",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5452,
+              "id": 5449,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "508:2:11"
             },
             "returnParameters": {
-              "id": 5455,
+              "id": 5452,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5454,
+                  "id": 5451,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5456,
+                  "scope": 5453,
                   "src": "534:7:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -419,7 +419,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5453,
+                    "id": 5450,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "534:7:11",
@@ -434,7 +434,7 @@
               ],
               "src": "533:9:11"
             },
-            "scope": 5498,
+            "scope": 5495,
             "src": "475:68:11",
             "stateMutability": "view",
             "superFunction": null,
@@ -443,28 +443,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5461,
+            "id": 5458,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getAllowNewDeposits",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5457,
+              "id": 5454,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "576:2:11"
             },
             "returnParameters": {
-              "id": 5460,
+              "id": 5457,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5459,
+                  "id": 5456,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5461,
+                  "scope": 5458,
                   "src": "602:4:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -473,7 +473,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 5458,
+                    "id": 5455,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "602:4:11",
@@ -488,7 +488,7 @@
               ],
               "src": "601:6:11"
             },
-            "scope": 5498,
+            "scope": 5495,
             "src": "548:60:11",
             "stateMutability": "view",
             "superFunction": null,
@@ -497,22 +497,22 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5468,
+            "id": 5465,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "isAllowedLotSize",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5464,
+              "id": 5461,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5463,
+                  "id": 5460,
                   "name": "_requestedLotSizeSatoshis",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5468,
+                  "scope": 5465,
                   "src": "639:32:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -521,7 +521,7 @@
                     "typeString": "uint64"
                   },
                   "typeName": {
-                    "id": 5462,
+                    "id": 5459,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
                     "src": "639:6:11",
@@ -537,15 +537,15 @@
               "src": "638:34:11"
             },
             "returnParameters": {
-              "id": 5467,
+              "id": 5464,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5466,
+                  "id": 5463,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5468,
+                  "scope": 5465,
                   "src": "696:4:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -554,7 +554,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 5465,
+                    "id": 5462,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "696:4:11",
@@ -569,7 +569,7 @@
               ],
               "src": "695:6:11"
             },
-            "scope": 5498,
+            "scope": 5495,
             "src": "613:89:11",
             "stateMutability": "view",
             "superFunction": null,
@@ -578,22 +578,22 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5477,
+            "id": 5474,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "requestNewKeep",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5473,
+              "id": 5470,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5470,
+                  "id": 5467,
                   "name": "_requestedLotSizeSatoshis",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5477,
+                  "scope": 5474,
                   "src": "731:32:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -602,7 +602,7 @@
                     "typeString": "uint64"
                   },
                   "typeName": {
-                    "id": 5469,
+                    "id": 5466,
                     "name": "uint64",
                     "nodeType": "ElementaryTypeName",
                     "src": "731:6:11",
@@ -616,10 +616,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 5472,
+                  "id": 5469,
                   "name": "_maxSecuredLifetime",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5477,
+                  "scope": 5474,
                   "src": "765:27:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -628,7 +628,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 5471,
+                    "id": 5468,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "765:7:11",
@@ -644,15 +644,15 @@
               "src": "730:63:11"
             },
             "returnParameters": {
-              "id": 5476,
+              "id": 5473,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5475,
+                  "id": 5472,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5477,
+                  "scope": 5474,
                   "src": "820:7:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -661,7 +661,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5474,
+                    "id": 5471,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "820:7:11",
@@ -677,7 +677,7 @@
               ],
               "src": "819:9:11"
             },
-            "scope": 5498,
+            "scope": 5495,
             "src": "707:122:11",
             "stateMutability": "payable",
             "superFunction": null,
@@ -686,28 +686,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5482,
+            "id": 5479,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getSignerFeeDivisor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5478,
+              "id": 5475,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "862:2:11"
             },
             "returnParameters": {
-              "id": 5481,
+              "id": 5478,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5480,
+                  "id": 5477,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5482,
+                  "scope": 5479,
                   "src": "888:6:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -716,7 +716,7 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 5479,
+                    "id": 5476,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
                     "src": "888:6:11",
@@ -731,7 +731,7 @@
               ],
               "src": "887:8:11"
             },
-            "scope": 5498,
+            "scope": 5495,
             "src": "834:62:11",
             "stateMutability": "view",
             "superFunction": null,
@@ -740,28 +740,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5487,
+            "id": 5484,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getInitialCollateralizedPercent",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5483,
+              "id": 5480,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "941:2:11"
             },
             "returnParameters": {
-              "id": 5486,
+              "id": 5483,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5485,
+                  "id": 5482,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5487,
+                  "scope": 5484,
                   "src": "967:6:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -770,7 +770,7 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 5484,
+                    "id": 5481,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
                     "src": "967:6:11",
@@ -785,7 +785,7 @@
               ],
               "src": "966:8:11"
             },
-            "scope": 5498,
+            "scope": 5495,
             "src": "901:74:11",
             "stateMutability": "view",
             "superFunction": null,
@@ -794,28 +794,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5492,
+            "id": 5489,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getUndercollateralizedThresholdPercent",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5488,
+              "id": 5485,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1027:2:11"
             },
             "returnParameters": {
-              "id": 5491,
+              "id": 5488,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5490,
+                  "id": 5487,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5492,
+                  "scope": 5489,
                   "src": "1053:6:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -824,7 +824,7 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 5489,
+                    "id": 5486,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
                     "src": "1053:6:11",
@@ -839,7 +839,7 @@
               ],
               "src": "1052:8:11"
             },
-            "scope": 5498,
+            "scope": 5495,
             "src": "980:81:11",
             "stateMutability": "view",
             "superFunction": null,
@@ -848,28 +848,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5497,
+            "id": 5494,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getSeverelyUndercollateralizedThresholdPercent",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5493,
+              "id": 5490,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1121:2:11"
             },
             "returnParameters": {
-              "id": 5496,
+              "id": 5493,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5495,
+                  "id": 5492,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5497,
+                  "scope": 5494,
                   "src": "1147:6:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -878,7 +878,7 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 5494,
+                    "id": 5491,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
                     "src": "1147:6:11",
@@ -893,732 +893,864 @@
               ],
               "src": "1146:8:11"
             },
-            "scope": 5498,
+            "scope": 5495,
             "src": "1066:89:11",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 5499,
+        "scope": 5496,
         "src": "59:1098:11"
       }
     ],
     "src": "0:1158:11"
   },
   "legacyAST": {
-    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/interfaces/ITBTCSystem.sol",
-    "exportedSymbols": {
-      "ITBTCSystem": [
-        5498
-      ]
+    "attributes": {
+      "absolutePath": "/Users/konrad/Desktop/rumble/fin/local-setup/tbtc/solidity/contracts/interfaces/ITBTCSystem.sol",
+      "exportedSymbols": {
+        "ITBTCSystem": [
+          5495
+        ]
+      }
     },
-    "id": 5499,
-    "nodeType": "SourceUnit",
-    "nodes": [
+    "children": [
       {
-        "id": 5436,
-        "literals": [
-          "solidity",
-          "0.5",
-          ".17"
-        ],
-        "nodeType": "PragmaDirective",
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.5",
+            ".17"
+          ]
+        },
+        "id": 5433,
+        "name": "PragmaDirective",
         "src": "0:23:11"
       },
       {
-        "baseContracts": [],
-        "contractDependencies": [],
-        "contractKind": "interface",
-        "documentation": "@title Keep interface",
-        "fullyImplemented": false,
-        "id": 5498,
-        "linearizedBaseContracts": [
-          5498
-        ],
-        "name": "ITBTCSystem",
-        "nodeType": "ContractDefinition",
-        "nodes": [
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": "@title Keep interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            5495
+          ],
+          "name": "ITBTCSystem",
+          "scope": 5496
+        },
+        "children": [
           {
-            "body": null,
-            "documentation": null,
-            "id": 5441,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "fetchBitcoinPrice",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 5437,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "238:2:11"
-            },
-            "returnParameters": {
-              "id": 5440,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5439,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5441,
-                  "src": "264:7:11",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 5438,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "264:7:11",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
               ],
-              "src": "263:9:11"
+              "name": "fetchBitcoinPrice",
+              "scope": 5495,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "external"
             },
-            "scope": 5498,
-            "src": "212:61:11",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "external"
-          },
-          {
-            "body": null,
-            "documentation": null,
-            "id": 5446,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "fetchRelayCurrentDifficulty",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 5442,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "358:2:11"
-            },
-            "returnParameters": {
-              "id": 5445,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5444,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5446,
-                  "src": "384:7:11",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 5443,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "384:7:11",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "383:9:11"
-            },
-            "scope": 5498,
-            "src": "322:71:11",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "external"
-          },
-          {
-            "body": null,
-            "documentation": null,
-            "id": 5451,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "fetchRelayPreviousDifficulty",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 5447,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "435:2:11"
-            },
-            "returnParameters": {
-              "id": 5450,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5449,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5451,
-                  "src": "461:7:11",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 5448,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "461:7:11",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "460:9:11"
-            },
-            "scope": 5498,
-            "src": "398:72:11",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "external"
-          },
-          {
-            "body": null,
-            "documentation": null,
-            "id": 5456,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getNewDepositFeeEstimate",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 5452,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "508:2:11"
-            },
-            "returnParameters": {
-              "id": 5455,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5454,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5456,
-                  "src": "534:7:11",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 5453,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "534:7:11",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "533:9:11"
-            },
-            "scope": 5498,
-            "src": "475:68:11",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "external"
-          },
-          {
-            "body": null,
-            "documentation": null,
-            "id": 5461,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getAllowNewDeposits",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 5457,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "576:2:11"
-            },
-            "returnParameters": {
-              "id": 5460,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5459,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5461,
-                  "src": "602:4:11",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bool",
-                    "typeString": "bool"
-                  },
-                  "typeName": {
-                    "id": 5458,
-                    "name": "bool",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "602:4:11",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "601:6:11"
-            },
-            "scope": 5498,
-            "src": "548:60:11",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "external"
-          },
-          {
-            "body": null,
-            "documentation": null,
-            "id": 5468,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "isAllowedLotSize",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 5464,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5463,
-                  "name": "_requestedLotSizeSatoshis",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5468,
-                  "src": "639:32:11",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint64",
-                    "typeString": "uint64"
-                  },
-                  "typeName": {
-                    "id": 5462,
-                    "name": "uint64",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "639:6:11",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint64",
-                      "typeString": "uint64"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "638:34:11"
-            },
-            "returnParameters": {
-              "id": 5467,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5466,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5468,
-                  "src": "696:4:11",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bool",
-                    "typeString": "bool"
-                  },
-                  "typeName": {
-                    "id": 5465,
-                    "name": "bool",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "696:4:11",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "695:6:11"
-            },
-            "scope": 5498,
-            "src": "613:89:11",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "external"
-          },
-          {
-            "body": null,
-            "documentation": null,
-            "id": 5477,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "requestNewKeep",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 5473,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5470,
-                  "name": "_requestedLotSizeSatoshis",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5477,
-                  "src": "731:32:11",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint64",
-                    "typeString": "uint64"
-                  },
-                  "typeName": {
-                    "id": 5469,
-                    "name": "uint64",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "731:6:11",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint64",
-                      "typeString": "uint64"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
                 },
-                {
-                  "constant": false,
-                  "id": 5472,
-                  "name": "_maxSecuredLifetime",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5477,
-                  "src": "765:27:11",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 5471,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "765:7:11",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "730:63:11"
-            },
-            "returnParameters": {
-              "id": 5476,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5475,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5477,
-                  "src": "820:7:11",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 5474,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "820:7:11",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "819:9:11"
-            },
-            "scope": 5498,
-            "src": "707:122:11",
-            "stateMutability": "payable",
-            "superFunction": null,
-            "visibility": "external"
+                "children": [],
+                "id": 5434,
+                "name": "ParameterList",
+                "src": "238:2:11"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 5438,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 5435,
+                        "name": "ElementaryTypeName",
+                        "src": "264:7:11"
+                      }
+                    ],
+                    "id": 5436,
+                    "name": "VariableDeclaration",
+                    "src": "264:7:11"
+                  }
+                ],
+                "id": 5437,
+                "name": "ParameterList",
+                "src": "263:9:11"
+              }
+            ],
+            "id": 5438,
+            "name": "FunctionDefinition",
+            "src": "212:61:11"
           },
           {
-            "body": null,
-            "documentation": null,
-            "id": 5482,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getSignerFeeDivisor",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 5478,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "862:2:11"
-            },
-            "returnParameters": {
-              "id": 5481,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5480,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5482,
-                  "src": "888:6:11",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint16",
-                    "typeString": "uint16"
-                  },
-                  "typeName": {
-                    "id": 5479,
-                    "name": "uint16",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "888:6:11",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint16",
-                      "typeString": "uint16"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
               ],
-              "src": "887:8:11"
+              "name": "fetchRelayCurrentDifficulty",
+              "scope": 5495,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "external"
             },
-            "scope": 5498,
-            "src": "834:62:11",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "external"
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5439,
+                "name": "ParameterList",
+                "src": "358:2:11"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 5443,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 5440,
+                        "name": "ElementaryTypeName",
+                        "src": "384:7:11"
+                      }
+                    ],
+                    "id": 5441,
+                    "name": "VariableDeclaration",
+                    "src": "384:7:11"
+                  }
+                ],
+                "id": 5442,
+                "name": "ParameterList",
+                "src": "383:9:11"
+              }
+            ],
+            "id": 5443,
+            "name": "FunctionDefinition",
+            "src": "322:71:11"
           },
           {
-            "body": null,
-            "documentation": null,
-            "id": 5487,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getInitialCollateralizedPercent",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 5483,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "941:2:11"
-            },
-            "returnParameters": {
-              "id": 5486,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5485,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5487,
-                  "src": "967:6:11",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint16",
-                    "typeString": "uint16"
-                  },
-                  "typeName": {
-                    "id": 5484,
-                    "name": "uint16",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "967:6:11",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint16",
-                      "typeString": "uint16"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
               ],
-              "src": "966:8:11"
+              "name": "fetchRelayPreviousDifficulty",
+              "scope": 5495,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "external"
             },
-            "scope": 5498,
-            "src": "901:74:11",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "external"
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5444,
+                "name": "ParameterList",
+                "src": "435:2:11"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 5448,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 5445,
+                        "name": "ElementaryTypeName",
+                        "src": "461:7:11"
+                      }
+                    ],
+                    "id": 5446,
+                    "name": "VariableDeclaration",
+                    "src": "461:7:11"
+                  }
+                ],
+                "id": 5447,
+                "name": "ParameterList",
+                "src": "460:9:11"
+              }
+            ],
+            "id": 5448,
+            "name": "FunctionDefinition",
+            "src": "398:72:11"
           },
           {
-            "body": null,
-            "documentation": null,
-            "id": 5492,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getUndercollateralizedThresholdPercent",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 5488,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "1027:2:11"
-            },
-            "returnParameters": {
-              "id": 5491,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5490,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5492,
-                  "src": "1053:6:11",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint16",
-                    "typeString": "uint16"
-                  },
-                  "typeName": {
-                    "id": 5489,
-                    "name": "uint16",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1053:6:11",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint16",
-                      "typeString": "uint16"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
               ],
-              "src": "1052:8:11"
+              "name": "getNewDepositFeeEstimate",
+              "scope": 5495,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "external"
             },
-            "scope": 5498,
-            "src": "980:81:11",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "external"
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5449,
+                "name": "ParameterList",
+                "src": "508:2:11"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 5453,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 5450,
+                        "name": "ElementaryTypeName",
+                        "src": "534:7:11"
+                      }
+                    ],
+                    "id": 5451,
+                    "name": "VariableDeclaration",
+                    "src": "534:7:11"
+                  }
+                ],
+                "id": 5452,
+                "name": "ParameterList",
+                "src": "533:9:11"
+              }
+            ],
+            "id": 5453,
+            "name": "FunctionDefinition",
+            "src": "475:68:11"
           },
           {
-            "body": null,
-            "documentation": null,
-            "id": 5497,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getSeverelyUndercollateralizedThresholdPercent",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 5493,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "1121:2:11"
-            },
-            "returnParameters": {
-              "id": 5496,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 5495,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 5497,
-                  "src": "1147:6:11",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint16",
-                    "typeString": "uint16"
-                  },
-                  "typeName": {
-                    "id": 5494,
-                    "name": "uint16",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1147:6:11",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint16",
-                      "typeString": "uint16"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
               ],
-              "src": "1146:8:11"
+              "name": "getAllowNewDeposits",
+              "scope": 5495,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "external"
             },
-            "scope": 5498,
-            "src": "1066:89:11",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "external"
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5454,
+                "name": "ParameterList",
+                "src": "576:2:11"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 5458,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 5455,
+                        "name": "ElementaryTypeName",
+                        "src": "602:4:11"
+                      }
+                    ],
+                    "id": 5456,
+                    "name": "VariableDeclaration",
+                    "src": "602:4:11"
+                  }
+                ],
+                "id": 5457,
+                "name": "ParameterList",
+                "src": "601:6:11"
+              }
+            ],
+            "id": 5458,
+            "name": "FunctionDefinition",
+            "src": "548:60:11"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "isAllowedLotSize",
+              "scope": 5495,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_requestedLotSizeSatoshis",
+                      "scope": 5465,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint64",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint64",
+                          "type": "uint64"
+                        },
+                        "id": 5459,
+                        "name": "ElementaryTypeName",
+                        "src": "639:6:11"
+                      }
+                    ],
+                    "id": 5460,
+                    "name": "VariableDeclaration",
+                    "src": "639:32:11"
+                  }
+                ],
+                "id": 5461,
+                "name": "ParameterList",
+                "src": "638:34:11"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 5465,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 5462,
+                        "name": "ElementaryTypeName",
+                        "src": "696:4:11"
+                      }
+                    ],
+                    "id": 5463,
+                    "name": "VariableDeclaration",
+                    "src": "696:4:11"
+                  }
+                ],
+                "id": 5464,
+                "name": "ParameterList",
+                "src": "695:6:11"
+              }
+            ],
+            "id": 5465,
+            "name": "FunctionDefinition",
+            "src": "613:89:11"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "requestNewKeep",
+              "scope": 5495,
+              "stateMutability": "payable",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_requestedLotSizeSatoshis",
+                      "scope": 5474,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint64",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint64",
+                          "type": "uint64"
+                        },
+                        "id": 5466,
+                        "name": "ElementaryTypeName",
+                        "src": "731:6:11"
+                      }
+                    ],
+                    "id": 5467,
+                    "name": "VariableDeclaration",
+                    "src": "731:32:11"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_maxSecuredLifetime",
+                      "scope": 5474,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 5468,
+                        "name": "ElementaryTypeName",
+                        "src": "765:7:11"
+                      }
+                    ],
+                    "id": 5469,
+                    "name": "VariableDeclaration",
+                    "src": "765:27:11"
+                  }
+                ],
+                "id": 5470,
+                "name": "ParameterList",
+                "src": "730:63:11"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 5474,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 5471,
+                        "name": "ElementaryTypeName",
+                        "src": "820:7:11"
+                      }
+                    ],
+                    "id": 5472,
+                    "name": "VariableDeclaration",
+                    "src": "820:7:11"
+                  }
+                ],
+                "id": 5473,
+                "name": "ParameterList",
+                "src": "819:9:11"
+              }
+            ],
+            "id": 5474,
+            "name": "FunctionDefinition",
+            "src": "707:122:11"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getSignerFeeDivisor",
+              "scope": 5495,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5475,
+                "name": "ParameterList",
+                "src": "862:2:11"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 5479,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint16",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint16",
+                          "type": "uint16"
+                        },
+                        "id": 5476,
+                        "name": "ElementaryTypeName",
+                        "src": "888:6:11"
+                      }
+                    ],
+                    "id": 5477,
+                    "name": "VariableDeclaration",
+                    "src": "888:6:11"
+                  }
+                ],
+                "id": 5478,
+                "name": "ParameterList",
+                "src": "887:8:11"
+              }
+            ],
+            "id": 5479,
+            "name": "FunctionDefinition",
+            "src": "834:62:11"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getInitialCollateralizedPercent",
+              "scope": 5495,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5480,
+                "name": "ParameterList",
+                "src": "941:2:11"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 5484,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint16",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint16",
+                          "type": "uint16"
+                        },
+                        "id": 5481,
+                        "name": "ElementaryTypeName",
+                        "src": "967:6:11"
+                      }
+                    ],
+                    "id": 5482,
+                    "name": "VariableDeclaration",
+                    "src": "967:6:11"
+                  }
+                ],
+                "id": 5483,
+                "name": "ParameterList",
+                "src": "966:8:11"
+              }
+            ],
+            "id": 5484,
+            "name": "FunctionDefinition",
+            "src": "901:74:11"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getUndercollateralizedThresholdPercent",
+              "scope": 5495,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5485,
+                "name": "ParameterList",
+                "src": "1027:2:11"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 5489,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint16",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint16",
+                          "type": "uint16"
+                        },
+                        "id": 5486,
+                        "name": "ElementaryTypeName",
+                        "src": "1053:6:11"
+                      }
+                    ],
+                    "id": 5487,
+                    "name": "VariableDeclaration",
+                    "src": "1053:6:11"
+                  }
+                ],
+                "id": 5488,
+                "name": "ParameterList",
+                "src": "1052:8:11"
+              }
+            ],
+            "id": 5489,
+            "name": "FunctionDefinition",
+            "src": "980:81:11"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": null,
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getSeverelyUndercollateralizedThresholdPercent",
+              "scope": 5495,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5490,
+                "name": "ParameterList",
+                "src": "1121:2:11"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 5494,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint16",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint16",
+                          "type": "uint16"
+                        },
+                        "id": 5491,
+                        "name": "ElementaryTypeName",
+                        "src": "1147:6:11"
+                      }
+                    ],
+                    "id": 5492,
+                    "name": "VariableDeclaration",
+                    "src": "1147:6:11"
+                  }
+                ],
+                "id": 5493,
+                "name": "ParameterList",
+                "src": "1146:8:11"
+              }
+            ],
+            "id": 5494,
+            "name": "FunctionDefinition",
+            "src": "1066:89:11"
           }
         ],
-        "scope": 5499,
+        "id": 5495,
+        "name": "ContractDefinition",
         "src": "59:1098:11"
       }
     ],
+    "id": 5496,
+    "name": "SourceUnit",
     "src": "0:1158:11"
   },
   "compiler": {
@@ -1626,8 +1758,8 @@
     "version": "0.5.17+commit.d19bba13.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.23",
-  "updatedAt": "2021-02-01T16:23:16.977Z",
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-04-30T09:32:13.259Z",
   "devdoc": {
     "methods": {},
     "title": "Keep interface"

@@ -1,6 +1,6 @@
 // Configuration for addresses of externally deployed smart contracts
 // prettier-ignore
-const BondedECDSAKeepFactoryAddress = "0xD9C3E217E0fAAB0faE52CACA4603bA154Ab44680"
+const BondedECDSAKeepFactoryAddress = "0x58EdA045Cb06Ae390D336e4033491d8cBBe578b2"
 
 // Medianized price feeds.
 // These are deployed and maintained by Maker.

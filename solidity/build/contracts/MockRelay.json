@@ -62,25 +62,25 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getCurrentEpochDifficulty\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getPrevEpochDifficulty\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_current\",\"type\":\"uint256\"}],\"name\":\"setCurrentEpochDifficulty\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_previous\",\"type\":\"uint256\"}],\"name\":\"setPrevEpochDifficulty\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/relay/MockRelay.sol\":\"MockRelay\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/relay/MockRelay.sol\":{\"keccak256\":\"0xd9ba8c6f535a294b9d46c0c710e6538366135e139c9111f534a8072c4daf6304\",\"urls\":[\"bzz-raw://26384c778de51fb730fe1936979437426f5d37a6ebd1d53b42c3c6a92a468fa2\",\"dweb:/ipfs/QmUaFXKXwTKBKuwajKKoYHJG4rpABT1R65Mhf5t392YcAG\"]},\"@summa-tx/bitcoin-spv-sol/contracts/BTCUtils.sol\":{\"keccak256\":\"0x461cc52e40ba53e646f5c9505b992baa3d5b3c98ae5718561e61b3bc6c726d52\",\"urls\":[\"bzz-raw://90cf2e608b660671642a616ec044e2a39e8ceb7079315b6133ec978c47af9f98\",\"dweb:/ipfs/QmX4hyYS99RYWiQ7BwLXuvQpU5x62YbjJWLgYFwrPkYbzT\"]},\"@summa-tx/bitcoin-spv-sol/contracts/BytesLib.sol\":{\"keccak256\":\"0x43451fdb4c4d55c01122411a4cf89a5c544c2bd4b646ee1d1f306626275324bf\",\"urls\":[\"bzz-raw://db93f07c32fa294d416aaab1b19a205772f2a3fa573fd380e5641e7770193ccf\",\"dweb:/ipfs/QmVE4y8cFKWZGKEfTM9Q3YreAArpMTTALHNr2tcvcNDnbi\"]},\"@summa-tx/bitcoin-spv-sol/contracts/SafeMath.sol\":{\"keccak256\":\"0x22d34c04c68c2a77ee83e2ef3756f6e6bad6ad675560d777e612315d7eb83935\",\"urls\":[\"bzz-raw://b642c61be1d34e153e4f9cc139291fa26f4ecf31a3acc5b960aad20f4f689eeb\",\"dweb:/ipfs/QmWADdVTCSyvtgb76AxFFkAr9h9jbY57Mj5X6xiEqCqmMu\"]},\"@summa-tx/bitcoin-spv-sol/contracts/ValidateSPV.sol\":{\"keccak256\":\"0x9af3b3f36de63e95977f09548617989e391b3c511cf0383ee35cefd5da7d3bfd\",\"urls\":[\"bzz-raw://97ce025c7d18540e4c24578db61cc5e33828be8e9a82b5cb5f46c99212f75ed1\",\"dweb:/ipfs/QmRrdWnd95rgCZzeaNiU4KUcGe1j7oDBj7LatpXhUmjbEE\"]},\"@summa-tx/relay-sol/contracts/Interfaces.sol\":{\"keccak256\":\"0x6f2698f8aab5cee319f36d69438b6870496a5523e7ccac4b465cdb38661242fa\",\"urls\":[\"bzz-raw://7f854c72db81631d1df800ae0c5fb0a50dc9efd97b0e6593b063c9fb1c61ef9e\",\"dweb:/ipfs/QmUMSQhzYKRSkLTGcHekjqvw1mLpeUULZkfffRdN521NBg\"]},\"@summa-tx/relay-sol/contracts/OnDemandSPV.sol\":{\"keccak256\":\"0x56757b0c8220558cd8c34a8c2679d74b7fe4769c087d6539068608a1ccc1bce2\",\"urls\":[\"bzz-raw://625fee9260c177bcf13bcca7001cec542edb91e9f0150fc5f2943df5a9961877\",\"dweb:/ipfs/QmfJWuP4snnVYnpjHypJgZLxzBW17ZhnfPnzpBtt2yLAUG\"]},\"@summa-tx/relay-sol/contracts/Relay.sol\":{\"keccak256\":\"0x4a6d12fa6570e2c787f9dc234edae9c1eb326e78eb2c6384c84d2b6ba0a0ad7e\",\"urls\":[\"bzz-raw://fa5365dc5a8312d0305568dbf297964be13567a7879395bfc3e99be2510e4e10\",\"dweb:/ipfs/QmfGZz6iL45xPcwQTT3XFAqb7McuY89niBEvfbhy513moF\"]},\"@summa-tx/relay-sol/contracts/TestnetRelay.sol\":{\"keccak256\":\"0x04883856ccd9e6688d757af666ab04f0ab5e56bbb2f500966da3b27f3031366b\",\"urls\":[\"bzz-raw://204a0a0683bc53608086ed3ed0ef41b36bc96b5df5862fd0c2b72dfad0bf8541\",\"dweb:/ipfs/QmdVUw96EjBBks1cRnX6uCwXtsjJVR7P5zHhwaedjEfpFE\"]}},\"version\":1}",
-  "bytecode": "0x608060405260016000556001805534801561001957600080fd5b5060ea806100286000396000f3fe6080604052348015600f57600080fd5b506004361060465760003560e01c8063113764be14604b5780632b97be241460635780633c5e87521460695780637d4046fb146085575b600080fd5b6051609f565b60408051918252519081900360200190f35b605160a5565b608360048036036020811015607d57600080fd5b503560ab565b005b608360048036036020811015609957600080fd5b503560b0565b60005490565b60015490565b600155565b60005556fea265627a7a72315820a342a2d549b372872246da44bb688c01482c999d874e2e5a2c756ee7607ae23d64736f6c63430005110032",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060465760003560e01c8063113764be14604b5780632b97be241460635780633c5e87521460695780637d4046fb146085575b600080fd5b6051609f565b60408051918252519081900360200190f35b605160a5565b608360048036036020811015607d57600080fd5b503560ab565b005b608360048036036020811015609957600080fd5b503560b0565b60005490565b60015490565b600155565b60005556fea265627a7a72315820a342a2d549b372872246da44bb688c01482c999d874e2e5a2c756ee7607ae23d64736f6c63430005110032",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getCurrentEpochDifficulty\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getPrevEpochDifficulty\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_current\",\"type\":\"uint256\"}],\"name\":\"setCurrentEpochDifficulty\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_previous\",\"type\":\"uint256\"}],\"name\":\"setPrevEpochDifficulty\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/konrad/Desktop/rumble/fin/local-setup/tbtc/solidity/contracts/test/relay/MockRelay.sol\":\"MockRelay\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/konrad/Desktop/rumble/fin/local-setup/tbtc/solidity/contracts/test/relay/MockRelay.sol\":{\"keccak256\":\"0xd9ba8c6f535a294b9d46c0c710e6538366135e139c9111f534a8072c4daf6304\",\"urls\":[\"bzz-raw://26384c778de51fb730fe1936979437426f5d37a6ebd1d53b42c3c6a92a468fa2\",\"dweb:/ipfs/QmUaFXKXwTKBKuwajKKoYHJG4rpABT1R65Mhf5t392YcAG\"]},\"@summa-tx/bitcoin-spv-sol/contracts/BTCUtils.sol\":{\"keccak256\":\"0x461cc52e40ba53e646f5c9505b992baa3d5b3c98ae5718561e61b3bc6c726d52\",\"urls\":[\"bzz-raw://90cf2e608b660671642a616ec044e2a39e8ceb7079315b6133ec978c47af9f98\",\"dweb:/ipfs/QmX4hyYS99RYWiQ7BwLXuvQpU5x62YbjJWLgYFwrPkYbzT\"]},\"@summa-tx/bitcoin-spv-sol/contracts/BytesLib.sol\":{\"keccak256\":\"0x43451fdb4c4d55c01122411a4cf89a5c544c2bd4b646ee1d1f306626275324bf\",\"urls\":[\"bzz-raw://db93f07c32fa294d416aaab1b19a205772f2a3fa573fd380e5641e7770193ccf\",\"dweb:/ipfs/QmVE4y8cFKWZGKEfTM9Q3YreAArpMTTALHNr2tcvcNDnbi\"]},\"@summa-tx/bitcoin-spv-sol/contracts/SafeMath.sol\":{\"keccak256\":\"0x22d34c04c68c2a77ee83e2ef3756f6e6bad6ad675560d777e612315d7eb83935\",\"urls\":[\"bzz-raw://b642c61be1d34e153e4f9cc139291fa26f4ecf31a3acc5b960aad20f4f689eeb\",\"dweb:/ipfs/QmWADdVTCSyvtgb76AxFFkAr9h9jbY57Mj5X6xiEqCqmMu\"]},\"@summa-tx/bitcoin-spv-sol/contracts/ValidateSPV.sol\":{\"keccak256\":\"0x9af3b3f36de63e95977f09548617989e391b3c511cf0383ee35cefd5da7d3bfd\",\"urls\":[\"bzz-raw://97ce025c7d18540e4c24578db61cc5e33828be8e9a82b5cb5f46c99212f75ed1\",\"dweb:/ipfs/QmRrdWnd95rgCZzeaNiU4KUcGe1j7oDBj7LatpXhUmjbEE\"]},\"@summa-tx/relay-sol/contracts/Interfaces.sol\":{\"keccak256\":\"0x6f2698f8aab5cee319f36d69438b6870496a5523e7ccac4b465cdb38661242fa\",\"urls\":[\"bzz-raw://7f854c72db81631d1df800ae0c5fb0a50dc9efd97b0e6593b063c9fb1c61ef9e\",\"dweb:/ipfs/QmUMSQhzYKRSkLTGcHekjqvw1mLpeUULZkfffRdN521NBg\"]},\"@summa-tx/relay-sol/contracts/OnDemandSPV.sol\":{\"keccak256\":\"0x56757b0c8220558cd8c34a8c2679d74b7fe4769c087d6539068608a1ccc1bce2\",\"urls\":[\"bzz-raw://625fee9260c177bcf13bcca7001cec542edb91e9f0150fc5f2943df5a9961877\",\"dweb:/ipfs/QmfJWuP4snnVYnpjHypJgZLxzBW17ZhnfPnzpBtt2yLAUG\"]},\"@summa-tx/relay-sol/contracts/Relay.sol\":{\"keccak256\":\"0x4a6d12fa6570e2c787f9dc234edae9c1eb326e78eb2c6384c84d2b6ba0a0ad7e\",\"urls\":[\"bzz-raw://fa5365dc5a8312d0305568dbf297964be13567a7879395bfc3e99be2510e4e10\",\"dweb:/ipfs/QmfGZz6iL45xPcwQTT3XFAqb7McuY89niBEvfbhy513moF\"]},\"@summa-tx/relay-sol/contracts/TestnetRelay.sol\":{\"keccak256\":\"0x04883856ccd9e6688d757af666ab04f0ab5e56bbb2f500966da3b27f3031366b\",\"urls\":[\"bzz-raw://204a0a0683bc53608086ed3ed0ef41b36bc96b5df5862fd0c2b72dfad0bf8541\",\"dweb:/ipfs/QmdVUw96EjBBks1cRnX6uCwXtsjJVR7P5zHhwaedjEfpFE\"]}},\"version\":1}",
+  "bytecode": "0x608060405260016000556001805534801561001957600080fd5b5060ea806100286000396000f3fe6080604052348015600f57600080fd5b506004361060465760003560e01c8063113764be14604b5780632b97be241460635780633c5e87521460695780637d4046fb146085575b600080fd5b6051609f565b60408051918252519081900360200190f35b605160a5565b608360048036036020811015607d57600080fd5b503560ab565b005b608360048036036020811015609957600080fd5b503560b0565b60005490565b60015490565b600155565b60005556fea265627a7a72315820dfac345de6d57428309dfbac7aa62f629d2ea9b6c1ff4c5d3453060fa8d7a06464736f6c63430005110032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060465760003560e01c8063113764be14604b5780632b97be241460635780633c5e87521460695780637d4046fb146085575b600080fd5b6051609f565b60408051918252519081900360200190f35b605160a5565b608360048036036020811015607d57600080fd5b503560ab565b005b608360048036036020811015609957600080fd5b503560b0565b60005490565b60015490565b600155565b60005556fea265627a7a72315820dfac345de6d57428309dfbac7aa62f629d2ea9b6c1ff4c5d3453060fa8d7a06464736f6c63430005110032",
   "sourceMap": "271:485:37:-;;;314:1;296:19;;340:1;321:20;;271:485;8:9:-1;5:2;;;30:1;27;20:12;5:2;271:485:37;;;;;;;",
   "deployedSourceMap": "271:485:37:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;271:485:37;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;348:100;;;:::i;:::-;;;;;;;;;;;;;;;;454:98;;;:::i;659:95::-;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;659:95:37;;:::i;:::-;;558;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;558:95:37;;:::i;348:100::-;408:7;434;348:100;:::o;454:98::-;537:8;;454:98;:::o;659:95::-;727:8;:20;659:95::o;558:::-;628:7;:18;558:95::o",
   "source": "pragma solidity 0.5.17;\n\n// Import of `TestnetRelay` will build artifacts for `TestnetRelay` and `OnDemandSPVProof`\n// that are required by the migration script but are not used for local contracts\n// deployment.\nimport \"@summa-tx/relay-sol/contracts/TestnetRelay.sol\";\n\ncontract MockRelay {\n    uint256 current = 1;\n    uint256 previous = 1;\n\n    function getCurrentEpochDifficulty() external view returns (uint256) {\n        return current;\n    }\n\n    function getPrevEpochDifficulty() external view returns (uint256) {\n        return previous;\n    }\n\n    function setCurrentEpochDifficulty(uint256 _current) public {\n        current = _current;\n    }\n\n    function setPrevEpochDifficulty(uint256 _previous) public {\n        previous = _previous;\n    }\n}\n",
-  "sourcePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/relay/MockRelay.sol",
+  "sourcePath": "/Users/konrad/Desktop/rumble/fin/local-setup/tbtc/solidity/contracts/test/relay/MockRelay.sol",
   "ast": {
-    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/relay/MockRelay.sol",
+    "absolutePath": "/Users/konrad/Desktop/rumble/fin/local-setup/tbtc/solidity/contracts/test/relay/MockRelay.sol",
     "exportedSymbols": {
       "MockRelay": [
-        10398
+        10395
       ]
     },
-    "id": 10399,
+    "id": 10396,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 10354,
+        "id": 10351,
         "literals": [
           "solidity",
           "0.5",
@@ -92,10 +92,10 @@
       {
         "absolutePath": "@summa-tx/relay-sol/contracts/TestnetRelay.sol",
         "file": "@summa-tx/relay-sol/contracts/TestnetRelay.sol",
-        "id": 10355,
+        "id": 10352,
         "nodeType": "ImportDirective",
-        "scope": 10399,
-        "sourceUnit": 16304,
+        "scope": 10396,
+        "sourceUnit": 16303,
         "src": "213:56:37",
         "symbolAliases": [],
         "unitAlias": ""
@@ -106,19 +106,19 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 10398,
+        "id": 10395,
         "linearizedBaseContracts": [
-          10398
+          10395
         ],
         "name": "MockRelay",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 10358,
+            "id": 10355,
             "name": "current",
             "nodeType": "VariableDeclaration",
-            "scope": 10398,
+            "scope": 10395,
             "src": "296:19:37",
             "stateVariable": true,
             "storageLocation": "default",
@@ -127,7 +127,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10356,
+              "id": 10353,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "296:7:37",
@@ -139,7 +139,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "31",
-              "id": 10357,
+              "id": 10354,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -158,10 +158,10 @@
           },
           {
             "constant": false,
-            "id": 10361,
+            "id": 10358,
             "name": "previous",
             "nodeType": "VariableDeclaration",
-            "scope": 10398,
+            "scope": 10395,
             "src": "321:20:37",
             "stateVariable": true,
             "storageLocation": "default",
@@ -170,7 +170,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 10359,
+              "id": 10356,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "321:7:37",
@@ -182,7 +182,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "31",
-              "id": 10360,
+              "id": 10357,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -201,54 +201,54 @@
           },
           {
             "body": {
-              "id": 10368,
+              "id": 10365,
               "nodeType": "Block",
               "src": "417:31:37",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10366,
+                    "id": 10363,
                     "name": "current",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10358,
+                    "referencedDeclaration": 10355,
                     "src": "434:7:37",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10365,
-                  "id": 10367,
+                  "functionReturnParameters": 10362,
+                  "id": 10364,
                   "nodeType": "Return",
                   "src": "427:14:37"
                 }
               ]
             },
             "documentation": null,
-            "id": 10369,
+            "id": 10366,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getCurrentEpochDifficulty",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10362,
+              "id": 10359,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "382:2:37"
             },
             "returnParameters": {
-              "id": 10365,
+              "id": 10362,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10364,
+                  "id": 10361,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10369,
+                  "scope": 10366,
                   "src": "408:7:37",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -257,7 +257,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10363,
+                    "id": 10360,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "408:7:37",
@@ -272,7 +272,7 @@
               ],
               "src": "407:9:37"
             },
-            "scope": 10398,
+            "scope": 10395,
             "src": "348:100:37",
             "stateMutability": "view",
             "superFunction": null,
@@ -280,54 +280,54 @@
           },
           {
             "body": {
-              "id": 10376,
+              "id": 10373,
               "nodeType": "Block",
               "src": "520:32:37",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10374,
+                    "id": 10371,
                     "name": "previous",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 10361,
+                    "referencedDeclaration": 10358,
                     "src": "537:8:37",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 10373,
-                  "id": 10375,
+                  "functionReturnParameters": 10370,
+                  "id": 10372,
                   "nodeType": "Return",
                   "src": "530:15:37"
                 }
               ]
             },
             "documentation": null,
-            "id": 10377,
+            "id": 10374,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "getPrevEpochDifficulty",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10370,
+              "id": 10367,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "485:2:37"
             },
             "returnParameters": {
-              "id": 10373,
+              "id": 10370,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10372,
+                  "id": 10369,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10377,
+                  "scope": 10374,
                   "src": "511:7:37",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -336,7 +336,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10371,
+                    "id": 10368,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "511:7:37",
@@ -351,7 +351,7 @@
               ],
               "src": "510:9:37"
             },
-            "scope": 10398,
+            "scope": 10395,
             "src": "454:98:37",
             "stateMutability": "view",
             "superFunction": null,
@@ -359,25 +359,25 @@
           },
           {
             "body": {
-              "id": 10386,
+              "id": 10383,
               "nodeType": "Block",
               "src": "618:35:37",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10384,
+                    "id": 10381,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 10382,
+                      "id": 10379,
                       "name": "current",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10358,
+                      "referencedDeclaration": 10355,
                       "src": "628:7:37",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -388,11 +388,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 10383,
+                      "id": 10380,
                       "name": "_current",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10379,
+                      "referencedDeclaration": 10376,
                       "src": "638:8:37",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -405,29 +405,29 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 10385,
+                  "id": 10382,
                   "nodeType": "ExpressionStatement",
                   "src": "628:18:37"
                 }
               ]
             },
             "documentation": null,
-            "id": 10387,
+            "id": 10384,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "setCurrentEpochDifficulty",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10380,
+              "id": 10377,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10379,
+                  "id": 10376,
                   "name": "_current",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10387,
+                  "scope": 10384,
                   "src": "593:16:37",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -436,7 +436,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10378,
+                    "id": 10375,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "593:7:37",
@@ -452,12 +452,12 @@
               "src": "592:18:37"
             },
             "returnParameters": {
-              "id": 10381,
+              "id": 10378,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "618:0:37"
             },
-            "scope": 10398,
+            "scope": 10395,
             "src": "558:95:37",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -465,25 +465,25 @@
           },
           {
             "body": {
-              "id": 10396,
+              "id": 10393,
               "nodeType": "Block",
               "src": "717:37:37",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 10394,
+                    "id": 10391,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 10392,
+                      "id": 10389,
                       "name": "previous",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10361,
+                      "referencedDeclaration": 10358,
                       "src": "727:8:37",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -494,11 +494,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 10393,
+                      "id": 10390,
                       "name": "_previous",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 10389,
+                      "referencedDeclaration": 10386,
                       "src": "738:9:37",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -511,29 +511,29 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 10395,
+                  "id": 10392,
                   "nodeType": "ExpressionStatement",
                   "src": "727:20:37"
                 }
               ]
             },
             "documentation": null,
-            "id": 10397,
+            "id": 10394,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "setPrevEpochDifficulty",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 10390,
+              "id": 10387,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 10389,
+                  "id": 10386,
                   "name": "_previous",
                   "nodeType": "VariableDeclaration",
-                  "scope": 10397,
+                  "scope": 10394,
                   "src": "691:17:37",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -542,7 +542,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 10388,
+                    "id": 10385,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "691:7:37",
@@ -558,545 +558,618 @@
               "src": "690:19:37"
             },
             "returnParameters": {
-              "id": 10391,
+              "id": 10388,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "717:0:37"
             },
-            "scope": 10398,
+            "scope": 10395,
             "src": "659:95:37",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 10399,
+        "scope": 10396,
         "src": "271:485:37"
       }
     ],
     "src": "0:757:37"
   },
   "legacyAST": {
-    "absolutePath": "/home/kowal/Projects/sovryn/tbtc/solidity/contracts/test/relay/MockRelay.sol",
-    "exportedSymbols": {
-      "MockRelay": [
-        10398
-      ]
+    "attributes": {
+      "absolutePath": "/Users/konrad/Desktop/rumble/fin/local-setup/tbtc/solidity/contracts/test/relay/MockRelay.sol",
+      "exportedSymbols": {
+        "MockRelay": [
+          10395
+        ]
+      }
     },
-    "id": 10399,
-    "nodeType": "SourceUnit",
-    "nodes": [
+    "children": [
       {
-        "id": 10354,
-        "literals": [
-          "solidity",
-          "0.5",
-          ".17"
-        ],
-        "nodeType": "PragmaDirective",
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.5",
+            ".17"
+          ]
+        },
+        "id": 10351,
+        "name": "PragmaDirective",
         "src": "0:23:37"
       },
       {
-        "absolutePath": "@summa-tx/relay-sol/contracts/TestnetRelay.sol",
-        "file": "@summa-tx/relay-sol/contracts/TestnetRelay.sol",
-        "id": 10355,
-        "nodeType": "ImportDirective",
-        "scope": 10399,
-        "sourceUnit": 16304,
-        "src": "213:56:37",
-        "symbolAliases": [],
-        "unitAlias": ""
+        "attributes": {
+          "SourceUnit": 16303,
+          "absolutePath": "@summa-tx/relay-sol/contracts/TestnetRelay.sol",
+          "file": "@summa-tx/relay-sol/contracts/TestnetRelay.sol",
+          "scope": 10396,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 10352,
+        "name": "ImportDirective",
+        "src": "213:56:37"
       },
       {
-        "baseContracts": [],
-        "contractDependencies": [],
-        "contractKind": "contract",
-        "documentation": null,
-        "fullyImplemented": true,
-        "id": 10398,
-        "linearizedBaseContracts": [
-          10398
-        ],
-        "name": "MockRelay",
-        "nodeType": "ContractDefinition",
-        "nodes": [
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            10395
+          ],
+          "name": "MockRelay",
+          "scope": 10396
+        },
+        "children": [
           {
-            "constant": false,
+            "attributes": {
+              "constant": false,
+              "name": "current",
+              "scope": 10395,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 10353,
+                "name": "ElementaryTypeName",
+                "src": "296:7:37"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "31",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 1",
+                  "value": "1"
+                },
+                "id": 10354,
+                "name": "Literal",
+                "src": "314:1:37"
+              }
+            ],
+            "id": 10355,
+            "name": "VariableDeclaration",
+            "src": "296:19:37"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "previous",
+              "scope": 10395,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 10356,
+                "name": "ElementaryTypeName",
+                "src": "321:7:37"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "31",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 1",
+                  "value": "1"
+                },
+                "id": 10357,
+                "name": "Literal",
+                "src": "340:1:37"
+              }
+            ],
             "id": 10358,
-            "name": "current",
-            "nodeType": "VariableDeclaration",
-            "scope": 10398,
-            "src": "296:19:37",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_uint256",
-              "typeString": "uint256"
-            },
-            "typeName": {
-              "id": 10356,
-              "name": "uint256",
-              "nodeType": "ElementaryTypeName",
-              "src": "296:7:37",
-              "typeDescriptions": {
-                "typeIdentifier": "t_uint256",
-                "typeString": "uint256"
-              }
-            },
-            "value": {
-              "argumentTypes": null,
-              "hexValue": "31",
-              "id": 10357,
-              "isConstant": false,
-              "isLValue": false,
-              "isPure": true,
-              "kind": "number",
-              "lValueRequested": false,
-              "nodeType": "Literal",
-              "src": "314:1:37",
-              "subdenomination": null,
-              "typeDescriptions": {
-                "typeIdentifier": "t_rational_1_by_1",
-                "typeString": "int_const 1"
-              },
-              "value": "1"
-            },
-            "visibility": "internal"
+            "name": "VariableDeclaration",
+            "src": "321:20:37"
           },
           {
-            "constant": false,
-            "id": 10361,
-            "name": "previous",
-            "nodeType": "VariableDeclaration",
-            "scope": 10398,
-            "src": "321:20:37",
-            "stateVariable": true,
-            "storageLocation": "default",
-            "typeDescriptions": {
-              "typeIdentifier": "t_uint256",
-              "typeString": "uint256"
-            },
-            "typeName": {
-              "id": 10359,
-              "name": "uint256",
-              "nodeType": "ElementaryTypeName",
-              "src": "321:7:37",
-              "typeDescriptions": {
-                "typeIdentifier": "t_uint256",
-                "typeString": "uint256"
-              }
-            },
-            "value": {
-              "argumentTypes": null,
-              "hexValue": "31",
-              "id": 10360,
-              "isConstant": false,
-              "isLValue": false,
-              "isPure": true,
-              "kind": "number",
-              "lValueRequested": false,
-              "nodeType": "Literal",
-              "src": "340:1:37",
-              "subdenomination": null,
-              "typeDescriptions": {
-                "typeIdentifier": "t_rational_1_by_1",
-                "typeString": "int_const 1"
-              },
-              "value": "1"
-            },
-            "visibility": "internal"
-          },
-          {
-            "body": {
-              "id": 10368,
-              "nodeType": "Block",
-              "src": "417:31:37",
-              "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 10366,
-                    "name": "current",
-                    "nodeType": "Identifier",
-                    "overloadedDeclarations": [],
-                    "referencedDeclaration": 10358,
-                    "src": "434:7:37",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "functionReturnParameters": 10365,
-                  "id": 10367,
-                  "nodeType": "Return",
-                  "src": "427:14:37"
-                }
-              ]
-            },
-            "documentation": null,
-            "id": 10369,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getCurrentEpochDifficulty",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 10362,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "382:2:37"
-            },
-            "returnParameters": {
-              "id": 10365,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 10364,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 10369,
-                  "src": "408:7:37",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 10363,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "408:7:37",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
               ],
-              "src": "407:9:37"
+              "name": "getCurrentEpochDifficulty",
+              "scope": 10395,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "external"
             },
-            "scope": 10398,
-            "src": "348:100:37",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "external"
-          },
-          {
-            "body": {
-              "id": 10376,
-              "nodeType": "Block",
-              "src": "520:32:37",
-              "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 10374,
-                    "name": "previous",
-                    "nodeType": "Identifier",
-                    "overloadedDeclarations": [],
-                    "referencedDeclaration": 10361,
-                    "src": "537:8:37",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "functionReturnParameters": 10373,
-                  "id": 10375,
-                  "nodeType": "Return",
-                  "src": "530:15:37"
-                }
-              ]
-            },
-            "documentation": null,
-            "id": 10377,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "getPrevEpochDifficulty",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 10370,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "485:2:37"
-            },
-            "returnParameters": {
-              "id": 10373,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 10372,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 10377,
-                  "src": "511:7:37",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 10371,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "511:7:37",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "510:9:37"
-            },
-            "scope": 10398,
-            "src": "454:98:37",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "external"
-          },
-          {
-            "body": {
-              "id": 10386,
-              "nodeType": "Block",
-              "src": "618:35:37",
-              "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 10384,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 10382,
-                      "name": "current",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 10358,
-                      "src": "628:7:37",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10359,
+                "name": "ParameterList",
+                "src": "382:2:37"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 10366,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
                     },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "id": 10383,
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 10360,
+                        "name": "ElementaryTypeName",
+                        "src": "408:7:37"
+                      }
+                    ],
+                    "id": 10361,
+                    "name": "VariableDeclaration",
+                    "src": "408:7:37"
+                  }
+                ],
+                "id": 10362,
+                "name": "ParameterList",
+                "src": "407:9:37"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 10362
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 10355,
+                          "type": "uint256",
+                          "value": "current"
+                        },
+                        "id": 10363,
+                        "name": "Identifier",
+                        "src": "434:7:37"
+                      }
+                    ],
+                    "id": 10364,
+                    "name": "Return",
+                    "src": "427:14:37"
+                  }
+                ],
+                "id": 10365,
+                "name": "Block",
+                "src": "417:31:37"
+              }
+            ],
+            "id": 10366,
+            "name": "FunctionDefinition",
+            "src": "348:100:37"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getPrevEpochDifficulty",
+              "scope": 10395,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10367,
+                "name": "ParameterList",
+                "src": "485:2:37"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 10374,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 10368,
+                        "name": "ElementaryTypeName",
+                        "src": "511:7:37"
+                      }
+                    ],
+                    "id": 10369,
+                    "name": "VariableDeclaration",
+                    "src": "511:7:37"
+                  }
+                ],
+                "id": 10370,
+                "name": "ParameterList",
+                "src": "510:9:37"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 10370
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 10358,
+                          "type": "uint256",
+                          "value": "previous"
+                        },
+                        "id": 10371,
+                        "name": "Identifier",
+                        "src": "537:8:37"
+                      }
+                    ],
+                    "id": 10372,
+                    "name": "Return",
+                    "src": "530:15:37"
+                  }
+                ],
+                "id": 10373,
+                "name": "Block",
+                "src": "520:32:37"
+              }
+            ],
+            "id": 10374,
+            "name": "FunctionDefinition",
+            "src": "454:98:37"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "setCurrentEpochDifficulty",
+              "scope": 10395,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
                       "name": "_current",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 10379,
-                      "src": "638:8:37",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
+                      "scope": 10384,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
                     },
-                    "src": "628:18:37",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "id": 10385,
-                  "nodeType": "ExpressionStatement",
-                  "src": "628:18:37"
-                }
-              ]
-            },
-            "documentation": null,
-            "id": 10387,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "setCurrentEpochDifficulty",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 10380,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 10379,
-                  "name": "_current",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 10387,
-                  "src": "593:16:37",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 10378,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "593:7:37",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "592:18:37"
-            },
-            "returnParameters": {
-              "id": 10381,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "618:0:37"
-            },
-            "scope": 10398,
-            "src": "558:95:37",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "public"
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 10375,
+                        "name": "ElementaryTypeName",
+                        "src": "593:7:37"
+                      }
+                    ],
+                    "id": 10376,
+                    "name": "VariableDeclaration",
+                    "src": "593:16:37"
+                  }
+                ],
+                "id": 10377,
+                "name": "ParameterList",
+                "src": "592:18:37"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10378,
+                "name": "ParameterList",
+                "src": "618:0:37"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 10355,
+                              "type": "uint256",
+                              "value": "current"
+                            },
+                            "id": 10379,
+                            "name": "Identifier",
+                            "src": "628:7:37"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 10376,
+                              "type": "uint256",
+                              "value": "_current"
+                            },
+                            "id": 10380,
+                            "name": "Identifier",
+                            "src": "638:8:37"
+                          }
+                        ],
+                        "id": 10381,
+                        "name": "Assignment",
+                        "src": "628:18:37"
+                      }
+                    ],
+                    "id": 10382,
+                    "name": "ExpressionStatement",
+                    "src": "628:18:37"
+                  }
+                ],
+                "id": 10383,
+                "name": "Block",
+                "src": "618:35:37"
+              }
+            ],
+            "id": 10384,
+            "name": "FunctionDefinition",
+            "src": "558:95:37"
           },
           {
-            "body": {
-              "id": 10396,
-              "nodeType": "Block",
-              "src": "717:37:37",
-              "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 10394,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 10392,
-                      "name": "previous",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 10361,
-                      "src": "727:8:37",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "id": 10393,
-                      "name": "_previous",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 10389,
-                      "src": "738:9:37",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
-                    },
-                    "src": "727:20:37",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "id": 10395,
-                  "nodeType": "ExpressionStatement",
-                  "src": "727:20:37"
-                }
-              ]
-            },
-            "documentation": null,
-            "id": 10397,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
-            "name": "setPrevEpochDifficulty",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 10390,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 10389,
-                  "name": "_previous",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 10397,
-                  "src": "691:17:37",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 10388,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "691:7:37",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
               ],
-              "src": "690:19:37"
+              "name": "setPrevEpochDifficulty",
+              "scope": 10395,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
             },
-            "returnParameters": {
-              "id": 10391,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "717:0:37"
-            },
-            "scope": 10398,
-            "src": "659:95:37",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "public"
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_previous",
+                      "scope": 10394,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 10385,
+                        "name": "ElementaryTypeName",
+                        "src": "691:7:37"
+                      }
+                    ],
+                    "id": 10386,
+                    "name": "VariableDeclaration",
+                    "src": "691:17:37"
+                  }
+                ],
+                "id": 10387,
+                "name": "ParameterList",
+                "src": "690:19:37"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 10388,
+                "name": "ParameterList",
+                "src": "717:0:37"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 10358,
+                              "type": "uint256",
+                              "value": "previous"
+                            },
+                            "id": 10389,
+                            "name": "Identifier",
+                            "src": "727:8:37"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 10386,
+                              "type": "uint256",
+                              "value": "_previous"
+                            },
+                            "id": 10390,
+                            "name": "Identifier",
+                            "src": "738:9:37"
+                          }
+                        ],
+                        "id": 10391,
+                        "name": "Assignment",
+                        "src": "727:20:37"
+                      }
+                    ],
+                    "id": 10392,
+                    "name": "ExpressionStatement",
+                    "src": "727:20:37"
+                  }
+                ],
+                "id": 10393,
+                "name": "Block",
+                "src": "717:37:37"
+              }
+            ],
+            "id": 10394,
+            "name": "FunctionDefinition",
+            "src": "659:95:37"
           }
         ],
-        "scope": 10399,
+        "id": 10395,
+        "name": "ContractDefinition",
         "src": "271:485:37"
       }
     ],
+    "id": 10396,
+    "name": "SourceUnit",
     "src": "0:757:37"
   },
   "compiler": {
     "name": "solc",
     "version": "0.5.17+commit.d19bba13.Emscripten.clang"
   },
-  "networks": {
-    "31": {
-      "events": {},
-      "links": {},
-      "address": "0x6dcB2504722948db86c82A4F91eee910F591E4Aa",
-      "transactionHash": "0xb33d90270810189c2ef177499aec3b3f40809141f8a15b716eb805d322e1ffbe"
-    }
-  },
-  "schemaVersion": "3.0.23",
-  "updatedAt": "2021-02-01T16:47:02.708Z",
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-04-30T09:57:27.713Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

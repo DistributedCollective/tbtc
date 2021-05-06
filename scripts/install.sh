@@ -26,12 +26,12 @@ printf "${LOG_START}Installing NPM dependencies...${LOG_END}"
 npm install
 
 printf "${LOG_START}Unlocking ethereum accounts...${LOG_END}"
-KEEP_ETHEREUM_PASSWORD=$KEEP_ETHEREUM_PASSWORD \
-    npx truffle exec scripts/unlock-eth-accounts.js --network development
+# KEEP_ETHEREUM_PASSWORD=$KEEP_ETHEREUM_PASSWORD \
+#     npx truffle exec scripts/unlock-eth-accounts.js --network sov
 
 printf "${LOG_START}Finding current ethereum network ID...${LOG_END}"
 
-output=$(npx truffle exec ./scripts/get-network-id.js --network development)
+output=$(npx truffle exec ./scripts/get-network-id.js --network sov)
 NETWORKID=$(echo "$output" | tail -1)
 printf "Current network ID: ${NETWORKID}\n"
 
@@ -42,6 +42,7 @@ NETWORKID=$NETWORKID \
 
 printf "${LOG_START}Migrating contracts...${LOG_END}"
 npm run clean
-npx truffle migrate --reset --network development
+npx truffle compile
+npx truffle migrate --reset --network sov
 
 printf "${DONE_START}Installation completed!${DONE_END}"
