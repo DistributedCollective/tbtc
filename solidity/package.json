@@ -40,7 +40,7 @@
   "homepage": "https://tbtc.network/",
   "dependencies": {
     "@chainlink/contracts": "0.0.12",
-    "@keep-network/keep-ecdsa": "/Users/konrad/Desktop/rumble/fin/local-setup/keep-ecdsa/solidity",
+    "@keep-network/keep-ecdsa": "../../keep-ecdsa/solidity",
     "@summa-tx/bitcoin-spv-sol": "^3.1.0",
     "@summa-tx/relay-sol": "^2.0.2",
     "ethers": "^5.0.25",
