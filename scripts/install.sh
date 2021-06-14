@@ -4,6 +4,13 @@ set -e pipefail
 # Dafault inputs.
 KEEP_ECDSA_PATH_DEFAULT=$(realpath -m $(dirname $0)/../../keep-ecdsa)
 
+if [[ -z "${DEST_NETWORK}" ]]; then
+  echo "DEST_NETWORK env not set. Exiting"
+  exit 1
+else
+  echo "Using network ${DEST_NETWORK}"
+fi
+
 # Read user inputs.
 read -p "Enter path to the keep-ecdsa project [$KEEP_ECDSA_PATH_DEFAULT]: " keep_ecdsa_path
 KEEP_ECDSA_PATH=$(realpath ${keep_ecdsa_path:-$KEEP_ECDSA_PATH_DEFAULT})
@@ -26,12 +33,12 @@ printf "${LOG_START}Installing NPM dependencies...${LOG_END}"
 npm install
 
 printf "${LOG_START}Unlocking ethereum accounts...${LOG_END}"
-# KEEP_ETHEREUM_PASSWORD=$KEEP_ETHEREUM_PASSWORD \
-#     npx truffle exec scripts/unlock-eth-accounts.js --network sov
+KEEP_ETHEREUM_PASSWORD=$KEEP_ETHEREUM_PASSWORD \
+    npx truffle exec scripts/unlock-eth-accounts.js --network $DEST_NETWORK
 
 printf "${LOG_START}Finding current ethereum network ID...${LOG_END}"
 
-output=$(npx truffle exec ./scripts/get-network-id.js --network sov)
+output=$(npx truffle exec ./scripts/get-network-id.js --network $DEST_NETWORK)
 NETWORKID=$(echo "$output" | tail -1)
 printf "Current network ID: ${NETWORKID}\n"
 
@@ -43,6 +50,6 @@ NETWORKID=$NETWORKID \
 printf "${LOG_START}Migrating contracts...${LOG_END}"
 npm run clean
 npx truffle compile
-npx truffle migrate --reset --network sov
+npx truffle migrate --reset --network $DEST_NETWORK
 
 printf "${DONE_START}Installation completed!${DONE_END}"

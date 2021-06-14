@@ -13,8 +13,6 @@
   "scripts": {
     "clean": "rm -rf build/",
     "compile": "truffle compile",
-    "deploy": "truffle migrate --network sov",
-    "deploy:local": "truffle migrate --network sov",
     "test": "truffle compile && mocha --exit --recursive test --timeout 20000",
     "test:oracle": "mocha test/SatWeiPriceFeedTest.js",
     "test:temp": "mocha test/GovernanceTest.js --timeout 20000",
@@ -40,7 +38,7 @@
   "homepage": "https://tbtc.network/",
   "dependencies": {
     "@chainlink/contracts": "0.0.12",
-    "@keep-network/keep-ecdsa": "../../keep-ecdsa/solidity",
+    "@keep-network/keep-ecdsa": "/home/michal/projects/sovryn/tbtc-deployment/keep-ecdsa/solidity",
     "@summa-tx/bitcoin-spv-sol": "^3.1.0",
     "@summa-tx/relay-sol": "^2.0.2",
     "ethers": "^5.0.25",

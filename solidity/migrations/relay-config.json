@@ -1,13 +1,15 @@
 {
   "init": {
     "bitcoinMain": {
-      "genesis":"0x00000020aa0973ee999bb7b4620cf7743320747eb50d41b90b868ff08410ffa100000000fe29ede3a6abbe228550ff9addcc434fb1021a2c2ef5aba7f8fdfef2877fc47a4ac48b60f4411f191f87aacf",
-      "height":1973182,
-      "epochStart":"0x3c7a6017f0ef5fad07be4e1179c99f63877269c3b3e7ea1f1e00000000000000"
+      "genesis": "0x00000020aa0973ee999bb7b4620cf7743320747eb50d41b90b868ff08410ffa100000000fe29ede3a6abbe228550ff9addcc434fb1021a2c2ef5aba7f8fdfef2877fc47a4ac48b60f4411f191f87aacf",
+      "height": 1973182,
+      "epochStart": "0x3c7a6017f0ef5fad07be4e1179c99f63877269c3b3e7ea1f1e00000000000000"
     },
-    "bitcoinTest": {"genesis":"0x00000020aa0973ee999bb7b4620cf7743320747eb50d41b90b868ff08410ffa100000000fe29ede3a6abbe228550ff9addcc434fb1021a2c2ef5aba7f8fdfef2877fc47a4ac48b60f4411f191f87aacf",
-      "height":1973182,
-      "epochStart":"0x3c7a6017f0ef5fad07be4e1179c99f63877269c3b3e7ea1f1e00000000000000"
+    "bitcoinTest": {
+      "genesis": "0x00000020aa0973ee999bb7b4620cf7743320747eb50d41b90b868ff08410ffa100000000fe29ede3a6abbe228550ff9addcc434fb1021a2c2ef5aba7f8fdfef2877fc47a4ac48b60f4411f191f87aacf",
+      "height": 1973182,
+      "epochStart": "0x3c7a6017f0ef5fad07be4e1179c99f63877269c3b3e7ea1f1e00000000000000"
     },
-  "forceRelay": "TestnetRelay"
+    "forceRelay": "TestnetRelay"
+  }
 }
