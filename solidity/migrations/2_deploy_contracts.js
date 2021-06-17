@@ -72,6 +72,19 @@ const all = [
 
 module.exports = (deployer, network, accounts) => {
   deployer.then(async () => {
+    const args = process.argv.slice(2)
+    const relayOwnerAddressIndex = args.findIndex(arg => arg === "--relayOwnerAddress")
+
+    const relayOwnerAddress = relayOwnerAddressIndex >= 0 && args[relayOwnerAddressIndex + 1]
+    
+    if (!relayOwnerAddress) {
+      console.error("Err: relayOwnerAddress not set. Exiting")
+      process.exit(1)
+    }
+
+    console.log(`Using relay owner address: ${relayOwnerAddress}`)
+
+
     let constantsContract = TBTCConstants
     if (
       network == "keep_dev" ||
@@ -125,7 +138,7 @@ module.exports = (deployer, network, accounts) => {
     if (network === "mainnet" || relayConfig.forceRelay === "OnDemandSPV") {
       const {genesis, height, epochStart} = relayConfig.init.bitcoinMain
 
-      await deployer.deploy(OnDemandSPV, genesis, height, epochStart, 0)
+      await deployer.deploy(OnDemandSPV, genesis, height, epochStart, 0, { from: relayOwnerAddress  })
       difficultyRelay = await OnDemandSPV.deployed()
     } else if (
       network === "keep_dev" ||
@@ -135,10 +148,10 @@ module.exports = (deployer, network, accounts) => {
     ) {
       const {genesis, height, epochStart} = relayConfig.init.bitcoinTest
 
-      await deployer.deploy(TestnetRelay, genesis, height, epochStart, 0)
+      await deployer.deploy(TestnetRelay, genesis, height, epochStart, 0, { from: relayOwnerAddress })
       difficultyRelay = await TestnetRelay.deployed()
     } else {
-      await deployer.deploy(MockRelay)
+      await deployer.deploy(MockRelay, { from: relayOwnerAddress })
       difficultyRelay = await MockRelay.deployed()
     }
 

@@ -11,6 +11,13 @@ else
   echo "Using network ${DEST_NETWORK}"
 fi
 
+if [[ -z "${RELAY_OWNER_ADDRESS}" ]]; then
+  echo "RELAY_OWNER_ADDRESS env not set. Exiting"
+  exit 1
+else
+  echo "Relay owner is set to ${RELAY_OWNER_ADDRESS}"
+fi
+
 # Read user inputs.
 read -p "Enter path to the keep-ecdsa project [$KEEP_ECDSA_PATH_DEFAULT]: " keep_ecdsa_path
 KEEP_ECDSA_PATH=$(realpath ${keep_ecdsa_path:-$KEEP_ECDSA_PATH_DEFAULT})
@@ -50,6 +57,6 @@ NETWORKID=$NETWORKID \
 printf "${LOG_START}Migrating contracts...${LOG_END}"
 npm run clean
 npx truffle compile
-npx truffle migrate --reset --network $DEST_NETWORK
+npx truffle migrate --reset --network $DEST_NETWORK --relayOwnerAddress $RELAY_OWNER_ADDRESS
 
 printf "${DONE_START}Installation completed!${DONE_END}"
