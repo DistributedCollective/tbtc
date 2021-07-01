@@ -90,7 +90,8 @@ module.exports = (deployer, network, accounts) => {
       network == "keep_dev" ||
       network == "development" ||
       network == "ropsten" ||
-      network == "sov"
+      network == "sov" ||
+      network == "local"
     ) {
       // For keep_dev and development, replace constants with testnet constants.
       // Masquerade as TBTCConstants like a sinister fellow.
