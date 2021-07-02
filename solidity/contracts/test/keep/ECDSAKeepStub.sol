@@ -46,7 +46,7 @@ contract ECDSAKeepStub is IBondedECDSAKeep {
         }
     }
 
-    function returnPartialSignerBonds() external payable {
+    function returnPartialSignerBonds(uint256 _amount) external {
         // solium-disable-previous-line no-empty-blocks
     }
 
