@@ -2,13 +2,17 @@ const {deployAndLinkAll} = require("./helpers/testDeployer.js")
 const {contract, web3, accounts} = require("@openzeppelin/test-environment")
 const {states, fundingTx} = require("./helpers/utils.js")
 const {BN, constants, expectRevert} = require("@openzeppelin/test-helpers")
-const {ZERO_ADDRESS} = constants
-const {expect} = require("chai")
+const chai = require("chai")
+const bnChai = require('bn-chai')
 
 const ECDSAKeepStub = contract.fromArtifact("ECDSAKeepStub")
 const Deposit = contract.fromArtifact("Deposit")
 const TestDeposit = contract.fromArtifact("TestDeposit")
 const TBTCSystem = contract.fromArtifact("TBTCSystem")
+
+chai.use(bnChai(BN))
+const {expect} = chai
+const {ZERO_ADDRESS} = constants
 
 describe("DepositFactory", async function() {
   let openKeepFee

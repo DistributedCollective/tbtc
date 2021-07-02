@@ -26,12 +26,15 @@ describe("SatWeiPriceFeed", async function() {
     afterEach(async () => await restoreSnapshot())
 
     it("returns correct satwei price feed value", async () => {
-      const btcusd = new BN(7000)
+      const multiplier = new BN(10**8)
+      const btcusd = new BN(7000).mul(multiplier)
+      const expectedPrice = btcusd.div(multiplier)
+
       // multiplication before division since BN does not store decimal points
       await btcsov.setValue(btcusd)
       const price = await satWeiPriceFeed.getPrice.call({from: tbtcSystem})
       // oracle returns price in sat 1 BTC = 1e8 sat
-      expect(new BN(price)).to.eq.BN(btcusd)
+      expect(new BN(price)).to.eq.BN(expectedPrice)
     })
   })
   describe("#setOracleAddress", async () => {
@@ -39,30 +42,42 @@ describe("SatWeiPriceFeed", async function() {
     afterEach(async () => await restoreSnapshot())
 
     it("setsNewOracleAddress", async () => {
-      const btcusd = new BN(7000)
+      const multiplier = new BN(10**8)
+      const btcusd = new BN(7000).mul(multiplier)
+      const expectedPrice = btcusd.div(multiplier)
+
       await btcsov.setValue(btcusd)
       const price = await satWeiPriceFeed.getPrice.call({from: tbtcSystem})
-      expect(new BN(price)).to.eq.BN(btcusd)
+      expect(new BN(price)).to.eq.BN(expectedPrice)
+
       // Create new oracle
       const newOracle = await MockPriceOracle.new()
-      const newbtcusd = new BN(8000)
+      const newbtcusd = new BN(8000).mul(multiplier)
+      const newExpectedPrice = newbtcusd.div(multiplier)
       await newOracle.setValue(newbtcusd)
+
       // set new oracle in contract
       await satWeiPriceFeed.setOracleAddress.sendTransaction(
         newOracle.address,
         {from: owner},
       )
       const newPrice = await satWeiPriceFeed.getPrice.call({from: tbtcSystem})
-      expect(new BN(newPrice)).to.eq.BN(newbtcusd)
+      expect(new BN(newPrice)).to.eq.BN(newExpectedPrice)
     })
     it("setsNewOracleAddress - reverts if not owner", async () => {
-      const btcusd = new BN(7000)
-      await btcsov.setValue(btcusd)
+      const multiplier = new BN(10**8)
+      const btcusd = new BN(7000).mul(multiplier)
+      const expectedPrice = btcusd.div(multiplier)
+
+      await btcsov.setValue(btcusd, {from: tbtcSystem})
       const price = await satWeiPriceFeed.getPrice.call({from: tbtcSystem})
-      expect(new BN(price)).to.eq.BN(btcusd)
+
+      expect(new BN(price)).to.eq.BN(expectedPrice)
+
       // Create new oracle
       const newOracle = await MockPriceOracle.new()
       const newbtcusd = new BN(8000)
+
       await newOracle.setValue(newbtcusd)
       // set new oracle in contract by not owner
       await expectRevert(

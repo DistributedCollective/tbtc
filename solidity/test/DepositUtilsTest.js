@@ -11,10 +11,15 @@ const {createSnapshot, restoreSnapshot} = require("./helpers/snapshot.js")
 const {accounts, contract, web3} = require("@openzeppelin/test-environment")
 const [owner] = accounts
 const {BN, constants, expectRevert} = require("@openzeppelin/test-helpers")
-const {ZERO_ADDRESS} = constants
-const {expect} = require("chai")
+const chai = require('chai')
+const bnChai = require('bn-chai')
 const TestDepositUtils = contract.fromArtifact("TestDepositUtils")
 const TestDepositUtilsSPV = contract.fromArtifact("TestDepositUtilsSPV")
+
+chai.use(bnChai(BN))
+
+const {ZERO_ADDRESS} = constants
+const {expect} = chai
 
 describe("DepositUtils", async function() {
   let beneficiary

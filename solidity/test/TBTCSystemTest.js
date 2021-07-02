@@ -13,6 +13,7 @@ describe("TBTCSystem", async function() {
   let ecdsaKeepFactory
   let tdt
 
+  const multiplier = 10**8
   const medianizerValue = 100000000000
 
   before(async () => {
@@ -131,7 +132,7 @@ describe("TBTCSystem", async function() {
 
       expect(
         await tbtcSystem.fetchBitcoinPrice.call({from: keepOwner}),
-      ).to.eq.BN(medianizerValue)
+      ).to.eq.BN(medianizerValue/multiplier)
     })
   })
 })

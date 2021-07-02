@@ -2,9 +2,14 @@ const {deployAndLinkAll} = require("./helpers/testDeployer.js")
 const {states} = require("./helpers/utils.js")
 const {createSnapshot, restoreSnapshot} = require("./helpers/snapshot.js")
 const {accounts, web3} = require("@openzeppelin/test-environment")
-const [owner] = accounts
 const {BN, expectRevert} = require("@openzeppelin/test-helpers")
-const {expect} = require("chai")
+const chai = require("chai")
+const bnChai = require('bn-chai')
+
+chai.use(bnChai(BN))
+
+const [owner] = accounts
+const {expect} = chai
 
 // spare signature:
 // signing with privkey '11' * 32

@@ -13,7 +13,7 @@
   "scripts": {
     "clean": "rm -rf build/",
     "compile": "truffle compile",
-    "test": "truffle compile && mocha --exit --recursive test --timeout 20000",
+    "test": "truffle compile && mocha --exit --recursive --timeout 20000",
     "test:oracle": "mocha test/SatWeiPriceFeedTest.js",
     "test:temp": "mocha test/GovernanceTest.js --timeout 20000",
     "test:quick": "mocha --exit --recursive test --timeout 20000",

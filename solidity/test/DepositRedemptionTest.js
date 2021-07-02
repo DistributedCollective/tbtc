@@ -16,8 +16,13 @@ const {
   expectRevert,
   time,
 } = require("@openzeppelin/test-helpers")
+const chai = require("chai")
+const bnChai = require('bn-chai')
+
+chai.use(bnChai(BN))
+
 const {ZERO_ADDRESS} = constants
-const {expect} = require("chai")
+const {expect} = chai
 
 // spare signature:
 // signing with privkey '11' * 32
